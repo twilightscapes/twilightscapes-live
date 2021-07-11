@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Twilightscapes - Unique night photography of abandoned urban exploration",
+    "titleTemplate": "%s",
+    "description": "Unique night photography",
+    "siteUrl": "https://twilightscapes.com/",
+    "image": "/assets/night182.jpg",
+    "iconimage": "/assets/tw-logo-white.svg",
+    "twitterUsername": "toddlambert",
+    "siteTitle": "Twilightscapes - Unique night photography of abandoned urban exploration",
+    "siteTitleDefault": "Twilightscapes - Unique night photography of abandoned urban exploration",
+    "hrefLang": "en",
+    "siteDescription":"Night long exposure photography in remote abandoned locations urban exploration",
+    "siteImage": "/default-og-image.jpg",
+    "twitter": "toddlambert"
+  },
+  "ga": "UA-49869143-1"
+}

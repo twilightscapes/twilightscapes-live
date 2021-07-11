@@ -1,0 +1,24 @@
+{
+  "socialIcons": [
+    {
+      "icon": "facebook",
+      "url": "https://facebook.com/twilightscapes"
+    },
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/twilightscapes/"
+    },
+    {
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/toddlambert"
+    },
+    {
+      "icon": "youtube",
+      "url": "https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ"
+    },
+    {
+      "icon": "twitter",
+      "url": "https://twitter.com/toddlambert"
+    }
+  ]
+}
