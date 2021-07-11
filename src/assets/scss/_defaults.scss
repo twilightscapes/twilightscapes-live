@@ -8,13 +8,13 @@ body {
   margin: 0;
   padding: 0;
 }
-// body {
-//   font-family: var(--font-family);
-//   font-size: 18px;
-// }
-// code {
-//   font-family: var(--font-family-mono);
-// }
+body {
+  // font-family: var(--font-family);
+  // font-size: 18px;
+}
+code {
+  font-family: var(--font-family-mono);
+}
 main {
   p {
     line-height: 1.5;

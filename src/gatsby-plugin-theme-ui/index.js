@@ -4,9 +4,9 @@ import { lightness } from "@theme-ui/color"
 const theme = {
   colors: {
     ...defaultColors,
-    text: "#222",
-    background: "#ddd",
-    primary: "#ff0000",
+    text: "#000",
+    background: "#fff",
+    primary: "#5C2941",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
     cardBg: "#fff",

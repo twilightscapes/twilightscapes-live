@@ -65,7 +65,7 @@
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "react-helmet": "^6.0.0",
-    "react-icons": "^3.11.0",
+    "react-icons": "^4.2.0",
     "react-images": "^1.0.0",
     "react-photo-gallery": "^8.0.0",
     "react-slideshow-image": "^3.4.3",

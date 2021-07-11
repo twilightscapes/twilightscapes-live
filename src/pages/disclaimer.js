@@ -1,33 +1,9 @@
-import React from "react"
-
-
-import { Seo } from "../components/seo"
+import * as React from "react"
 import { Layout } from "../components/layout"
-
-// import Image from '../components/Image'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import { GiPlainArrow } from 'react-icons/gi'
-
-import styled from 'styled-components'
-
-const CustomBox = styled.div`
-
-@media (max-width: 48em) {
-	.image-wrap h1, .image-wrap h2, .image-wrap h3  {font-size:300% !important; border:0px solid red !important;}
-	.image-wrap .news-btn{ margin-top:1rem;}
-	.image-wrap .innerpanel{font-size:70% !important;}
-}
-
-@media (min-width: 58em) {
-	.textbox{padding-top:80px !important;}
-       .container{max-width:800px !important;}
-}
-
-
-
-
-
-`
+import Image from '../components/Image'
+import { RiSendPlane2Line } from "react-icons/ri"
+import { Seo } from "../components/seo"
+import GoBack from "../components/goBack"
 
 
 
@@ -36,17 +12,26 @@ const CustomBox = styled.div`
 
 
 
-const disclaimer = () => (
 
 
- <CustomBox>
+
+
+
+export default function DisclaimerPage() {
+   return (
+
+
     
     <Layout className="thanks-page">
-    <Seo title="Twilightscapes Photo Galleries - Ghost Towns" />
-    
-    <section className="outer section section--gradient">
-      <div className="container" style={{padding: '2rem'}}>
-      <h1>Disclaimer</h1>
+
+{/* <Seo title={`Disclaimer`} /> */}
+
+
+<section className="outer section section--gradient" >
+      <div className="container" style={{padding: '2rem 10%'}}>
+      <GoBack />
+
+<h1 className="title" style={{fontSize:'50px'}}>Disclaimer</h1>
     
 
 
@@ -118,10 +103,11 @@ The materials on this website(s) also known as toddlambert.com, twilightsapes.co
 			
 
     </div>
+    <GoBack />
     </section>
     
+    
     </Layout>
-     </CustomBox>
-)
 
-export default disclaimer
+  )
+}

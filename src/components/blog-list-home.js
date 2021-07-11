@@ -69,16 +69,18 @@ const PostMaker = ({ data }) => (
   >
      <Link
       className=""
-      to="/favorites/"
+      to="/photos/milky-way/"
       sx={{
         variant: "variants.button",
       }}
-      title="Popular Favorites"
+      title="Milky Way Photo Gallery"
     >
       
-      <div >
-      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div><div className="post-content"><h2 className="title">Popular Favorites</h2><p className="meta">If you're new here, start here!</p></div>
+      <div style={{overflow:'hidden'}}>
+      <Image className="slider" alt="Milky Way Photo Gallery" filename="night62.jpg" style={{backgroundSize:'cover', zIndex:'', }} />
+        </div>
+        
+        <div className="post-content"><h2 className="title">Milky Way</h2><p className="meta">Photos that feature the Milky Way</p></div>
         
        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
@@ -95,17 +97,17 @@ const PostMaker = ({ data }) => (
 
       <Link
       className=""
-      to="/ghosttowns/"
+      to="/photos/crazy-geology/"
       sx={{
         variant: "variants.button",
       }}
-      title="Ghost Towns"
+      title="Crazy Geology"
     >  
        <div >
-      <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+      <Image className="slider" alt="Crazy Geology" filename="night84.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div>
        
-        <div className="post-content"><h2 className="title">Ghost Towns</h2><p className="meta">The real Old West comes alive at night</p></div>
+        <div className="post-content"><h2 className="title">Crazy Geology</h2><p className="meta">Some of the wildest formations</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div></Link>
     </article>
 
@@ -119,31 +121,26 @@ const PostMaker = ({ data }) => (
   >
     <Link
       className=""
-      to="/cars/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Relics of Rust"
+      to="/photos/in-the-city/"
+      title="In The City"
     >
 <div >
-      <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div><div className="post-content"><h2 className="title">Relics of Rust</h2><p className="meta">Todd's favorite subject matter</p></div>
+      <Image className="slider" alt="Abandoned Car in Paris TX" filename="night335.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div><div className="post-content"><h2 className="title">In The City</h2><p className="meta">Todd's favorite subject matter</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
     </article>
 
     
 
-      {data}
+      {/* {data} */}
       
       </div>
 
     <Link
       className="button"
       to="/galleries/"
-      sx={{
-        variant: "variants.button",
-      }}
+
       title="See More Galleries"
     >
       See more Galleries

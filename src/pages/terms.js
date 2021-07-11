@@ -1,33 +1,9 @@
-import React from "react"
-
-
-import { Seo } from "../components/seo"
+import * as React from "react"
 import { Layout } from "../components/layout"
-
-// import Image from '../components/Image'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import { GiPlainArrow } from 'react-icons/gi'
-
-import styled from 'styled-components'
-
-const CustomBox = styled.div`
-
-@media (max-width: 48em) {
-	.image-wrap h1, .image-wrap h2, .image-wrap h3  {font-size:300% !important; border:0px solid red !important;}
-	.image-wrap .news-btn{ margin-top:1rem;}
-	.image-wrap .innerpanel{font-size:70% !important;}
-}
-
-@media (min-width: 58em) {
-	.textbox{padding-top:80px !important;}
-       .container{max-width:800px !important;}
-}
-
-
-
-
-
-`
+import Image from '../components/Image'
+import { RiSendPlane2Line } from "react-icons/ri"
+import { Seo } from "../components/seo"
+import GoBack from "../components/goBack"
 
 
 
@@ -36,17 +12,27 @@ const CustomBox = styled.div`
 
 
 
-const terms = () => (
 
 
- <CustomBox>
+
+
+
+export default function TermsPage({}) {
+   return (
+
+
     
     <Layout className="thanks-page">
-    <Seo title="Twilightscapes Photo Galleries - Ghost Towns" />
+
+{/* <Seo title={`Terms of Use`} /> */}
+
     
-    <section className="outer section section--gradient">
-      <div className="container" style={{padding: '2rem'}}>
-      <h1>Terms of Service</h1>
+<section className="outer section section--gradient" >
+      <div className="container" style={{padding: '2rem 10%'}}>
+        
+      <GoBack />
+
+<h1 className="title" style={{fontSize:'50px'}}>Terms of Service</h1>
     
 
 <h3>1. Terms</h3>
@@ -56,14 +42,14 @@ and agree that you are responsible for compliance with any applicable local<br /
 laws. If you do not agree with any of these terms, you are prohibited from<br />
 using or accessing this site. The materials contained in this web site are<br />
 protected by applicable copyright and trade mark law.
-
+<br /><br />
 <h3>2. Use License</h3>
 
 Permission is granted to temporarily download one copy of the materials<br />
 (information or software) on Todd Lambert’s web site for personal,<br />
 non-commercial transitory viewing only. This is the grant of a license,<br />
 not a transfer of title, and under this license you may not:
-
+<br /><br />
 <ol>
 <li>modify or copy the materials;</li>
 <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
@@ -77,10 +63,13 @@ not a transfer of title, and under this license you may not:
 
 
     </div>
+
+    <GoBack />
+
     </section>
     
+    
     </Layout>
-     </CustomBox>
-)
 
-export default terms
+  )
+}

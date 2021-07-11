@@ -134,7 +134,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto">
-              <Link className="navbar-item txtshadow" to="/galleries/">
+              <Link className="navbar-item txtshadow" to="/vault/favorites/">
               The Vault <span>Full Photo archives</span>
               </Link>
       </li>

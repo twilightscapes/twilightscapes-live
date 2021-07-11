@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
+import { Helmet } from "react-helmet"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Icons from "../util/socialmedia.json"
 import Newsignup from "../components/newssign"
@@ -99,6 +100,9 @@ const HomePage = ({ data }) => {
   return (
     <CustomBox style={{}}>
     <Layout>
+    <Helmet>
+  <body className="homepage" />
+</Helmet>
       <Seo />
       
       <div className="home-banner flexbutt intro" style={{position:'relative', height:'auto', overflow:'hidden'}}>
