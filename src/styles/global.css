@@ -239,7 +239,7 @@ p{margin-bottom:2rem;}
 .actionJackson{
 display: flex;
 flex-direction: row;
-color: var(--text-color-inverted);
+color:#ccc;
 background-color: var(--primary);
 align-self: flex-end;
 padding: var(--space-sm) var(--space-xl);
@@ -250,7 +250,9 @@ height: var(--size-input);
 justify-content: center;
 transition: var(--transition); 
 }
-
+.actionJackson:hover{
+  color:#ccc;
+}
 
 
 
