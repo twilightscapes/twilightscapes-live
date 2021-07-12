@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiBugLine, RiSkullLine } from "react-icons/ri"
 
+import { AiFillRobot } from "react-icons/ai"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
@@ -15,16 +16,18 @@ const NotFound = () => (
       }}
     >
       <header>
-        <RiSkullLine
+        <br /> <br />
+        <AiFillRobot
           style={{
             fontSize: "128px",
             color: "var(--primary-color)",
+            margin:'0 auto',
+        textAlign:'center'
           }}
         />
-        <h1>Oops we did not expect that to happen</h1>
-        <p>
-          Have you wondered into the unknow. Let us help you, Please take a look
-          at below options
+        <h1>Well, Shit.</h1>
+        <p style={{margin:'2rem'}}>
+          That wasn't supposed to happen.
         </p>
       </header>
       <Link to="/" className="button">

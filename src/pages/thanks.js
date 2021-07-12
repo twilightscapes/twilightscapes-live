@@ -12,12 +12,17 @@ const Thanks = () => (
       className="wrapper"
       style={{
         textAlign: "center",
+        width:'60%',
+        margin:'0 auto',
+        textAlign:'center'
       }}
     >
       <RiCheckboxCircleLine
         style={{
           fontSize: "128px",
           color: "var(--primary-color)",
+          margin:'0 auto',
+          textAlign:'center'
         }}
       />
       <h1>Got your message</h1>

@@ -15,6 +15,10 @@ const settings = require("./src/util/site.json")
 
 module.exports = {
   siteMetadata: settings.meta,
+  flags: {
+    FAST_DEV: true,
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   plugins: [
     {
       resolve: "gatsby-source-shopify",

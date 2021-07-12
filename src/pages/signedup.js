@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
-
+import { AiTwotoneCamera } from "react-icons/ai"
 
 
 
@@ -28,25 +28,30 @@ export default function SignedUpPage({}) {
 
  
 
-    
+
 <div
       className="wrapper"
       style={{
         textAlign: "center",
         display:'flex',
         justifyContent:'center',
-        flexDirection:'column'
+        flexDirection:'column',
+        width:'60%',
+        margin:'0 auto',
+        textAlign:'center'
       }}
     >
-      <RiCheckboxCircleLine
+      <AiTwotoneCamera
         style={{
           fontSize: "128px",
           color: "var(--primary-color)",
+          margin:'0 auto',
+          textAlign:'center'
         }}
       />
-      <h1>Got your message</h1>
-      <p>Thank you for getting in touch us. We will get back to you shortly.</p>
-      <Link to="/" className="button">
+      <h1>Thanks!</h1>
+      <p>Thank you for joining the newsletter!</p>
+      <Link to="/" className="buttonMore">
         <RiArrowLeftSLine className="icon -left" />
         Lets go back to Homepage
       </Link>
