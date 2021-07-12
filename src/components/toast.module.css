@@ -3,7 +3,7 @@
   color: var(--text-color-inverted);
   width: max-content;
   position: fixed;
-  right: 80px;
+  right: 100px;
   top: 77vh;
   padding: var(--space-md) var(--space-lg);
   font-size: var(--text-xs);
