@@ -471,6 +471,9 @@ footer{background-color: #000; padding:.1rem 0rem; margin:0; display:flex; justi
   .home-hanner1 div{width:100%; display:inline-block; height:100vh !important; border:1px solid pink !important; }
 } */
 
+.home-banner{padding: 0 !important;}
+.home-posts, .home-posts a, .home-posts a:hover{color:inherit !important;}
+.post-card{color:#ccc !important;}
  body.carto .social-icons, body.carto .backdrop1{  display: none !important;}
 
 /* body.carto{overflow-y: hidden !important;} */

@@ -17,14 +17,15 @@ export default function BlogListHome(props) {
 
 const PostMaker = ({ data }) => (
 <div>
-  <section className="home-posts" >
-
-    <h2>
+  <h2>
       Spotlight <strong>Galleries</strong>
        <span className="icon -right">
         <RiArrowDownLine />
       </span>
     </h2>
+  <section className="home-posts" style={{color:'#ff0000 !important'}} >
+
+    
 
 <div className="grids col-1 sm-2 lg-3">
       
@@ -48,7 +49,7 @@ const PostMaker = ({ data }) => (
       <StaticImage src="../img/milky-way.jpg" alt="Milky Way Photo Gallery" />
         </div>
         
-        <div className="post-content"><h2 className="title">Milky Way</h2><p className="meta">Photos that feature the Milky Way</p></div>
+        <div className="post-content"><h2 className="title">Milky Way</h2><p className="">Photos that feature the Milky Way</p></div>
         
        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
@@ -71,7 +72,7 @@ const PostMaker = ({ data }) => (
       <StaticImage src="../img/crazygeo/night84.jpg" alt="Crazy Geology Photo Gallery" />
         </div>
        
-        <div className="post-content"><h2 className="title">Crazy Geology</h2><p className="meta">Some of the wildest formations</p></div>
+        <div className="post-content"><h2 className="title">Crazy Geology</h2><p className="">Some of the wildest formations</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div></Link>
     </article>
 
@@ -92,7 +93,7 @@ const PostMaker = ({ data }) => (
       
       <StaticImage src="../img/gallery3/night168.jpg" alt="In and around city centers" />
       
-        </div><div className="post-content"><h2 className="title">In The City</h2><p className="meta">In and around city centers</p></div>
+        </div><div className="post-content"><h2 className="title">In The City</h2><p className="">In and around city centers</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
     </article>
@@ -103,16 +104,16 @@ const PostMaker = ({ data }) => (
 
 
 
-
-    
-<section className="home-posts">
-   
-      <h2>
+<h2>
       Latest in <strong>Articles</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>
     </h2>
+    
+<section className="home-posts">
+   
+      
 
     
 
@@ -122,9 +123,14 @@ const PostMaker = ({ data }) => (
       
      </div>
 
-    <Link
+    
+
+    
+  </section>
+  
+  <Link
       className="button"
-      to="/galleries/"
+      to="/articles/"
 
       title="See More Galleries"
     >
@@ -134,7 +140,6 @@ const PostMaker = ({ data }) => (
       </span>
     </Link>
 
-    
-  </section>
+
 </div>
 )
