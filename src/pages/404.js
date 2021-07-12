@@ -30,13 +30,16 @@ const NotFound = () => (
           That wasn't supposed to happen.
         </p>
       </header>
-      <Link to="/" className="button">
+
+      <div style={{display:'flex', justifyContent:'center', width:'100%'}}>
+        <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
         Back to Homepage
       </Link>
-      <Link to="/contact" className="button -outline">
+      <Link to="/contact" className="button">
         Report this <RiBugLine className="icon -right" />
-      </Link>
+      </Link></div>
+
     </div>
   </Layout>
 )

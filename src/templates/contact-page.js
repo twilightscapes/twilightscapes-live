@@ -20,7 +20,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
       }
-    }
+    } 
   }
 `
 
@@ -35,7 +35,8 @@ const Contact = ({ data }) => {
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
       <div className="wrapper">
-        <h1>{frontmatter.title}</h1>
+        <br /><br />
+        <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
         <div
           className="description"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -75,9 +76,7 @@ const Contact = ({ data }) => {
           <p className="text-align-right">
             <button
               className="button"
-              sx={{
-                variant: "variants.button",
-              }}
+              
               type="submit"
             >
               Send Message{" "}
