@@ -2,12 +2,19 @@
   max-width: 400px;
   cursor: pointer;
   text-decoration: none;
-  padding-bottom: var(--space-md);
+  /* padding-bottom: var(--space-md); */
+  border-left: 1px solid rgba(51, 4, 39, 0.8);
+  border-top: 1px solid rgba(66, 55, 63, 0.8);
+  border-radius: 0;
+  transition: transform 250ms ease-in-out;
+  background-color:#111;
+  background: linear-gradient(180deg, #333 1%, #111 80%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
 }
 
-.productImageStyle {
+/* .productImageStyle {
   margin-bottom: var(--space-md);
-}
+} */
 
 .productDetailsStyle {
   display: flex;
