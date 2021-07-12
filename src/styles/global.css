@@ -96,7 +96,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .gatsby-image-wrapper [data-main-image] {
   border-radius: var(--radius-sm);
 }
-/* .gatsby-image-wrapper img{max-height: 80vh; } */
+.gatsby-image-wrapper img{max-height: 100%; }
 
 /* .gatsby-image-wrapper {max-height: 80vh; } */
 
