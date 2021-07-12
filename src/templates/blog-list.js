@@ -113,7 +113,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/galleries/"
+    const blogSlug = "/articles/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -320,14 +320,7 @@ class BlogIndex extends React.Component {
 </div>
 
 <br />
-{/* <h4 style={{display:'block', textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Library:</h4> */}
-<ul className="galmenu">
-<li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Bonus Galleries</li>
-      <li className="galmenu-item"><Link to="/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" id="gallery1">I</Link></li>
-      <li className="galmenu-item"><Link to="/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
-      <li className="galmenu-item"><Link to="/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
-    
-      </ul>
+
 
 
 
