@@ -80,7 +80,7 @@ export default function GalleryPage({ data }) {
 
 <div style={{textAlign:'center', fontWeight:'bold', width:'100%', margin:'2rem 0'}}>Themed Galleries:</div>
 
-<div style={{display:'flex', width:'90vw', margin:'0 auto 2rem auto', padding:'.5rem', border:'1px solid #333', borderRadius:'12px'}}>
+<div style={{display:'flex', width:'90vw', margin:'0 auto 2rem auto', padding:'', border:'0px solid #333', borderRadius:'12px'}}>
 
 
 <Link to="./milky-way/"

@@ -3,7 +3,7 @@
   cursor: pointer;
   text-decoration: none;
   /* padding-bottom: var(--space-md); */
-  border-left: 1px solid rgba(51, 4, 39, 0.8);
+  border-left: 1px solid rgba(51, 4, 39, 0.5);
   border-top: 1px solid rgba(66, 55, 63, 0.8);
   border-radius: 0;
   transition: transform 250ms ease-in-out;
