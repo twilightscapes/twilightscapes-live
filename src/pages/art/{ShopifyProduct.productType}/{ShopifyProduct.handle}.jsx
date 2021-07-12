@@ -7,7 +7,7 @@ import { getSrc } from "gatsby-plugin-image"
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
-
+import DisqusComments from '../../../components/disqus'
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
 
@@ -365,6 +365,8 @@ export default function Product({ data: { product, suggestions } }) {
 <GoBack />
 
 
+
+<DisqusComments />
             
             </div>
 

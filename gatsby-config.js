@@ -28,6 +28,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `twilightscapes`
+      }
+    },
+    {
       resolve: `gatsby-plugin-modal-routing-3`,
       options: {
         // A selector to set react-modal's app root to, default is `#___gatsby`

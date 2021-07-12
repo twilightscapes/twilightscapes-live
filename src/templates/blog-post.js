@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-
+import DisqusComments from '../components/disqus'
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
@@ -116,6 +116,11 @@ const Post = ({ data, pageContext }) => {
       <div style={{padding:'0 5vw'}}>
       {(previous || next) && <Pagination {...props} />}
       </div>
+
+   
+      <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
+     <DisqusComments />
+     </div>
     </Layout>
   )
 }
