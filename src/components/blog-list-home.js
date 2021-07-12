@@ -51,7 +51,7 @@ const PostMaker = ({ data }) => (
         
         <div className="post-content"><h2 className="title">Milky Way</h2><p className="">Photos that feature the Milky Way</p></div>
         
-       <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+       <div style={{position:'absolute', top:'10px', right:'10px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
 
     </article>
@@ -73,7 +73,7 @@ const PostMaker = ({ data }) => (
         </div>
        
         <div className="post-content"><h2 className="title">Crazy Geology</h2><p className="">Some of the wildest formations</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div></Link>
+        <div style={{position:'absolute', top:'10px', right:'10px', fontSize:'20px'}}><RiStarLine /></div></Link>
     </article>
 
 
@@ -94,7 +94,7 @@ const PostMaker = ({ data }) => (
       <StaticImage src="../img/gallery3/night168.jpg" alt="In and around city centers" />
       
         </div><div className="post-content"><h2 className="title">In The City</h2><p className="">In and around city centers</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+        <div style={{position:'absolute', top:'10px', right:'10px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
     </article>
 
