@@ -7,7 +7,7 @@ const PostCard = ({ data }) => (
   <article
     className="post-card"
     sx={{
-      bg: "cardBg",
+      bg: "linear-gradient(180deg, #333 1%, #111 80%)",
     }}
   >
     {data.frontmatter.featuredImage ? (

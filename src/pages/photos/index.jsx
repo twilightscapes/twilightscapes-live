@@ -132,7 +132,7 @@ justifyContent: 'center',
     <div className="frontprod">
       <ProductListing products={data.shopifyCollection.products} className="frontprod" />
 </div>
-      <Link
+      {/* <Link
               className="moreButton"
               sx={{
                 cursor:'pointer',
@@ -145,7 +145,7 @@ justifyContent: 'center',
               <span className="icon -right" style={{paddingLeft:'1rem'}}>
                 <RiSendPlane2Line />
               </span>
-            </Link>
+            </Link> */}
 
             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'0 0 2rem 0'}}>
 
