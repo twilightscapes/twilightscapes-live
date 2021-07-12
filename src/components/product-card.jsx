@@ -48,7 +48,7 @@ export function ProductCard({ product, eager }) {
       to={slug}
       aria-label={`View ${title} product page`}
     >
-      <div className={productImageStyle} data-name="product-image-box" style={{overflow:'visible', width:'100%', backgroundSize: 'contain', justifyContent:'center'}}>
+      <div className={productImageStyle} data-name="product-image-box" style={{overflow:'visible', width:'100%', backgroundSize: '', justifyContent:'center'}}>
         <GatsbyImage
           alt={firstImage?.altText ?? title}
           image={firstImage?.gatsbyImageData ?? storefrontImageData}

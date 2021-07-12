@@ -34,7 +34,11 @@ const Intro2 = () => (
 <CustomBox style={{}}>
 
 
-<div className="kenburns-right"  style={{zIndex:'-1', width:'', height:''}}><StaticImage src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" /></div>
+<div className="" style={{zIndex:'-1', width:'', height:'', backgroundSize:'cover'}}>
+  
+  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" />
+  
+  </div>
 
 
 

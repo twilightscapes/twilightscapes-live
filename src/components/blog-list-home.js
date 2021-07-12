@@ -45,7 +45,7 @@ const PostMaker = ({ data }) => (
       
       <div style={{overflow:'hidden'}}>
      
-      <StaticImage src="../img/gallery6/night62.jpg" alt="Milky Way Photo Gallery" />
+      <StaticImage src="../img/milky-way.jpg" alt="Milky Way Photo Gallery" />
         </div>
         
         <div className="post-content"><h2 className="title">Milky Way</h2><p className="meta">Photos that feature the Milky Way</p></div>

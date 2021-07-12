@@ -86,7 +86,7 @@ const HomePage = ({ data }) => {
       
       <div className="home-banner flexbutt intro" style={{position:'relative', height:'auto', overflow:'hidden'}}>
 
-      <div className="flexcheek" style={{padding:'1vh 3% 0 3%',}}>
+      <div className="flexcheek" style={{padding:'1vh 3% 3rem 3%',}}>
 
 
           <h1 className="title1">{frontmatter.title}</h1>
