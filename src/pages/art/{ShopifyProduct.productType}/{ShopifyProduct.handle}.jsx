@@ -366,7 +366,9 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-<DisqusComments />
+<div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
+     <DisqusComments />
+     </div>
             
             </div>
 
