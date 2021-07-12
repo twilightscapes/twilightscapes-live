@@ -5,7 +5,7 @@
   /* padding-bottom: var(--space-md); */
   border-left: 1px solid rgba(51, 4, 39, 0.5);
   border-top: 1px solid rgba(66, 55, 63, 0.8);
-  border-radius: 0;
+  border-radius: 12px;
   transition: transform 250ms ease-in-out;
   background-color:#111;
   background: linear-gradient(180deg, #333 1%, #111 80%);
