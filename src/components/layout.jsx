@@ -164,7 +164,7 @@ Contact Me<span>Ordering Questions?</span>
       <li className="carto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center' }}>
   
       <Theme  />
-   <Link to="/search" style={{marginRight:'20px', marginTop:'5px'}}>
+   <Link className="sherlock" to="/search" style={{marginRight:'20px', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
    

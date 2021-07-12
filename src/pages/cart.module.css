@@ -54,7 +54,7 @@
   align-items: center;
   background: var(--primary);
   border-radius: var(--radius-md);
-  color: var(--text-color-inverted);
+  /* color: var(--text-color-inverted); */
   display: flex;
   font-size: var(--text-md);
   font-weight: var(--semibold);
@@ -123,7 +123,7 @@
 }
 
 .emptyStateHeading {
-  color: var(--primary);
+  color: var(--text-color-inverted);
   font-size: var(--text-display);
   font-weight: var(--bold);
   margin-bottom: var(--space-lg);

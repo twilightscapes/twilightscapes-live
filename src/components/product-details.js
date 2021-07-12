@@ -62,10 +62,8 @@ const ProductDetails = () => (
             <p>Rights-managed content is allowed to be printed in any format suited for private display. Rights-managed content cannot be distributed or used in public in any way that compromises Todd Lambert's abilities to resell the content.<br /><br />
 Rights-managed content is licensed for specific types of private use, and limits the use of the content to private use and display only.</p> */}
 
-            <p style={{textAlign:'center', fontSize:'130%', margin:'2rem 0'}}>
-              <Link to="/legal/"
-           
-            >View License Agreement</Link>
+            <p style={{textAlign:'center', fontSize:'130%', margin:'2rem 0',}}>
+              <Link to="/legal/" style={{color:'inherit'}}>View License Agreement</Link>
             
    
            <br />

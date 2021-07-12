@@ -133,6 +133,10 @@
   color: var(--text-color-secondary);
 }
 
+.sherlock:hover {
+  color: #ff0000;
+}
+
 .clearSearch {
   grid-area: clear;
   border-radius: var(--radius-rounded);

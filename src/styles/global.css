@@ -566,9 +566,9 @@ display: none;
   margin-top: 36px;
 } */
 
-  label {
+  /* label {
     color: #fff;
-  }
+  } */
 
     .description {
     line-height: 1.5;
@@ -670,10 +670,10 @@ body{overflow-x: hidden;}
 .sidebarMenuInner li span{
   display: block;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.70);
+  /* color: rgba(255, 255, 255, 0.70); */
 }
 .sidebarMenuInner li a{
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
