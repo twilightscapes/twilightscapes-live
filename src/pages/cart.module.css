@@ -123,7 +123,7 @@
 }
 
 .emptyStateHeading {
-  color: var(--text-color);
+  color: var(--primary);
   font-size: var(--text-display);
   font-weight: var(--bold);
   margin-bottom: var(--space-lg);
