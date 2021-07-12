@@ -7,7 +7,7 @@ date: 2021-07-12 11:37
 description: "Over the years I have put my tripod into some places where I
   probably shouldn’t have. I have traipsed into places where I was unprepared or
   ignorant.  "
-featuredImage: /assets/dsc02202.jpg
+featuredImage: /assets/find-your-own-spot.jpg
 ---
 I have several photo locations I shot from that over the years, I am fairly confident that nobody else has a photo of, or at least not a recent or non-documentary version of it.
 
