@@ -170,7 +170,9 @@ export default function Product({ data: { product, suggestions } }) {
                         <InnerImageZoom src={getSrc(firstImage.gatsbyImageData)} objectFit="contain" loading={index === 0 ? "eager" : "lazy"} />
 
                       {/* <img className="spinned" src={spinner} alt="Twilightscapes" style={{height:'100%', width:'100%', position:'fixed', top:'0', left:'0',  zIndex:'-1', border:'1px solid yellow', display:'block'}} /> */}
-
+                      <div className="mobilefixa" style={{textAlign:'center',}}>
+           <GoBack />
+            </div>
                       </div>
 
                       {/* <GatsbyImage
@@ -202,9 +204,7 @@ export default function Product({ data: { product, suggestions } }) {
 
 
           
-<div className="mobile" style={{}}>
-<GoBack />
-</div>
+
 
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
@@ -285,9 +285,9 @@ export default function Product({ data: { product, suggestions } }) {
 
             <div className="flexcheek sidebart" style={{border:'0px solid yellow', width:'30%'}}>
 
-            <div className="mobilefix" style={{textAlign:'center',}}>
-           <GoBack />
-            </div>
+            <div className="mobile" style={{}}>
+<GoBack />
+</div>
 
             <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
             
