@@ -4,13 +4,13 @@ import { lightness } from "@theme-ui/color"
 const theme = {
   colors: {
     ...defaultColors,
-    text: "#000",
-    background: "#fff",
+    text: "#111",
+    background: "#ccc",
     primary: "#5C2941",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
-    cardBg: "#fff",
-    borderColor: "#540229",
+    cardBg: "#222",
+    borderColor: "#444",
     labelText: "#777",
     inputBorder: "#aaa",
     inputBackground: "#fff",
@@ -23,7 +23,7 @@ const theme = {
       dark: {
         text: "#f5f5f5",
         background: "#111",
-        primary: "#252525",
+        primary: "#ccc",
         accent: "#5C2941",
         muted: "rgba(255, 255, 255, 0.7)",
         cardBg: "#252525",

@@ -57,7 +57,7 @@
   --primary: var(--green-80);
   --background: var(--white);
   --border: var(--black-fade-5);
-
+  --home-link-color-hover:#FA02B7;
   /* transitions */
   --transition: box-shadow 0.125s ease-in;
 
@@ -69,7 +69,7 @@
   --text-color: #ccc;
   --text-color-secondary: var(--white-50);
   --text-color-inverted: var(--white);
-  --primary-color:fuchsia;
+  --primary-color:color:fuchsia;
   /* size */
   --text-display: var(--text-2xl);
   --text-prose: var(--text-md);

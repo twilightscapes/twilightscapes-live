@@ -11,8 +11,13 @@ $breakpoint-xl: 1200px;
     monospace;
   --font-size-small: 12px;
 
+  --font-size-small: 12px;
+
+
   --home-link-color: #d4d4d4;
   --home-link-hover-color: var(--primary-color);
+
+  --home-link-hover-color: #FA02B7;
 
   --button-color: #e5c3d3;
   --button-alternate-color: #5c2941;
@@ -24,6 +29,8 @@ $breakpoint-xl: 1200px;
 
   --label-text: #777;
   --input-focus-border: #83aaac;
+
+
 
   // CSS Grid Utility
   --grid-gap: 30px;

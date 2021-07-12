@@ -70,9 +70,6 @@ const PostMaker = ({ data }) => (
      <Link
       className=""
       to="/photos/milky-way/"
-      sx={{
-        variant: "variants.button",
-      }}
       title="Milky Way Photo Gallery"
     >
       
@@ -98,9 +95,6 @@ const PostMaker = ({ data }) => (
       <Link
       className=""
       to="/photos/crazy-geology/"
-      sx={{
-        variant: "variants.button",
-      }}
       title="Crazy Geology"
     >  
        <div >
