@@ -114,6 +114,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
+
       {/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/gear/">Gear Talk<span>What tools I use</span></Link>
        </li> */}
@@ -124,6 +125,10 @@ Contact Me<span>Ordering Questions?</span>
                 About Me <span>My story</span>
               </Link>
       </li> */}
+
+      <li className="carto">
+      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>rants &amp; raves</span></Link>
+       </li>
 
 
       <li className="carto">
