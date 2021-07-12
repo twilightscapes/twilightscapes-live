@@ -61,11 +61,6 @@ const Ghost = graphql`
               width
               height
             }
-            fluid {
-              ...GatsbyImageSharpFluid
-              originalName
-              originalImg
-            }
           }
         }
       }
