@@ -102,12 +102,12 @@ export function Layout({ children }) {
 
 
  <li className="carto">
- <Link state={{modal: true}} className="navbar-item txtshadow" to="/contact/">
+ <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>I love feedback!</span>
 </Link>
 </li>
 <li className="carta">
- <Link state={{modal: true}} className="navbar-item txtshadow" to="/contact/">
+ <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>Ordering Questions?</span>
 </Link>
 </li>
@@ -133,11 +133,11 @@ Contact Me<span>Ordering Questions?</span>
       </li>
 
 
-      <li className="carto">
+      {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/vault/favorites/">
               The Vault <span>Full Photo archives</span>
               </Link>
-      </li>
+      </li> */}
 
 
 

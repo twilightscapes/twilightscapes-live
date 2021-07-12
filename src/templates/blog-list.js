@@ -148,7 +148,7 @@ class BlogIndex extends React.Component {
         textAlign: "center",
       }}
     >
-<h1 style={{padding:'10px', margin:'0'}}>Themed Galleries</h1>
+<h1 style={{padding:'10px', margin:'0'}}>Articles</h1>
 
     </div>
 
@@ -158,7 +158,7 @@ class BlogIndex extends React.Component {
 {/* <Gall1 /> */}
 
 <br />
-<div style={{ maxHeight:'30%'}}>
+{/* <div style={{ maxHeight:'30%'}}>
 <Slide {...properties} style={{zIndex:'-1'}}>
 <article
     className="post-card1 each-slide"
@@ -404,20 +404,20 @@ class BlogIndex extends React.Component {
 
 
     
-    </div>
+    </div> */}
 
 
     <div
-      className="wrapper"
+      className="wrapper1"
       style={{
         textAlign: "center",
-        marginTop:'5vh',
+        padding:'5vh 4vw',
         clear:'both'
       }}
     >
-<h2>Lastest &amp; Greatest</h2>
+<h2>Lastest Articles</h2>
 
-    </div>
+    
     
     <div className="grids col-1 sm-2 lg-3" style={{clear:'both'}}>
   
@@ -428,7 +428,7 @@ class BlogIndex extends React.Component {
 
         
 
-
+</div>
 
       </Layout>
     )

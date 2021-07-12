@@ -16,18 +16,19 @@ export default function BlogListHome(props) {
 }
 
 const PostMaker = ({ data }) => (
-  <section className="home-posts">
+<div>
+  <section className="home-posts" >
+
     <h2>
-      Latest in <strong>Galleries</strong>{" "}
-      <span className="icon -right">
+      Spotlight <strong>Galleries</strong>
+       <span className="icon -right">
         <RiArrowDownLine />
       </span>
     </h2>
 
-    <div className="grids col-1 sm-2 lg-3">
+<div className="grids col-1 sm-2 lg-3">
       
     
-
 
 <article
     className="post-card"
@@ -61,7 +62,6 @@ const PostMaker = ({ data }) => (
       position:'relative'
     }}
   >
-
       <Link
       className=""
       to="/photos/crazy-geology/"
@@ -97,11 +97,30 @@ const PostMaker = ({ data }) => (
 </Link>
     </article>
 
+
+</div>
+</section>
+
+
+
+
+    
+<section className="home-posts">
+   
+      <h2>
+      Latest in <strong>Articles</strong>{" "}
+      <span className="icon -right">
+        <RiArrowDownLine />
+      </span>
+    </h2>
+
     
 
-      {/* {data} */}
+
+     <div className="grids col-1 sm-2 lg-3">
+      {data}
       
-      </div>
+     </div>
 
     <Link
       className="button"
@@ -109,10 +128,13 @@ const PostMaker = ({ data }) => (
 
       title="See More Galleries"
     >
-      See more Galleries
+      See more articles
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
     </Link>
+
+    
   </section>
+</div>
 )

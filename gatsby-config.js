@@ -14,11 +14,8 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: settings.meta,
-  flags: {
-    FAST_DEV: true,
-    PRESERVE_WEBPACK_CACHE: true,
-  },
   plugins: [
     {
       resolve: "gatsby-source-shopify",
