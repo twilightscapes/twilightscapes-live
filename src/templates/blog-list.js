@@ -419,10 +419,9 @@ class BlogIndex extends React.Component {
 
     
     
-    <div className="grids col-1 sm-2 lg-3" style={{clear:'both'}}>
-  
-      
- {posts}</div>
+ <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}>
+ {posts}
+ </div>
         <Pagination {...props} />
 
 
