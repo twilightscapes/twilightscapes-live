@@ -15,17 +15,13 @@ My first real subject that really interested me was this **old shrimp boat named
 
 ![The Sandy Marie, later renamed to the Tiger Shark](/assets/night146.jpg "The Sandy Marie, later renamed to the Tiger Shark")
 
-
-
->Having just upgraded from my Canon 300d to the brand new flagship 5D mk II I was shooting a lot at night
-
-
+> Having just upgraded from my **Canon 300d** to the brand new flagship **5D mk II** I was shooting a lot at night
 
 The Tiger Shark survived the storm but then floated aimlessly as a ghost ship in the Sound, for almost a month before it grounded ashore in Biloxi. I was newly into shooting at night and the digital camera scene in general. Having just upgraded from my Canon 300d to the brand new flagship 5D mk II I was shooting a lot at night after work. This ship and that camera became the catalyst for me to continue to pursue photographing at night. 
 
 ![The Sandy Marie, later renamed to the Tiger Shark](/assets/boatswains-blunder_2400x1600_crop_center.jpg.webp "The Sandy Marie, later renamed to the Tiger Shark")
 
-I photographed this ship for 3 months mostly on or around the full-moon. I had tried to get a clear night but was met with the normal clouds and stormy weather that is prevalent here. On the third month, I finally got the image that I had envisioned with almost clear water and skies. 
+I photographed this ship for **3 months** mostly on or around the full-moon. I had tried to get a clear night but was met with the normal clouds and stormy weather that is prevalent here. On the third month, I finally got the image that I had envisioned with almost clear water and skies. 
 
 ![The Sandy Marie, later renamed to the Tiger Shark](/assets/lost-dreams-on-the-gulfcoast.jpg "The Sandy Marie, later renamed to the Tiger Shark")
 
@@ -33,7 +29,7 @@ Not long after taking this shot, the ship was removed and retrofitted and sunk a
 
 I had searched and search for any other photos of the ship and or it’s history and found very, very little. I was the only one that had been lucky enough to take advantage of the opportunity to tell it’s final story and capture an image of it’s final beauty.
 
->I was lucky enough to be in the right place at the right time.
+> *I was lucky enough to be in the right place at the right time.*
 
 In this case, I was lucky enough to be in the right place at the right time. I fully admit that. But as I said, this spurred me to seek out other objects that I could photograph at night. I started to drive around and look for objects that I could turn into a foreground element for a night shot. Lol.
 
@@ -43,11 +39,11 @@ Driving around a lot, I found a lot, and I photographed most of them. I found lo
 
 Over the years I have put my tripod into some places where I probably shouldn’t have. I have traipsed into places where I was unprepared or ignorant.  Thankfully, I’ve come away with nothing more than some scrapes and bruises, stories, and a few photographs. I’ve been lucky enough to not suffer worse fates while exploring. 
 
->If a place has juice., it’s not abandoned. If it gets mail, it’s not abandoned.
+> If a place has juice., it’s not abandoned. If it gets mail, it’s not abandoned.
 
 ![OOOPs!](/assets/bluebox-crash.jpg "OOOPs!")
 
-But there is more to doing this long term than just luck. I always recommend anyone to do as much research as you can. Minimize the risks to youself as much as possible. Visit the location more than once. Look for power lines and mail boxes and utilities. If a place has juice., it’s not abandoned. If it gets mail, it’s not abandoned. 
+**But there is more to doing this long term than just luck.** I always recommend anyone to do as much research as you can. Minimize the risks to youself as much as possible. Visit the location more than once. Look for power lines and mail boxes and utilities. If a place has juice., it’s not abandoned. If it gets mail, it’s not abandoned. 
 
 Those are starting points for how to proceed. See if you can find a point of contact from these, whether it be mailing address or power use. Often you can find owners through these channels using local city clerk’s office. 
 
