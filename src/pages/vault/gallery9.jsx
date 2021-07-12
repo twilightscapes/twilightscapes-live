@@ -70,11 +70,6 @@ const Gall9 = graphql`
               width
               height
             }
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp
-              originalName
-              originalImg
-            }
           }
         }
       }
