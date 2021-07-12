@@ -160,7 +160,7 @@
   background-color:#111;
   background: linear-gradient(180deg, #333 1%, #111 80%);
   border-left:1px solid rgba(255, 255, 255, 0.10);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
   border-radius: 12px;
   transition: box-shadow 0.3s linear;
   .featured-image {
@@ -170,6 +170,12 @@
       margin: 0;
     }
   }
+
+  .post-card:hover {
+    background: linear-gradient(640deg, #333 1%, #111 80%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1) !important;
+  }
+
   .title {
     margin: 0 0 3px;
     // font-size: 20px;
