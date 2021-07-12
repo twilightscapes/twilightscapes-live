@@ -2,16 +2,14 @@
 import * as React from "react"
 import styled from "styled-components";
 import { Link } from 'gatsby'
-import { BiLeftArrow } from "react-icons/bi"
-import { navigate } from "gatsby";
 import { CgInfo, CgRatio  } from "react-icons/cg"
 // import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import {  RiArrowRightSLine } from "react-icons/ri"
-import { RiSecurePaymentLine, RiSendPlane2Line } from "react-icons/ri"
-import { HiBan, HiOutlineKey, HiOutlineMap, HiOutlinePhotograph, HiOutlineScale    } from "react-icons/hi"
+
+import { RiSecurePaymentLine } from "react-icons/ri"
+import { HiOutlineScale } from "react-icons/hi"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 const CustomBox = styled.div`

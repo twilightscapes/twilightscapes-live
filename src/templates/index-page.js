@@ -1,32 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+
 import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
-import ScrollAnimation from 'react-animate-on-scroll'
-import Icons from "../util/socialmedia.json"
-import Newsignup from "../components/newssign"
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
-import {
-  RiFacebookBoxFill,
-  RiTwitterFill,
-  RiLinkedinBoxFill,
-  RiYoutubeFill,
-  RiInstagramFill,
-  RiRssFill,
-  RiGithubFill,
-  RiTelegramFill,
-  RiPinterestFill,
-  RiSnapchatFill,
-  RiSkypeFill,
-  RiDribbbleFill,
-  RiMediumFill,
-  RiBehanceFill,
-} from "react-icons/ri"
-import { FaWordpress, FaVk } from "react-icons/fa"
-// import Image from '../components/Image'
+
 import styled from "styled-components"
 
 
@@ -179,7 +158,6 @@ const HomePage = ({ data }) => {
 
       </div>
         </div>
-
 
 
       <div style={{padding:'0 3%'}}>

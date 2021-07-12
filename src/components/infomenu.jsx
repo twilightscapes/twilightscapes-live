@@ -1,11 +1,11 @@
 import * as React from "react"
-import { MdBrandingWatermark, MdCropFree } from "react-icons/md"
+
 import { RiGitRepositoryPrivateFill } from "react-icons/ri"
-import { GiRoyalLove } from "react-icons/gi"
+
 import { FaLockOpen } from "react-icons/fa"
-import { HiBan, HiOutlineKey, HiOutlineMap, HiOutlinePhotograph, HiOutlineScale    } from "react-icons/hi"
+import { HiOutlinePhotograph, HiOutlineScale } from "react-icons/hi"
 import { CgInfo, CgRatio  } from "react-icons/cg"
-import { FiCameraOff, FiCamera } from "react-icons/fi"
+import { FiCamera } from "react-icons/fi"
 
 
 export function infomenu() {

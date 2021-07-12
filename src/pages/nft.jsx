@@ -5,10 +5,11 @@ import { ProductListing } from "../components/product-listing"
 import { Link } from "gatsby"
 import { Seo } from "../components/seo"
 // import { Helmet } from "react-helmet"
-import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
+import { RiSendPlane2Line } from "react-icons/ri"
 import { IoLogoVercel } from "react-icons/io5"
 import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull } from "react-icons/fa"
+import { StaticImage } from "gatsby-plugin-image"
 
 
 // import { MoreButton } from "../components/more-button"
@@ -24,7 +25,7 @@ import { FaSquareFull } from "react-icons/fa"
 //   deployButton,
 // } from "./index.module.css"
 
-import Image from '../components/Image'
+
 import ScrollAnimation from 'react-animate-on-scroll'
 // import { GiPlainArrow } from 'react-icons/gi'
 
@@ -153,26 +154,6 @@ export const query = graphql`
         />
 
 
-
-{/* <div className="video-background">
-    <div className="video-foreground">
-      <iframe src="https://www.youtube.com/embed/iH5sjz0nx9o?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1" frameBorder="0" allowFullscreen></iframe>
-
-
-    </div>
-
-
-    <div id="vidtop-content">
-<div className="vid-info">
-	  <strong>Meet Todd</strong>
-	  <p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.</p>
-     <p>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of</p>
-  </div>
-</div>
-
-
-  </div> */}
-
  
 
 <div className="vidbox">
@@ -238,7 +219,9 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}><Image alt="Todd Lambert hanging with friends" filename="night165.jpg" className="featured-image kenburns-right" /></div>
+<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}>
+<StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+</div>
 </div>
 
 
@@ -304,7 +287,9 @@ justifyContent: 'center',
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}><Image alt="Todd Lambert hanging with friends" filename="night295.jpg" className="featured-image kenburns-right" /></div>
+<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}>
+<StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+</div>
 
 </div>
 
@@ -368,7 +353,9 @@ justifyContent: 'center',
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}><Image alt="Todd Lambert hanging with friends" filename="night282.jpg" className="featured-image kenburns-right" /></div>
+<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}>
+<StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+</div>
 
 </div>
 
@@ -497,7 +484,9 @@ justifyContent: 'center',
 </ScrollAnimation>
 
 
-<div className=" kenburns-bottom-right" style={{zIndex:'',}}><Image className="slider" alt="Coming Soon" filename="night221.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
+<div className=" kenburns-bottom-right" style={{zIndex:'',}}>
+<StaticImage src="../img/favorites/night221.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+</div>
 
 </div>
 
@@ -554,7 +543,9 @@ justifyContent: 'center',
 
 
 
-<div className=" kenburns-left" style={{zIndex:'',}}><Image className="nftimage" alt="Coming Soon" filename="gas-header.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
+<div className=" kenburns-left" style={{zIndex:'',}}>
+<StaticImage src="../img/gas-header.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+</div>
 
 </div>
 

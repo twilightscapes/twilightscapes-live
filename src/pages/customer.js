@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import Image from '../components/Image'
-import { RiSendPlane2Line } from "react-icons/ri"
-import Seo from "../components/seo"
+
+
 import { Link } from "gatsby"
 
-
+import { StaticImage } from "gatsby-plugin-image"
 
 
 
@@ -39,7 +38,8 @@ export default function CustomerPage({}) {
     <p>Thank You!</p>
     
   
-    <Image alt="Todd Travels" filename="toddlambert.jpg" />
+
+    <StaticImage src="../img/toddlambert.jpg" alt="Todd Travels" />
     <br />
      <p>If you should ever have any questions or concerns, please feel free to drop me a line anytime.</p>
 

@@ -2,28 +2,20 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { Layout } from "../../../components/layout"
 import isEqual from "lodash.isequal"
-import { GatsbyImage, getSrc } from "gatsby-plugin-image"
-import Image from '../../../components/Image'
+import { getSrc } from "gatsby-plugin-image"
+
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
-import { NumericInput } from "../../../components/numeric-input"
+
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
-import { CgChevronRight as ChevronIcon } from "react-icons/cg"
-import { MdBrandingWatermark, MdCropFree } from "react-icons/md"
-import { RiSecurePaymentLine, RiSendPlane2Line } from "react-icons/ri"
-import { BiLeftArrow } from "react-icons/bi"
+
 import GoBack from "../../../components/goBack"
 import ProductDetails from "../../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
+import { StaticImage } from "gatsby-plugin-image"
 
-
-import { GiRoyalLove } from "react-icons/gi"
-import { FaLockOpen } from "react-icons/fa"
-import { HiBan, HiOutlineKey, HiOutlineMap, HiOutlinePhotograph, HiOutlineScale    } from "react-icons/hi"
-import { CgInfo, CgRatio  } from "react-icons/cg"
-import { FiCameraOff, FiCamera } from "react-icons/fi"
 
 import InnerImageZoom from 'react-inner-image-zoom'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
@@ -301,9 +293,12 @@ export default function Product({ data: { product, suggestions } }) {
             
             <div style={{display:'flex', gap:'10px',padding:'0 ', margin:'0 0 2rem 0', justifyContent:'center' }}>
 
-<div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.bayphoto.com" target="_blank" rel="noopener noreferrer nofollow"><Image className="" alt="" filename="bayphoto-logo.png" /></a></div>
+<div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.bayphoto.com" target="_blank" rel="noopener noreferrer nofollow">
+<StaticImage src="../../../img/bayphoto-logo.png" alt="Print This On Bay Photo" /></a></div>
 
-<div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.printique.com" target="_blank" rel="noopener noreferrer nofollow"><Image className="" alt="" filename="printique-logo.png" /></a></div>
+<div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.printique.com" target="_blank" rel="noopener noreferrer nofollow">
+<StaticImage src="../../../img/printique-logo.png" alt="Print This On Printique" />
+</a></div>
 
 </div>
 
@@ -324,8 +319,8 @@ export default function Product({ data: { product, suggestions } }) {
     </div>
 
   
-        
-        <Image className="" alt="" filename="todd-horizons.jpg" /></Link>
+    <StaticImage src="../../../img/todd-horizons.jpg" alt="Todd in the Field" />
+        </Link>
 </div>
 
 <br />
@@ -336,7 +331,8 @@ export default function Product({ data: { product, suggestions } }) {
  
 
 
- <Image className="slider" alt="Urban Fetish photos" filename="urban-fetish-button.jpg" />
+
+ <StaticImage src="../../../img/urban-fetish-button.jpg" alt="Urban Fetish" />
  <br />
  
  Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 

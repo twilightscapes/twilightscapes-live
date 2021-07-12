@@ -1,12 +1,6 @@
 import * as React from "react"
 import { CheckFilter } from "./check-filter"
-import { CurrencyField } from "./currency-field"
-import {
-  priceFilterStyle,
-  clearButton,
-  priceFields,
-  summary,
-} from "./filters.module.css"
+
 
 export function Filters({
   currencyCode,

@@ -1,15 +1,10 @@
 
 import * as React from "react"
 import { Link } from 'gatsby-plugin-modal-routing-3'
-import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import styled from "styled-components";
 import twLogo from "../icons/tw-logo-white.svg"
-import { StoreContext } from "../context/store-context"
-import { Toast } from "./toast"
-import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../icons/search"
-import Image from './Image'
 import Theme from "../components/theme"
 const CustomBox = styled.div`
 #installer {

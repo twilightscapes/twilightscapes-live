@@ -2,12 +2,12 @@
 import { jsx } from "theme-ui"
 import React from 'react'
 
+import { StaticImage } from "gatsby-plugin-image"
 
-import Image from '../components/Image'
 
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
-import { FaLock } from 'react-icons/fa';
+
 
 import PostCard from "../components/post-card"
 import { Seo } from "../components/seo"
@@ -16,7 +16,7 @@ import { Layout } from "../components/layout"
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
-import ScrollAnimation from 'react-animate-on-scroll'
+
 
 // import Gall1 from '../components/gallery1'
 
@@ -179,7 +179,7 @@ class BlogIndex extends React.Component {
     >
     
     <div >
-      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'', zIndex:'', }} />
+      <StaticImage src="../img/homepage.jpg" alt="Popular Favorites" />
     </div>
     
 
@@ -225,7 +225,7 @@ class BlogIndex extends React.Component {
     >
     
     <div >
-    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    <StaticImage src="../img/cars/night400.jpg" alt="Abandoned car in Paris TX" />
     </div>
     
 
@@ -281,7 +281,7 @@ class BlogIndex extends React.Component {
     >
     
     <div >
-    <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    <StaticImage src="../img/ghosttowns/night305.jpg" alt="Todd photographs ghost towns" />
     </div>
     
 
@@ -352,7 +352,7 @@ class BlogIndex extends React.Component {
     >
       
       <div >
-      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+      <StaticImage src="../img/homepage.jpg" alt="Popular Favorites" />
         </div><div className="post-content"><h2 className="title">Popular Favorites</h2><p className="meta">If you're new here, start here!</p></div>
         
        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
@@ -375,7 +375,7 @@ class BlogIndex extends React.Component {
       title="Relics of Rust"
     >
 <div >
-      <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+      <StaticImage src="../img/cars/night400.jpg" alt="Abandoned car in paris TX" />
         </div><div className="post-content"><h2 className="title">Relics of Rust</h2><p className="meta">Todd's favorite subject matter</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
 </Link>
@@ -401,7 +401,8 @@ class BlogIndex extends React.Component {
       title="Ghost Towns"
     >
      <div >
-      <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+
+      <StaticImage src="../img/ghosttowns/night305.jpg" alt="Ghosttowns" />
         </div><div className="post-content"><h2 className="title">Ghost Towns</h2><p className="meta">The real Old West comes alive at night</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
         </Link>
@@ -432,52 +433,7 @@ class BlogIndex extends React.Component {
         <Pagination {...props} />
 
 
-        {/* <div
-      className="wrapper"
-      style={{
-        textAlign: "center",
-        marginTop:'10vh',
-      }}
-    >
-<h2>Todd's Other Projects</h2>
-
-    </div>
-
-
-
-        <div style={{display:'flex', padding:'1rem', flexWrap:'nowrap', justifyContent:''}}>
-
-
-<div style={{width:'50%', margin:'1rem'}}>
-  <a href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',lineHeight:'1.7rem'}}>
-   
-
-   <Image className="slider" alt="Todd Lambert Personal Site" filename="toddlambert.jpg" />
-  <br />
-
-  The original. Todd's oldest web project is his personal site. Learn more about Todd, or maybe even hire him. He's a nice guy.  ;-)
-  <h5 style={{textAlign:'center',}}>Visit ToddLambert.com</h5></a>
-  </div>
-
-
- 
-
-
-  
-  <div style={{width:'50%', margin:'1rem'}}>
-  <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit', lineHeight:'1.7rem'}}>
- 
-
-
-  <Image className="slider" alt="Urban Fetish photos" filename="urban-fetish-button.jpg" />
-  <br />
-  
-  Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
-  
-  <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
-  
-  </div>
-</div> */}
+        
 
 
 

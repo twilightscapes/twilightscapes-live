@@ -2,7 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
-import { Link } from "gatsby"
+
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
 // import { Helmet } from "react-helmet"
@@ -25,7 +25,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 //   deployButton,
 // } from "./index.module.css"
 
-import Image from '../../components/Image'
+
 
 // import { GiPlainArrow } from 'react-icons/gi'
 
@@ -82,14 +82,6 @@ export const query = graphql`
           image={'https://twilightscapes.com/default-photo-city.jpg'}
         />
     
-    {/* <div className="vidbox"> */}
-    {/* <div style={{position:'absolute', top:'', fontSize:'10vw', color:'white', zIndex:'', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>Milky Way
-    </div> */}
-{/* <video autoPlay autobuffer="true" playsInline loop muted>
-  <source src={video} type="video/mp4" />
-</video> */}
-
-    {/* </div> */}
    
 
     <div className="vidbox" style={{position:'relative'}}>
@@ -101,7 +93,7 @@ export const query = graphql`
 
 <div className="video-background">
     <div className="video-foreground">
-      <iframe className="" src="https://www.youtube.com/embed/nKi6zsb1L1A?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=nKi6zsb1L1A" frameBorder="0" allowFullScreen></iframe>
+      <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/nKi6zsb1L1A?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=nKi6zsb1L1A" frameBorder="0" allowFullScreen></iframe>
     </div>
 </div>
 

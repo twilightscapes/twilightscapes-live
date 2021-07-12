@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from "styled-components"
-import Image from './Image'
 // import Newsletter from './PopNewsletter'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
+import { StaticImage } from "gatsby-plugin-image"
 const CustomBox = styled.div`
 
 .slider{object-fit: scale-down;}
@@ -34,7 +34,8 @@ const Intro2 = () => (
 <CustomBox style={{}}>
 
 
-<div className="kenburns-right"  style={{zIndex:'-1', width:'', height:''}}><Image alt="Todd Lambert hanging with friends" filename="night316.jpg" className="featured-image kenburns-right" /></div>
+<div className="kenburns-right"  style={{zIndex:'-1', width:'', height:''}}><StaticImage src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" /></div>
+
 
 
 <div className="abcontent" style={{position:'absolute', height:'', width:'100%', top:'50px', right:'0',}}>

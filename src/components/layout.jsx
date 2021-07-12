@@ -17,7 +17,7 @@ import Theme from "../components/theme"
 import "../assets/scss/style.scss"
 // import Consent from './Consent'
 // import Install from './install-discount'
-// import Image from '../components/Image'
+// 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 

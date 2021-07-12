@@ -14,7 +14,7 @@ import { getCurrencySymbol } from "../utils/format-price"
 import { Spinner } from "../components/progress"
 import { Filters } from "../components/filters"
 import { SearchProvider } from "../context/search-provider"
-import { Seo } from "../components/seo"
+// import { Seo } from "../components/seo"
 import {
   visuallyHidden,
   main,

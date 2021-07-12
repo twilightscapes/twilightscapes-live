@@ -1,10 +1,10 @@
 
 import * as React from "react"
 import styled from "styled-components";
-import { Link } from 'gatsby'
+
 import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
-import { Location } from '@reach/router'
+
 const CustomBox = styled.div`
 
 .themed{margin-top:20px;}

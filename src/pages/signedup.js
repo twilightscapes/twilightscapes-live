@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import Image from '../components/Image'
-import { RiSendPlane2Line } from "react-icons/ri"
-import Seo from "../components/seo"
+
+
 
 import { Link } from "gatsby"
-import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
+import { RiArrowLeftSLine } from "react-icons/ri"
 import { AiTwotoneCamera } from "react-icons/ai"
 
 
@@ -38,7 +37,6 @@ export default function SignedUpPage({}) {
         flexDirection:'column',
         width:'60%',
         margin:'0 auto',
-        textAlign:'center'
       }}
     >
       <AiTwotoneCamera

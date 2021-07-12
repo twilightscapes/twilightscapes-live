@@ -4,12 +4,9 @@ import Social from "../components/social"
 import { Link } from "gatsby"
 import {
   footerStyle,
-  copyright,
   links,
   blurb,
   logos,
-  footerNavList,
-  footerNavListItem,
 } from "./footer.module.css"
 
 export function Footer() {

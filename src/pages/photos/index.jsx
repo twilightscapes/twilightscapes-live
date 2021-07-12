@@ -4,13 +4,11 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { Seo } from "../../components/seo"
 import { Layout } from "../../components/layout"
-import Image from '../../components/Image'
 import { ProductListing } from "../../components/product-listing"
-import Social from "../../components/social"
-import Newsignup from "../../components/newssign"
+
 // import { Helmet } from "react-helmet"
 // import TouchUp from '../components/TouchUp'
-import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
+import { RiSendPlane2Line } from "react-icons/ri"
 import { Helmet } from "react-helmet"
 
 // import {
@@ -73,14 +71,7 @@ export default function GalleryPage({ data }) {
     <Layout>
 
 
-    {/* <div className="vidbox">
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe className="" src="https://www.youtube.com/embed/iH5sjz0nx9o?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=iH5sjz0nx9o" frameBorder="0" allowFullScreen></iframe>
-    </div>
-</div>
-</div> */}
+
 
 
 
