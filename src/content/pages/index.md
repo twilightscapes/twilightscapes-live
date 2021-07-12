@@ -5,7 +5,7 @@ title: Night Photography
 tagline: Twilightscapes - Night Photography by Todd Lambert
 featuredImage: /assets/night316.jpg
 cta:
-  ctaText: View the work
+  ctaText: View the photos
   ctaLink: /photos/
 ---
 Finding obscure locations and unusual subject matter, Todd has excelled at capturing long exposure photos of rarely seen moments of time.
