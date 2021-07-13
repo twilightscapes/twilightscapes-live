@@ -4,6 +4,9 @@ import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
+import { FiZoomIn } from 'react-icons/fi'
+
+
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -33,7 +36,7 @@ import styled from 'styled-components'
 const CustomBox = styled.div`
 
 
-
+img{cursor:zoom-in}
 
 @media (min-width: 58rem) {
 
@@ -82,13 +85,15 @@ export const query = graphql`
         />
     
    
-   
+    <div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
+    <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
+</div>
 
     <div className="vidbox" style={{position:'relative'}}>
 
     <ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
-      <div className="txtshadow-header letter">Crazy Geology
-    </div>
+      <div className="txtshadow-header letter zoomer">Crazy Geology</div>
+      
 </ScrollAnimation>
 
 <div className="video-background">
