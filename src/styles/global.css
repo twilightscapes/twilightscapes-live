@@ -236,8 +236,10 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
 p{margin-bottom:2rem;}
 
+
+
 .actionJackson{
-display: flex;
+/* display: flex;
 flex-direction: row;
 color:#fff;
 background-color: var(--primary);
@@ -248,7 +250,23 @@ font-weight: var(--bold);
 align-items: center;
 height: var(--size-input);
 justify-content: center;
-transition: var(--transition); 
+transition: var(--transition);  */
+
+display: flex;
+flex-direction: row;
+color: var(--text-color-inverted);
+background-color: var(--primary);
+align-self: center;
+padding: var(--space-sm) var(--space-xl);
+border-radius: var(--radius-md);
+font-weight: var(--bold);
+align-items: center;
+height: var(--size-input);
+justify-content: center;
+transition: var(--transition);
+font-weight: bold;
+font-size: 140%;
+text-shadow: 2px 2px 2px black;
 }
 .actionJackson:hover{
   color:#ccc;
