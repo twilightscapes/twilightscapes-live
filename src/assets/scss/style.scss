@@ -337,7 +337,8 @@ article img {
 .contact-form {
   margin-top: 36px;
   label {
-    color: var(--label-text);
+    color: #fff;
+    text-shadow:2px 2px 10px #FA02B7;
   }
   input,
   textarea {
@@ -351,6 +352,7 @@ article img {
     font-weight: 600;
     &:focus {
       border-color: var(--input-focus-border);
+      background-color: #000;
     }
   }
   textarea {
