@@ -164,7 +164,7 @@ const HomePage = ({ data }) => {
         </div>
 
 
-      <div style={{padding:'0 3%'}}>
+      <div style={{padding:'2rem 3%'}}>
         <BlogListHome data={posts} />
         </div>
       

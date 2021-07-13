@@ -17,7 +17,7 @@ export default function BlogListHome(props) {
 
 const PostMaker = ({ data }) => (
 <div>
-  <h2>
+  <h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
       Spotlight <strong>Galleries</strong>
        <span className="icon -right">
         <RiArrowDownLine />
@@ -104,7 +104,7 @@ const PostMaker = ({ data }) => (
 
 
 
-<h2>
+<h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
       Latest in <strong>Articles</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
