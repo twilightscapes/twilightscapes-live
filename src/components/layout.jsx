@@ -7,7 +7,7 @@ import 'fontsource-hammersmith-one'
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
-import twLogo from "../icons/tw-logo-white.svg"
+import TwilightLogo from "../icons/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 import { ImArrowRight } from "react-icons/im"
@@ -41,7 +41,7 @@ export function Layout({ children }) {
       <div>
         {modal ? (
           <>
-          <div style={{position:'fixed', right:'6vw', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important'}}>
+          <div style={{position:'fixed', top:'4vh', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important', zIndex:'2'}}>
           <Link state={{noScroll: true }} to={closeTo}>
             <AiOutlineClose />
           </Link>
@@ -89,22 +89,28 @@ export function Layout({ children }) {
 30% OFF CODE: <span style={{color:'#FA02B7', fontWeight:'bold'}}>LoveTheNight</span>
 </div> */}
 
+
+
     <ul className="sidebarMenuInner">
 
  <li className="carto" style={{border:'none', marginBottom:'1rem'}}>
-<Link to="/"><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'165px',}} /></Link>
+
+<Link to="/"> <TwilightLogo /></Link>
  </li>
- <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
+ {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
  <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
- </li>
+ </li> */}
 
 
 
 
  <li className="carto">
- <Link className="navbar-item txtshadow" to="/contact/">
+ {/* <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>I love feedback!</span>
-</Link>
+</Link> */}
+
+
+
 </li>
 <li className="carta">
  <Link className="navbar-item txtshadow" to="/contact/">
