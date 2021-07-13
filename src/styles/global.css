@@ -21,7 +21,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
 
 
-
+.fire{  box-shadow:  0 4px 22px #FA02B7 !important;}
 
 
 .video-background {
@@ -255,10 +255,12 @@ transition: var(--transition);  */
 display: flex;
 flex-direction: row;
 color: var(--text-color-inverted);
-background-color: var(--primary);
+/* background-color: var(--primary); */
+background: linear-gradient(180deg, rgb(233, 171, 219) 1%, #FA02B7 99%);
 align-self: center;
 padding: var(--space-sm) var(--space-xl);
 border-radius: var(--radius-md);
+border:1px solid rgb(94, 26, 85);
 font-weight: var(--bold);
 align-items: center;
 height: var(--size-input);
@@ -267,6 +269,7 @@ transition: var(--transition);
 font-weight: bold;
 font-size: 140%;
 text-shadow: 2px 2px 2px black;
+box-shadow:  0 4px 22px #FA02B7;
 }
 .actionJackson:hover{
   color:#ccc;
@@ -1003,16 +1006,15 @@ input[type="checkbox"]:checked ~ .backdrop1 {
   display:flex;
 } */
 
-.signbox button{
+/* .signbox button{
   cursor:pointer;
   display:flex;
   margin-right: 0rem;
   margin-left:14px;
   padding:1rem 1rem;
   background:rgba(0, 0, 0, 0.4) !important;
-  /* border:1px solid #555 !important; */
   color:#fff;
-}
+} */
 
 
 

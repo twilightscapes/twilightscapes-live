@@ -84,7 +84,7 @@ export default function GalleryPage({ data }) {
 
 
 <Link to="./milky-way/"
-className="moreButton"
+className="button"
 style={{
 cursor:'pointer',
 textAlign:'center',
@@ -97,7 +97,7 @@ justifyContent: 'center',
 </Link>
 
 <Link to="./crazy-geology/"
-className="moreButton"
+className="button"
 style={{
 cursor:'pointer',
 textAlign:'center',
@@ -110,7 +110,7 @@ justifyContent: 'center',
 </Link>
 
 <Link to="./in-the-city/"
-className="moreButton"
+className="button"
 style={{
 cursor:'pointer',
 textAlign:'center',

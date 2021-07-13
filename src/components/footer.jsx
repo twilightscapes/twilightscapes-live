@@ -19,7 +19,7 @@ export function Footer() {
         <Social />
         </div>
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button">Contact Me&nbsp;  - &nbsp;&nbsp;<span> I love feedback!</span></Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire">Contact Me&nbsp;  - &nbsp;&nbsp;<span> I love feedback!</span></Link>
 
 
       </div>

@@ -81,7 +81,7 @@ const NewsletterPage = () => (
                 <RiSendPlane2Line />
               </span>
             </button> */}
-
+&nbsp;&nbsp;
             <button
               className="button"
               

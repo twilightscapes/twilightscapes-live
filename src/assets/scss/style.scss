@@ -277,21 +277,40 @@ article img {
 .button {
   --padding: 15px;
   --margin: 20px;
+  box-shadow:  0 4px 22px #999;
   display: inline-flex;
   align-items: center;
-  padding: var(--padding) calc(var(--padding) * 2);
-  border-radius: 12px;
-  text-decoration: none;
-  appearance: none;
-  background:rgba(0, 0, 0, 0.3) !important;
-  color:#fff;
-  border:1px solid #FA02B7 ;
-  font-size: 16px;
-  line-height: 1;
+  // padding: var(--padding) calc(var(--padding) * 2);
+  // border-radius: 12px;
+  // text-decoration: none;
+  // appearance: none;
+  // background:rgba(0, 0, 0, 0.1) !important;
+  // color:#fff;
+  // border:1px solid #ccc ;
+  // font-size: 16px;
+  // line-height: 1;
+
+  background: linear-gradient(180deg, rgb(34, 26, 32) 1%, #111 99%);
+  align-self: center;
+  padding: var(--space-sm) var(--space-xl);
+  border-radius: var(--radius-md);
+  border:1px solid rgb(104, 87, 102);
+  font-weight: var(--bold);
+  align-items: center;
+  height: var(--size-input);
+  justify-content: center;
+  transition: var(--transition);
+  font-weight: bold;
+  font-size: 140%;
+  text-shadow: 2px 2px 2px black;
+  box-shadow:  2px 4px 7px #000;
+
+
+
+
   transition: background 0.3s linear;
   &.-outline {
     color: var(--primary-color);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
     background: #fff;
     &:hover {
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
