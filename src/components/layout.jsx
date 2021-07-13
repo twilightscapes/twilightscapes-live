@@ -93,10 +93,13 @@ export function Layout({ children }) {
 
     <ul className="sidebarMenuInner">
 
- <li className="carto" style={{border:'none', marginBottom:'1rem'}}>
-
+ <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
 <Link to="/"> <TwilightLogo /></Link>
  </li>
+ <li className="carto" style={{border:'none', marginBottom:'1rem'}}>
+<Link to="/"> <TwilightLogo /></Link>
+ </li>
+ 
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
  <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
  </li> */}
@@ -111,11 +114,11 @@ Contact Me<span>I love feedback!</span>
 
 
 
-</li>
+{/* </li>
 <li className="carta">
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>Ordering Questions?</span>
-</Link>
+</Link> */}
 </li>
 
 
@@ -161,7 +164,7 @@ Contact Me<span>Ordering Questions?</span>
     
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>
-<button className="back" onClick={()=>navigate(-1)}>
+<button className="back button" onClick={()=>navigate(-1)}>
         {/* <span className="icon -left" style={{paddingRight:'1rem'}}>
                 <BiLeftArrow />
         </span>  */}
