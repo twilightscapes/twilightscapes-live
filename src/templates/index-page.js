@@ -88,7 +88,7 @@ const HomePage = ({ data }) => {
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
       
-      <div className="home-banner flexbutt intro" style={{position:'relative', height:'auto', overflow:'hidden'}}>
+      <div className="home-banner flexbutt" style={{position:'relative', height:'auto', overflow:'hidden'}}>
 
       <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
 

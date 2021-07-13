@@ -283,9 +283,9 @@ article img {
   border-radius: 12px;
   text-decoration: none;
   appearance: none;
-  background: #fff;
-  color:#333;
-  border: none;
+  background:rgba(0, 0, 0, 0.3) !important;
+  color:#fff;
+  border:1px solid #FA02B7 ;
   font-size: 16px;
   line-height: 1;
   transition: background 0.3s linear;

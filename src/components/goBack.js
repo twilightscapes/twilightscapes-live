@@ -18,7 +18,7 @@ const GoBack = () => (
 <CustomBox style={{}}>
 
 
-<div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><button className="back" onClick={() => { navigate(-1) }} style={{display:'flex', justifyContent:'center'}}><span className="icon -left" style={{paddingRight:'1rem'}}><BiLeftArrow /></span> {" "}Go Back</button></div>
+<div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><button className="back button" onClick={() => { navigate(-1) }} style={{display:'flex', justifyContent:'center'}}><span className="icon -left" style={{paddingRight:'1rem'}}><BiLeftArrow /></span> {" "}Go Back</button></div>
 
 
 </CustomBox>

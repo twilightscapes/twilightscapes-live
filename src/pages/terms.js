@@ -29,7 +29,7 @@ export default function TermsPage({}) {
 <section className="outer section section--gradient" >
       <div className="container" style={{padding: '2rem 10%'}}>
         
-      <GoBack />
+      <div className="mobile"><GoBack /></div>
 
 <h1 className="title" style={{fontSize:'50px'}}>Terms of Service</h1>
     

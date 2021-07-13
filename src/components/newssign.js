@@ -46,7 +46,7 @@ const NewsletterPage = () => (
           data-netlify="true"
           data-netlify-honeypot="bot-field">
 
-            <div className="newsletter" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center'}}>
+            <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center'}}>
 
               <div className="blocker" style={{width:'100%', height:'100%'}}></div>
 
@@ -71,13 +71,24 @@ const NewsletterPage = () => (
 
   
 
-            <button
-              className="buttonMore"
+            {/* <button
+              className="button"
               type="submit"
       
             >
-              <span style={{ textDecoration: 'underline',}}>Follow Todd</span> {" "}
+              <span style={{}}>Follow Todd</span> {" "}
               <span className="icon -right" style={{paddingLeft:'.5rem'}}>
+                <RiSendPlane2Line />
+              </span>
+            </button> */}
+
+            <button
+              className="button"
+              
+              type="submit"
+            >
+              Follow Todd{" "}
+              <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
             </button>

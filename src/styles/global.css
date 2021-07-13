@@ -239,7 +239,7 @@ p{margin-bottom:2rem;}
 .actionJackson{
 display: flex;
 flex-direction: row;
-color:#ccc;
+color:#fff;
 background-color: var(--primary);
 align-self: flex-end;
 padding: var(--space-sm) var(--space-xl);
@@ -252,10 +252,11 @@ transition: var(--transition);
 }
 .actionJackson:hover{
   color:#ccc;
+  box-shadow: var(--shadow);
 }
 
 .actionJackson:before{
-  content:(" Todd");
+  content:(" ");
   border:1px solid #FA02B7;
   display: flex;
   height:70px;
@@ -974,26 +975,25 @@ input[type="checkbox"]:checked ~ .backdrop1 {
   width:100%;
   padding:0 10px;
 }
-.signbox input{
+
+/* .signbox input{
   margin-right:14px;
   border:1px solid #FA02B7 !important;
   padding:.5rem;
   border-radius:8px;
   background:rgba(0,0,0,0.40) !important;
   display:flex;
-}
+} */
 
 .signbox button{
   cursor:pointer;
-  padding:.5rem;
   display:flex;
   margin-right: 0rem;
   margin-left:14px;
-  /* width:100%; */
-  padding:.5rem 1rem;
-  border-radius:8px;
-  background:rgba(0,0,0,0.70) !important;
-  border:1px solid #FA02B7 !important;
+  padding:1rem 1rem;
+  background:rgba(0, 0, 0, 0.4) !important;
+  /* border:1px solid #555 !important; */
+  color:#fff;
 }
 
 
@@ -1093,7 +1093,7 @@ transform: scale(1);
 
 
 
-  .back {
+  /* .back {
     --padding: 15px;
     --margin: 20px;
     display: inline-flex;
@@ -1107,21 +1107,20 @@ transform: scale(1);
     font-size: 16px;
     line-height: 1;
 background:#000;
-  }
+  } */
   .back.-outline {
       color: var(--primary-color);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
       background: #fff;
-      
     }
 
 
     .back:hover {
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-        background: #f2f2f2;
+        /* background: #f2f2f2; */
         color:#FA02B7;
       }
-
+.back{border:1px solid #555 !important;}
 
 
 .iconmenu{
@@ -1269,7 +1268,7 @@ border:1px solid #222;
 
 
 
-    .button {
+    /* .button {
       --padding: 15px;
       --margin: 20px;
       display: inline-flex;
@@ -1296,7 +1295,7 @@ border:1px solid #222;
           box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
           background: #f2f2f2;
           color:#FA02B7;
-        }
+        } */
 
 
 
