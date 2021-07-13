@@ -164,7 +164,7 @@ Contact Me<span>Ordering Questions?</span>
     
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>
-<button className="back button" onClick={()=>navigate(-1)}>
+<button className="back" onClick={()=>navigate(-1)} style={{padding:'4px 8px', borderRadius:'12px'}}>
         {/* <span className="icon -left" style={{paddingRight:'1rem'}}>
                 <BiLeftArrow />
         </span>  */}

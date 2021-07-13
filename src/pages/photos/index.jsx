@@ -78,9 +78,9 @@ export default function GalleryPage({ data }) {
 
 
 
-<div style={{textAlign:'center', fontWeight:'bold', width:'100%', margin:'2rem 0'}}>Themed Galleries:</div>
+<div style={{textAlign:'center', fontWeight:'bold', width:'100%', margin:'2rem 0 0 0'}}>Themed Galleries:</div>
 
-<div style={{display:'flex', width:'90vw', margin:'0 auto 2rem auto', padding:'', border:'0px solid #333', borderRadius:'12px'}}>
+<div style={{display:'flex', width:'90vw', margin:'0 auto 1rem auto', padding:'', border:'0px solid #333', borderRadius:'12px', gap:'0'}}>
 
 
 <Link to="./milky-way/"
@@ -88,10 +88,11 @@ className="button"
 style={{
 cursor:'pointer',
 textAlign:'center',
-margin:'2rem auto',
+margin:'1rem auto',
 alignItems:'center',
 display: 'flex',
 justifyContent: 'center',
+fontSize:'100%',
 }}>
   Milky Way
 </Link>
@@ -101,10 +102,11 @@ className="button"
 style={{
 cursor:'pointer',
 textAlign:'center',
-margin:'2rem auto',
+margin:'1rem auto',
 alignItems:'center',
 display: 'flex',
 justifyContent: 'center',
+fontSize:'100%',
 }}>
   Crazy Geology
 </Link>
@@ -114,10 +116,11 @@ className="button"
 style={{
 cursor:'pointer',
 textAlign:'center',
-margin:'2rem auto',
+margin:'1rem auto',
 alignItems:'center',
 display: 'flex',
 justifyContent: 'center',
+fontSize:'100%',
 }}>
   In The City
 </Link>
