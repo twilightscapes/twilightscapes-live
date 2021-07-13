@@ -339,7 +339,7 @@ height:100vh;
 } */
 
 
-/* main{min-height: 100vh;} */
+main{min-height: 100vh;}
 .zoomer{animation: zoomer 1s forwards;
   animation-delay: 4s;}
   
@@ -520,18 +520,17 @@ body.carto .carta {display:block; height:100%;}
 
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff{
+.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad{
 display: none;
 }
 
 .ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}
 
-.ReactModalPortal {margin:0 3% !important; width:80% !important;}
 
-.ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.90);
-  backdrop-filter: blur(22px);}
+.ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.50);
+  backdrop-filter: blur(4px);}
 
-.ReactModal__Content{padding:0 !important; background:transparent !important; margin:0 auto ; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5); box-shadow: none !important;}
+.ReactModal__Content{padding:0 !important; background:#111 !important; margin:30px auto ; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5);}
 
 
 .ReactModal__Body--open {

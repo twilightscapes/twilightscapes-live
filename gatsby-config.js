@@ -33,16 +33,6 @@ module.exports = {
         shortname: `twilightscapes`
       }
     },
-
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /icons/ // Where the animated svgs are.
-        }
-      }
-    },
-
     {
       resolve: `gatsby-plugin-modal-routing-3`,
       options: {

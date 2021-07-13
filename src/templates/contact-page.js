@@ -34,16 +34,13 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className="wrapper fluff">
+      <div className="wrapper">
         <br /><br />
         <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
         <div
           className="description"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        </div>
-
-        <div className="wrapper">
         <form
           className="contact-form"
           action="/thanks"
@@ -76,7 +73,7 @@ const Contact = ({ data }) => {
               Message<textarea name="message" required></textarea>
             </label>
           </p>
-          <p className="text-align-right" style={{marginRight:'60px'}}>
+          <p className="text-align-right">
             <button
               className="button"
               

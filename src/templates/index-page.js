@@ -7,7 +7,7 @@ import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 
 import styled from "styled-components"
-// import Trumpy from '../icons/trump-family-board.svg'
+// import Trumpy from '../icons/trump-family-board.svg';
 
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"

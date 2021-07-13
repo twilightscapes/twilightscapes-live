@@ -18,10 +18,6 @@ export function Footer() {
         <div className={logos}>
         <Social />
         </div>
-
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button">Contact Me&nbsp;  - &nbsp;&nbsp;<span> I love feedback!</span></Link>
-
-
       </div>
       <nav className={links} aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
