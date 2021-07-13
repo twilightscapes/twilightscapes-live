@@ -527,7 +527,7 @@ footer{background-color: #000; padding:.1rem 0rem; margin:0; display:flex; justi
 .post-card{color:#ccc !important;}
  body.carto .social-icons, body.carto .backdrop1{  display: none !important;}
 
-/* body.carto{overflow-y: hidden !important;} */
+body.carto{min-height:100vh !important;}
 .carta{display:none;}
 body.carto .carto {display:none; height:100%;}
 

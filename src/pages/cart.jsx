@@ -46,7 +46,7 @@ export default function CartPage() {
     <Layout>
       <div className={wrap}>
         {emptyCart ? (
-          <div className={emptyStateContainer}>
+          <div className={emptyStateContainer} style={{minHeight:'100vh'}}>
             <h1 className={emptyStateHeading}>Your cart is empty</h1>
             <p>
               Looks like you haven’t found anything yet. We understand that
