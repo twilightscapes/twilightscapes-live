@@ -76,7 +76,7 @@ const Contact = ({ data }) => {
               Message<textarea name="message" required></textarea>
             </label>
           </p>
-          <p className="text-align-right" style={{marginRight:'60px'}}>
+          <p className="text-align-right" style={{marginRight:'60px', color:'#fff'}}>
             <button
               className="button"
               
