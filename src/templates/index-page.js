@@ -7,7 +7,7 @@ import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 
 import styled from "styled-components"
-
+// import Trumpy from '../icons/trump-family-board.svg';
 
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
@@ -82,7 +82,11 @@ const HomePage = ({ data }) => {
     <Helmet>
   <body className="homepage" />
 </Helmet>
-      <Seo />
+<Seo
+          title={`Twilightscapes Killer Photo Galleries`}
+          description={`Twilightscapes night photography`}
+          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+        />
       
       <div className="home-banner flexbutt intro" style={{position:'relative', height:'auto', overflow:'hidden'}}>
 
@@ -165,6 +169,10 @@ const HomePage = ({ data }) => {
         </div>
       
       
+
+{/* <Trumpy /> */}
+{/* <img id="trump" className="trump" src={Trumpy} alt="Trump sucks" title="Trump sucks" style={{minWidth:'100vw', maxWidth:'100%',}} /> */}
+
 
     </Layout>
     </CustomBox>
