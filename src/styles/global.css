@@ -270,10 +270,12 @@ font-weight: bold;
 font-size: 140%;
 text-shadow: 2px 2px 2px black;
 box-shadow:  0 4px 22px #FA02B7;
+filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
 }
 .actionJackson:hover{
   color:#ccc;
   box-shadow: var(--shadow);
+  filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
 }
 
 .actionJackson:before{
