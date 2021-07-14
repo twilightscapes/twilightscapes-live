@@ -73,7 +73,7 @@ export function Layout({ children }) {
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-  <span className="txtshadow" style={{textShadow:'2px', color:'#fff',}}>MENU</span>
+  <div className="txtshadow" style={{textShadow:'2px', color:'#fff',}}><span>TAP FOR MENU</span></div>
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div>

@@ -766,21 +766,48 @@ input[type=checkbox] {
   height: 42px;
   width: 42px;
 }
-.sidebarIconToggle span{
-  content:(" Todd");
+
+.sidebarIconToggle div{
+  content:(" ");
   border:0px solid #FA02B7;
   display: flex;
-  height:70px;
-  width:70px;
+  height:300px;
+  width:250px;
   justify-content: center;
   flex-direction: column;
   position: absolute;
   top:-15px;
-  left:-15px;
+  left:-115px;
   z-index: 5;
   text-align: center;
   /* border-radius: 50%; */
   padding-top:30px;
+  /* animation: zoomer 1s forwards;
+  animation-delay: 4s; */
+  position: relative;
+}
+
+.sidebarIconToggle div span{
+  /* content:(" HELLO! "); */
+
+ border:none;
+  display: flex;
+  height:300px;
+  width:30vw;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  right:0;
+
+  z-index: 5;
+  text-align: right;
+    animation: zoomer 1s forwards;
+  animation-delay: 4s;
+}
+
+.homepage .sidebarIconToggle div span{
+  border:4px dotted #FA02B7;
+  border-radius: 20px;
 }
 
 .spinner {
@@ -1353,7 +1380,7 @@ border:1px solid #222;
         height: 100vh;
         background-repeat: no-repeat;
         background-position: left top;
-        background-image: linear-gradient(#111212 40%, #232325  100%);
+        /* background-image: linear-gradient(#111212 40%, #232325  100%); */
           
             animation: poof 1s forwards;
             animation-delay: 1.5s;
@@ -1391,7 +1418,7 @@ border:1px solid #222;
    left:0;
    top:0;
    right:0;
-
+   filter: drop-shadow(1px 1px 4px rgba(255, 2, 213, 0.9));
         display: flex;
         align-items: center;
         justify-content: center;
