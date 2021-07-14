@@ -304,6 +304,7 @@ article img {
   font-size: 120%;
   text-shadow: 2px 2px 2px black;
   box-shadow:  2px 4px 7px #000;
+  
   filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
 
 
@@ -314,8 +315,8 @@ article img {
     color: var(--primary-color);
     background: #fff;
     &:hover {
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-      background: #f2f2f2;
+      // box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+      // background: #f2f2f2;
     }
   }
   & + .button {
@@ -331,6 +332,14 @@ article img {
     }
   }
 }
+
+.button:hover{
+  box-shadow:  0 0px 22px #FA02B7;
+  filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
+}
+
+
+
 
 // Page
 .page,
