@@ -82,7 +82,7 @@ const HomePage = ({ data }) => {
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
-  <body className="homepage1" />
+  <body className="homepage" />
 </Helmet>
 <Seo
           title={`Twilightscapes Killer Photo Galleries`}

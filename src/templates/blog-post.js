@@ -25,6 +25,7 @@ const styles = {
 }
 
 const Pagination = props => (
+  
   <div className="pagination -post" sx={styles.pagination}>
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
@@ -102,12 +103,13 @@ const Post = ({ data, pageContext }) => {
           ) : (
             ""
           )}
-          {/* <section className="article-header">
+          <section className="article-header" style={{textAlign:'left', margin:'0 4%'}}>
             <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
-          </section> */}
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+          </section>
         </header>
 
+        <ShareSocial />
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}

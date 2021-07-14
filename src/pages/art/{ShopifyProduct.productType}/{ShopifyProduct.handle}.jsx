@@ -206,15 +206,16 @@ export default function Product({ data: { product, suggestions } }) {
 
           
 
-      <ShareSocial />
+      
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
 <div className="flexcheek" style={{width:'70%'}}>
+<ShareSocial />
             <div className={breadcrumb}>
               {/* <Link to={product.productTypeSlug}>{product.productType}</Link> */}
               {/* <ChevronIcon size={12} /> */}
             </div>
-            <h1 className={header} style={{margin:'0 0 2rem 0'}}>{title}</h1>
+            <h1 className={header} style={{margin:'3rem 0 0 0'}}>{title}</h1>
             <div className={productDescription} style={{paddingTop:'2rem'}} dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
 
 
