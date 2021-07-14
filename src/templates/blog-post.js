@@ -6,7 +6,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import DisqusComments from '../components/disqus'
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-
+import ShareSocial from '../components/share' 
 const styles = {
   "article blockquote": {
     "background-color": "cardBg",
@@ -111,7 +111,11 @@ const Post = ({ data, pageContext }) => {
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
-        />
+        />      
+        
+
+      <ShareSocial />
+
       </article>
       <div style={{padding:'0 5vw'}}>
       {(previous || next) && <Pagination {...props} />}

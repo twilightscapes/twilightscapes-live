@@ -10,7 +10,7 @@ import { IoLogoVercel } from "react-icons/io5"
 import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
-
+import ShareSocial from '../components/share' 
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -156,7 +156,7 @@ export const query = graphql`
 
  
 
-<div className="vidbox">
+<div className="vidbox" style={{maxHeight:'80vh'}}>
 <div className="video-background">
     <div className="video-foreground">
       
@@ -208,6 +208,10 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 
     </div>
        
+
+
+    
+      <ShareSocial />
        
        
        
@@ -219,8 +223,8 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}>
-<StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+<div className=""  style={{zIndex:'-1', width:'', height:'100%'}}>
+<StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="featured-image " />
 </div>
 </div>
 
@@ -287,8 +291,8 @@ justifyContent: 'center',
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}>
-<StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+<div className=""  style={{zIndex:'-1', width:'', height:'100%'}}>
+<StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="featured-image " />
 </div>
 
 </div>
@@ -353,8 +357,8 @@ justifyContent: 'center',
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className="kenburns-right1"  style={{zIndex:'-1', width:'', height:'100%'}}>
-<StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+<div className=""  style={{zIndex:'-1', width:'', height:'100%'}}>
+<StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="featured-image " />
 </div>
 
 </div>
@@ -484,8 +488,8 @@ justifyContent: 'center',
 </ScrollAnimation>
 
 
-<div className=" kenburns-bottom-right" style={{zIndex:'',}}>
-<StaticImage src="../img/favorites/night221.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+<div className="" style={{zIndex:'',}}>
+<StaticImage src="../img/favorites/night221.jpg" alt="Twilightscapes" className="featured-image " />
 </div>
 
 </div>
@@ -543,8 +547,8 @@ justifyContent: 'center',
 
 
 
-<div className=" kenburns-left" style={{zIndex:'',}}>
-<StaticImage src="../img/gas-header.jpg" alt="Twilightscapes" className="featured-image kenburns-right" />
+<div className="" style={{zIndex:'',}}>
+<StaticImage src="../img/gas-header.jpg" alt="Twilightscapes" className="featured-image" />
 </div>
 
 </div>

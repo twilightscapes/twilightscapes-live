@@ -11,6 +11,7 @@ import DisqusComments from '../../../components/disqus'
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
 
+import ShareSocial from '../../../components/share' 
 import GoBack from "../../../components/goBack"
 import ProductDetails from "../../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
@@ -205,7 +206,7 @@ export default function Product({ data: { product, suggestions } }) {
 
           
 
-
+      <ShareSocial />
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
 <div className="flexcheek" style={{width:'70%'}}>

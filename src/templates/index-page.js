@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
-
+import ShareSocial from '../components/share' 
 import styled from "styled-components"
 // import Trumpy from '../icons/trump-family-board.svg'
 
@@ -69,6 +69,8 @@ export const pageQuery = graphql`
   }
 `
 
+
+
 const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -80,7 +82,7 @@ const HomePage = ({ data }) => {
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
-  <body className="homepage" />
+  <body className="homepage1" />
 </Helmet>
 <Seo
           title={`Twilightscapes Killer Photo Galleries`}
@@ -152,7 +154,6 @@ const HomePage = ({ data }) => {
       <Intro2 />
       
       
-
 
 
 
