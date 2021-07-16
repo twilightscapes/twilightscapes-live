@@ -7,6 +7,7 @@ import 'fontsource-hammersmith-one'
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
+import { FaHandPointDown } from "react-icons/fa"
 import TwilightLogo from "../icons/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
@@ -14,6 +15,8 @@ import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../icons/search"
 import Theme from "../components/theme"
+// import TouchUp from '../components/TouchUp'
+import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
 // import Consent from './Consent'
 // import Install from './install-discount'
@@ -60,6 +63,7 @@ export function Layout({ children }) {
 
       
       
+      
 
 <header>
 
@@ -73,10 +77,19 @@ export function Layout({ children }) {
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-  <div className="txtshadow" style={{textShadow:'2px', color:'#fff',}}><span>TAP FOR MENU</span></div>
-    <div className="spinner diagonal part-1"></div>
+
+  {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
+  <IoMdFingerPrint style={{fontSize:'50px', }}/>
+ <span><br />TAP CORNER<br /> FOR MENU<br />
+</span>
+    </div> */}
+
+<span>MENU</span><IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/>
+
+
+    {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div>
+    <div className="spinner diagonal part-2"></div> */}
   </label>
 
 

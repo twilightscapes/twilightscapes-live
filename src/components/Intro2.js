@@ -4,6 +4,7 @@ import styled from "styled-components"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 import { StaticImage } from "gatsby-plugin-image"
+import Night319 from "../icons/night316.svg"
 const CustomBox = styled.div`
 
 .slider{object-fit: scale-down;}
@@ -35,16 +36,19 @@ const Intro2 = () => (
 
 
 <div className="" style={{zIndex:'-1', width:'', height:'', backgroundSize:'cover'}}>
-  
-  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" />
+{/*   
+  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" /> */}
+
+<Night319 />
+
   
   </div>
 
 
 
-<div className="abcontent" style={{position:'absolute', height:'', width:'100%', top:'50px', right:'0',}}>
+<div className="abcontent" style={{position:'relative', height:'', width:'100%', top:'50px', right:'', display:'flex', justifyContent:'center', zIndex:'0'}}>
 
-<ScrollAnimation animateIn="bounceInDown" delay={1350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow'}}>
+{/* <ScrollAnimation animateIn="bounceInDown" delay={1350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow'}}>
 <h2
   className="letter normal txtshadow-header hit-the-floor"
   style={{
@@ -62,10 +66,10 @@ const Intro2 = () => (
 >
   Follow me
 </h2>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
-<ScrollAnimation animateIn="bounceInRight" delay={1400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red'}}>
+{/* <ScrollAnimation animateIn="bounceInRight" delay={1400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -79,10 +83,10 @@ const Intro2 = () => (
 >
   into the
 </h2>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue'}}>
+{/* <ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -98,12 +102,12 @@ const Intro2 = () => (
 >
   Night
 </h2>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={1750} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', bottom:'0',
-right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center'}}>
+<ScrollAnimation animateIn="bounceInUp" delay={2950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', bottom:'15vh',
+right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex',}}>
 
 
   <Newsignup />
@@ -111,6 +115,8 @@ right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlig
 
 
 </div>
+
+
 
 
 

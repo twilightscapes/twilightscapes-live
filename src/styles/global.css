@@ -759,17 +759,25 @@ input[type=checkbox] {
   cursor: pointer;
   position: fixed;
   z-index: 4;
-  height: 100%;
-  width: 100%;
   top: 77vh;
   right: 3vw;
-  height: 42px;
-  width: 42px;
+  height: 100px;
+  width: 100px;
+  color: #999;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+justify-self:flex-start;
+border:0px solid white;
+
 }
 
-.sidebarIconToggle div{
+
+
+
+.sidebarIconToggle span1{
   content:(" ");
-  border:0px solid #FA02B7;
+  border:1px solid #FA02B7;
   display: flex;
   height:300px;
   width:250px;
@@ -787,30 +795,37 @@ input[type=checkbox] {
   position: relative;
 }
 
-.sidebarIconToggle div span{
-  /* content:(" HELLO! "); */
-
- border:none;
-  display: flex;
-  height:300px;
-  width:30vw;
+.sidebarIconToggle div span1{
+  /* display: flex; */
+  /* height:300px; */
+  width:200px;
   justify-content: center;
   flex-direction: column;
-  position: fixed;
+  /* position: fixed; */
   right:0;
-
-  z-index: 5;
-  text-align: right;
-    animation: zoomer 1s forwards;
-  animation-delay: 4s;
+  bottom:0;
+  z-index: 3;
+  text-align: center;
+    /* animation: zoomer 1s forwards; */
+  animation-delay: 1.5s;
 }
 
+/* .sidebarIconToggle div span.pointer{
+  position:fixed;
+  right:-50px;
+  bottom:5vh;
+  font-size: 40px;
+} */
+
 .homepage .sidebarIconToggle div span{
-  border:4px dotted #FA02B7;
+  /* border:4px dotted #FA02B7; */
   border-radius: 20px;
+  animation-delay: 4s;
+  color:#FA02B7;
 }
 
 .spinner {
+  visibility: hidden;
   transition: all 0.3s;
   box-sizing: border-box;
   position: absolute;
@@ -1055,16 +1070,18 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 
 
 
-.touchup{animation: touchup 3s forwards;
-  position:fixed;
-  bottom:8vh;
-  right:5vw;
-  opacity:0;
+.touchup{
+  /* animation: touchup 3s forwards; */
+  position:absolute;
+  bottom:4vh;
+  right:0;
+  opacity:1;
   scale: .8;
   animation-delay: 1.5s;
   z-index:3;
   filter: drop-shadow(3px 0px 0rem #444);
   color:#fff;
+  font-size: 90px;
 }
 
   

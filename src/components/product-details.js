@@ -30,15 +30,40 @@ const ProductDetails = () => (
 
 <Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'1000px',   overflow:'hidden', marginTop:'40px', }}>
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
-    <Tab><div className="iconmenu"><HiOutlineScale/><span>Legal</span></div></Tab>
+    <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
     <Tab><div className="iconmenu"><RiSecurePaymentLine/><span>Secure</span></div></Tab>
-      <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
+    <Tab><div className="iconmenu"><HiOutlineScale/><span>Legal</span></div></Tab>
       {/* <Tab><div className="iconmenu"><FiCamera /><span>Tech</span></div></Tab> */}
       <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab>
       
       
     </TabList>
  
+
+   <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
+           <strong style={{fontSize:'1.5rem'}}>Specs</strong><br /><br />
+           <p>
+           Edited and production output to Tiff file format<br /> <br />
+           Typical file size 30-50MB<br /> <br />
+           Average dimensions range from 4988×3325 to 5481x3653 or greater<br /> <br />
+           All Twilightscapes are shot using the latest state-of-the-art equipment and lenses.
+           <br /><br />Canon 5D series, Sony A7R series and Sony A7S series.
+           </p>
+           
+    </TabPanel>
+
+
+
+    <TabPanel style={{padding:'0 1.5rem', width:'100%',}}>
+            <strong style={{fontSize:'1.5rem'}}>Secure and spam free</strong><br /><br />
+            <p>All transactions are secured using the latest 128-bit SSL encryption. <br />
+            <br />
+            Full PCI Compliance - Payment Card Industry Data Security Standard (PCI DSS)<br /> <br />
+            I value your privacy and will always put your security first on all accounts. <br /> <br />
+            </p>
+
+    </TabPanel>
+
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
     <strong style={{fontSize:'1.5rem'}}>Legal</strong><br /><br />
@@ -82,30 +107,6 @@ Rights-managed content is licensed for specific types of private use, and limits
 
 
 
-    <TabPanel style={{padding:'0 1.5rem', width:'100%',}}>
-            <strong>Secure and spam free</strong><br /><br />
-            <p>All transactions are secured using the latest 128-bit SSL encryption. <br />
-            <br />
-            Full PCI Compliance - Payment Card Industry Data Security Standard (PCI DSS)<br /> <br />
-            I value your privacy and will always put your security first on all accounts. <br /> <br />
-            </p>
-
-    </TabPanel>
-
-<TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-           <strong>Specs</strong><br /><br />
-           <p>
-           Edited and production output to Tiff file format<br /> <br />
-           Typical file size 30-50MB<br /> <br />
-           Average dimensions range from 4988×3325 to 5481x3653 or greater<br /> <br />
-           All Twilightscapes are shot using the latest state-of-the-art equipment and lenses.
-           <br /><br />Canon 5D series, Sony A7R series and Sony A7S series.
-           </p>
-           
-    </TabPanel>
-
-
-
 
     {/* <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
           <strong>Technology</strong><br /><br />
@@ -120,7 +121,7 @@ Rights-managed content is licensed for specific types of private use, and limits
 
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-            <strong>FAQ</strong><br /><br />
+            <strong style={{fontSize:'1.5rem'}}>FAQ</strong><br /><br />
 
             <p style={{fontWeight:'bold', marginBottom:'0'}}>So, what do I get?</p>
             <p style={{}}>Upon completion of your purchase, you will receive a ZIP file that contains the original high-resolution image in TIFF format. </p>
