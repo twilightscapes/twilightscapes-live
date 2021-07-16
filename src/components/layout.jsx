@@ -15,6 +15,7 @@ import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../icons/search"
 import Theme from "../components/theme"
+// import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
@@ -63,7 +64,9 @@ export function Layout({ children }) {
 
       
       
-      
+      {/* <audio controls="controls" autoplay="true" src={Audio}>
+    Your browser does not support the HTML5 Audio element.
+</audio> */}
 
 <header>
 
