@@ -15,10 +15,12 @@ const CustomBox = styled.div`
 	.image-wrap h1, .image-wrap h2, .image-wrap h3  {font-size:300% !important; border:0px solid red !important;}
 	.image-wrap .news-btn{ margin-top:1rem;}
 	.image-wrap .innerpanel{font-size:70% !important;}
+  .signup{ bottom:150px;}
 }
 
 @media (min-width: 58em) {
 	.textbox{padding-top: !important;}
+  .signup{ bottom:250px;}
 }
 
 
@@ -106,7 +108,7 @@ const Intro2 = () => (
 
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', bottom:'250px',
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute',
 right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
 
 
