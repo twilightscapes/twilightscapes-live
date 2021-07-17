@@ -4,6 +4,15 @@ import styled from "styled-components"
 
 const CustomBox = styled.div`
 
+copyContainer: {
+  position: relative;
+  padding: 14px;
+  border: 1px solid grey;
+  color: #263238;
+  fontFamily: inherit !important;
+  background: #ff0000; 
+}
+
 .makeStyles-copyContainer-5 {
   width: 100%;
   cursor: text;
@@ -89,10 +98,12 @@ const Foo = () => {
   return (
 <CustomBox style={{}}>
     <ShareSocial
-    // style={style}
+    style={style}
     url ={url}
     // title="Sharing IS Caring!"
-    socialTypes={['facebook','twitter','reddit','linkedin']} />
+    socialTypes={['facebook','twitter','reddit','linkedin']}>
+
+      </ShareSocial>
     </CustomBox>
 
 
