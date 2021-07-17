@@ -72,6 +72,10 @@ const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
+  const artImage = frontmatter.featuredImage
+  ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
+  : ""
+
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -89,7 +93,7 @@ const Post = ({ data, pageContext }) => {
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={Image}
+        image={artImage}
         article={true}
       />
       <article className="blog-post">
@@ -110,6 +114,7 @@ const Post = ({ data, pageContext }) => {
         </header>
 
         <ShareSocial />
+        
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
