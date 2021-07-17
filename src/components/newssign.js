@@ -48,7 +48,7 @@ const NewsletterPage = () => (
 
             <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center'}}>
 
-              <div className="blocker" style={{width:'100%', height:'100%'}}></div>
+              <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
 
           <input type="hidden" name="form-name" value="news" />
 

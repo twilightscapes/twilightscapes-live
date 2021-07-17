@@ -769,6 +769,10 @@ input[type=checkbox] {
   flex-direction: column;
 justify-self:flex-start;
 border:0px solid white;
+}
+
+.sidebarIconToggle:hover, .sidebarIconToggle:focus {
+  color: #FA02B7;
 
 }
 

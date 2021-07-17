@@ -60,7 +60,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 p{line-height:150%;}
 
 
-body.light .speech p span{color:#fff;}
+// body.light .speech p span{color:#fff;}
 
 
 
@@ -169,14 +169,14 @@ export const query = graphql`
 
 
 
-    <section className="nft" style={{paddingTop:'0', overflow:'', margin:'1vh', background:'#111'}}>
+    <section className="nft" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
     
 
     
 
 
    
-    <div className="" style={{background:'#111', padding:'1vh 12% 0 12%', textAlign:'left'}}>
+    <div className="" style={{background:'', padding:'1vh 12% 0 12%', textAlign:'left'}}>
 
            <h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1>
           
@@ -215,21 +215,21 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
        
        
        
- <ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'10px dotted #000', marginTop:'4rem', paddingTop:'1rem', background:'#111'}}>
- <a href="https://foundation.app/@twilightscapes/stellar-sentries-51674" target="_blank" rel="noopener noreferrer nofollow">
+ <ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'4rem', paddingTop:'1rem', background:''}}>
+
 
 <div className="home-banner flexbutt" style={{position:'relative', height:'100%', overflow:'', margin:'1rem 3%'}}>
 
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
-<div className=""  style={{zIndex:'-1', width:'', height:'100%'}}>
-<StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="featured-image " />
+<div className=""  style={{zIndex:'-1', width:'', height:'100%'}}> <a href="https://foundation.app/@twilightscapes/stellar-sentries-51674" target="_blank" rel="noopener noreferrer nofollow">
+<StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="featured-image" /></a>
 </div>
 </div>
 
 
-<div className="flexcheek" style={{padding:'1vh 3% 0 3%',}}>
+<div className="flexcheek" style={{padding:'1vh 3% 0 3%', color:'inherit !important'}}>
        <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Stellar Sentries</h2>
 
 <p>A very rare night photo of the Very Large Array (VLA). I'd always been intrigued by this place and I'd wanted to visit it. These towers are like nimble giants, constantly twitching and positioning and working tirelessly throughout the night.</p>
@@ -278,21 +278,21 @@ justifyContent: 'center',
 
 
 </div>
-</a>
+
 </ScrollAnimation>
 
 
 
-<ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'10px dotted #000', marginTop:'2rem', paddingTop:'1rem', background:'#111'}}>
+<ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'2rem', paddingTop:'1rem', background:''}}>
 
-<a href="https://foundation.app/@twilightscapes/alien-egg-farm-51678" target="_blank" rel="noopener noreferrer nofollow">
+
 <div className="home-banner flexbutt" style={{position:'relative', height:'100%', overflow:'', margin:'1rem 3%'}}>
 
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
 <div className=""  style={{zIndex:'-1', width:'', height:'100%'}}>
-<StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="featured-image " />
+<a href="https://foundation.app/@twilightscapes/alien-egg-farm-51678" target="_blank" rel="noopener noreferrer nofollow"><StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="featured-image " /></a>
 </div>
 
 </div>
@@ -345,20 +345,20 @@ justifyContent: 'center',
 </div>
 
 </div>
-</a>
+
 </ScrollAnimation>
 
 
 
-<ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'10px dotted #000', marginTop:'2rem', paddingTop:'1rem', background:'#111'}}>
+<ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'2rem', paddingTop:'1rem', background:''}}>
 
-<a href="https://foundation.app/@twilightscapes/boatswain-s-blunder-51680" target="_blank" rel="noopener noreferrer nofollow">
+
 <div className="home-banner flexbutt" style={{position:'relative', height:'100%', overflow:'', margin:'1rem 3%'}}>
 
 <div className="flexcheek" style={{position:'relative', overflow:'', width:'75vw'}}>
 
 <div className=""  style={{zIndex:'-1', width:'', height:'100%'}}>
-<StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="featured-image " />
+<a href="https://foundation.app/@twilightscapes/boatswain-s-blunder-51680" target="_blank" rel="noopener noreferrer nofollow"><StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="featured-image " /></a>
 </div>
 
 </div>
@@ -420,7 +420,7 @@ justifyContent: 'center',
 
 
 </div>
-</a>
+
 </ScrollAnimation>
        
        

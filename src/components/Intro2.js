@@ -106,8 +106,8 @@ const Intro2 = () => (
 
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={2950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', bottom:'15vh',
-right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex',}}>
+<ScrollAnimation animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', bottom:'250px',
+right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
 
 
   <Newsignup />

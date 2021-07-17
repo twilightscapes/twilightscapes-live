@@ -135,7 +135,7 @@ export const query = graphql`
 
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
 </div>
-
+<br /><br /><br /><br />
 <GoBack />
     
     </Layout>
