@@ -89,7 +89,7 @@ const Foo = () => {
   return (
 <CustomBox style={{}}>
     <ShareSocial
-    style={style}
+    // style={style}
     url ={url}
     // title="Sharing IS Caring!"
     socialTypes={['facebook','twitter','reddit','linkedin']} />
