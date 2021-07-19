@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import DisqusComments from '../components/disqus'
 import { Seo } from "../components/seo"
@@ -93,9 +94,14 @@ const Post = ({ data, pageContext }) => {
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={artImage}
+        // image={artImage}
+        image={getSrc(frontmatter.featuredImage)}
         article={true}
       />
+
+
+
+
       <article className="blog-post">
         <header className="featured-banner">
           {Image ? (

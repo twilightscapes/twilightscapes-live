@@ -35,7 +35,7 @@ const themeStyles = {
       mt: "-2px",
       p: "0 20px 0 0",
       "&:hover": {
-        color: "#bea9b3",
+        color: "#FA02B7",
       },
     },
   },
@@ -44,6 +44,9 @@ const themeStyles = {
     alignItems: "center",
     color: "#ccc",
     mt: "10px",
+    "&:hover": {
+      color: "#FA02B7",
+    },
   },
   modeText: {
     fontSize: "14px",

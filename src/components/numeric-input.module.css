@@ -14,7 +14,7 @@
 
 .input {
   grid-area: input;
-  background: none;
+  background: #000;
   border: none;
   padding: var(--space-sm) var(--space-lg);
   align-self: stretch;

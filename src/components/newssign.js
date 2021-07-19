@@ -11,9 +11,10 @@ const CustomBox = styled.div`
 
 .newsletter{position:relative;}
 
-// input::placeholder {
-//   color: #111;
-// }
+input::placeholder {
+  color: #fff !important;
+  filter: drop-shadow(0px 0px 6px #FA02B7);
+}
 
 
 
@@ -59,7 +60,7 @@ const NewsletterPage = () => (
               
               <span style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
 
-             <div className="signbox" style={{display:'',}}>
+             <div className="signbox" style={{display:'flex',}}>
 
                <label style={{color:'#fff'}} htmlFor="email">
                  <input type="email" name="email" required={true}
@@ -86,6 +87,7 @@ const NewsletterPage = () => (
               className="button"
               
               type="submit"
+              style={{marginTop:'-8px'}}
             >
               Follow Todd{" "}
               <span className="icon -right">

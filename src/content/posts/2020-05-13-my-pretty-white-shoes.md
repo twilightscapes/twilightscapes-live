@@ -6,7 +6,7 @@ date: 2020-05-13 12:55
 description: I’ll begin by saying that to me, the titling of my images is very
   important. It is a “non-crucial”, but effective tool that the photographer has
   to imprint something extra onto their work.
-featuredImage: /assets/night182.jpg
+featuredImage: /assets/title-or-not-title.jpg
 ---
 Today I received a comment on a photo that I posted to a Facebook group and it got me **thinking about photo titles**.
 

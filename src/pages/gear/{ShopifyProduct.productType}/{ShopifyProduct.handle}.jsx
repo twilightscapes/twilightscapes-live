@@ -4,16 +4,16 @@ import { Layout } from "../../../components/layout"
 import isEqual from "lodash.isequal"
 import { getSrc } from "gatsby-plugin-image"
 
-// import InfoMenu from '../../../components/infomenu'
+// import InfoMenu from '../../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
-import DisqusComments from '../../../components/disqus'
+// import DisqusComments from '../../components/disqus'
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
 import { NumericInput } from "../../../components/numeric-input"
-import ShareSocial from '../../../components/share' 
+// import ShareSocial from '../../components/share' 
 import GoBack from "../../../components/goBack"
-import ProductDetails from "../../../components/product-details"
+// import ProductDetails from "../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -141,14 +141,12 @@ export default function Product({ data: { product, suggestions } }) {
 
     <Layout>
       <CustomBox>
-      
       {firstImage ? (
         <Seo
           title={title}
           description={description}
           image={getSrc(firstImage.gatsbyImageData)}
         />
-        
       ) : undefined}
       <div className={container} style={{paddingTop:'0 !important', marginTop:'0'}}>
         <div className="dd">
@@ -174,7 +172,7 @@ export default function Product({ data: { product, suggestions } }) {
 
                       {/* <img className="spinned" src={spinner} alt="Twilightscapes" style={{height:'100%', width:'100%', position:'fixed', top:'0', left:'0',  zIndex:'-1', border:'1px solid yellow', display:'block'}} /> */}
                       <div className="mobilefixa" style={{textAlign:'center',}}>
-           <GoBack />
+           {/* <GoBack /> */}
             </div>
                       </div>
 
@@ -212,10 +210,10 @@ export default function Product({ data: { product, suggestions } }) {
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
 <div className="flexcheek" style={{width:'70%'}}>
-<ShareSocial />
+{/* <ShareSocial /> */}
             <div className={breadcrumb}>
-              <Link to={product.productTypeSlug}>{product.productType}</Link>
-              
+              {/* <Link to={product.productTypeSlug}>{product.productType}</Link> */}
+              {/* <ChevronIcon size={12} /> */}
             </div>
             <h1 className={header} style={{margin:'3rem 0 0 0'}}>{title}</h1>
             <div className={productDescription} style={{paddingTop:'2rem'}} dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
@@ -223,10 +221,9 @@ export default function Product({ data: { product, suggestions } }) {
 
 
             <span className="print">
-            <h2 className={priceValue}>
-             <strong style={{fontSize:'30px'}}>{price}</strong>
-              {/* <br /> High-Res Print Ready Art */}
-            </h2>
+            {/* <h2 className={priceValue}>
+             <strong style={{fontSize:'30px'}}>{price}</strong> <br /> High-Res Print Ready Art
+            </h2> */}
          
 
             
@@ -252,7 +249,7 @@ export default function Product({ data: { product, suggestions } }) {
                 ))}
             </fieldset>
             <div className={addToCartStyle}>
-              Qty: &nbsp;<NumericInput
+              <NumericInput
                 aria-label="Quantity"
                 onIncrement={() => setQuantity((q) => Math.min(q + 1, 20))}
                 onDecrement={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -261,7 +258,6 @@ export default function Product({ data: { product, suggestions } }) {
                 min="1"
                 max="20"
               />
-              <br /><br />
               <AddToCart
                 variantId={productVariant.storefrontId}
                 quantity={quantity}
@@ -269,10 +265,10 @@ export default function Product({ data: { product, suggestions } }) {
               />
             </div>
             <div className="taggage" style={{display:'flex', flexWrap:'wrap !important', maxWidth:'100vw', margin:'3rem 0 2rem 0', overflow:'hidden'}}> 
-              <span className={labelFont}>Type</span>
+              {/* <span className={labelFont}>Type</span>
               <span className={tagList}>
                 <Link to={product.productTypeSlug}>{product.productType}</Link>
-              </span>
+              </span> */}
 
 
               <span className={labelFont}>Tags</span>
@@ -285,14 +281,14 @@ export default function Product({ data: { product, suggestions } }) {
             </span>
             
 
-<ProductDetails />
+{/* <ProductDetails /> */}
 
 </div>
 
             <div className="flexcheek sidebart" style={{border:'0px solid yellow', width:'30%'}}>
 
             <div className="mobile" style={{}}>
-<GoBack />
+{/* <GoBack /> */}
 </div>
 
             <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
@@ -300,19 +296,16 @@ export default function Product({ data: { product, suggestions } }) {
             <div style={{display:'flex', gap:'10px',padding:'0 ', margin:'0 0 2rem 0', justifyContent:'center' }}>
 
 <div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.bayphoto.com" target="_blank" rel="noopener noreferrer nofollow">
-<StaticImage src="../../../img/bayphoto-logo.png" alt="Print This On Bay Photo" /></a></div>
+<StaticImage src="../../img/bayphoto-logo.png" alt="Print This On Bay Photo" /></a></div>
 
 <div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.printique.com" target="_blank" rel="noopener noreferrer nofollow">
-<StaticImage src="../../../img/printique-logo.png" alt="Print This On Printique" />
+<StaticImage src="../../img/printique-logo.png" alt="Print This On Printique" />
 </a></div>
 
 </div>
 
 
-
-
-
-<div className="round" style={{ overflow:'hidden', position:'relative', zIndex:'0'}}>
+<div style={{ border:'0px solid red', overflow:'hidden', position:'relative', zIndex:'0'}}>
 
   <h3 style={{fontSize:'130%', fontWeight:'bold', textAlign:'center'}}>About the photographer</h3>
 
@@ -327,28 +320,27 @@ export default function Product({ data: { product, suggestions } }) {
         Hi, I'm Todd Lambert
       
     </div>
-</Link>
+
   
-    <StaticImage src="../../../img/todd-horizons.jpg" alt="Todd in the Field" className="round" />
-        
+    <StaticImage src="../../img/todd-horizons.jpg" alt="Todd in the Field" />
+        </Link>
 </div>
 
 <br />
 <br />
 <h3 style={{fontSize:'130%', fontWeight:'bold', textAlign:'center'}}>Other projects by Todd</h3>
 
-
-
-
-
 <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit', lineHeight:'1.7rem'}}>
- <StaticImage src="../../../img/urban-fetish-button.jpg" alt="Urban Fetish" className="round" />
+ 
+
+
+
+ <StaticImage src="../../img/urban-fetish-button.jpg" alt="Urban Fetish" />
  <br />
  
  Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
  
  <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
-
 
 
             </div>
@@ -373,13 +365,13 @@ export default function Product({ data: { product, suggestions } }) {
           
     
 
-<GoBack />
+{/* <GoBack /> */}
 
 
 
-<div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
+{/* <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
      <DisqusComments />
-     </div>
+     </div> */}
             
             </div>
 
@@ -399,7 +391,7 @@ export const query = graphql`
       descriptionHtml
       productType
       productTypeSlug: gatsbyPath(
-        filePath: "/art/{ShopifyProduct.productType}"
+        filePath: "../gear/{ShopifyProduct.productType}"
       )
       tags
       priceRangeV2 {

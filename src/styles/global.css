@@ -20,6 +20,9 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 }
 
 
+.round{border-radius: 12px !important;}
+.round img{border-radius: 12px !important; }
+
 
 .fire{  box-shadow:  0 4px 22px #FA02B7 !important;}
 
@@ -83,7 +86,9 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
 .gatsby-image-wrapper [data-main-image] {
   border-radius: 12px 12px;
+  border-radius: 0;
 }
+
 .gatsby-image-wrapper img{max-height: 100%; }
 
 /* .gatsby-image-wrapper {max-height: 80vh; } */
@@ -544,7 +549,9 @@ body.carto .carta {display:block; height:100%;}
 
 .navbar-item{display:block; padding:5px 0;}
 
-
+.sherlock:hover{
+  color:#FA02B7;
+}
 
 
 
@@ -652,7 +659,7 @@ display: none;
     background:#333;
     color:#fff !important;
     border:1px solid #666 !important;
-    padding:1rem;
+    padding:10px !important;
     border-radius:8px;
     /* background:rgba(145, 26, 103, 0.829) !important; */
     opacity: .5;
@@ -769,11 +776,14 @@ input[type=checkbox] {
   flex-direction: column;
 justify-self:flex-start;
 border:0px solid white;
+filter: drop-shadow(1px 1px 1px #FA02B7);
+  text-shadow:1px 1px 0px #333;
 }
 
-.sidebarIconToggle:hover, .sidebarIconToggle:focus {
+.sidebarIconToggle:hover{
   color: #FA02B7;
-
+  filter: drop-shadow(0px 0px 10px #FA02B7);
+  text-shadow:1px 1px 0px #000;
 }
 
 

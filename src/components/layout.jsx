@@ -141,7 +141,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/gear/">Gear Talk<span>What tools I use</span></Link>
+      <Link className="navbar-item txtshadow" to="/photo-tools/">TwilightTools™<span>Lighting and Gear</span></Link>
        </li> */}
 
 
@@ -152,7 +152,7 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
       <li className="carto">
-      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>rants &amp; raves</span></Link>
+      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>My rants &amp; raves</span></Link>
        </li>
 
 
