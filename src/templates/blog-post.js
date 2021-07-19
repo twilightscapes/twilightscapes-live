@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, siteUrl } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
@@ -26,6 +26,10 @@ const styles = {
 }
 
 const Pagination = props => (
+
+
+
+
   
   <div className="pagination -post" sx={styles.pagination}>
     <ul>
@@ -77,6 +81,9 @@ const Post = ({ data, pageContext }) => {
   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
   : ""
 
+  const siteUrl = siteUrl()
+
+
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -95,7 +102,7 @@ const Post = ({ data, pageContext }) => {
           frontmatter.description ? frontmatter.description : excerpt
         }
         // image={artImage}
-        image={getSrc(frontmatter.featuredImage)}
+        image={getSrc(frontmatter.featuredImage.childImageSharp.gatsbyImageData)}
         article={true}
       />
 
@@ -138,14 +145,29 @@ const Post = ({ data, pageContext }) => {
       <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
      <DisqusComments />
      </div>
+
+
     </Layout>
   )
 }
+
+
 
 export default Post
 
 export const pageQuery = graphql`
   query BlogPostQuery($id: String!) {
+    site {
+      siteMetadata {
+        siteTitle
+        siteTitleDefault
+        siteUrl
+        hrefLang
+        siteDescription
+        siteImage
+        twitter
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html
