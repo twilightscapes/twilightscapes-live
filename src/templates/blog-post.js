@@ -81,7 +81,6 @@ const Post = ({ data, pageContext }) => {
   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
   : ""
 
-  const siteUrl = siteUrl()
 
 
   const Image = frontmatter.featuredImage
