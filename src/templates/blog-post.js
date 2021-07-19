@@ -101,7 +101,7 @@ const Post = ({ data, pageContext }) => {
           frontmatter.description ? frontmatter.description : excerpt
         }
         // image={artImage}
-        image={getSrc(frontmatter.featuredImage.childImageSharp.gatsbyImageData)}
+        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
