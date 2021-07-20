@@ -3,7 +3,7 @@ import * as React from "react"
 import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 import { Seo } from "../components/seo"
-
+import { FaHandPointDown } from "react-icons/fa"
 
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -1014,7 +1014,32 @@ Traveling across the country in search of a beauty that is elusive and fading, o
        
        
        
-       
+       <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto',}}>Wow! If you've made it this far, then that must mean that you are:</h3> <br /><br />
+
+       <ul style={{display:'flex', flexDirection:'column', justifyContent:'space-between', fontSize:'150%', margin:'0 auto', width:'55%', listStyle:'none', listStyleType:'none', textAlign:'left', border:'1px solid', padding:'3rem', borderRadius:'12px', gap:'2rem' }}>
+
+              <li>a) a stalker (great, as long as you're buyin! - HMU)</li>
+   <li>b) a Russian bot (great, as long as you're buyin! - don't HMU)</li>
+
+      <li>c) FBI (Sorry, new number, who dis?) </li>
+
+
+       <li>d) my Mom (Love you Mom!)</li>
+
+       {/* <li>SOOO, that must mean you're cool and I like you. (HMU - I'm buyin!)</li> */}
+       </ul>
+
+       <div style={{display:'flex', flexDirection:'column', justifyContent:'space-between', fontSize:'150%', margin:'0 auto', width:'75%', textAlign:'left'}}>
+       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>NOW...</h2>
+
+       <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px'}}>if you've come this far, maybe you're willing to come a little further. You remember the name of the town, don't you?</blockquote>
+
+       <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px'}}>I could use a good man to help me get my project on wheels. I'll keep an eye out for you and the chessboard ready.</blockquote>
+</div>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
        
        
 
