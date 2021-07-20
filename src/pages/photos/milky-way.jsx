@@ -11,7 +11,8 @@ import GoBack from "../../components/goBack"
 // import { FaSquareFull } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { FiZoomIn } from 'react-icons/fi'
-
+import GalleryMenu from "../../components/galleryMenu"
+import { FaHandPointDown } from "react-icons/fa"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -103,7 +104,7 @@ export const query = graphql`
 
 
 </div>
-
+<GoBack />
 
     {/* <div id="vidtop-content">
 <div className="vid-info">
@@ -126,7 +127,7 @@ export const query = graphql`
 
 
 
-
+<GalleryMenu />
 
 <br />
 <br />
@@ -135,8 +136,22 @@ export const query = graphql`
 
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
 </div>
-<br /><br /><br /><br />
+<br /><br />
+
+<GalleryMenu />
+
+<br /><br />
 <GoBack />
+
+<blockquote style={{fontSize:'200%', padding:'1rem 8%', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>Do you like the Milky Way as much as I do? I'd love to hear ahout it. </blockquote>
+
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
+
+
     
     </Layout>
      </CustomBox>

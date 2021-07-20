@@ -5,7 +5,8 @@ import { graphql, Link } from "gatsby"
 import { Seo } from "../../components/seo"
 import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
-
+import { FaHandPointDown } from "react-icons/fa"
+import GalleryMenu from "../../components/galleryMenu"
 // import { Helmet } from "react-helmet"
 // import TouchUp from '../components/TouchUp'
 import { RiSendPlane2Line } from "react-icons/ri"
@@ -81,56 +82,7 @@ export default function GalleryPage({ data }) {
 
 
 
-<div style={{textAlign:'center', fontWeight:'bold', width:'100%', margin:'2rem 0 0 0'}}>Themed Galleries:</div>
-
-<div style={{display:'flex', width:'90vw', margin:'0 auto 1rem auto', padding:'', border:'0px solid #333', borderRadius:'12px', gap:'0'}}>
-
-
-<Link to="./milky-way/"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  Milky Way
-</Link>
-
-<Link to="./crazy-geology/"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  Crazy Geology
-</Link>
-
-<Link to="./in-the-city/"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  In The City
-</Link>
-
-{/* <div style={{}}></div>
-<div style={{}}></div> */}
-</div>
+<GalleryMenu />
 
 
     
@@ -153,7 +105,9 @@ fontSize:'100%',
               </span>
             </Link> */}
 
-            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'0 0 2rem 0'}}>
+            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0'}}>
+              
+              
 
 <p style={{textAlign:'center', margin:'2rem 0 0 0'}}>GET ALL YOUR FAVORITES NOW</p>
 
@@ -166,6 +120,14 @@ fontSize:'100%',
   </span>
 </div>
 </div>
+
+<blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>You know what they say about people who can't pick 3 of anything? Maybe we need to talk?</blockquote>
+
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
 
    </Layout></CustomBox>
     </>

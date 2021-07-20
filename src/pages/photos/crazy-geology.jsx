@@ -5,8 +5,8 @@ import { ProductListing } from "../../components/product-listing"
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
 import { FiZoomIn } from 'react-icons/fi'
-
-
+import GalleryMenu from "../../components/galleryMenu"
+import { FaHandPointDown } from "react-icons/fa"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -114,7 +114,7 @@ export const query = graphql`
   </div>
 </div> */}
  
-
+ <GoBack />
  
 <div style={{position:'', zIndex:'', width:'90%', display:'flex', justifyContent:'center', padding:'1rem 3%', gap:'30px'}}>
   {/* <p>The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night.</p> */}
@@ -127,7 +127,7 @@ export const query = graphql`
 </div>
 
 
-
+<GalleryMenu />
 
 
 
@@ -137,9 +137,22 @@ export const query = graphql`
 
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
 </div>
-<br /><br /><br /><br />
+<br /><br />
+
+<GalleryMenu />
+
+<br /><br />
 <GoBack />
     
+
+
+<blockquote style={{fontSize:'200%', padding:'1rem 8%', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>What's the craziest rock stone formation you've seen? </blockquote>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
+
     </Layout>
      </CustomBox>
      </>
