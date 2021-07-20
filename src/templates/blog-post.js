@@ -7,6 +7,8 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import DisqusComments from '../components/disqus'
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 import ShareSocial from '../components/share' 
 const styles = {
   "article blockquote": {
@@ -144,6 +146,12 @@ const Post = ({ data, pageContext }) => {
       <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
      <DisqusComments />
      </div>
+
+     <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
 
 
     </Layout>

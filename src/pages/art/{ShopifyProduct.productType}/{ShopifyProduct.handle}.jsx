@@ -3,7 +3,8 @@ import { graphql, Link } from "gatsby"
 import { Layout } from "../../../components/layout"
 import isEqual from "lodash.isequal"
 import { getSrc } from "gatsby-plugin-image"
-
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
@@ -150,7 +151,7 @@ export default function Product({ data: { product, suggestions } }) {
         />
         
       ) : undefined}
-      <div className={container} style={{paddingTop:'0 !important', marginTop:'0'}}>
+      <div className="" style={{paddingTop:'0 !important', marginTop:'0'}}>
         <div className="dd">
           {hasImages && (
             <div className={productImageWrapper}>
@@ -208,7 +209,7 @@ export default function Product({ data: { product, suggestions } }) {
 
           
 
-      
+      <div className={container}>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
 <div className="flexcheek" style={{width:'70%'}}>
@@ -384,8 +385,17 @@ export default function Product({ data: { product, suggestions } }) {
             </div>
 
 
-
+            </div>
       </div>
+
+
+      <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
+
       </CustomBox>
     </Layout>
   )

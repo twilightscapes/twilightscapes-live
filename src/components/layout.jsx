@@ -11,6 +11,8 @@ import { FaHandPointDown } from "react-icons/fa"
 import TwilightLogo from "../icons/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
+import { FiShare } from 'react-icons/fi';
+import { FaRegPlusSquare } from 'react-icons/fa';
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../icons/search"
@@ -99,20 +101,45 @@ export function Layout({ children }) {
   <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
 
-   <div id="sidebarMenu">
+   <div id="sidebarMenu" style={{minWidth:'', width:''}}>
   
 {/* <div className="no-app promocode">
 30% OFF CODE: <span style={{color:'#FA02B7', fontWeight:'bold'}}>LoveTheNight</span>
 </div> */}
 
+<div className="home-posts" style={{display:'flex', justifyContent:'center', border:'0px solid red', maxWidth:'', margin:'0 auto' }}>
 
 
-    <ul className="sidebarMenuInner">
+<div id="installer3" className="post-card" style={{display:'flex', justifyContent:'center', alignItems:'center', zIndex:'0', borderRadius:'8px',}}>
 
- <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
+
+
+
+
+
+
+
+  {/* <Install /> */}
+
+
+
+	
+
+    
+
+</div>
+
+
+</div>
+
+
+
+    <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
+
+ <li className="carta" style={{border:'none', margin:'1rem 0'}}>
 <Link to="/"> <TwilightLogo /></Link>
  </li>
- <li className="carto" style={{border:'none', marginBottom:'1rem'}}>
+ <li className="carto" style={{border:'none', margin:'1rem 0'}}>
 <Link to="/"> <TwilightLogo /></Link>
  </li>
  
@@ -140,9 +167,9 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/photo-tools/">TwilightTools™<span>Lighting and Gear</span></Link>
-       </li> */}
+      <li className="carto">
+      <Link className="navbar-item txtshadow" to="/photo-tools/">Twilight Tools<span>Lighting and Gear</span></Link>
+       </li>
 
 
       {/* <li className="carto">

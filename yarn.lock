@@ -9926,6 +9926,11 @@ js-base64@^3.0.0:
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.6.0.tgz#773e1de628f4f298d65a7e9842c50244751f5756"
   integrity sha512-wVdUBYQeY2gY73RIlPrysvpYx+2vheGo8Y1SNQv/BzHToWpAZzJU7Z6uheKMAe+GLSBig5/Ps2nxg/8tRB73xg==
 
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
+
 js-sha256@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/js-sha256/-/js-sha256-0.9.0.tgz#0b89ac166583e91ef9123644bd3c5334ce9d0966"
@@ -13418,6 +13423,14 @@ react-color@^2.18.1:
     prop-types "^15.5.10"
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
+
+react-cookie-consent@^6.2.4:
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-6.2.4.tgz#b7761ff69296115e96cd1f448d66c03e2e0317e3"
+  integrity sha512-h6coYS6P1Vv/CLL6tn6mBivtERPkKNo7ilY3vLjNnRD8bsc4+XHT3t27fqceyyW5cT1nKVO5zCdO8UFCjpBnTw==
+  dependencies:
+    js-cookie "^2.2.1"
+    prop-types "^15.7.2"
 
 react-datetime@^3.0.0:
   version "3.0.4"

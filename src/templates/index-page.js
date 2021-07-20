@@ -7,8 +7,10 @@ import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import ShareSocial from '../components/share' 
 import styled from "styled-components"
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 // import Trumpy from '../icons/trump-family-board.svg'
-
+import Gearbox from "../components/gearbox"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -85,7 +87,7 @@ const HomePage = ({ data }) => {
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Twilightscapes Killer Photo Galleries`}
+          title={`Killer Night Photo Galleries`}
           description={`Twilightscapes night photography`}
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
@@ -168,12 +170,23 @@ const HomePage = ({ data }) => {
       <div style={{padding:'2rem 3%'}}>
         <BlogListHome data={posts} />
         </div>
+
+
+
+        {/* <div style={{padding:'2rem 3%'}}>
+        <Gearbox data={posts} />
+        </div> */}
       
       
 
 {/* <Trumpy /> */}
 {/* <img id="trump" className="trump" src={Trumpy} alt="Trump sucks" title="Trump sucks" style={{minWidth:'100vw', maxWidth:'100%',}} /> */}
 
+<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Wanna get in touch?</h3>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
 
     </Layout>
     </CustomBox>

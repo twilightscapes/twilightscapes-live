@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from 'react'
-
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 import { StaticImage } from "gatsby-plugin-image"
 
 
@@ -428,6 +429,13 @@ class BlogIndex extends React.Component {
         
 
 </div>
+
+
+<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
 
       </Layout>
     )

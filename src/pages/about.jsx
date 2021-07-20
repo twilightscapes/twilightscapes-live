@@ -14,7 +14,7 @@ import styled from 'styled-components'
 
 const CustomBox = styled.div`
 
-/*
+
 .intro:before{
 	content: "About Twilightscapes";
 position:absolute;
@@ -23,7 +23,7 @@ align-items: center;
 justify-content: center;
 font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
-*/
+
 
 
 
@@ -139,17 +139,24 @@ height: 0;
 
 <div className="vidbox" style={{position:'relative', maxHeight:'80vh'}}>
 
-    <ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
-      <div className="txtshadow-header letter">
-             About
+
+
+<ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
+      <div className="txtshadow-header letter zoomer">About
     </div>
 </ScrollAnimation>
 
-{/* <div className="video-background">
+
+
+
+<div className="video-background">
     <div className="video-foreground">
-      <iframe className="" src="../img/https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
+      
+      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
     </div>
-</div> */}
+</div>
+
+
 
 
 </div>

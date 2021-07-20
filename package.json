@@ -57,6 +57,7 @@
     "query-string": "^7.0.0",
     "react": "^16.14.0",
     "react-animate-on-scroll": "^2.1.5",
+    "react-cookie-consent": "^6.2.4",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.0.0",
     "react-icons": "^4.2.0",

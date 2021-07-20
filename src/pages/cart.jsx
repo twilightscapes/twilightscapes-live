@@ -4,6 +4,8 @@ import { Layout } from "../components/layout"
 import { StoreContext } from "../context/store-context"
 import { LineItem } from "../components/line-item"
 import { formatPrice } from "../utils/format-price"
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import { Helmet } from "react-helmet"
 
@@ -46,7 +48,7 @@ export default function CartPage() {
     <Layout>
       <div className={wrap} style={{minHeight:'100vh'}}>
         {emptyCart ? (
-          <div className={emptyStateContainer}>
+          <div className={emptyStateContainer} style={{paddingTop:'5rem'}}>
             <h1 className={emptyStateHeading}>Your cart is empty</h1>
             <p>
               Looks like you haven’t found anything yet. We understand that
@@ -55,7 +57,15 @@ export default function CartPage() {
             <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
               View trending Twilightscapes
             </Link>
+
+            <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'40vh auto 0 auto'}}>Pre-order questions?</h3>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
           </div>
+
         ) : (
           <>
             <h1 className={title}>Your cart</h1>

@@ -1,17 +1,16 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Layout } from "../components/layout"
-import { ProductListing } from "../components/product-listing-gear"
+
+import { ProductListing } from "./product-listing"
 import { Link } from "gatsby"
-import { Seo } from "../components/seo"
+import { Seo } from "./seo"
 // import { Helmet } from "react-helmet"
 import { RiSendPlane2Line } from "react-icons/ri"
 import { IoLogoVercel } from "react-icons/io5"
 import { BsCircleFill } from "react-icons/bs"
-import { FaSquareFull, FaHandPointDown } from "react-icons/fa"
+import { FaSquareFull } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
-import ShareSocial from '../components/share' 
-
+import ShareSocial from './share' 
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -38,14 +37,14 @@ const CustomBox = styled.div`
 a:after{display:none !important;}
 
 
-// .intro:before{
-// 	content: "Lightpainting Tools";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-// }
+.intro:before{
+	content: "Twilightscapes NFTs";
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
 
 
 
@@ -134,7 +133,7 @@ export const query = graphql`
 `
 
        // export default function nftPage({ data: { products } }) {
-              export default function toolsPage({ data }) {
+              export default function gearboxPage({ data }) {
 
   return (
 <>
@@ -145,26 +144,19 @@ export const query = graphql`
 
 <CustomBox>
 
-    <Layout className="tools-page" style={{position:'relative'}}>
+
 
     
     <Seo
-          title={`Light painting tools and photo gear`}
-          description={`The best light painting tools and photo gear`}
+          title={`Photography`}
+          description={`Twilightscapes`}
           image={'https://twilightscapes.com/follow-me-into-the-night-promo.jpg'}
         />
 
 
  
 
-<div className="vidbox" style={{maxHeight:'80vh'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/KnTw3-oW-vQ?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=KnTw3-oW-vQ" classname="" frameborder="0" allowfullscreen=""></iframe>
-    </div>
-</div>
-</div>
+
 
   
 
@@ -173,41 +165,38 @@ export const query = graphql`
     <section className="nft" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
     
 
-    <div className="" style={{background:'', padding:'1vh 3%', textAlign:'left'}}>
+    
 
-    <h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>Twilight Tools</h1>
-          
 
-<p style={{textAlign:'center', margin:'0 12%'}}>
-From light painting to timelapse and rig setups, Twilightscapes has you covered.
-</p>
+   
+    
+       
+       
+
+    </section>
+ 
+
+ 
 
 
 
 
 <br />
+<br />
 
-<div className="nft"><ProductListing products={data.shopifyCollection.products} />
+
+<br />
+
+<div className="nft">
+  <ProductListing products={data.shopifyCollection.products} />
 </div>
   
 
 <br />
-<br />
-
-<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Got Questions?</h3>
-
-<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
-{/* <Link state={{modal: true}} to="/contact/" style={{textAlign:'center', fontSize:'120%', fontWeight:'bold', maxWidth:'700px', margin:'0 auto', textDecoration: 'underline',}} className="moreButton">Request it!</Link> */}
 
 
 
-</div>
-</section>
 
-
-    </Layout>
      </CustomBox>
      </>
 

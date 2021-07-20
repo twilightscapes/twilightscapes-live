@@ -11,6 +11,8 @@ import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -26,7 +28,7 @@ import ShareSocial from '../components/share'
 // } from "./index.module.css"
 
 
-import ScrollAnimation from 'react-animate-on-scroll'
+
 // import { GiPlainArrow } from 'react-icons/gi'
 
 import styled from 'styled-components'
@@ -160,7 +162,7 @@ export const query = graphql`
 <div className="video-background">
     <div className="video-foreground">
       
-      <iframe className="" src="https://www.youtube.com/embed/vWNkRK6-oU4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=vWNkRK6-oU4" frameBorder="0" allowFullScreen></iframe>
+      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/vWNkRK6-oU4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=vWNkRK6-oU4" frameBorder="0" allowFullScreen></iframe>
     </div>
 </div>
 </div>
@@ -570,8 +572,15 @@ justifyContent: 'center',
 <hr />
 <br />
 
-<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem auto'}}>Don't see the twilightscape you're looking for?</h3>
-<Link state={{modal: true}} to="/contact/" style={{textAlign:'center', fontSize:'120%', fontWeight:'bold', maxWidth:'700px', margin:'0 auto', textDecoration: 'underline',}} className="moreButton">Request it!</Link>
+
+
+<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Don't see the twilightscape you're looking for?</h3>
+
+<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
+
     </Layout>
      </CustomBox>
      </>

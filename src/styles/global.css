@@ -711,21 +711,22 @@ body{overflow-x: hidden;}
   flex-direction: column;
   justify-content: flex-end;
   /* width: 250px; */
-  padding:0 0 0 0;
-  transform: translateX(250px);
+  padding:75vh 0 0 0;
+  transform: translateX(100vw);
   transition: transform 250ms ease-in-out;
-  background-color:#111;
-  background: linear-gradient(180deg, #333 1%, #111 80%);
-  border-left:1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 0 0 0 12px;
 }
 .sidebarMenuInner{
   margin:0 0 0 0;
-  padding:0;
+  padding:75vh 0 0 0;
   /* border-top: 1px solid rgba(255, 255, 255, 0.10); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color:#111;
+  background: linear-gradient(180deg, #333 1%, #111 80%);
+  border-left:1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 0 0 0 12px;
+  min-width: 200px;
 
 }
 .sidebarMenuInner li{
@@ -750,7 +751,7 @@ body{overflow-x: hidden;}
   text-decoration: none;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 
 
