@@ -1030,7 +1030,7 @@ Traveling across the country in search of a beauty that is elusive and fading, o
        </ul>
 
        <div style={{display:'flex', flexDirection:'column', justifyContent:'space-between', fontSize:'150%', margin:'0 auto', width:'75%', textAlign:'left'}}>
-       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>NOW...</h2>
+       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>AND...</h2>
 
        <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px'}}>if you've come this far, maybe you're willing to come a little further. You remember the name of the town, don't you?</blockquote>
 
