@@ -7,6 +7,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
 import { Disqus } from 'gatsby-plugin-disqus'
 import useSiteMetadata from '../utils/site-metadata';
+
 // import Disqus from "../components/disqus"
 
 import { Seo } from "../components/seo"
@@ -91,7 +92,7 @@ const Post = ({ data, pageContext, path }) => {
   const { siteUrl } = useSiteMetadata();
 
   let disqusConfig = {
-    url: `https://twilightscapes.com`,
+    url: `${siteUrl}${path}`,
     identifier: `${siteUrl}${path}`,
     title: frontmatter.title,
   }
