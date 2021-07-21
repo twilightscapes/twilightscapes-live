@@ -5,9 +5,9 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+import { Disqus } from 'gatsby-plugin-disqus'
 import useSiteMetadata from '../utils/site-metadata';
-
+// import Disqus from "../components/disqus"
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -30,6 +30,9 @@ const styles = {
     },
   },
 }
+
+
+
 
 const Pagination = props => (
 
@@ -80,6 +83,7 @@ const Pagination = props => (
 )
 
 const Post = ({ data, pageContext, path }) => {
+
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
