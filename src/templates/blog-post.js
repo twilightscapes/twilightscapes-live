@@ -4,7 +4,11 @@ import { Link, graphql, siteUrl } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-import DisqusComments from '../components/disqus'
+
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+import useSiteMetadata from '../utils/site-metadata';
+
+
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import { FaHandPointDown } from "react-icons/fa"
@@ -75,9 +79,19 @@ const Pagination = props => (
   </div>
 )
 
-const Post = ({ data, pageContext }) => {
+const Post = ({ data, pageContext, path }) => {
+
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
+
+  const { siteUrl } = useSiteMetadata();
+
+  let disqusConfig = {
+    url: `${siteUrl}${path}`,
+    identifier: `${siteUrl}${path}`,
+    title: markdownRemark.frontmatter.title,
+  }
+
 
   const artImage = frontmatter.featuredImage
   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
@@ -144,7 +158,7 @@ const Post = ({ data, pageContext }) => {
 
    
       <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
-     <DisqusComments />
+      <Disqus config={disqusConfig} />
      </div>
 
      <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
