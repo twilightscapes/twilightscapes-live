@@ -7,7 +7,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 // import DisqusComments from '../components/disqus'
 
 // import CommentBox from "../components/commentbox"
-import commentBox from 'commentbox.io'
+// import commentBox from 'commentbox.io'
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -29,7 +29,7 @@ const styles = {
   },
 }
 
-{commentBox('5708736052068352-proj')}
+
 
 const Pagination = props => (
 

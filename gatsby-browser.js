@@ -3,7 +3,7 @@ import { StoreProvider } from "./src/context/store-context"
 import "./src/styles/reset.css"
 import "./src/styles/variables.css"
 import "./src/styles/global.css"
-
+import commentBox from 'commentbox.io'
 
 
 export const wrapRootElement = ({ element }) => (
@@ -13,6 +13,7 @@ export const wrapRootElement = ({ element }) => (
 )
 
 
+{commentBox('5708736052068352-proj')}
 
 export const onRouteUpdate = ({ 
   location, prevLocation }) => {
