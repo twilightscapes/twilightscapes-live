@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React, { useEffect } from 'react';
 import { jsx } from "theme-ui"
 import { Link, graphql, siteUrl } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -7,11 +8,12 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 // import DisqusComments from '../components/disqus'
 
 // import CommentBox from "../components/commentbox"
-import commentBox from 'commentbox.io'
+import commentbox from 'commentbox.io'
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
+import { commentBox } from "commentbox.io"
 const styles = {
   "article blockquote": {
     "background-color": "cardBg",
@@ -87,7 +89,9 @@ const Post = ({ data, pageContext }) => {
   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
   : ""
 
-
+  useEffect(() =>{
+    commentbox('5708736052068352-proj')
+  },[])
 
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -148,8 +152,10 @@ const Post = ({ data, pageContext }) => {
 
    
       <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
-     {commentBox('5708736052068352-proj')}
-<div className="commentbox"></div>
+     {/* {commentBox('5730512475783168-proj')} */}
+{/* <div className="commentbox"></div> */}
+{/* <CommentBox /> */}
+<div className="commentbox" />
      </div>
 
 {/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
