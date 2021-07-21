@@ -92,7 +92,7 @@ const Post = ({ data, pageContext, path }) => {
 
   let disqusConfig = {
     url: `https://twilightscapes.com`,
-    // identifier: `${siteUrl}${path}`,
+    identifier: `${siteUrl}${path}`,
     title: frontmatter.title,
   }
 
