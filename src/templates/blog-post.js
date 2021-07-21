@@ -4,16 +4,13 @@ import { Link, graphql, siteUrl } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+// import DisqusComments from '../components/disqus'
 
-import { Disqus } from 'gatsby-plugin-disqus'
-import useSiteMetadata from '../utils/site-metadata';
-
-// import Disqus from "../components/disqus"
+// import CommentBox from "../components/commentbox"
+import commentBox from 'commentbox.io'
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
 import ShareSocial from '../components/share' 
 const styles = {
   "article blockquote": {
@@ -32,8 +29,7 @@ const styles = {
   },
 }
 
-
-
+{commentBox('5708736052068352-proj')}
 
 const Pagination = props => (
 
@@ -83,20 +79,9 @@ const Pagination = props => (
   </div>
 )
 
-const Post = ({ data, pageContext, path }) => {
-
-
+const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
-
-  const { siteUrl } = useSiteMetadata();
-
-  let disqusConfig = {
-    url: `${siteUrl}${path}`,
-    identifier: `${siteUrl}${path}`,
-    title: frontmatter.title,
-  }
-
 
   const artImage = frontmatter.featuredImage
   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
@@ -163,16 +148,15 @@ const Post = ({ data, pageContext, path }) => {
 
    
       <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
-      <Disqus config={disqusConfig} />
+     
+<div className="commentbox"></div>
      </div>
 
-     <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
+{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
-
-
+</ScrollAnimation> */}
     </Layout>
   )
 }

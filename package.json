@@ -19,6 +19,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
     "@sindresorhus/slugify": "^1.1.0",
     "@theme-ui/color": "^0.6.0",
+    "commentbox.io": "^2.1.0",
     "debounce": "^1.2.1",
     "fontsource-hammersmith-one": "^4.0.0",
     "gatsby": "^3.5.0",
