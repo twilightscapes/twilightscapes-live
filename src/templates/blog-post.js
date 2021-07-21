@@ -91,9 +91,9 @@ const Post = ({ data, pageContext, path }) => {
   const { siteUrl } = useSiteMetadata();
 
   let disqusConfig = {
-    url: `${siteUrl}${path}`,
-    identifier: `${siteUrl}${path}`,
-    title: markdownRemark.frontmatter.title,
+    url: `https://twilightscapes.com`,
+    // identifier: `${siteUrl}${path}`,
+    title: frontmatter.title,
   }
 
 
