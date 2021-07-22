@@ -117,14 +117,14 @@ export const query = graphql`
  
 
  
-{/* <div style={{position:'', zIndex:'', width:'90%', display:'flex', justifyContent:'center', padding:'1rem 3%', gap:'30px'}}>
+<div style={{position:'', zIndex:'', width:'90%', display:'flex', justifyContent:'center', padding:'1rem 3%', gap:'30px'}}>
 
-  <p>The Milky Way is a barred spiral galaxy. All the stars we see in the night sky are in our own Milky Way Galaxy. Earth is aproximately 25,000 light years from the center and the distance from one side of the Milky Way to the other, is a whopping 100,000 light years. </p>
+  {/* <p>The Milky Way is a barred spiral galaxy. All the stars we see in the night sky are in our own Milky Way Galaxy. Earth is aproximately 25,000 light years from the center and the distance from one side of the Milky Way to the other, is a whopping 100,000 light years. </p>
 
   <p>While nobody knows the true number, it is believed that the Milky Way consists of over a 100 billion stars!  </p>
 
-  <p>Just as the Earth goes around the Sun, the Sun goes around the center of the Milky Way. It takes 250 million years for our Sun and the solar system to go all the way around the center of the Milky Way.</p>
-</div> */}
+  <p>Just as the Earth goes around the Sun, the Sun goes around the center of the Milky Way. It takes 250 million years for our Sun and the solar system to go all the way around the center of the Milky Way.</p> */}
+</div>
 
 
 
