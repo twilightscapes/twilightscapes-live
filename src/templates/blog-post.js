@@ -90,7 +90,11 @@ const Post = ({ data, pageContext }) => {
   : ""
 
   useEffect(() =>{
-    commentbox('5708736052068352-proj')
+    commentbox('5708736052068352-proj', {
+      backgroundColor: null,  // default transparent
+      textColor: "#666",  // default black
+       subtextColor: "#666",  // default grey
+   })
   },[])
 
   const Image = frontmatter.featuredImage
