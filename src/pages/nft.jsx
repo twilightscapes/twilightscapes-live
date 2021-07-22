@@ -13,6 +13,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
+import CommentBox from "../components/commentbox"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -569,7 +570,9 @@ justifyContent: 'center',
   
 
 <br />
-<hr />
+<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+<CommentBox />
+</div>
 <br />
 
 

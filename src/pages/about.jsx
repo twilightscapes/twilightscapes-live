@@ -4,6 +4,7 @@ import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 import { Seo } from "../components/seo"
 import { FaHandPointDown } from "react-icons/fa"
+import CommentBox from "../components/commentbox"
 
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -44,6 +45,8 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 .outer .container{width:90%; height:auto; margin:1rem auto; padding:1rem; border-radius:10px;}
 
 .imgbox img{border-radius:12px; border:0px solid #000;}
+
+.circle{clip-path: circle(30vw at center); background-color:#222;}
 
 .spacer33{height:8vh;}
 .spacer66{height:33vh;}
@@ -459,12 +462,12 @@ Todd had worked hard and become one of the the once-vaunted “Webmasters” who
        
        
        
-       
+       {/*
        <div className="spacer33"></div>  
        
 
        
-        <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+         <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
  <ScrollAnimation animateIn="fadeIn" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
@@ -486,7 +489,7 @@ It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer liste
 </div>
 </ScrollAnimation>
 
- </div>
+ </div> */}
 
        
        
@@ -555,7 +558,7 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 
  <ScrollAnimation animateIn="fadeIn" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
+<div className="imgbox grad circle" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
 </div>
 </ScrollAnimation>
@@ -638,7 +641,7 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
  <ScrollAnimation animateIn="fadeIn" animateOut="" animateOnce={true} delay={100} style={{width:'40%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/coworker.png" style={{borderColor:'transparent',}} />
+<div className="imgbox grad circle" style={{border:'4px solid #fff', clipPath: 'circle(40vw at center)', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/coworker.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'25px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>co-worker</div>
 </div>
 </ScrollAnimation>
@@ -738,7 +741,7 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="fadeIn" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
+<div className="imgbox grad circle" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
 </div>
 </ScrollAnimation>
@@ -841,7 +844,7 @@ There was actually several incidences of me pretending to be “sleep walking”
 
  <ScrollAnimation animateIn="fadeIn" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
+<div className="imgbox grad circle" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
 </div>
 </ScrollAnimation>
@@ -910,7 +913,7 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
 
  <ScrollAnimation animateIn="fadeIn" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
+<div className="imgbox grad circle" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><StaticImage alt="Co-worker talks about Todd Lambert" src="../img/todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
 </div>
 </ScrollAnimation>
@@ -962,7 +965,7 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
  
  
  
- <div className="spacer33"></div>  
+ {/* <div className="spacer33"></div>  
        
 
        
@@ -989,7 +992,7 @@ Traveling across the country in search of a beauty that is elusive and fading, o
 </div>
 </ScrollAnimation>
 
- </div>
+ </div> */}
  
  
  
@@ -1041,10 +1044,15 @@ Traveling across the country in search of a beauty that is elusive and fading, o
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
        
-       
-
-      
+   
     </section>
+
+    <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+    <CommentBox />
+    </div>
+
+
+
     </Layout>
      </CustomBox>
     
