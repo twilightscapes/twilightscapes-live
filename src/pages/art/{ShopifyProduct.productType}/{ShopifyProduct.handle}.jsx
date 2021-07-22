@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
-// import DisqusComments from '../../../components/disqus'
+import CommentBox from "../../../components/commentbox"
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
 import { NumericInput } from "../../../components/numeric-input"
@@ -378,8 +378,9 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-<div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
-     {/* <DisqusComments /> */}
+<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+     <CommentBox />
+     
      </div>
             
             </div>

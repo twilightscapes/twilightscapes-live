@@ -676,7 +676,7 @@ display: none;
 
 
   
-  .commentbox {color:#FA02B7 !important; border:0px solid red;}
+  .commentbox {color:#FA02B7 !important; border:0px solid red; border-radius: 12px; background:#ccc;}
 
 
 body{overflow-x: hidden;}

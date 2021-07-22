@@ -7,8 +7,8 @@ import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 // import DisqusComments from '../components/disqus'
 
-// import CommentBox from "../components/commentbox"
-import commentbox from 'commentbox.io'
+import CommentBox from "../components/commentbox"
+// import commentbox from 'commentbox.io'
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -89,13 +89,13 @@ const Post = ({ data, pageContext }) => {
   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
   : ""
 
-  useEffect(() =>{
-    commentbox('5708736052068352-proj', {
-      backgroundColor: null,  // default transparent
-      textColor: "#666",  // default black
-       subtextColor: "#666",  // default grey
-   })
-  },[])
+  // useEffect(() =>{
+  //   commentbox('5708736052068352-proj', {
+  //     backgroundColor: null,  // default transparent
+  //     textColor: "#222",  // default black
+  //      subtextColor: "#222",  // default grey
+  //  })
+  // },[])
 
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -155,11 +155,12 @@ const Post = ({ data, pageContext }) => {
       </div>
 
    
-      <div style={{padding:'5vh 5vw', borderTop:'1px solid', marginTop:'3rem'}}>
+      <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
      {/* {commentBox('5730512475783168-proj')} */}
 {/* <div className="commentbox"></div> */}
 {/* <CommentBox /> */}
-<div className="commentbox" />
+{/* <div className="commentbox" /> */}
+<CommentBox />
      </div>
 
 {/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
