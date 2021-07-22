@@ -213,7 +213,7 @@ export default function Product({ data: { product, suggestions } }) {
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
 <div className="flexcheek" style={{width:'70%'}}>
-<ShareSocial />
+<ShareSocial className="print" />
             <div className={breadcrumb}>
               <Link to={product.productTypeSlug}>{product.productType}</Link>
               
@@ -390,12 +390,12 @@ export default function Product({ data: { product, suggestions } }) {
       </div>
 
 
-      <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
+      <div className="print"><h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
-
+</div>
 
       </CustomBox>
     </Layout>
