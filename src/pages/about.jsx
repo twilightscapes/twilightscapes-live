@@ -473,8 +473,8 @@ Todd had worked hard and become one of the the once-vaunted “Webmasters” who
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer listed as friends on my Flickr (pro) account. Yup, that was me.
 </p>
@@ -547,8 +547,8 @@ It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer liste
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 I should have been on top of the world, yet I felt empty and felt as though I was just going through the motions.
 </p>
@@ -630,8 +630,8 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br /><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br /><br />
 I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it down with at least 2 gallons of Mountain Dew.
 <br /><br />And this was like, usually ever day...
 </p>
@@ -728,8 +728,8 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 I really only had free time during the evenings which is why I initially learned to photograph at night.
 <br />
@@ -833,8 +833,8 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 There was actually several incidences of me pretending to be “sleep walking”... in order to help explain my unusual nocturnal activities to my parents.
 </p>
@@ -902,8 +902,8 @@ There was actually several incidences of me pretending to be “sleep walking”
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 The history of our past, seemed to call to me. I was enamored by ghosts of places that I’d never been, yet they felt like home when I got there.
 </p>
@@ -975,8 +975,8 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
 <div className=" speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 Traveling across the country in search of a beauty that is elusive and fading, often makes for some wild circumstances.<br />
 <br />I always find that the experiences are so worth it though.
