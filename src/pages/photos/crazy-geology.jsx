@@ -7,6 +7,7 @@ import GoBack from "../../components/goBack"
 import { FiZoomIn } from 'react-icons/fi'
 import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
+import CommentBox from "../../components/commentbox"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -152,6 +153,9 @@ export const query = graphql`
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
 
+<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+    <CommentBox />
+    </div>
 
     </Layout>
      </CustomBox>

@@ -6,6 +6,7 @@ import { FiZoomIn } from 'react-icons/fi'
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
 import GalleryMenu from "../../components/galleryMenu"
+import CommentBox from "../../components/commentbox"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -152,6 +153,10 @@ export const query = graphql`
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
+
+<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+    <CommentBox />
+    </div>
     
     </Layout>
      </CustomBox>

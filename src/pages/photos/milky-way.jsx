@@ -4,6 +4,7 @@ import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
+import CommentBox from "../../components/commentbox"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -150,6 +151,11 @@ export const query = graphql`
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
 
+
+
+<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+    <CommentBox />
+    </div>
 
 
     
