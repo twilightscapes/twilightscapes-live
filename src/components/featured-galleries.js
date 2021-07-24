@@ -98,10 +98,7 @@ const CaseStudyPanels = () => (
               }}
               to="/photos/milky-way"
             >
-              View The Gallery {" "}
-              <span className="icon -right" style={{paddingLeft:'1rem'}}>
-                <RiSendPlane2Line />
-              </span>
+              View Gallery {" "}
             </Link>
   </div>
 
@@ -170,10 +167,7 @@ const CaseStudyPanels = () => (
               }}
               to="/photos/crazy-geology"
             >
-              View The Gallery {" "}
-              <span className="icon -right" style={{paddingLeft:'1rem'}}>
-                <RiSendPlane2Line />
-              </span>
+              View Gallery {" "}
             </Link>
   </div>
 
@@ -231,10 +225,7 @@ const CaseStudyPanels = () => (
               }}
               to="/photos/in-the-city"
             >
-              View The Gallery {" "}
-              <span className="icon -right" style={{paddingLeft:'1rem'}}>
-                <RiSendPlane2Line />
-              </span>
+              View Gallery {" "}
             </Link>
   </div>
 

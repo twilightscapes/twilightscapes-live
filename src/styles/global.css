@@ -465,7 +465,6 @@ height:0;
 .mobile{display: block;}
 .dd ul{min-height:inherit !important;}
 .flexcheek h1, .mobilefix{ margin-top:2rem !important;}
-.contentpanel .more{max-width:80%;}
 	}
 
 
@@ -2066,8 +2065,9 @@ background: rgba(0,0,0,0.6);
       .contentpanel{
         padding:2rem 1rem;
         padding-top:2vh;
+        
       }
-      .contentpanel .more{max-width:80%;}
+.contentpanel .more{width:100% !important;}
 
       }
       @media (min-width: 48rem) {
