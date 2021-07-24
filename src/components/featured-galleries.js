@@ -164,7 +164,7 @@ const CaseStudyPanels = () => (
                 backgroundColor:'#000 !important',
                 textAlign:'center',
               }}
-              to="/crazy-geology"
+              to="/photos/crazy-geology"
             >
               View The Gallery {" "}
               <span className="icon -right" style={{paddingLeft:'1rem'}}>
@@ -225,7 +225,7 @@ const CaseStudyPanels = () => (
                 backgroundColor:'#000 !important',
                 textAlign:'center',
               }}
-              to="/in-the-city"
+              to="/photos/in-the-city"
             >
               View The Gallery {" "}
               <span className="icon -right" style={{paddingLeft:'1rem'}}>
