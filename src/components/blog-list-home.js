@@ -112,7 +112,7 @@ const PostMaker = ({ data }) => (
       </span>
     </h2>
     
-<section className="home-posts">
+<section className="home-posts" style={{height:'auto'}}>
    
       
 
@@ -125,21 +125,21 @@ const PostMaker = ({ data }) => (
      </div>
 
     
-<Link
+
+    
+  </section>
+  
+  <Link
       className="button"
       to="/articles/"
-
       title="See More Galleries"
+      style={{color:'#fff'}}
     >
       See more articles
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
     </Link>
-    
-  </section>
-  
-  
 
 
 </div>
