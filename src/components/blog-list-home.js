@@ -125,11 +125,7 @@ const PostMaker = ({ data }) => (
      </div>
 
     
-
-    
-  </section>
-  
-  <Link
+<Link
       className="button"
       to="/articles/"
 
@@ -140,6 +136,10 @@ const PostMaker = ({ data }) => (
         <RiArrowRightSLine />
       </span>
     </Link>
+    
+  </section>
+  
+  
 
 
 </div>

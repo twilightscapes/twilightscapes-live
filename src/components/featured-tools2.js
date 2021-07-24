@@ -87,7 +87,7 @@ const FeaturedTools2 = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'70vh', overflow:''}}><Link className="" to="/art/gear/colorwand/">
+<section className="child" style={{position:'relative', height:'70vh', overflow:''}}><Link className="" to="/art/gear/twilightcolorwand/">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
     
