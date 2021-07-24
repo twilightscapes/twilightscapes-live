@@ -34,6 +34,8 @@ const styles = {
 
 
 
+
+
 const Pagination = props => (
 
 
@@ -87,7 +89,7 @@ const Post = ({ data, pageContext }) => {
   const { frontmatter, html, excerpt } = markdownRemark
 
   const artImage = frontmatter.featuredImage
-  ? frontmatter.featuredImage.childImageSharp.gatsbyImageData.publicURL
+  ? frontmatter.featuredImage.gatsbyImageData
   : ""
 
   // useEffect(() =>{
@@ -109,6 +111,7 @@ const Post = ({ data, pageContext }) => {
   }
 
   return (
+    
     <Layout className="page">
       <Seo
         title={frontmatter.title}
@@ -170,6 +173,10 @@ const Post = ({ data, pageContext }) => {
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
     </Layout>
+
+
+
+
   )
 }
 

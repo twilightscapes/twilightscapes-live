@@ -3,10 +3,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StoreContext } from "../context/store-context"
-import twLogo from "../icons/tw-logo-white.svg"
+
 import { Navigation } from "./navigation"
 import { CartButton } from "./cart-button"
-import SearchIcon from "../icons/search"
+import SearchIcon from "../../static/assets/search"
 import { ImArrowRight } from "react-icons/im"
 import { Toast } from "./toast"
 import {

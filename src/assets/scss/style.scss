@@ -258,9 +258,9 @@ article img {
   max-width: 100%;
 }
 .blog-post-content {
-  max-width: 70ch;
+  // max-width: 70ch;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
   line-height: 1.5;
   font-size: 20px;
 }
@@ -273,6 +273,24 @@ article img {
     margin-right: auto;
   }
 }
+
+.blog-post-content p, .blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5{
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .blog-post-content p img, .blog-post-content p svg, .blog-post-content iframe, .blog-post-content video{
+//   max-width: 100% !important;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+
+// .blog-post-content img{z-index:3 !important; border:5px solid red !important; max-width: 100vw !important; position:relative; }
+
+// img[src*="#thumbnail"]{z-index:1 !important;}
+
 // Buttons
 .button {
   --padding: 15px;

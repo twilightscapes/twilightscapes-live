@@ -8,14 +8,14 @@ import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 import { FaHandPointDown } from "react-icons/fa"
-import TwilightLogo from "../icons/TSidebarHover.svg"
+import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
-import SearchIcon from "../icons/search"
+import SearchIcon from "../../static/assets/search"
 import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'

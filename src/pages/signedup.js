@@ -38,7 +38,7 @@ export default function SignedUpPage({}) {
         width:'60%',
         margin:'0 auto',
       }}
-    >
+    ><div className="spacer33"></div> 
       <AiTwotoneCamera
         style={{
           fontSize: "128px",
@@ -49,11 +49,16 @@ export default function SignedUpPage({}) {
       />
       <h1>Thanks!</h1>
       <p>Thank you for joining the newsletter!</p>
-      <Link to="/" className="buttonMore">
+
+      <div className="spacer33"></div> 
+      <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
         Lets go back to Homepage
       </Link>
     </div>
+    <div className="spacer33"></div> 
+
+ 
     
     
     </Layout>

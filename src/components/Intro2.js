@@ -4,7 +4,7 @@ import styled from "styled-components"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 import { StaticImage } from "gatsby-plugin-image"
-import Night319 from "../icons/night316.svg"
+import Night319 from "../../static/assets/night316.svg"
 const CustomBox = styled.div`
 
 .slider{object-fit: scale-down;}

@@ -42,6 +42,7 @@ const NewsletterPage = () => (
 <form
           className="news-form"
           action="/signedup/"
+          state={{modal: true}}
           name="ts-news"
           method="POST"
           data-netlify="true"

@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { PRESERVE_WEBPACK_CACHE: false },
   siteMetadata: settings.meta,
   plugins: [
     {
@@ -27,18 +27,27 @@ module.exports = {
         shopName: ["sales.twilightscapes.com"],
       },
     },
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `twilightscapes`
-      }
+
+{
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: "gatsby-remark-copy-linked-files",
+          options: {
+            destinationDir: "assets",
+          },
+        },
+      ],
     },
+  },
 
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /icons/ // Where the animated svgs are.
+          // include: /assets/ 
+          include: /\.svg$/
         }
       }
     },
@@ -178,12 +187,12 @@ module.exports = {
         // icon: "static" + settings.meta.iconimage,
         icons: [
           {
-            src: `/icons/icon-192x192.png`,
+            src: `/static/assets/icon-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/icons/icon-512x512.png`,
+            src: `/static/assets/icon-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
             purpose: `any maskable`,

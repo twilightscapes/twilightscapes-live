@@ -48,9 +48,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 .circle{clip-path: circle(30vw at center); background-color:#222;}
 
-.spacer33{height:8vh;}
-.spacer66{height:33vh;}
-.spacer99{height:99vh;}
+
 
 p{line-height:150%;}
 

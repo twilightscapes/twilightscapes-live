@@ -17,6 +17,7 @@ const Thanks = () => (
         textAlign:'center'
       }}
     >
+<div className="spacer33"></div> 
       <RiCheckboxCircleLine
         style={{
           fontSize: "128px",
@@ -26,12 +27,15 @@ const Thanks = () => (
         }}
       />
       <h1>Got your message</h1>
-      <p>Thank you for getting in touch us. We will get back to you shortly.</p>
+      <p>I should respond shortly, depending on where I am at</p>
+      <div className="spacer33"></div> 
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
         Lets go back to Homepage
       </Link>
     </div>
+    <div className="spacer33"></div> 
+    {/* <div className="spacer66"></div>  */}
   </Layout>
 )
 

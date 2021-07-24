@@ -28,7 +28,7 @@ const CustomBox = styled.div`
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String!) {
+  query homeQueryAndHomeQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -77,7 +77,7 @@ const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+    ? frontmatter.featuredImage.gatsbyImageData
     : ""
   
   return (
@@ -87,7 +87,7 @@ const HomePage = ({ data }) => {
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Night Photo Galleries`}
+          title={`Killer Night Photo Galleries`}
           description={`Twilightscapes night photography`}
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />

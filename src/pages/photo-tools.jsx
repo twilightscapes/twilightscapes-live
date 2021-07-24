@@ -157,11 +157,11 @@ export const query = graphql`
 
  
 
-<div className="vidbox" style={{maxHeight:'80vh'}}>
+<div className="vidbox" style={{maxHeight:'100vh'}}>
 <div className="video-background">
     <div className="video-foreground">
       
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/KnTw3-oW-vQ?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=KnTw3-oW-vQ" classname="" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/ph-xiH95Ty4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=ph-xiH95Ty4" classname="" frameborder="0" allowfullscreen=""></iframe>
     </div>
 </div>
 </div>

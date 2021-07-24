@@ -78,7 +78,15 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 }
 
 
+.blog-post-content a{color:var(--home-link-hover-color);}
+.blog-post-content h2{font-size:200%; line-height: 3rem; margin:1rem 0;}
+.blog-post-content h2.megacall{font-size:200%; line-height: 3rem; margin:1rem 0; padding:1rem; border:3px dotted #FA02B7; margin:2rem auto;}
+.blog-post-content h3{font-size:150%; line-height: 2.5rem; margin:1rem 0;}
+.blog-post-content blockquote{font-weight: bold; margin:3rem auto; width:60%;}
+.blog-post-content blockquote div{text-align: right; margin-right:30%;}
 
+.blog-post-content .callout{margin:2rem auto 2rem auto; padding:1rem;border-right:100px groove; position:relative;}
+.blog-post-content p.callout:after{position:absolute; top:0; right:0; content:(" boom "); display:block; width:50px; height:50px; border:1px solid #FA02B7;}
 
 .gatsby-image-wrapper {
   margin: auto;
@@ -630,7 +638,9 @@ display: none;
 
 
 
-
+    .spacer33{height:8vh;}
+    .spacer66{height:33vh;}
+    .spacer99{height:99vh;}
 
 /* .contact-form {
   margin-top: 36px;
@@ -679,7 +689,11 @@ display: none;
   .commentbox {color:#FA02B7 !important; border:0px solid red; border-radius: 12px; background:#ccc;}
 
 
-body{overflow-x: hidden;}
+body{overflow-x: hidden; min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
 [aria-roledescription]{z-index:0 !important;}
 .react-slideshow-container .nav{  font-size: 40px !important;}

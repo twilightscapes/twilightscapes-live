@@ -22,7 +22,7 @@ main {
 }
 a {
   color: var(--home-link-color);
-  text-decoration: none;
+  text-decoration: underline;
   &:hover {
     color: var(--home-link-hover-color);
   }

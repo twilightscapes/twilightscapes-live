@@ -2,9 +2,9 @@
 import * as React from "react"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import styled from "styled-components";
-import twLogo from "../icons/tw-logo-white.svg"
+import twLogo from "../../static/assets/tw-logo-white.svg"
 import { CartButton } from "./cart-button"
-import SearchIcon from "../icons/search"
+import SearchIcon from "../../static/assets/search"
 import Theme from "../components/theme"
 const CustomBox = styled.div`
 #installer {
