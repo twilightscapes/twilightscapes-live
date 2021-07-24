@@ -11,7 +11,7 @@ import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull, FaHandPointDown } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
-
+import FeaturedTools from "../components/featured-tools"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -157,17 +157,18 @@ export const query = graphql`
 
  
 
-<div className="vidbox" style={{maxHeight:'80vh'}}>
+{/* <div className="vidbox" style={{maxHeight:'80vh'}}>
 <div className="video-background">
     <div className="video-foreground">
       
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/KnTw3-oW-vQ?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=KnTw3-oW-vQ" classname="" frameborder="0" allowfullscreen=""></iframe>
     </div>
 </div>
-</div>
+</div> */}
 
   
 
+<FeaturedTools />
 
 
     <section className="nft" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
