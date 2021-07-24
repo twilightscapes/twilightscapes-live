@@ -12,22 +12,22 @@ const Thanks = () => (
       className="wrapper"
       style={{
         textAlign: "center",
-        width:'60%',
+        width:'80%',
         margin:'0 auto',
         textAlign:'center'
       }}
     >
 <div className="spacer33"></div> 
-      <RiCheckboxCircleLine
+      <RiCheckboxCircleLine className="neonText" 
         style={{
-          fontSize: "128px",
+          fontSize: "150px",
           color: "var(--primary-color)",
           margin:'0 auto',
           textAlign:'center'
         }}
       />
-      <h1>Got your message</h1>
-      <p>I should respond shortly, depending on where I am at</p>
+      <h1 className="neonText" style={{fontSize:'200%'}}>Got your message</h1>
+      <p>I should respond shortly, depending on where I am at.</p>
       <div className="spacer33"></div> 
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />

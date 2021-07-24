@@ -35,20 +35,20 @@ export default function SignedUpPage({}) {
         display:'flex',
         justifyContent:'center',
         flexDirection:'column',
-        width:'60%',
+        width:'80%',
         margin:'0 auto',
       }}
     ><div className="spacer33"></div> 
       <AiTwotoneCamera
         style={{
-          fontSize: "128px",
+          fontSize: "150px",
           color: "var(--primary-color)",
           margin:'0 auto',
           textAlign:'center'
         }}
       />
-      <h1>Thanks!</h1>
-      <p>Thank you for joining the newsletter!</p>
+      <h1 className="neonText" style={{fontSize:'200%'}}>Thank you for joining the newsletter!</h1>
+   
 
       <div className="spacer33"></div> 
       <Link to="/" className="button">

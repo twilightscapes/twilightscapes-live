@@ -93,6 +93,9 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .blog-post-content .callout{margin:2rem auto 2rem auto; padding:1rem;border-right:100px groove; position:relative;}
 .blog-post-content p.callout:after{position:absolute; top:0; right:0; content:(" boom "); display:block; width:50px; height:50px; border:1px solid #FA02B7;}
 
+.contentpanel .letter{color:#fff !important;}
+
+
 .gatsby-image-wrapper {
   margin: auto;
 }
@@ -583,6 +586,8 @@ body.carto .carta {display:block; height:100%;}
       0 0 52px #FA02B7,
       0 0 61px #fff;
 }
+
+
 
 
 

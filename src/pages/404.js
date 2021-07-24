@@ -19,14 +19,14 @@ const NotFound = () => (
         <br /> <br />
         <AiFillRobot
           style={{
-            fontSize: "128px",
+            fontSize: "160px",
             color: "var(--primary-color)",
             margin:'0 auto',
         textAlign:'center'
           }}
         />
-        <h1>Well, Shit.</h1>
-        <p style={{margin:'2rem'}}>
+        <h1 className="neonText" style={{fontSize:'200%'}}>Well, Shit.</h1>
+        <p className="neonText" style={{fontSize:'150%'}} style={{margin:'2rem'}}>
           That wasn't supposed to happen.
         </p>
       </header>
