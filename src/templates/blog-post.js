@@ -137,7 +137,7 @@ const Post = ({ data, pageContext }) => {
           ) : (
             ""
           )}
-          <section className="article-header" style={{textAlign:'left', margin:'0 4%'}}>
+          <section className="article-header" style={{textAlign:'left', margin:'0 4%', height:'auto'}}>
             <h1>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
           </section>
