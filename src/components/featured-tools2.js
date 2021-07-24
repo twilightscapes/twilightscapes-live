@@ -39,7 +39,7 @@ const FeaturedTools2 = () => (
 
 
 
-<div className="container2" style={{position:'', height:'60vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
+<div className="container2 post-card " style={{position:'', height:'70vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px',  transition:'background 0.3s ease-in'}}>
 
 
 
@@ -50,7 +50,7 @@ const FeaturedTools2 = () => (
     
 <section className="child" style={{position:'relative', height:'70vh', overflow:''}}>
 <Link className="" to="/art/gear/twilighttorch/">
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'70vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
 
       <div style={{alignSelf: 'flex-center', position:'', textAlign:'center'}}>
 
@@ -68,9 +68,9 @@ const FeaturedTools2 = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'70vh', overflow:''}}>
 <Link className="" to="/art/gear/twilightslider/">
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
 
     </div>
@@ -87,8 +87,8 @@ const FeaturedTools2 = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'80vh', overflow:''}}><Link className="" to="/art/gear/colorwand/">
-<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
+<section className="child" style={{position:'relative', height:'70vh', overflow:''}}><Link className="" to="/art/gear/colorwand/">
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
     
     </div>

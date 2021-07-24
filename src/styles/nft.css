@@ -38,17 +38,18 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 }
 section {
 	scroll-snap-align: start;
-  border-bottom:10px solid #000!important;
   overflow:hidden;
-  height:60vh;
+  height:70vh;
   background:tranparent !important;
 }
 .slider1{
   position:fixed; 
   top:0;
   width:100vw;
-  height:60vh;
+  height:70vh;
   display:block;
   background-size:cover;
-  min-height:60vh;
+  min-height:70vh;
 }
+
+

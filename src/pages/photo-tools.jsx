@@ -171,7 +171,7 @@ export const query = graphql`
 <FeaturedTools />
 
 
-    <section className="nft" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
+    <section className="" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
     
 
     <div className="" style={{background:'', padding:'1vh 3%', textAlign:'left'}}>
@@ -195,12 +195,12 @@ From light painting to timelapse and rig setups, Twilightscapes has you covered.
 <br />
 <br />
 
-<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Got Questions?</h3>
+{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Got Questions?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
-{/* <Link state={{modal: true}} to="/contact/" style={{textAlign:'center', fontSize:'120%', fontWeight:'bold', maxWidth:'700px', margin:'0 auto', textDecoration: 'underline',}} className="moreButton">Request it!</Link> */}
+</ScrollAnimation> */}
+
 
 
 
