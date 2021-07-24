@@ -193,7 +193,7 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 <p style={{textAlign:'center', fontSize:'140%', marginTop:''}}>An introduction to the work of Todd Lambert</p>
 
 <p style={{textAlign:'center', fontSize:'100%',}}>Genesis Series presented <br />  exclusively on Foundation
-<span style={{fontSize:'40px', display:'flex', justifyContent:'center', gap:'3px', marginTop:'10px'}}><IoLogoVercel /><BsCircleFill style={{marginLeft:'-6px', fontSize:'36px'}} /><FaSquareFull style={{marginLeft:'2px', fontSize:'36px'}} /></span>
+<div style={{fontSize:'40px', display:'flex', justifyContent:'center', gap:'3px', marginTop:'10px', filter: 'drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.99))' }}><IoLogoVercel /><BsCircleFill style={{marginLeft:'-6px', fontSize:'36px'}} /><FaSquareFull style={{marginLeft:'2px', fontSize:'36px'}} /></div>
 
 
 </p>
@@ -213,9 +213,9 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 
     
       <ShareSocial />
-       
-       
-       
+       <br /> <br />
+        <br />
+       <div className="spacer66" />
  {/* <ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'4rem', paddingTop:'1rem', background:''}}>
 
 
@@ -427,7 +427,7 @@ justifyContent: 'center',
        
 
     </section>
- 
+    <div className="spacer33" />
 
 
 
