@@ -7,6 +7,7 @@ import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
 import GalleryMenu from "../../components/galleryMenu"
 import CommentBox from "../../components/commentbox"
+import ShareSocial from '../../components/share' 
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -86,9 +87,9 @@ export const query = graphql`
     
    
     
-<div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
+{/* <div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
     <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
-</div>
+</div> */}
 
     <div className="vidbox" style={{position:'relative', maxHeight:'80vh'}}>
 
@@ -121,19 +122,18 @@ export const query = graphql`
  
  <GoBack />
  
-<div style={{position:'', zIndex:'', width:'90%', display:'flex', justifyContent:'center', padding:'1rem 3%', gap:'30px'}}>
-  {/* <p>The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night.</p> */}
 
+<br />
+<br />
 
-
-</div>
 <GalleryMenu />
 
+ <br /><br />
+ <ShareSocial />
+<br /><br /><br />
 
 
 
-<br />
-<br />
 
 
 

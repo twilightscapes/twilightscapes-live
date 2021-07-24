@@ -14,6 +14,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { FiZoomIn } from 'react-icons/fi'
 import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
+import ShareSocial from '../../components/share' 
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -86,9 +87,9 @@ export const query = graphql`
         />
     
 
-   <div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
+   {/* <div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
     <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
-</div>
+</div> */}
 
     <div className="vidbox" style={{position:'relative', maxHeight:'80vh'}}>
 
@@ -130,11 +131,9 @@ export const query = graphql`
 
 <GalleryMenu />
 
-<br />
-<br />
-
-
-
+<br /><br />
+ <ShareSocial />
+<br /><br /><br />
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
 </div>
 <br /><br />
