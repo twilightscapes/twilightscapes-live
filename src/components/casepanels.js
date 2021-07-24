@@ -193,7 +193,7 @@ const CaseStudyPanels = () => (
 
  <div className="outerpanel" style={{borderLeft:'none'}}>
 
-<span className=" neonText">Boatswain's Blunder</span>
+<span className="headline neonText">Boatswain's Blunder</span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
           <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
