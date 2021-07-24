@@ -157,7 +157,7 @@ export const query = graphql`
 
  
 
-<div className="vidbox" style={{maxHeight:'100vh'}}>
+<div className="vidbox" style={{maxHeight:'80vh'}}>
 <div className="video-background">
     <div className="video-foreground">
       
