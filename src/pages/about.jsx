@@ -14,7 +14,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import styled from 'styled-components'
 
 const CustomBox = styled.div`
-
+.intro{height:100% !important;}
 
 .intro:before{
 	content: "About Twilightscapes";
