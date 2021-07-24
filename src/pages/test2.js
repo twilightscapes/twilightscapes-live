@@ -26,7 +26,7 @@ const CustomBox = styled.div`
 .progress{position:absolute; top:80vh; left:100px; border:1px solid yellow; z-index:1;}
 .slide:nth-child(1) {
   -webkit-animation: fade 24s 0s infinite;
-  z-index:2;
+  z-index:1;
 }
 .slide:nth-child(2) {
   -webkit-animation: fade 24s 6s infinite;
@@ -63,7 +63,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 }
 section {
 	scroll-snap-align: start;
-  border-bottom:10px solid #222!important;
+  border-bottom:10px solid #000!important;
   overflow:hidden;
   height:60vh;
   background:tranparent !important;
@@ -78,7 +78,6 @@ section {
   display:block;
   background-size:cover;
   min-height:60vh;
-  // z-index:3 !important;
 }
 a.button2{
    display:inline-block;
@@ -129,12 +128,12 @@ const CaseStudyVertIndex = () => (
 
   
 
-  <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Galleries</h1>
+  {/* <h1 style={{textAlign:'center', marginTop:'100px', fontSize:'140%'}}>Galleries</h1> */}
 
 
 
       
-<div className="container2" style={{position:'', height:'60vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
+<div className="container2" style={{position:'', height:'80vh', display:'', border:'5px solid ', margin:'3vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
 
 
 
@@ -143,7 +142,7 @@ const CaseStudyVertIndex = () => (
 
 
     
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 
 
 
@@ -174,7 +173,7 @@ const CaseStudyVertIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
@@ -200,7 +199,7 @@ const CaseStudyVertIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
@@ -222,7 +221,7 @@ const CaseStudyVertIndex = () => (
 
 
 
-  <section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+  <section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'60vh', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
       
@@ -240,7 +239,7 @@ const CaseStudyVertIndex = () => (
   </section>
 {/* END Panel 3 */}
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 
 
 
@@ -270,7 +269,7 @@ const CaseStudyVertIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 
 
 
@@ -302,7 +301,7 @@ const CaseStudyVertIndex = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'60vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'80vh', overflow:''}}>
 
 
 

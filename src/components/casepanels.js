@@ -16,7 +16,7 @@ import { RiSendPlane2Line } from "react-icons/ri"
 // import TouchUp from './TouchUp'
 // import PopContact from './PopContact'
 // import Contact from '../../components/Contact-inc'
-import BgImage from './BgImage'
+
 
 // import Img1 from './Img1'
 // import Img2 from './Img2'
@@ -40,25 +40,26 @@ const CustomBox = styled.div`
   display:flex;
   flex-wrap:nowrap;
   // width:100vw;
-  height:100vh;
+  height:90vh;
   // height: calc(100vh - 88px);
   overflow:hidden;
 }
 
 .slidepanel > div{
-  // min-width:16vw;
+  min-width:16vw;
   width:50vw;
   flex-grow:1;
   flex-shrink:1;
   height:100%;
-  // overflow:hidden;
+  overflow:hidden;
   transition:all .5s ease;
-  // border-left:1.5px solid ;
-  // border-right:1.5px solid ;
+  border-left:1.5px solid #222;
+  border-right:1.5px solid #222;
   border-radius:0px;
   position:relative;
   align-items: center;
   justify-content: center;
+  overflow:hidden;
 }
 
 
@@ -66,36 +67,39 @@ const CustomBox = styled.div`
   flex-shrink:0
 }
 
-.slidepanel div img, .slidepanel div .gatsby-image-wrapper {
+.pop{
   width:100%;
   height:100vh ;
   object-fit: cover;
-  position:fixed;
+  position:absolute;
   z-index:-1;
   padding:0;
   margin:0;
   border:0px solid yellow;
   // background-position:bottom bottom;
   // object-position: 100% 100%;
-
 }
-// .slidepanel div  div  img{border:3px solid yellow;}
-// .slidepanel div .gatsby-image-wrapper *{
-//   border:3px solid yellow; width:100% !important;
-// }
 
 
-// .slidepanel div:hover::before { 
-//   content: "Before -"; 
-//   background-color: green; 
-//   position:absolute;
-//   z-index:1;
-//   width:200px;
-//   margin:0 auto;
-// } 
+
+
+.slidepanel > div:hover{
+  width:70vw;
+  }
+
+  .slidepanel > div:hover .contentpanel{
+    min-width:100%; border:0px solid red;
+    width:70vw;
+  }
+
+
+
+
+
+
 
 .slidepanel a{
-  z-index:0;
+  // z-index:0;
   align-items: center;
   justify-content: center;
   // border:1px solid white !important; 
@@ -118,24 +122,17 @@ const CustomBox = styled.div`
   
   .innerpanel{
     display:flex;
-    // alignItems:center;
-    // justifyContent:center;
     width:100%;
-    // height:auto;
     position:absolute;
-    // top:25vh;
-    z-index:0;
     margin:0 0 0 0;
-height:100%;
+    height:100%;
     padding:0 0 0 0;
   }
 
  .contentpanel{
      display:block;
-    //  border:1px solid #333;
-    // border-radius:6px;
      margin:0 auto;
-     padding:2rem 1rem;
+     padding:0 1rem;
      text-decoration:none;
     text-align:left;
     text-shadow: 1px 2px 1px black;
@@ -149,66 +146,35 @@ height:100%;
     overflow-y:auto;
     backdrop-filter: blur(10px);
     width:100%;
-    // height:84vh;
     height:100%;
     animation:fade 1.7s forwards;
     }
 
   
 
-    // .contentpanel > *{opacity:0; animation:fade 3s forwards;}
+    .contentpanel > *{opacity:0; animation:fade 3s forwards;}
 
     .headline{
       padding:1em;
      margin:0 auto;
     box-shadow: 0px 1px 6px 1px black;
     text-shadow: 1px 2px 1px black;
-    background: rgba(250, 3, 196, 0.9);
+    // background: rgba(250, 3, 196, 0.9);
+    background: rgba(0, 0, 0, 0.8);
 
     // filter: brightness(120%);
     font-size:100%;
     font-weight:0 !important; 
     position:absolute;
-    bottom:25vh;
+    bottom:5vh;
     color:#fff;
     width:100%;
     transition: all .6s ease-out;
-    display:none !important;
+    display:block !important;
+    z-index:1;
     }
 
-.button2{
-   display:inline-block;
-   padding:.5em 3vw;
-   border:0.16em solid #FFFFFF;
-  border-radius:6px;
-   margin:1rem auto;
-   box-sizing: border-box;
-  box-shadow: 0px 1px 6px 1px black;
-   text-decoration:none;
-  text-shadow: 1px 2px 1px black;
-   font-weight:400;
-   color:#FFFFFF;
-  background:#333;
-  filter: brightness(120%);
-  opacity:.9;
-   transition: all 0.15s;
-  }
-  .button2:hover{
-   color:#DDDDDD;
-   border-color:#FA02B7;
-  filter: brightness(140%);
-  }
 
-  .button2:active{
-   color:#BBBBBB;
-   border-color:#BBBBBB;
-  }
-  @media all and (max-width:30vw){
-   .button2{
-    display:block;
-    margin:0.4em auto;
-   }
-}
 
 @media (max-width: 48rem) {
   // .slidepanel > div{width:70%; border:0px solid red;}
@@ -216,25 +182,24 @@ height:100%;
   .headline{padding:4px; font-size:70%;}
   .contentpanel{
     padding:2rem 1rem;
-    padding-top:12vh;
+    padding-top:2vh;
   }
   }
   @media (min-width: 48rem) {
   .contentpanel{
     padding:2rem 2rem;
-    padding-top:18vh;
+    padding-top:1vh;
   }
   }
   
   @media (min-width: 1024px) {
     .contentpanel{
       padding:2rem 3rem;
-      padding-top:18vh;
+      padding-top:1vh;
     }
     }
 
-// .slidepanel > div:last-child{display:; width:50%}
-// .slidepanel > div:nth-last-of-type(-n+2){width:50%}
+
 
  .gatsby-image-wrapper{position: initial !important;}
 
@@ -242,29 +207,7 @@ height:100%;
 
 
 
- .shout{width:100%; height:100vh; display:flex; display:; flex-direction:column;}
-//  .shout span:first-child{}
- .shout span{
-    width:100vw;
-    height:20vh;
-    animation-iteration-count: 1;
-    animation-fill-mode: none;
-    animation-play-state: running; 
-  opacity:0;
-  // border:1px solid blue;
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #c9c9c9,
-  0 3px 0 #bbb,
-  0 4px 0 #b9b9b9,
-  0 5px 0 #aaa,
-  0 6px 1px rgba(0,0,0,.1),
-  0 0 5px rgba(0,0,0,.1),
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2),
-  0 5px 10px rgba(0,0,0,.25),
-  0 10px 10px rgba(0,0,0,.2),
-  0 20px 20px rgba(0,0,0,.15);
-    }
+
 
 
 
@@ -317,7 +260,7 @@ height:100%;
     }
 
     @media (hover: hover) {
-      .touchindicator{display: none !important;}
+
       }
 
 `
@@ -333,11 +276,7 @@ const CaseStudyPanels = () => (
 
 
 
-<div className="shout" style={{position:'absolute', top:'5vh',}}>
 
-<span style={{position:'absolute', top:'29vh', textAlign:'center', fontSize:'17vw', animation:'poptop 5s forwards', animationDelay:'0s'}}>Case Studies</span>
-
-</div>
 
   <div className="slidepanel">
   
@@ -345,18 +284,28 @@ const CaseStudyPanels = () => (
 
 
 
+
+
+
+
   <div className="outerpanel" style={{borderLeft:'none'}}>
 
-<span className="headline">Case 1 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards', opacity:'0'}}/></span>
+<span className="headline">Stellar Sentries</span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
-          <div className="contentpanel" style={{}}>
+          <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
           
           
 
+ <div style={{position:'relative', zIndex:'1', margin:'0 auto', display:'flex', justifyContent:'center', padding:'0', border:'1px solid #666'}}>
+ <a href="https://foundation.app/@twilightscapes/stellar-sentries-51674" target="_blank" rel="noopener noreferrer nofollow">
+<StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="" style={{ }} /></a>
 
-{/* <div style={{maxWidth:'200px', overflow:'hidden'}}><a href="https://foundation.app/@twilightscapes/stellar-sentries-51674" target="_blank" rel="noopener noreferrer nofollow"><StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="featured-imaged" /></a></div> */}
-          
+</div>
+
+
+
+
           <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Stellar Sentries</h2>
 
           <p>A very rare night photo of the Very Large Array (VLA). I'd always been intrigued by this place and I'd wanted to visit it. These towers are like nimble giants, constantly twitching and positioning and working tirelessly throughout the night.</p>
@@ -366,11 +315,12 @@ const CaseStudyPanels = () => (
 <p>Single Shot - No PS - lightpainted long exposure</p>
 
 
-<a
+<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+              <a
               className="button"
               sx={{
                 cursor:'pointer',
-                width:'',
+                maxWidth:'10%',
                 backgroundColor:'#000 !important',
                 textAlign:'center',
               }}
@@ -381,121 +331,161 @@ const CaseStudyPanels = () => (
                 <RiSendPlane2Line />
               </span>
             </a>
-  
-        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pavandbroome/">Pav &amp; Broome<br /> View the case study</Link></h1> */}
+  </div>
 
         </div>
+        
+        
     </div>
-    <BgImage filename="night235.jpg" />
+    <StaticImage src="../img/favorites/night165.jpg" alt="Twilightscapes" className="pop" />
+
  </div>
 
 
 
-  <div className="outerpanel" style={{borderLeft:'', paddingTop:''}}>
-  {/* <img src="https://source.unsplash.com/random/1200x12001" alt="rando" /> */}
- <span className="headline">Case 2 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
- <div className="innerpanel" style={{}}>
 
-     
 
-          <div className="contentpanel" style={{}}>
+
+
+
+
+
+
+
+
+
+
+ <div className="outerpanel" style={{borderLeft:'none'}}>
+
+<span className="headline">Alien Egg Farm</span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
+      
+          <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
           
           
 
-          <strong style={{fontSize:'130%'}}>The Pediatric Center</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget, egestas viverra dolor. Sed lobortis justo quis mi porttitor ultricies. Quisque turpis est, elementum ac interdum at.</p>
-        
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
+ <div style={{position:'relative', zIndex:'1', margin:'0 auto', display:'flex', justifyContent:'center', padding:'0', border:'1px solid #666'}}>
 
-       
-        {/* <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'50%', margin:'0 auto'}}><label className="modal-btn0 button2" htmlFor="modal-toggle" style={{ textAlign:'center', cursor:'pointer',}}>Let's Get Started!</label> </h1> */}
+ <a href="https://foundation.app/@twilightscapes/alien-egg-farm-51678" target="_blank" rel="noopener noreferrer nofollow">
+<StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="" style={{ }} /></a>
+
+</div>
+
+          
+          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Alien Egg Farm</h2>
+
+          <p>Possibly one of the most far-out locations I've ever been to. The Bisti Badlands are on tribal land and extremely remote. There are no roads. This is a 3.5 mile hike into some of the most extreme landscapes.
+</p>
+
+<p>It seems like around every corner there is another scene that appears to be from a distant planet. These "alien eggs" are actually weathered limestone.</p>
 
 
-        <h1 style={{fontSize:'100%', textAlign:'center', maxWidth:'80%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/pediatric-center/">The Pediatric Center<br /> View the case study</Link></h1>
+
+
+<p>Single Shot - No PS - long exposure</p>
+
+
+
+<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<a
+              className="button"
+              sx={{
+                cursor:'pointer',
+                maxWidth:'50%',
+                backgroundColor:'#000 !important',
+                textAlign:'center',
+              }}
+              href="https://foundation.app/@twilightscapes/alien-egg-farm-51678"
+            >
+              Place Bid Now {" "}
+              <span className="icon -right" style={{paddingLeft:'1rem'}}>
+                <RiSendPlane2Line />
+              </span>
+            </a>
+  </div>
 
 
         </div>
+        
+        
     </div>
-    <BgImage filename="night216.jpg" />
-    {/* <Img2 /> */}
-    {/* <Image alt="Temp Graphic" filename="homebanner-pb.jpg" /> */}
-    {/* <BackgroundImg /> */}
+    <StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="pop" />
+
  </div>
 
- 
 
 
- <div className="outerpanel" style={{borderLeft:''}}>
 
-<span className="headline">Case 3 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-<div className="innerpanel" style={{}}>
+
+
+
+
+
+
+
+
+ <div className="outerpanel" style={{borderLeft:'none'}}>
+
+<span className="headline">Boatswain's Blunder</span>
+      <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
-          <div className="contentpanel" style={{}}>
+          <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
           
-          <strong style={{fontSize:'130%'}}>Humane Society of South Mississippi</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nisi, tincidunt nec urna eget.</p>
-        
-        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
-        
-        
+          
 
+ <div style={{position:'relative', zIndex:'1', margin:'0 auto', display:'flex', justifyContent:'center', padding:'0', border:'1px solid #666'}}>
 
-         <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button" to="/case-study/hssm/">Humane Society of South Mississippi<br /> View the case study</Link></h1>
+ <a href="https://foundation.app/@twilightscapes/boatswain-s-blunder-51680" target="_blank" rel="noopener noreferrer nofollow">
+ <StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="featured-image " /></a>
 
+</div>
+
+          
+          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Boatswain's Blunder</h2>
+
+          <p>Confinement, a bode of misery with blue majesty abound.</p>
+
+<p>The petty officer, Mr. Transcontinental promised treasures never found.</p>
+
+<p>Recognized with nothing but obscurity for the sea is sole judge and jury.</p>
+
+<p>Crashing thunderstorms are the only sound where lonesomeness becomes friend and death is crowned.</p>
+
+<p>Thoughts of liberation are constant wonder. from mast to keel and gunwale, this swoon of a boatswain’s blunder.</p>
+
+<p>-- by Todd Lambert</p>
+
+<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<a
+              className="button"
+              sx={{
+                cursor:'pointer',
+                maxWidth:'50%',
+                backgroundColor:'#000 !important',
+                textAlign:'center',
+              }}
+              href="https://foundation.app/@twilightscapes/boatswain-s-blunder-51680"
+            >
+              Place Bid Now {" "}
+              <span className="icon -right" style={{paddingLeft:'1rem'}}>
+                <RiSendPlane2Line />
+              </span>
+            </a>
+  </div>
 
 
         </div>
+        
+        
     </div>
-    <BgImage filename="night165.jpg" />
+    <StaticImage src="../img/gallery2/night282.jpg" alt="Twilightscapes" className="pop" />
+
  </div>
 
 
-{/* 
- <div className="outerpanel" style={{borderRight:'none'}}>
-
-
-<span className="headline">Case 4 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-<div className="innerpanel" style={{}}>
-      
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{fontSize:'130%'}}>Jackson County Economic Development Foundation</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        
-        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
-       
-      
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/jcedf/">Jackson County Economic Development Foundation<br /> View the case study</Link></h1>
-
-        </div>
-    </div>
-    
-    <BgImage filename="night233.jpg" />
- </div> */}
 
 
 
-
- {/* <div className="outerpanel" style={{borderRight:'none'}}>
-
-<span className="headline">Case 5 <IoMdFingerPrint className="touchindicator" style={{position:'absolute', top:'20%', right:'10%', fontSize:'170%', animation:'tooltop 3s forwards',}}/></span>
-<div className="innerpanel" style={{}}>
-      
-          <div className="contentpanel" style={{}}>
-          
-          <strong style={{fontSize:'130%'}}>Coast Electric Power Association</strong><br />
-          <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        
-        <p style={{ }}>Lorem ipsum dolor sit amet, consectetur adipiscing Sed a turpis eu augue lacinia vehicula. Ut nisl sapie.</p>
-       
-      
-        <h1 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0', textAlign:'center', maxWidth:'90%', margin:'1rem auto 0 auto'}}><Link className="button2" to="/case-study/coastelectric/">Coast Electric Power Association<br /> View the case study</Link></h1>
-
-        </div>
-    </div>
-    
-    <BgImage filename="night245.jpg" />
- </div> */}
 
 
     

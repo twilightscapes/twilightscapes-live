@@ -14,6 +14,7 @@ import ShareSocial from '../components/share'
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import CommentBox from "../components/commentbox"
+import CasePanels from "../components/casepanels"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -153,20 +154,17 @@ export const query = graphql`
     <Seo
           title={`NFT Collectible Photography`}
           description={`Twilightscapes NFTs - NFT Art photography for collectors`}
-          image={'https://twilightscapes.com/follow-me-into-the-night-promo.jpg'}
+          image={'https://twilightscapes.com/nft-promo.jpg'}
         />
 
 
+
+
+
+<CasePanels />
  
 
-<div className="vidbox" style={{maxHeight:'80vh'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/vWNkRK6-oU4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=vWNkRK6-oU4" frameBorder="0" allowFullScreen></iframe>
-    </div>
-</div>
-</div>
+
 
   
 
@@ -218,7 +216,7 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
        
        
        
- <ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'4rem', paddingTop:'1rem', background:''}}>
+ {/* <ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'4rem', paddingTop:'1rem', background:''}}>
 
 
 <div className="home-banner flexbutt" style={{position:'relative', height:'100%', overflow:'', margin:'1rem 3%'}}>
@@ -424,12 +422,30 @@ justifyContent: 'center',
 
 </div>
 
-</ScrollAnimation>
+</ScrollAnimation> */}
        
        
 
     </section>
  
+
+
+
+
+    <div className="vidbox" style={{maxHeight:'80vh'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      
+      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/vWNkRK6-oU4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=vWNkRK6-oU4" frameBorder="0" allowFullScreen></iframe>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
 
  <br /> <br />
     <h2 className="title" style={{fontSize:'50px', textAlign:'center'}}>Dropping Soon</h2>
