@@ -4,7 +4,7 @@ import GoBack from "../components/goBack"
 
 import { StaticImage } from "gatsby-plugin-image"
 import { Seo } from "../components/seo"
-
+import CasePanels from "../components/casepanels"
 
 
 
@@ -30,7 +30,7 @@ export default function testPage() {
 
 
 
-
+<CasePanels />
 
       <div className="container" style={{padding: '2rem 10%'}}>
    

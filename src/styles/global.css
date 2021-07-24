@@ -546,6 +546,7 @@ footer{background-color: #000; padding:.1rem 0rem; margin:0; display:flex; justi
 .home-banner{padding: 0 !important;}
 .home-posts, .home-posts a, .home-posts a:hover{color:inherit !important;}
 .post-card{color:#ccc !important;}
+.post-card a{text-decoration: none;}
  body.carto .social-icons, body.carto .backdrop1{  display: none !important;}
 
 body.carto{min-height:100vh !important;}
@@ -560,8 +561,8 @@ body.carto .carta {display:block; height:100%;}
 
 .sherlock:hover{
   color:#FA02B7;
+  background: rgba(250, 3, 196, 0.9);
 }
-
 
 
 
