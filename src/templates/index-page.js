@@ -97,7 +97,7 @@ const HomePage = ({ data }) => {
       <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
 
 
-          <h1 className="title1">{frontmatter.title}</h1>
+          <h1 className="title1 neonText">{frontmatter.title}</h1>
           <p
             className="tagline1"
             sx={{
