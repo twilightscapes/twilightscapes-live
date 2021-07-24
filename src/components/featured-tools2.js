@@ -48,7 +48,7 @@ const FeaturedTools2 = () => (
 
 
     
-<section className="child" style={{position:'relative', height:'70vh', overflow:''}}>
+<section className="child" style={{position:'relative', backgroundSize:'cover',  height:'65vh', overflow:''}}>
 <Link className="" to="/art/gear/twilighttorch/">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
 
@@ -68,7 +68,7 @@ const FeaturedTools2 = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'70vh', overflow:''}}>
+<section className="child" style={{position:'relative', height:'65vh', overflow:''}}>
 <Link className="" to="/art/gear/twilightslider/">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
@@ -87,7 +87,7 @@ const FeaturedTools2 = () => (
 
 
 
-<section className="child" style={{position:'relative', height:'70vh', overflow:''}}><Link className="" to="/art/gear/twilightcolorwand/">
+<section className="child" style={{position:'relative', height:'65vh', overflow:''}}><Link className="" to="/art/gear/twilightcolorwand/">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', zIndex:'1' }}>
       <div style={{ position:'', textAlign:'center'}}>
     
