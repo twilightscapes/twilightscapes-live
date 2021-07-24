@@ -256,6 +256,9 @@ p{margin-bottom:2rem;}
 
 
 
+
+
+
 .actionJackson{
 /* display: flex;
 flex-direction: row;
@@ -315,6 +318,8 @@ outline-color: #FA02B7; */
   padding-top:30px;
 } */
 
+
+.contentpanel .more{max-width:50%;}
 
 
 .moreButton {
@@ -460,7 +465,7 @@ height:0;
 .mobile{display: block;}
 .dd ul{min-height:inherit !important;}
 .flexcheek h1, .mobilefix{ margin-top:2rem !important;}
-
+.contentpanel .more{max-width:80%;}
 	}
 
 
@@ -2027,7 +2032,7 @@ background: rgba(0,0,0,0.6);
         height:100%;
         animation:fade 1.7s forwards;
         }
-    
+        .contentpanel .button{max-width:50%; margin:1rem auto}
       
     
         .contentpanel > *{opacity:0; animation:fade 3s forwards;}
@@ -2062,6 +2067,8 @@ background: rgba(0,0,0,0.6);
         padding:2rem 1rem;
         padding-top:2vh;
       }
+      .contentpanel .more{max-width:80%;}
+
       }
       @media (min-width: 48rem) {
       .contentpanel{

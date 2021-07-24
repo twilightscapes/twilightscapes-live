@@ -39,14 +39,14 @@ const CaseStudyPanels = () => (
 
 
 
-<div className="panel-wrapper" style={{marginTop:'0', overflow:'hidden', height:'60vh', margin:'2rem 0'}}>
+<div className="panel-wrapper home-posts post-card" style={{marginTop:'0', overflow:'hidden', height:'60vh', margin:'2rem 0', overflow:'hidden'}}>
     
 
 
 
 
 
-  <div className="slidepanel">
+  <div className="slidepanel home-posts post-card" >
   
 
 
@@ -61,7 +61,7 @@ const CaseStudyPanels = () => (
 <span className="headline" style={{bottom:'35vh'}}>Milky Way</span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
-          <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
+          <div className="contentpanel" style={{position:'relative', zIndex:'1', color:'#fff'}}>
           
           
 
@@ -74,23 +74,27 @@ const CaseStudyPanels = () => (
 
 <div className="spacer66" style={{height:'20vh'}} />
 
-          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Milky Way</h2>
+          <h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Milky Way</h2>
 
-          <p>A collection of shots that focus or prominently feature the Milky Way</p>
+          <p className="letter">A collection of shots that focus or prominently feature the Milky Way</p>
 
 
 
 {/* <p>Single Shot - No PS - lightpainted long exposure</p> */}
 
 
-<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'20px 0 0 0'}}>
               <Link
               className="button"
               sx={{
                 cursor:'pointer',
-                maxWidth:'10%',
+                maxWidth:'80%',
                 backgroundColor:'#000 !important',
                 textAlign:'center',
+                display:'flex',
+                margin:'0 auto'
+                // flexDirection:'row',
+                // justifyContent:'baseline'
               }}
               to="/photos/milky-way"
             >
@@ -128,7 +132,7 @@ const CaseStudyPanels = () => (
 <span className="headline" style={{bottom:'35vh'}}>Crazy Geology </span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
-          <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
+          <div className="contentpanel" style={{position:'relative', zIndex:'1', color:'#fff'}}>
           
           
 
@@ -141,9 +145,9 @@ const CaseStudyPanels = () => (
 
 <div className="spacer66" style={{height:'20vh'}} />
 
-          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Crazy Geology</h2>
+          <h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Crazy Geology</h2>
 
-          <p>Some of the wildest stone and rock formations around.
+          <p className="letter">Some of the wildest stone and rock formations around.
 </p>
 
 
@@ -155,7 +159,7 @@ const CaseStudyPanels = () => (
 
 
 
-<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'20px 0 0 0'}}>
 <Link
               className="button"
               sx={{
@@ -198,7 +202,7 @@ const CaseStudyPanels = () => (
 <span className="headline" style={{bottom:'35vh'}}>In The City</span>
       <div className="innerpanel" style={{height:'100%', width:'100%'}}>
       
-          <div className="contentpanel" style={{position:'relative', zIndex:'1'}}>
+          <div className="contentpanel" style={{position:'relative', zIndex:'1', color:'#fff'}}>
           
           
 
@@ -210,13 +214,13 @@ const CaseStudyPanels = () => (
 </div> */}
 
 <div className="spacer66" style={{height:'20vh'}} />
-          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>In The City</h2>
+          <h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>In The City</h2>
 
-          <p>In and around city centers. </p>
+          <p className="letter">In and around city centers. </p>
 
 
 
-<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'20px 0 0 0'}}>
 <Link
               className="button"
               sx={{
