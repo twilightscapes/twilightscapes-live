@@ -11,7 +11,7 @@ import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull, FaHandPointDown } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
-import FeaturedTools from "../components/featured-tools"
+import FeaturedTools from "../components/featured-tools2"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"

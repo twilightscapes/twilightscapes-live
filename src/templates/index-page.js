@@ -17,12 +17,7 @@ import { Layout } from "../components/layout"
 
 const CustomBox = styled.div`
 
-@media (max-width: 48em) {
-  .seotext{padding-top:0 !important;}
-}
-@media (min-width: 58em) {
-.seotext{padding-top:5vh !important;}
-}
+
 `
 
 
