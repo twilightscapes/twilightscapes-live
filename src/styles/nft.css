@@ -1,0 +1,232 @@
+.panel-wrapper{
+  margin: 0 ;
+  width:100%;
+  
+}
+
+.slidepanel{
+  display:flex;
+  flex-wrap:nowrap;
+
+  height:90vh;
+  /*  height: calc(100vh - 88px); */
+  overflow:hidden;
+}
+
+.slidepanel > div{
+  min-width:16vw;
+  width:50vw;
+  flex-grow:1;
+  flex-shrink:1;
+  height:100%;
+  overflow:hidden;
+  transition:all .5s ease;
+  border-left:1.5px solid #222;
+  border-right:1.5px solid #222;
+  border-radius:0px;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+}
+
+
+.slidepanel > div:hover{
+  flex-shrink:0
+}
+
+.pop{
+  width:100%;
+  height:100vh ;
+  object-fit: cover;
+  position:absolute;
+  z-index:-1;
+  padding:0;
+  margin:0;
+  border:0px solid yellow;
+   /* background-position:bottom bottom;
+   object-position: 100% 100%; */
+}
+
+
+
+
+.slidepanel > div:hover{
+  width:70vw;
+  }
+
+  .slidepanel > div:hover .contentpanel{
+    min-width:100%; border:0px solid red;
+    width:70vw;
+  }
+
+
+
+
+
+
+
+.slidepanel a{
+   /* z-index:0; */
+  align-items: center;
+  justify-content: center;
+   /* border:1px solid white !important; 
+   animation: fadeIn; */
+}
+
+
+.slidepanel div:hover a, .slidepanel div:hover .contentpanel{
+  display:block;
+  }
+  .slidepanel div a, .slidepanel div .contentpanel{
+  display:none;
+  }
+
+  .slidepanel div .headline {display:block; opacity:1;}
+  .slidepanel div:hover .headline{display:none;}
+
+
+  /* .outerpanel{} */
+  
+  .innerpanel{
+    display:flex;
+    width:100%;
+    position:absolute;
+    margin:0 0 0 0;
+    height:100%;
+    padding:0 0 0 0;
+  }
+
+ .contentpanel{
+     display:block;
+     margin:0 auto;
+     padding:0 1rem;
+     text-decoration:none;
+    text-align:left;
+    text-shadow: 1px 2px 1px black;
+     font-weight:400;
+     color:#FFFFFF;
+    cursor:default;
+    background: rgba(0,0,0,0.50);
+     transition: all 0.15s;
+    font-size:100%;
+    opacity:0;
+    overflow-y:auto;
+    back-drop-filter: blur(10px);
+    width:100%;
+    height:100%;
+    animation:fade 1.7s forwards;
+    }
+
+  
+
+    .contentpanel > *{opacity:0; animation:fade 3s forwards;}
+
+    .headline{
+      padding:1em;
+     margin:0 auto;
+    box-shadow: 0px 1px 6px 1px black;
+    text-shadow: 1px 2px 1px black;
+ /* background: rgba(250, 3, 196, 0.9); */
+    background: rgba(0, 0, 0, 0.8);
+
+     /* filter: brightness(120%); */
+    font-size:100%;
+    font-weight:0 !important; 
+    position:absolute;
+    bottom:5vh;
+    color:#fff;
+    width:100%;
+    transition: all .6s ease-out;
+    display:block !important;
+    z-index:1;
+    }
+
+
+
+@media (max-width: 48rem) {
+   /* .slidepanel > div{width:70%; border:0px solid red;}
+   .slidepanel > div:last-child{display:; width:50%} */
+  .headline{padding:4px; font-size:70%;}
+  .contentpanel{
+    padding:2rem 1rem;
+    padding-top:2vh;
+  }
+  }
+  @media (min-width: 48rem) {
+  .contentpanel{
+    padding:2rem 2rem;
+    padding-top:1vh;
+  }
+  }
+  
+  @media (min-width: 1024px) {
+    .contentpanel{
+      padding:2rem 3rem;
+      padding-top:1vh;
+    }
+    }
+
+
+
+ .gatsby-image-wrapper{position: initial !important;}
+
+
+
+
+
+
+
+
+
+
+    @keyframes poptop {
+      0%{
+            opacity: 0;
+             /* transform: translateY(-100vh) */
+         }
+         50%{
+          opacity: .8;
+          transform: translateY(0)
+       }
+
+         100% {
+            opacity:0;
+            transform: translateY(0)
+
+         }
+      
+      }
+
+
+      @keyframes tagline {
+        0%{
+          opacity: 0;
+           /* transform: translateY(-100vh) */
+       }
+       50%{
+        opacity: .8;
+        transform: translateY(0)
+     }
+
+       100% {
+          opacity:.8;
+          transform: translateY(0)
+
+       }
+          }
+
+
+    @keyframes tooltop{
+        0% { opacity: 0; transform: scale(1.3) }
+        5% { opacity: 0;}
+        10% { opacity: .3; -webkit-transform: translateX(0px); }
+        25% { opacity: .4; -webkit-transform: translateX(0px); }
+        30% { opacity: .5;  transform: scale(.9) translate(1px); }
+        80% { opacity: 1; transform: scale(1) translate(0px); }
+        100% { opacity: 0; }
+    }
+
+    @media (hover: hover) {
+
+      }
