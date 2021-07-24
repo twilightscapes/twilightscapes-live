@@ -73,22 +73,21 @@ const CaseStudyPanels = () => (
 
 
 
+<div className="spacer66" style={{height:'2vh'}} />
+          <h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Stellar Sentries</h2>
 
-          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Stellar Sentries</h2>
+          <p className="letter">A very rare night photo of the Very Large Array (VLA). I'd always been intrigued by this place and I'd wanted to visit it. These towers are like nimble giants, constantly twitching and positioning and working tirelessly throughout the night.</p>
 
-          <p>A very rare night photo of the Very Large Array (VLA). I'd always been intrigued by this place and I'd wanted to visit it. These towers are like nimble giants, constantly twitching and positioning and working tirelessly throughout the night.</p>
+<p className="letter">After having obtained special permission to be on the premises after dark by way of a favor, I was able to get the perfect lineup framed and then waited for the skies to darken and the stars to come out.</p>
 
-<p>After having obtained special permission to be on the premises after dark by way of a favor, I was able to get the perfect lineup framed and then waited for the skies to darken and the stars to come out.</p>
-
-<p>Single Shot - No PS - lightpainted long exposure</p>
+<p className="letter">Single Shot - No PS - lightpainted long exposure</p>
 
 
-<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'10px 0 4rem 0'}}>
               <a
               className="button"
               sx={{
                 cursor:'pointer',
-                maxWidth:'10%',
                 backgroundColor:'#000 !important',
                 textAlign:'center',
               }}
@@ -139,22 +138,22 @@ const CaseStudyPanels = () => (
 
 </div>
 
-          
-          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Alien Egg Farm</h2>
+<div className="spacer66" style={{height:'2vh'}} />
+          <h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Alien Egg Farm</h2>
 
-          <p>Possibly one of the most far-out locations I've ever been to. The Bisti Badlands are on tribal land and extremely remote. There are no roads. This is a 3.5 mile hike into some of the most extreme landscapes.
+          <p className="letter">Possibly one of the most far-out locations I've ever been to. The Bisti Badlands are on tribal land and extremely remote. There are no roads. This is a 3.5 mile hike into some of the most extreme landscapes.
 </p>
 
-<p>It seems like around every corner there is another scene that appears to be from a distant planet. These "alien eggs" are actually weathered limestone.</p>
+<p className="letter">It seems like around every corner there is another scene that appears to be from a distant planet. These "alien eggs" are actually weathered limestone.</p>
 
 
 
 
-<p>Single Shot - No PS - long exposure</p>
+<p className="letter">Single Shot - No PS - long exposure</p>
 
 
 
-<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'10px 0 4rem 0'}}>
 <a
               className="button"
               sx={{
@@ -208,22 +207,22 @@ const CaseStudyPanels = () => (
 
 </div>
 
-          
-          <h2 style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Boatswain's Blunder</h2>
+<div className="spacer66" style={{height:'2vh'}} />
+          <h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Boatswain's Blunder</h2>
 
-          <p>Confinement, a bode of misery with blue majesty abound.</p>
+          <p className="letter">Confinement, a bode of misery with blue majesty abound.</p>
 
-<p>The petty officer, Mr. Transcontinental promised treasures never found.</p>
+<p className="letter">The petty officer, Mr. Transcontinental promised treasures never found.</p>
 
-<p>Recognized with nothing but obscurity for the sea is sole judge and jury.</p>
+<p className="letter">Recognized with nothing but obscurity for the sea is sole judge and jury.</p>
 
-<p>Crashing thunderstorms are the only sound where lonesomeness becomes friend and death is crowned.</p>
+<p className="letter">Crashing thunderstorms are the only sound where lonesomeness becomes friend and death is crowned.</p>
 
-<p>Thoughts of liberation are constant wonder. from mast to keel and gunwale, this swoon of a boatswain’s blunder.</p>
+<p className="letter">Thoughts of liberation are constant wonder. from mast to keel and gunwale, this swoon of a boatswain’s blunder.</p>
 
-<p>-- by Todd Lambert</p>
+<p className="letter">-- by Todd Lambert</p>
 
-<div style={{textAlign:'center', padding:'0 30%', margin:'10px 0 0 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'10px 0 4rem 0'}}>
 <a
               className="button"
               sx={{
