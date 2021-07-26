@@ -1463,7 +1463,6 @@ border:1px solid #222;
 
 
       .intro:before, .poof{
-        display: none;
         position:absolute;
         top:0;
         left:0;
@@ -1530,7 +1529,6 @@ background: rgba(0,0,0,0.6);
    right:0;
    filter: drop-shadow(1px 1px 4px rgba(255, 2, 213, 0.9));
         display: flex;
-        display:none;
         align-items: center;
         justify-content: center;
         align-self:center;
