@@ -296,7 +296,7 @@ export default function Product({ data: { product, suggestions } }) {
 <GoBack />
 </div>
 
-            <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
+            {/* <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
             
             <div style={{display:'flex', gap:'10px',padding:'0 ', margin:'0 0 2rem 0', justifyContent:'center' }}>
 
@@ -307,7 +307,7 @@ export default function Product({ data: { product, suggestions } }) {
 <StaticImage src="../../../img/printique-logo.png" alt="Print This On Printique" />
 </a></div>
 
-</div>
+</div> */}
 
 
 
