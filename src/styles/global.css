@@ -391,7 +391,8 @@ height:100vh;
 } */
 
 
-main{min-height: 100vh;}
+main{min-height: 100vh; height:100% !important;
+padding-bottom: 2rem;}
 .zoomer{animation: zoomer 1s forwards;
   animation-delay: 4s;}
   
@@ -624,7 +625,7 @@ display: none;
   display: none !important;
 } */
 
-section{height:100% !important;}
+section{height:100% !important; padding-bottom:3rem;}
 
 
 .listingContainerStyle {

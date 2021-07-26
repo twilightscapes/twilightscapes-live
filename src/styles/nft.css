@@ -39,7 +39,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 section {
 	scroll-snap-align: start;
   overflow:hidden;
-  height:70vh;
+  /* height:70vh; */
   background:tranparent !important;
 }
 .slider1{
