@@ -35,7 +35,7 @@ const themeStyles = {
       mt: "-2px",
       p: "0 20px 0 0",
       "&:hover": {
-        color: "#FA02B7",
+        color: "var(--primary-color)",
       },
     },
   },
@@ -45,7 +45,7 @@ const themeStyles = {
     color: "#ccc",
     mt: "10px",
     "&:hover": {
-      color: "#FA02B7",
+      color: "var(--primary-color)",
     },
   },
   modeText: {

@@ -70,7 +70,7 @@ export default function CartPage() {
           <>
             <h1 className={title}>Your cart</h1>
             <div className="has-app promocode1" style={{textAlign:'center', fontSize:'30px', margin:'0 0 2rem 0'}}>
-30% OFF CODE: <span style={{color:'#FA02B7', fontWeight:'bold'}}>LoveTheNight</span>
+30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
 </div>
             <table className={table}>
               <thead>

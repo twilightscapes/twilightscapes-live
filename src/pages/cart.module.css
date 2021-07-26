@@ -52,7 +52,7 @@
 
 .checkoutButton {
   align-items: center;
-  background: var(--primary);
+  background: var(--primary-color);
   border-radius: var(--radius-md);
   /* color: var(--text-color-inverted); */
   display: flex;

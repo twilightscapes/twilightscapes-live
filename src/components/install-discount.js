@@ -82,7 +82,7 @@ left:'0', right:'0', display:'flex', justifyContent:'center', alignItems:'center
     <p style={{fontSize:'90%', }}>Get a special coupon code for 30% off!</p>
 
  
-  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'100%', margin:'0 auto', padding:' .5rem .7rem', border:'2px dotted #FA02B7', borderRadius:'8px',}}>To Get Started:
+  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'100%', margin:'0 auto', padding:' .5rem .7rem', border:'2px dotted var(--primary-color)', borderRadius:'8px',}}>To Get Started:
   <br />Simply click the "install" icon on the right-side of your browser address bar</div>
 
 

@@ -89,7 +89,8 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<span>MENU</span><IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/>
+<span>MENU</span>
+<IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/>
 
 
     {/* <div className="spinner diagonal part-1"></div>
@@ -104,7 +105,7 @@ export function Layout({ children }) {
    <div id="sidebarMenu" style={{minWidth:'', width:''}}>
   
 {/* <div className="no-app promocode">
-30% OFF CODE: <span style={{color:'#FA02B7', fontWeight:'bold'}}>LoveTheNight</span>
+30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
 </div> */}
 
 <div className="home-posts" style={{display:'flex', justifyContent:'center', border:'0px solid red', maxWidth:'', margin:'0 auto' }}>
@@ -201,7 +202,7 @@ Contact Me<span>Ordering Questions?</span>
       <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/photos/">
       
-              View Photos <span style={{color:'#FA02B7',}}>start here</span>
+              View Photos <span style={{color:'var(--primary-color)',}}>start here</span>
               </Link>
       </li> 
     

@@ -152,7 +152,7 @@ collections:
               - widget: image
                 name: image
                 label: image
-                default: "/assets/stackrole.png"
+                default: "/assets/todd.jpg"
               - widget: image
                 name: iconimage
                 label: favicon
@@ -160,6 +160,10 @@ collections:
                 name: twitterUsername
                 label: Twitter
                 required: false
+              - widget: string
+                name: companyname
+                label: Company Name
+                required: true
 
           - label: "Google Analytics"
             name: ga

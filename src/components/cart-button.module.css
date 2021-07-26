@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   box-shadow: 0 0 0 2px white;
   color: var(--text-color-inverted);
   font-size: var(--text-xs);

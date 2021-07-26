@@ -115,7 +115,7 @@ export default function GalleryPage({ data }) {
 
   <span style={{fontSize:'70px', color:'white', transform:'rotate()', lineHeight:'80%'}}>PICK ANY <br /><span style={{letterSpacing:''}}>THREE</span></span>
 
-  <span style={{fontSize:'40px', color:'#FA02B7', lineHeight:'90%'}}>
+  <span style={{fontSize:'40px', color:'var(--primary-color)', lineHeight:'90%'}}>
   ONLY PAY<br /> FOR TWO
   </span>
 </div>

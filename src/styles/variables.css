@@ -54,15 +54,15 @@
   /* role-based tokens */
 
   /* colors */
-  --primary: var(--green-80);
+  --primary: var(--white) ;
   --background: var(--white);
   --border: var(--black-fade-5);
-  --home-link-color-hover:#FA02B7;
+  --home-link-color-hover: var(--primary-color);
   /* transitions */
   --transition: box-shadow 0.125s ease-in;
 
   /* shadows */
-  --shadow: 0 4px 12px #FA02B7;
+  --shadow: 0 4px 12px var(--primary-color);
 
   /* text */
   /* color */
@@ -81,7 +81,7 @@
   --input-text: var(--text-color);
   --input-text-disabled: var(--black-fade-40);
   --input-ui: var(--text-color-secondary);
-  --input-ui-active: (--text-color);
+  --input-ui-active: var(--text-color);
 
   /* size */
   --size-input: var(--space-3xl);

@@ -13,7 +13,7 @@ const CustomBox = styled.div`
 
 input::placeholder {
   color: #fff !important;
-  filter: drop-shadow(0px 0px 6px #FA02B7);
+  filter: drop-shadow(0px 0px 6px var(--primary-color));
 }
 
 
