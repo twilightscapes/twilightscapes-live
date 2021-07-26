@@ -391,7 +391,7 @@ height:100vh;
 } */
 
 
-/* main{min-height: 100vh;} */
+main{min-height: 100vh;}
 .zoomer{animation: zoomer 1s forwards;
   animation-delay: 4s;}
   
@@ -623,6 +623,8 @@ display: none;
 /* .section.nft .listingContainerStyle a:first-child:after, section.nft .listingContainerStyle a:nth-child(11n-8):after{
   display: none !important;
 } */
+
+section{height:100% !important;}
 
 
 .listingContainerStyle {
