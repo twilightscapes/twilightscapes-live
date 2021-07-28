@@ -212,10 +212,10 @@ Contact Me<span>Ordering Questions?</span>
 
       
 
-      <li className="carto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center' }}>
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-between', verticalAlign:'center', padding:'0 20px',  }}>
   
-      <Theme  />
-   <Link className="sherlock" to="/search" style={{marginRight:'20px', marginTop:'5px'}}>
+      <Theme  style={{padding:'0'}} />
+   <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
    
