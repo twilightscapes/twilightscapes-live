@@ -35,6 +35,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .fire{  box-shadow:  0 4px 22px var(--primary-color) !important;}
 
 
+
 .video-background {
   background: #000;
   position: absolute;
@@ -576,6 +577,10 @@ body.carto .carta {display:block; height:100%;}
 
 /* body.carto .carto .blanco {display:none; height:100%;} */
 
+.carto:hover{
+  background: rgba(0,0,0,0.2); transition: 1s background;
+}
+
 .navbar-item{display:block; padding:5px 0;}
 
 .sherlock:hover{
@@ -960,7 +965,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .popper{
   animation: move;
   animation-duration: 0.7s;
-  animation-delay:5s;
+  animation-delay:3s;
   opacity: 0;
   animation-fill-mode: forwards;
 }

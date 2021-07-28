@@ -43,12 +43,11 @@ const InstallDiscount = () => (
 
 
 <div id="installer" className="popper" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
-left:'0', right:'0', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent'}}>
+left:'-100vw', right:'0', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent'}}>
 
 
 
 
-<div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px',}} >
 
 
 
@@ -57,11 +56,11 @@ left:'0', right:'0', display:'flex', justifyContent:'center', alignItems:'center
 
 
 <CookieConsent
-	debug={false}
+debug={true}
 	location="none"
-	style={{ color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'left', justifyContent:'center', margin:'0 auto', top:'0', maxWidth:'600px', position:'relative', border:'0px solid red', }}
-    buttonText="OK Got it"
-	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "16px", bottom:'10px', position:'absolute', display:'flex', alignContent:'center', color:'inherit', }}
+	style={{ display:'flex', flexDirection:'column', color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'center', justifyContent:'center', margin:'0 auto', top:'0', maxWidth:'62vw', position:'', border:'0px solid red', }}
+    buttonText="HIDE THIS"
+	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "16px", top:'-60px', position:'relative', display:'flex', flexDirection:'column', justifyContent:'center', color:'inherit', border:'0px solid yellow', margin:'0 auto', color:'#fff', fontWeight:'bold' }}
     expires={1}
     cookieName="twilightscapes.com-install-discount-cookie"
 >
@@ -108,7 +107,8 @@ left:'0', right:'0', display:'flex', justifyContent:'center', alignItems:'center
     <br />
     </div>
     
-</CookieConsent></div>
+</CookieConsent>
+
     </div>
 
 
