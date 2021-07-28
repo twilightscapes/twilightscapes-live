@@ -56,7 +56,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 
 
 <CookieConsent
-debug={true}
+debug={false}
 	location="none"
 	style={{ display:'flex', flexDirection:'column', color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'center', justifyContent:'center', margin:'0 auto', top:'0', maxWidth:'62vw', position:'', border:'0px solid red', }}
     buttonText="HIDE THIS"
