@@ -43,7 +43,7 @@ const InstallDiscount = () => (
 
 
 <div id="installer" className="popper" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
-left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent'}}>
+left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', color:'white'}}>
 
 
 
