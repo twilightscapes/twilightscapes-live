@@ -3,9 +3,10 @@ import { Layout } from "../components/layout"
 import GoBack from "../components/goBack"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
 // import CasePanels from "../components/casepanels"
-import Audio from '../../static/assets/music.m4a'
+import Audio from '../../static/assets/bensound-betterdays.mp3'
 import Creepers from "../../static/assets/nebula.svg"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
@@ -13,15 +14,15 @@ import Newsignup from "../components/newssign"
 const CustomBox = styled.div`
 .slider{object-fit: scale-down;}
 
-.audio:before{
-  position:absolute;
-  top:100px;
-  width:200px;
-  content: " Audio Controls: ";
-  display:block  !important;
-  border:0px solid red  !important;
+// .audio:before{
+//   position:absolute;
+//   top:100px;
+//   width:200px;
+//   content: " Audio Controls: ";
+//   display:block  !important;
+//   border:0px solid red  !important;
 
-}
+// }
 // div:first-of-type{padding:0 !important; margin:0 !important;}
 
 @media (max-width: 48em) {
@@ -52,6 +53,9 @@ export default function test3Page() {
 
     <CustomBox style={{}}>
     <Layout className="thanks-page">
+    <Helmet>
+  <body className="featurepage" />
+</Helmet>
 
 <Seo
           title={`Photography`}
@@ -72,15 +76,17 @@ export default function test3Page() {
   {/* <StaticImage style={{zIndex:'-1', backgroundSize:'cover', width:'100vw', height:'100vh'}} className="" src="../img/favorites/night294.jpg" alt="Colorado at night with Twilightscapes">
   </StaticImage> */}
 
-{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'50vh',
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={53950} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
 
 
   <Newsignup />
-</ScrollAnimation> */}
-<audio className="audio" controls="controls" autoplay="true" src={Audio} style={{position:'fixed', top:'0', right:'0', zIndex:'1'}}> 
+</ScrollAnimation>
+<div className="audio">
+  <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="true" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
 </audio>
+</div>
 <Creepers className="creeper" style={{zIndex:'-1', backgroundSize:'cover', width:'100vw',}} />
 
 
