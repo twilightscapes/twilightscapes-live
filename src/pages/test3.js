@@ -1,7 +1,10 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
+import { ProductListing } from "../components/product-listing"
 import GoBack from "../components/goBack"
 import styled from "styled-components"
+import ShareSocial from '../components/share' 
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
@@ -9,7 +12,7 @@ import { Seo } from "../components/seo"
 import Audio from '../../static/assets/bensound-betterdays.mp3'
 import Creepers from "../../static/assets/nebula.svg"
 import ScrollAnimation from 'react-animate-on-scroll'
-import Newsignup from "../components/newssign"
+import GiftShop from "../components/giftshop"
 
 const CustomBox = styled.div`
 .slider{object-fit: scale-down;}
@@ -46,9 +49,22 @@ const CustomBox = styled.div`
 `
 
 
+export const query = graphql`
+  query {
+    shopifyCollection(handle: { eq: "crazy-geology" }) {
+      products {
+        ...ProductCard
+      }
+    }
+  }
+`
 
-export default function test3Page() {
-   return (
+       // export default function nftPage({ data: { products } }) {
+              export default function crazygeoPage({ data }) {
+                
+
+  return (
+<>
 
 
     <CustomBox style={{}}>
@@ -80,7 +96,7 @@ export default function test3Page() {
 right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
 
 
-  <Newsignup />
+  <GiftShop />
 </ScrollAnimation>
 <div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="true" src={Audio} style={{}}> 
@@ -93,8 +109,21 @@ right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', text
        </div>
 
     
+
+
+       <br /><br />
+ <ShareSocial />
+<br /><br /><br />
+
+<div className="nft"><ProductListing products={data.shopifyCollection.products} />
+</div>
+<br /><br />
+
+
     
-    </Layout>
-</CustomBox>
+       </Layout>
+     </CustomBox>
+     </>
+
   )
 }
