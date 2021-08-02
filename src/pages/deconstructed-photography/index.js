@@ -27,9 +27,9 @@ export default function SpaceportPage() {
 </Helmet>
 
 <Seo
-          title={`Photography`}
-          description={`Twilightscapes - `}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`Deconstructed Photography by Todd Lambert and Twilightscapes`}
+          description={`Deconstructed Photography is a new melding of visual, audio and interactive together in a new medium for art`}
+          image={'https://twilightscapes.com/deconstructed-photography.jpg'}
         />
 
 
