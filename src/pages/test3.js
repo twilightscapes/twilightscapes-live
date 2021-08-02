@@ -71,7 +71,7 @@ export const query = graphql`
     <CustomBox style={{}}>
     <Layout className="thanks-page">
     <Helmet>
-  <body className="featurepage" />
+  <body className="spaceport" />
 </Helmet>
 
 <Seo

@@ -2249,7 +2249,7 @@ background: rgba(0,0,0,0.6);
             background-image:none;
           }
 
-          body.featurepage .intro:before{
+          body.featurepage .intro:before, body.spaceport .intro:before {
             position:absolute !important;
             top:0 !important;
             left:0 !important;
@@ -2271,11 +2271,11 @@ background: rgba(0,0,0,0.6);
                 animation-delay: 2.8s;
                 overflow: hidden;
                 
-                content: " AIRLOCK ";
+                content: "  ";
             font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
             }
             
-            body.featurepage .intro:after{
+            body.featurepage .intro:after, body.spaceport .intro:after{
             position:absolute !important;
             top:0 !important;
            right:0 !important;
@@ -2295,12 +2295,25 @@ background: rgba(0,0,0,0.6);
                 animation-delay: 2.8s !important;
                 overflow: hidden !important;
                 
-                content: " OPENING " !important;
+                content: "  " ;
             font-size:180% !important;
             color:#f8f8fc !important;
             text-shadow: 12px 7px 15px 12px black !important;
             }
 
+            body.featurepage .intro:before{
+              content: "AIRLOCK" !important;
+              }
+            body.featurepage .intro:after{
+              content: "ESTABLISHED" !important;
+              }
+
+              body.spaceport .intro:before{
+                content: "AIRLOCK" !important;
+                }
+              body.spaceport .intro:after{
+                content: "OPENING!" !important;
+                }
 
             /* body.featurepage .intro:after{
               content: " ";

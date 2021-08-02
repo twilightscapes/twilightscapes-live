@@ -10,6 +10,9 @@ import styled from "styled-components";
 const CustomBox = styled.div`
 
 
+
+
+
 .newsletter{position:relative;}
 
 input::placeholder {
@@ -58,8 +61,8 @@ const LaunchPadPage = () => (
 
             
               <span style={{fontSize:'120%'}}><strong>Get your boarding pass</strong></span><br />
-              
-              <span style={{fontSize:'85%'}}>Feel free to leave your email (NO SPAM!)</span><br /><br />
+              <br />
+              <span style={{fontSize:'105%'}}>NEXT DEPARTURE in 1 min</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 
