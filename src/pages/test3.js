@@ -13,7 +13,7 @@ import Audio from '../../static/assets/bensound-betterdays.mp3'
 import Creepers from "../../static/assets/nebula.svg"
 import ScrollAnimation from 'react-animate-on-scroll'
 import GiftShop from "../components/giftshop"
-
+import CommentBox from "../components/commentbox"
 const CustomBox = styled.div`
 .slider{object-fit: scale-down;}
 
@@ -92,7 +92,7 @@ export const query = graphql`
   {/* <StaticImage style={{zIndex:'-1', backgroundSize:'cover', width:'100vw', height:'100vh'}} className="" src="../img/favorites/night294.jpg" alt="Colorado at night with Twilightscapes">
   </StaticImage> */}
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={53950} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
 
 
@@ -120,6 +120,9 @@ right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', text
 <br /><br />
 
 
+<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+    <CommentBox />
+    </div>
     
        </Layout>
      </CustomBox>

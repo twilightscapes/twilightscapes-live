@@ -57,16 +57,16 @@ const GiftShopPage = () => (
 <br />
 
             
-              <span style={{fontSize:'120%'}}><strong>Thank you for travelling with Twilightscapes</strong></span><br />
+              <span style={{fontSize:'120%', padding:'0 2rem'}}><strong>Thank you for travelling with Twilightscapes</strong></span><br />
               
-              <span style={{fontSize:'85%'}}>Feel free to leave your email (NO SPAM!)</span><br /><br />
+              
 
              <div className="signbox" style={{display:'flex',}}>
 
-               <label style={{color:'#fff'}} htmlFor="email">
+               {/* <label style={{color:'#fff'}} htmlFor="email">
                  <input type="email" name="email" required={true}
                       placeholder="your@email.com"
-                      style={{}}/></label>
+                      style={{}}/></label> */}
                       
             
 
@@ -84,7 +84,7 @@ const GiftShopPage = () => (
               </span>
             </button> */}
 &nbsp;&nbsp;
-            <button
+            {/* <button
               className="button"
               
               type="submit"
@@ -94,7 +94,7 @@ const GiftShopPage = () => (
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
-            </button>
+            </button> */}
 
 
             </div>
@@ -110,6 +110,8 @@ const GiftShopPage = () => (
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
 
+
+<span style={{fontSize:'105%'}}>Be sure to sign the guest book!</span><br /><br />
 
             </div>
 <br />
