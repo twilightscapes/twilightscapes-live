@@ -191,6 +191,14 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
+<li className="carto">
+              <Link className="navbar-item txtshadow" to="/deconstructed-photography/">
+                Deconstructed Photography 
+                {/* <span>A new medium in visual arts</span> */}
+              </Link>
+      </li>
+
+
 
       <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/photos/">

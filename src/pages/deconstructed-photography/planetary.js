@@ -1,20 +1,20 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Layout } from "../components/layout"
-import { ProductListing } from "../components/product-listing"
-import GoBack from "../components/goBack"
+import { Layout } from "../../components/layout"
+import { ProductListing } from "../../components/product-listing"
+import GoBack from "../../components/goBack"
 import styled from "styled-components"
-import ShareSocial from '../components/share' 
+import ShareSocial from '../../components/share' 
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
-import { Seo } from "../components/seo"
+import { Seo } from "../../components/seo"
 import { RiSendPlane2Line } from "react-icons/ri"
 // import CasePanels from "../components/casepanels"
-import Audio from '../../static/assets/bensound-betterdays.mp3'
-import Creepers from "../../static/assets/nebula.svg"
+import Audio from '../../../static/assets/bensound-betterdays.mp3'
+import Creepers from "../../../static/assets/nebula.svg"
 import ScrollAnimation from 'react-animate-on-scroll'
-import GiftShop from "../components/giftshop"
-import CommentBox from "../components/commentbox"
+import GiftShop from "../../components/giftshop"
+import CommentBox from "../../components/commentbox"
 const CustomBox = styled.div`
 .slider{object-fit: scale-down;}
 
