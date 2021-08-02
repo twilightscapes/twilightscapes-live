@@ -453,7 +453,24 @@ height:0;
 }
 
 
+@-webkit-keyframes move {
+  0% {
+    transform-origin: 60% 80%;
+    transform: scale(1.0);
+  }
+  
 
+  
+    40% {
+    transform-origin: 30% 60%;
+    transform: scale(1.4);
+  }
+  
+  100% {
+    transform: scale(1.6);
+    transform-origin: 40% 10%;
+  }
+}
 
 
 
@@ -1543,21 +1560,21 @@ background: rgba(0,0,0,0.6);
 } */
 
 
-        body.homepage .intro:before{
+        body.featurepage1 .intro:before{
           
           content: "Follow Me Into The Night";
-        position:fixed;
-   left:0;
+        /* position:fixed; */
+   /* left:0;
    top:0;
-   right:0;
+   right:0; */
    filter: drop-shadow(1px 1px 4px rgba(255, 2, 213, 0.9));
         display: flex;
         align-items: center;
         justify-content: center;
         align-self:center;
           width:100%;
-        animation: poof 1s forwards;
-        animation-delay: 1.5s;
+        /* animation: poof 1s forwards;
+        animation-delay: 1.5s; */
         overflow: hidden;
           /* border:1px solid red; */
         padding:300px 0 0 0;
@@ -2197,11 +2214,11 @@ background: rgba(0,0,0,0.6);
 
 
 
+          
 
 
 
-
-          body.featurepage .intro:before{
+          body.featurepage1 .intro:before{
           
             content: "SEALING AIRLOCK";
           position:fixed;
@@ -2231,3 +2248,71 @@ background: rgba(0,0,0,0.6);
 
             background-image:none;
           }
+
+          body.featurepage .intro:before{
+            position:absolute !important;
+            top:0 !important;
+            left:0 !important;
+            z-index: 1 !important;
+            width: 57% !important;
+            height: 100vh !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            background-repeat: no-repeat !important;
+            background-position: left top !important;
+       
+            
+            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%) !important;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%) !important;
+            
+            background-image: linear-gradient(#3a3a3b 40%,#111212  100%) !important;
+                animation: slide 2.6s forwards;
+                animation-delay: 2.8s;
+                overflow: hidden;
+                
+                content: " AIRLOCK ";
+            font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+            }
+            
+            body.featurepage .intro:after{
+            position:absolute !important;
+            top:0 !important;
+           right:0 !important;
+            z-index: 1 !important;
+            width: 57% !important;
+            height: 100vh !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+      
+            
+            -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%) !important;
+            
+            background-image: linear-gradient(#3a3a3b 40%,#111212  100%) !important;
+                animation: slide 2.6s forwards !important;
+                animation-delay: 2.8s !important;
+                overflow: hidden !important;
+                
+                content: " OPENING " !important;
+            font-size:180% !important;
+            color:#f8f8fc !important;
+            text-shadow: 12px 7px 15px 12px black !important;
+            }
+
+
+            /* body.featurepage .intro:after{
+              content: " ";
+              position:fixed;
+            left:0;
+            top:0;
+            right:0;
+            animation: poof 1s forwards;
+            animation-delay: 1.5s;
+            filter: blur(80px);
+            width:100%;
+            height:100vh;
+            border:0x solid yellow;
+            background: rgba(0,0,0,0.6);
+            } */
