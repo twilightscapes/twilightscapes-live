@@ -42,8 +42,8 @@ const LaunchPadPage = () => (
 <CustomBox style={{}}>
 <form
           className="news-form"
-          action="/test3"
-          name="ts-news"
+          action="/test3/"
+          name="ts-space"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field">
@@ -52,7 +52,7 @@ const LaunchPadPage = () => (
 
               <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
 
-          <input type="hidden" name="form-name" value="news" />
+          <input type="hidden" name="form-name" value="ts-space" />
 
 <br />
 
