@@ -36,13 +36,13 @@ input::placeholder {
 `
 
 
-const GiftShopPage = () => (
+const LaunchPadPage = () => (
 
 
 <CustomBox style={{}}>
 <form
           className="news-form"
-          // action="/signedup/"
+          action="/test3"
           name="ts-news"
           method="POST"
           data-netlify="true"
@@ -57,7 +57,7 @@ const GiftShopPage = () => (
 <br />
 
             
-              <span style={{fontSize:'120%'}}><strong>Thank you for travelling with Twilightscapes</strong></span><br />
+              <span style={{fontSize:'120%'}}><strong>Get your boarding pass</strong></span><br />
               
               <span style={{fontSize:'85%'}}>Feel free to leave your email (NO SPAM!)</span><br /><br />
 
@@ -90,7 +90,7 @@ const GiftShopPage = () => (
               type="submit"
               style={{marginTop:'-8px'}}
             >
-              Follow Todd{" "}
+              BOARD NOW!{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
@@ -103,12 +103,12 @@ const GiftShopPage = () => (
             <div style={{fontSize: '150%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
             {/* <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link> */}
 
-            PLEASE EXIT THROUGH GIFT SHOP
+            {/* PLEASE EXIT THROUGH GIFT SHOP */}
            
 
-            <ScrollAnimation animateIn="bounce" duration={1}  initiallyVisible={true} animateOnce={false} animatePreScroll={true} >
+            {/* <ScrollAnimation animateIn="bounce" duration={1}  initiallyVisible={true} animateOnce={false} animatePreScroll={true} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
             </div>
@@ -121,4 +121,4 @@ const GiftShopPage = () => (
   
 )
 
-  export default GiftShopPage
+  export default LaunchPadPage
