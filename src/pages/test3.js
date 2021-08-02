@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Seo } from "../components/seo"
 // import CasePanels from "../components/casepanels"
 
-import Creepers from "../../static/assets/planetx.svg"
+import Creepers from "../../static/assets/nebula.svg"
 
 
 
