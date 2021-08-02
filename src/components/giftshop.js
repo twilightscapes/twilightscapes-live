@@ -57,7 +57,7 @@ const GiftShopPage = () => (
 <br />
 
             
-              <span style={{fontSize:'120%', padding:'0 2rem'}}><strong>Thank you for travelling with Twilightscapes</strong></span><br />
+              <span style={{fontSize:'120%', padding:'0 2rem'}}><strong>Thank you for traveling with Twilightscapes</strong></span><br />
               
               
 
