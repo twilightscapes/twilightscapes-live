@@ -45,7 +45,7 @@ const LaunchPadPage = () => (
 <CustomBox style={{}}>
 <form
           className="news-form"
-          action="/decontructed-photography/planetary/"
+          action="/deconstructed-photography/planetary/"
           name="ts-space"
           method="POST"
           data-netlify="true"
