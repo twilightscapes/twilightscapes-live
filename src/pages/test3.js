@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { Seo } from "../components/seo"
 // import CasePanels from "../components/casepanels"
-
+import Audio from '../../static/assets/music.m4a'
 import Creepers from "../../static/assets/nebula.svg"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
@@ -13,6 +13,15 @@ import Newsignup from "../components/newssign"
 const CustomBox = styled.div`
 .slider{object-fit: scale-down;}
 
+.audio:before{
+  position:absolute;
+  top:100px;
+  width:200px;
+  content: " Audio Controls: ";
+  display:block  !important;
+  border:0px solid red  !important;
+
+}
 // div:first-of-type{padding:0 !important; margin:0 !important;}
 
 @media (max-width: 48em) {
@@ -69,7 +78,9 @@ right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', text
 
   <Newsignup />
 </ScrollAnimation> */}
-
+<audio className="audio" controls="controls" autoplay="true" src={Audio} style={{position:'fixed', top:'0', right:'0', zIndex:'1'}}> 
+    Your browser does not support the HTML5 Audio element.
+</audio>
 <Creepers className="creeper" style={{zIndex:'-1', backgroundSize:'cover', width:'100vw',}} />
 
 
