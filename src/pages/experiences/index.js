@@ -42,8 +42,8 @@ export default function experiencesPage({ data }) {
 </Helmet>
 
 <Seo
-          title={`Deconstructed Photography by Todd Lambert and Twilightscapes`}
-          description={`Deconstructed Photography is a new melding of visual, audio and interactive together in a new medium for art`}
+          title={`Interactive Photo Experiences by Twilightscapes`}
+          description={`Experiences are a new melding of visual, audio and interactive together in a new medium for art`}
           image={'https://twilightscapes.com/deconstructed-photography.jpg'}
         />
 
