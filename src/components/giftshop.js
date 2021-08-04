@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
-import { FaHandPointDown } from "react-icons/fa"
+import { FaHandPointRight } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 // import Layout from "./layout"
 // import Seo from "./seo"
@@ -46,20 +46,27 @@ const GiftShopPage = () => (
           name="ts-news"
           method="POST"
           data-netlify="true"
-          data-netlify-honeypot="bot-field">
+          data-netlify-honeypot="bot-field" style={{display:'flex', justifyContent:'center'}}>
 
-            <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center'}}>
+            <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'500px', overflow:'hidden'}}>
 
-              <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
+              <div className="blocker" style={{width:'500px', height:'100%', borderRadius:'12px'}}></div>
 
           <input type="hidden" name="form-name" value="news" />
 
 <br />
 
             
-              <span style={{fontSize:'120%', padding:'0 2rem'}}><strong>Thank you for traveling with Twilightscapes</strong></span><br />
+              <span style={{fontSize:'120%', padding:'0 2rem'}}><strong>Thank you for viewing!</strong></span><br />
               
               
+
+
+              <ScrollAnimation animateIn="bounce" duration={1}  initiallyVisible={true} animateOnce={false} animatePreScroll={true} >
+<FaHandPointRight className="bounce" style={{fontSize:'40px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
+
+
 
              <div className="signbox" style={{display:'flex',}}>
 
@@ -106,11 +113,7 @@ const GiftShopPage = () => (
             PLEASE EXIT THROUGH GIFT SHOP
            
 
-            <ScrollAnimation animateIn="bounce" duration={1}  initiallyVisible={true} animateOnce={false} animatePreScroll={true} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
-
-
+<br /><br />
 <span style={{fontSize:'105%'}}>Be sure to sign the guest book!</span><br /><br />
 
             </div>

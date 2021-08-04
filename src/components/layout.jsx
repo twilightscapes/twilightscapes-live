@@ -192,9 +192,9 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto">
-              <Link className="navbar-item txtshadow" to="/deconstructed-photography/">
-                Deconstructed Photography 
-                {/* <span>A new medium in visual arts</span> */}
+              <Link className="navbar-item txtshadow" to="/experiences/">
+                Experiences
+                <span>Photo Multimedia</span>
               </Link>
       </li>
 
