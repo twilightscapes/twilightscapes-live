@@ -21,6 +21,10 @@ import { IoMdFingerPrint } from 'react-icons/io'
 
 const CustomBox = styled.div`
 
+@media (max-width: 48rem) {
+.container2 {height:300px !important;}
+}
+
 `
 
 
@@ -40,7 +44,7 @@ const CaseStudyVertIndex = () => (
 
 
   
-<div className="container2" style={{position:'', height:'600px', display:'', border:'5px solid ', margin:'5vh 6vw 0 6vw', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
+<div className="container2" style={{display:'', justifySelf:'center', maxWidth:'1042px', height:'600px',  border:'5px solid ', margin:'5vh 12% 0 12%', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
 
 
 
@@ -58,6 +62,17 @@ const CaseStudyVertIndex = () => (
   <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-alien-egg-farm.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
   </section>
 {/* END Panel 1 */}
+
+
+<section className="child" style={{position:'relative', height:'100%', overflow:''}}>
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
+<div style={{alignSelf: 'flex-center', position:'absolute',  top:'2vh', textAlign:'center',}}>
+        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="button" to="/experiences/transcendence-naked">Enter the Experience</Link></h2>
+    </div>
+  </div>
+  <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-transcendence.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
+  </section>
+{/* END Panel 2 */}
 
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
