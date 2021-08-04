@@ -79,7 +79,7 @@ export const query = graphql`
 <Seo
           title={`Interactive Photo Experiences by Todd Lambert`}
           description={`Experiences are a new melding of visual, audio and interactive together in a new medium for art`}
-          image={'https://twilightscapes.com/deconstructed-photography.jpg'}
+          image={'https://twilightscapes.com/experiences-promo.jpg'}
         />
 
 
@@ -96,7 +96,7 @@ export const query = graphql`
   </StaticImage> */}
 
 <ScrollAnimation className="signup" animateIn="bounceInUp" delay={49000} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'10px',
-right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
+right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', width:'200px', borderRadius:'12px'}}>
 
 
 <ScrollAnimation  animateIn="fadeOut" delay={57000} duration="1" initiallyVisible={true} animateOnce={true} animatePreScroll={true} >

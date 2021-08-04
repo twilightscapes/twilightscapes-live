@@ -96,7 +96,7 @@ export const query = graphql`
   </StaticImage> */}
 
 <ScrollAnimation className="signup" animateIn="bounceInUp" delay={19000} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'10px',
-right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
+right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', width:'200px', borderRadius:'12px'}}>
 
 
 <ScrollAnimation  animateIn="fadeOut" delay={24000} duration="1" initiallyVisible={true} animateOnce={true} animatePreScroll={true} >
