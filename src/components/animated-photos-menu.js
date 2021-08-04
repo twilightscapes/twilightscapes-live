@@ -56,7 +56,7 @@ const CaseStudyVertIndex = () => (
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
       <div style={{alignSelf: 'flex-center', position:'absolute',  top:'2vh', textAlign:'center',}}>
-        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="button" to="/experiences/alien-egg-farm-naked">Enter the Experience</Link></h2>
+        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="moreButton" to="/experiences/alien-egg-farm-naked">Enter the Experience</Link></h2>
     </div>
   </div>
   <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-alien-egg-farm.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
@@ -67,7 +67,7 @@ const CaseStudyVertIndex = () => (
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  top:'2vh', textAlign:'center',}}>
-        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="button" to="/experiences/transcendence-naked">Enter the Experience</Link></h2>
+        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="moreButton" to="/experiences/transcendence-naked">Enter the Experience</Link></h2>
     </div>
   </div>
   <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-transcendence.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
@@ -78,7 +78,7 @@ const CaseStudyVertIndex = () => (
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  top:'2vh', textAlign:'center',}}>
-        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="button" to="/experiences/crude-addiction-naked">Enter the Experience</Link></h2>
+        <h2 style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}><Link state={{modal: true}} className="moreButton" to="/experiences/crude-addiction-naked">Enter the Experience</Link></h2>
     </div>
   </div>
   <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-crude-addiction.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
