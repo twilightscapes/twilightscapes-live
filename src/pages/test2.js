@@ -44,7 +44,7 @@ export default function testPage() {
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
     
-      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/AmrrSfiMxGA?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=AmrrSfiMxGA" frameBorder="0" allowFullScreen playsinline></iframe>
+      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/AmrrSfiMxGA?controls=0&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=AmrrSfiMxGA" frameBorder="0" allowFullScreen playsinline></iframe>
     </div>
   
 </div>

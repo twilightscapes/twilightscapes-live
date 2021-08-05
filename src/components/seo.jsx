@@ -69,7 +69,7 @@ export function Seo({
       <meta name="twitter:creator" content={twitter} />
       <meta name="twitter:image" content={seo.image} />
 
-      {/* <meta name="apple-mobile-web-app-capable" content="yes" /> */}
+      <meta name="apple-mobile-web-app-capable" content="yes" />
       
       <link
         rel="icon"
