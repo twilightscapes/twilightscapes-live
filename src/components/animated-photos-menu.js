@@ -44,7 +44,7 @@ const CaseStudyVertIndex = () => (
 
 
   
-<div className="container2" style={{display:'', justifySelf:'center', maxWidth:'1042px', height:'600px',  border:'5px solid ', margin:'5vh 12% 0 12%', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
+<div className="container2" style={{display:'', justifySelf:'center', maxWidth:'1042px', height:'550px',  border:'5px solid ', margin:'5vh 12% 0 12%', borderRadius:'12px', boxShadow:'0 2px 3px 1px #777', transition:'background 0.3s ease-in'}}>
 
 
 
