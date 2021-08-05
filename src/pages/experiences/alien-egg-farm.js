@@ -111,7 +111,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
 
-<span className="headline">Alien Egg Farm</span>
+<span className="">Alien Egg Farm</span>
 
 <h2 className="" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Alien Egg Farm</h2>
 
