@@ -95,7 +95,7 @@ export const query = graphql`
   {/* <StaticImage style={{zIndex:'-1', backgroundSize:'cover', width:'100vw', height:'100vh'}} className="" src="../img/favorites/night294.jpg" alt="Colorado at night with Twilightscapes">
   </StaticImage> */}
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={39000} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'10px',
+{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={39000} initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'10px',
 right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', width:'200px', borderRadius:'12px'}}>
 
 
@@ -103,7 +103,7 @@ right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', text
   <GiftShop />
   </ScrollAnimation>
 
-</ScrollAnimation>
+</ScrollAnimation> */}
 {/* <div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="true" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
