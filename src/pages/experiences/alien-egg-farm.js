@@ -8,9 +8,9 @@ import ShareSocial from '../../components/share'
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../../components/seo"
-// import { RiSendPlane2Line } from "react-icons/ri"
-// import Audio from '../../../static/assets/bensound-betterdays.mp3'
-// import SVG from "../../../static/assets/alien-egg-farm.svg"
+import { RiSendPlane2Line } from "react-icons/ri"
+import Audio from '../../../static/assets/bensound-betterdays.mp3'
+import SVG from "../../../static/assets/alien-egg-farm.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../../components/giftshop"
 import PhotoMenu from "../../components/animated-photos-menu"
@@ -85,7 +85,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   
 <div className="video-background" style={{width:'100vw'}}>
 
-  {/* <SVG style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
+  <SVG style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
 
 
 {/* <div style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/Wormhole.png" alt="Twilightscapes" className="layer1" /></div> */}
@@ -102,33 +102,33 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div>
 
 
-{/* <div className="audio">
+<div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="true" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
 </audio>
-</div> */}
+</div>
 
 
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
 
-{/* <span className="headline">Alien Egg Farm</span>
+<span className="headline">Alien Egg Farm</span>
 
-<h2 className="letter" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Alien Egg Farm</h2>
+<h2 className="" style={{fontSize:'3vw', margin:'0 0 2rem 0'}}>Alien Egg Farm</h2>
 
-<p className="letter">Possibly one of the most far-out locations I've ever been to. The Bisti Badlands are on tribal land and extremely remote. There are no roads. This is a 3.5 mile hike into some of the most extreme landscapes.
+<p className="">Possibly one of the most far-out locations I've ever been to. The Bisti Badlands are on tribal land and extremely remote. There are no roads. This is a 3.5 mile hike into some of the most extreme landscapes.
 </p>
 
-<p className="letter">It seems like around every corner there is another scene that appears to be from a distant planet. These "alien eggs" are actually weathered limestone.</p>
+<p className="">It seems like around every corner there is another scene that appears to be from a distant planet. These "alien eggs" are actually weathered limestone.</p>
 
-<p className="letter">Single Shot - No PS - long exposure</p> */}
+<p className="letter">Single Shot - No PS - long exposure</p>
 
- {/* <div style={{position:'relative', zIndex:'0', margin:'0 auto', display:'flex', justifyContent:'center', padding:'0', border:'1px solid #666'}}>
+ <div style={{position:'relative', zIndex:'0', margin:'0 auto', display:'flex', justifyContent:'center', padding:'0', border:'1px solid #666'}}>
 <StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="" />
-</div> */}
+</div>
 
 {/* <div className="spacer66" style={{height:'2vh'}} /> */}
 
-{/* <div style={{textAlign:'center', padding:'0', margin:'10px 0 1rem 0'}}>
+<div style={{textAlign:'center', padding:'0', margin:'10px 0 1rem 0'}}>
   WANT THE NFT? ITS ON FOUNDATION:<br />
 <a
               className="button"
@@ -145,7 +145,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
                 <RiSendPlane2Line />
               </span>
             </a>
-  </div> */}
+  </div>
 
     {/* <StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="pop" /> */}
 
