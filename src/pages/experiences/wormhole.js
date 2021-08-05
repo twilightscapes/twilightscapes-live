@@ -38,7 +38,7 @@ const CustomBox = styled.div`
 	// .image-wrap .innerpanel{font-size:70% !important;}
   // .signup{ bottom:150px;}
 
-
+  .vidbox{height:50vh !important;}
 
 
 
