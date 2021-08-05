@@ -2217,8 +2217,15 @@ background: rgba(0,0,0,0.6);
 
 
 
-          
-
+          .container2{border-color:#FA02B7 !important;}
+          /* .container2:after{
+            content:'BALLS!';
+          position:absolute;
+          bottom:0; 
+          border:1px solid red;
+          display:block;
+          width:100%;
+          } */
 
 
           body.homepage .intro:before{
