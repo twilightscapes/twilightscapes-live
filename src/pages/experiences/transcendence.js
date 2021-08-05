@@ -11,7 +11,7 @@ import { Seo } from "../../components/seo"
 import { RiSendPlane2Line } from "react-icons/ri"
 // import CasePanels from "../components/casepanels"
 import Audio from '../../../static/assets/bensound-betterdays.mp3'
-import Creepers from "../../../static/assets/spikespin.svg"
+import Creepers from "../../../static/assets/crude-addiction.svg"
 import ScrollAnimation from 'react-animate-on-scroll'
 import GiftShop from "../../components/giftshop"
 import PhotoMenu from "../../components/animated-photos-menu"
