@@ -102,11 +102,11 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div>
 
 
-<div className="audio">
+{/* <div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="true" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
 </audio>
-</div>
+</div> */}
 
 
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
