@@ -113,7 +113,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
        </div>
 
-    
+       <div className="fluff">
        <div className="outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
 
 
@@ -175,8 +175,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-       {/* <br /><br />
- <ShareSocial /> */}
+ <ShareSocial />
 <br /><br /><br />
 
 <div style={{textAlign:'center', fontSize:'2rem', padding:'0', margin:'10px 0 1rem 0'}}>WANT THE PHOTO? <br /> TWILIGHTCAPES ARE ONLY $29</div>
@@ -192,7 +191,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     
 
 <PhotoMenu />
-
+</div>
 
        </Layout>
      </CustomBox>
