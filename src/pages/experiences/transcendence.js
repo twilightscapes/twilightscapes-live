@@ -9,8 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import Audio from '../../../static/assets/bensound-betterdays.mp3'
-import SVG from "../../../static/assets/transcendence.svg"
+// import Audio from '../../../static/assets/bensound-betterdays.mp3'
+// import SVG from "../../../static/assets/transcendence.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../../components/giftshop"
 import PhotoMenu from "../../components/animated-photos-menu"
@@ -81,11 +81,11 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div className="vidbox" style={{maxHeight:'90vh', overflow:'hidden'}}>
+<div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   
 <div className="video-background" style={{width:'100vw'}}>
 
-  <SVG style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
+  {/* <SVG style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
 
 {/* <div style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/Wormhole.png" alt="Twilightscapes" className="layer1" /></div> */}
@@ -102,11 +102,11 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div>
 
 
-<div className="audio">
+{/* <div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="true" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
 </audio>
-</div>
+</div> */}
 
 
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
