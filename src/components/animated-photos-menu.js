@@ -69,9 +69,9 @@ color:'#fff',
 opacity:'.8',
 }}>SCROLL DOWN FOR MORE</div>
 
-<Link state={{modal: true}} className="" to="/experiences/alien-egg-farm-naked">
+<Link state={{modal: true}} className="" to="/experiences/alien-egg-farm">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
-      <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'10vh', textAlign:'center',}}>
+      <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
         <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
     </div>
   </div>
@@ -83,10 +83,10 @@ opacity:'.8',
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} className="" to="/experiences/transcendence-naked">
+  <Link state={{modal: true}} className="" to="/experiences/transcendence">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
-<div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'10vh', textAlign:'center',}}>
+<div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
         <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
     </div>
   </div>
@@ -99,17 +99,32 @@ opacity:'.8',
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} to="/experiences/crude-addiction-naked">
+  <Link state={{modal: true}} to="/experiences/crude-addiction">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
-<div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'10vh', textAlign:'center',}}>
+<div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
         <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
     </div>
   </div>
   <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-crude-addiction.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
   </Link>
   </section>
-{/* END Panel 2 */}
+{/* END Panel 3 */}
+
+
+<section className="child" style={{position:'relative', height:'100%', overflow:''}}>
+
+  <Link state={{modal: true}} to="/experiences/wormhole">
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
+<div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
+        <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
+    </div>
+  </div>
+  <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-wormhole.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
+  </Link>
+  </section>
+{/* END Panel 4 */}
 
 
 
