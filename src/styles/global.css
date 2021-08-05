@@ -622,8 +622,8 @@ body .carto:hover{
 
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff{
-display: none;
+.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline{
+display: none !important;
 }
 
 .ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}

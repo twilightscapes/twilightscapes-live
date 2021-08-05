@@ -44,7 +44,7 @@ export default function experiencesPage({ data }) {
 <Seo
           title={`Interactive Photo Experiences by Twilightscapes`}
           description={`Experiences are a new melding of visual, audio and interactive together in a new medium for art`}
-          image={'https://twilightscapes.com/deconstructed-photography.jpg'}
+          image={'https://twilightscapes.com/experiences-promo.jpg'}
         />
 
 
