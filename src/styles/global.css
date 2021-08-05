@@ -2220,7 +2220,31 @@ background: rgba(0,0,0,0.6);
 
 
           .container2{border-color:#FA02B7 !important;}
-  
+
+  .container2 section:first-child:after{
+content: " SCROLL DOWN FOR MORE ";
+display: block;
+position:absolute;
+bottom:0;
+width:100%;
+text-align: center;
+background: #222;
+font-size: 20px;
+color:#fff;
+opacity:.8;
+  }
+  .container2 section:last-child:after{
+    content: " SCROLL UP FOR MORE ";
+    display: block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background: #222;
+    font-size: 20px;
+    color:#fff;
+    opacity:.8;
+      }
 
 
           body.homepage .intro:before{

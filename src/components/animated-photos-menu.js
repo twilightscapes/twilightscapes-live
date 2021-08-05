@@ -57,18 +57,6 @@ const CaseStudyVertIndex = () => (
     
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-<div style={{position:'absolute', bottom:'0',
-position:'absolute',
-bottom:'0',
-display:'block',
-width:'100%',
-textAlign:'center',
-background:'#222',
-fontSize:'20px',
-color:'#fff',
-opacity:'.8',
-}}>SCROLL DOWN FOR MORE</div>
-
 <Link state={{modal: true}} className="" to="/experiences/alien-egg-farm">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
       <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
