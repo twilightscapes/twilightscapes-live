@@ -9,8 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import Audio from '../../../static/assets/bensound-betterdays.mp3'
-import SVG from "../../../static/assets/nebula.svg"
+// import Audio from '../../../static/assets/bensound-betterdays.mp3'
+// import SVG from "../../../static/assets/alien-egg-farm.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../../components/giftshop"
 import PhotoMenu from "../../components/animated-photos-menu"
@@ -81,7 +81,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div className="vidbox" style={{maxHeight:'90vh', overflow:'hidden'}}>
+<div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   
 <div className="video-background" style={{width:'100vw'}}>
 
@@ -92,9 +92,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-  <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
+  {/* <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
   <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/NfEdtor4cis?controls=0&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NfEdtor4cis" frameBorder="0" allowFullScreen playsinline></iframe>
-  </div>
+  </div> */}
 
   
 </div>
@@ -166,9 +166,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
  </div>
     
 
-<PhotoMenu />
-</div>
 
+</div>
+<PhotoMenu />
        </Layout>
      </CustomBox>
      </>

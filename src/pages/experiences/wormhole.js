@@ -166,9 +166,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
  </div>
     
 
-<PhotoMenu />
-</div>
 
+</div>
+<PhotoMenu />
        </Layout>
      </CustomBox>
      </>

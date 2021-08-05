@@ -9,7 +9,7 @@ import { Seo } from "../../components/seo"
 // import CasePanels from "../components/casepanels"
 // import LaunchPad from "../../components/launchpad"
 import ScrollAnimation from 'react-animate-on-scroll'
-import SpacePort from "../../../static/assets/spaceport.svg"
+// import SpacePort from "../../../static/assets/spaceport.svg"
 import PhotoMenu from "../../components/animated-photos-menu"
 import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
