@@ -57,7 +57,7 @@ const CaseStudyVertIndex = () => (
     
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-<Link state={{modal: true}} className="" to="/experiences/alien-egg-farm">
+<Link state={{modal: true}} className="" to="/experiences/alien-egg-farm#___gatsby">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
       <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
         <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
@@ -71,7 +71,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} className="" to="/experiences/transcendence">
+  <Link state={{modal: true}} className="" to="/experiences/transcendence#___gatsby">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
@@ -87,7 +87,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} to="/experiences/crude-addiction">
+  <Link state={{modal: true}} to="/experiences/crude-addiction#___gatsby">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
@@ -102,7 +102,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} to="/experiences/wormhole">
+  <Link state={{modal: true}} to="/experiences/wormhole#___gatsby">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>

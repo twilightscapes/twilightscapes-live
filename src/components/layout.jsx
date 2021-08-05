@@ -70,7 +70,7 @@ export function Layout({ children }) {
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
-<header>
+<header name="pagetop" >
 
 {/* <Link to="/"><img id="logo" className="twlogo1" src={twLogo} alt="Twilightscapes Logo" style={{margin:'16px 0 40px 4vw', minWidth:'100px', maxWidth:'100px', height:'auto', padding:'0', border:'0px solid red', position:'fixed', zIndex:'2'}} /></Link> */}
 
@@ -286,7 +286,7 @@ Contact Me<span>Ordering Questions?</span>
 
       <SkipNavContent className="intro">{children}</SkipNavContent>
       
-      <br /><br />
+      
       {/* <Consent /> */}
      {/* <Install /> */}
       <Footer />
