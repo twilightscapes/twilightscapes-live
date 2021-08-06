@@ -14,7 +14,7 @@ import Gearbox from "../components/gearbox"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-
+import PhotoMenu from "../components/animated-photos-menu"
 const CustomBox = styled.div`
 
 
@@ -162,6 +162,9 @@ const HomePage = ({ data }) => {
         </div>
 
         
+
+
+        <PhotoMenu />
 
 
       <div style={{padding:'2rem 3%'}}>

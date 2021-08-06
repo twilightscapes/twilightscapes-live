@@ -5,7 +5,7 @@ import { RiArrowDownLine, RiArrowRightSLine, RiStarLine } from "react-icons/ri"
 import { StaticImage } from "gatsby-plugin-image"
 
 import PostCard from "./post-card"
-import FeaturedGalleries from "./featured-galleries"
+// import FeaturedGalleries from "./featured-galleries"
 
 export default function BlogListHome(props) {
   const data = props.data
@@ -17,16 +17,11 @@ export default function BlogListHome(props) {
 
 const PostMaker = ({ data }) => (
 <div>
-  <h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
-      Spotlight <strong>Galleries</strong>
-       <span className="icon -right">
-        <RiArrowDownLine />
-      </span>
-    </h2>
+  
   <section className="home-posts" style={{color:'#ff0000 !important'}} >
 
     
-  <FeaturedGalleries />
+  {/* <FeaturedGalleries /> */}
 
 {/* <div className="grids col-1 sm-2 lg-3">
       

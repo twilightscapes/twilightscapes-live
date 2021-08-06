@@ -38,7 +38,12 @@ const CaseStudyPanels = () => (
     <CustomBox style={{}}>
 
 
-
+<h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
+      Spotlight <strong>Galleries</strong>
+       <span className="icon -right">
+        <RiArrowDownLine />
+      </span>
+    </h2>
 <div className="panel-wrapper home-posts post-card" style={{marginTop:'0', overflow:'hidden', height:'60vh', margin:'2rem 0', overflow:'hidden'}}>
     
 
