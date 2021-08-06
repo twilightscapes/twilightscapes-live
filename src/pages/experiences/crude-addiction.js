@@ -85,7 +85,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   
 <div className="video-background" style={{width:'100vw'}}>
 
-  <SVG style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
+  <SVG style={{width:'100%', position:'absolute', bottom:'', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
 
 
 {/* <div style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/Wormhole.png" alt="Twilightscapes" className="layer1" /></div> */}
