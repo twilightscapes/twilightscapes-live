@@ -622,13 +622,14 @@ body .carto:hover{
 
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline{
+.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after{
 display: none !important;
+
 }
 
 .ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}
 
-.ReactModalPortal {margin:0 3% !important; width:80% !important;}
+.ReactModalPortal {margin:0 3% !important; width:80% !important; z-index: 2;}
 
 .ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.90);
   backdrop-filter: blur(22px);}
