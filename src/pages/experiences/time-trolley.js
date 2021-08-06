@@ -1,20 +1,20 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Layout } from "../components/layout"
-import { ProductListing } from "../components/product-listing"
+import { Layout } from "../../components/layout"
+import { ProductListing } from "../../components/product-listing"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
-import ShareSocial from '../components/share' 
+import ShareSocial from '../../components/share' 
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
-import { Seo } from "../components/seo"
+import { Seo } from "../../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import Audio from '../../static/assets/bensound-betterdays.mp3'
-import SVG from "../../static/assets/crude-addiction.svg"
+import Audio from '../../../static/assets/bensound-betterdays.mp3'
+import SVG from "../../../static/assets/crude-addiction.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../components/giftshop"
-import PhotoMenu from "../components/animated-photos-menu"
-import CommentBox from "../components/commentbox"
+import PhotoMenu from "../../components/animated-photos-menu"
+import CommentBox from "../../components/commentbox"
 const CustomBox = styled.div`
 
 @media (max-width: 48em) {
@@ -81,32 +81,32 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div className="vidbox" style={{maxHeight:'90vh', overflow:'hidden'}}>
+<div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   
 <div className="video-background" style={{width:'100vw'}}>
 
   {/* <SVG style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
 
-<div style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/alien-egg-farm-cutout.png" alt="Twilightscapes" className="layer1" /></div>
+<div style={{width:'100%', height:'100%',  position:'absolute', bottom:'', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../../img/trolley-test.png" alt="Twilightscapes" className="layer1" style={{height:'100vh'}} /></div>
 
 
 
-  {/* <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
-  <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/NfEdtor4cis?controls=0&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NfEdtor4cis" frameBorder="0" allowFullScreen playsinline></iframe>
-  </div> */}
-
-  
+  <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
+  <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/zomZywCAPTA?controls=0&amp;playsinline=1&amp;start=5270&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=zomZywCAPTA" frameBorder="0" allowFullScreen playsinline></iframe>
+  </div>
+  {/* zomZywCAPTA */}
+  {/* YpcJ6jJlz6o */}
 </div>
 {/*  */}
 </div>
 
 
-<div className="audio">
+{/* <div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="false" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
 </audio>
-</div>
+</div> */}
 
 
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>

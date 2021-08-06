@@ -117,6 +117,22 @@ const CaseStudyVertIndex = () => (
 
 
 
+<section className="child" style={{position:'relative', height:'100%', overflow:''}}>
+
+  <Link state={{modal: true}} to="/experiences/time-trolley">
+
+<div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
+<div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
+        <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
+    </div>
+  </div>
+  <div style={{position:'absolute', zIndex:'-1'}}><StaticImage src="../img/interactive-photo-banner-time-trolley.jpg" alt="Twilightscapes" className="featured-imaged" /></div>
+  </Link>
+  </section>
+{/* END Panel 5 */}
+
+
+
 
 
 

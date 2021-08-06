@@ -57,11 +57,11 @@ right:'10vw', border:'0px solid yellow', justifyContent:'center', width:'', text
 
 {/* <SpacePort /> */}
 
-<div className="audio">
+{/* <div className="audio">
   <strong>FULL Experience:</strong> &nbsp; <audio controls="controls" autoplay="false" src={Audio} style={{}}> 
     Your browser does not support the HTML5 Audio element.
 </audio>
-</div>
+</div> */}
 
 
 <PhotoMenu />
