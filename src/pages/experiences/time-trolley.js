@@ -53,9 +53,9 @@ export const query = graphql`
 </Helmet>
 
 <Seo
-          title={`Wormhole - Animated Photo Experience by Todd Lambert`}
+          title={`Time Trolley - Animated Photo Experience by Todd Lambert`}
           description={`Experiences are a new melding of visual, audio and interactive together in a new medium for art`}
-          image={'https://twilightscapes.com/twilight-promo-wormhole.jpg'}
+          image={'https://twilightscapes.com/twilight-promo-time-trolley.jpg'}
         />
 
 
