@@ -32,7 +32,7 @@ export default class Installer extends React.Component {
        return(
            <div>
            <div style={{textAlign:'center', }}>
-           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install the Web App</button> - Get 30% OFF!.
+           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install the Web App</button> - Get 30% OFF!
              
              
              </div>
