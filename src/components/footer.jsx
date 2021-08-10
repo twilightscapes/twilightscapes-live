@@ -1,7 +1,8 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Social from "../components/social"
-
+import Consent from "../components/Consent"
+import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import {
   RiFacebookBoxFill,
@@ -158,9 +159,15 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 export function Footer() {
   const { companyname } = useSiteMetadata()
   return (
-
+<>
     
+
     <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
+
+    <Install />
+{/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
+    <Consent />
+    
       <div className={blurb}>
 
 
@@ -186,6 +193,7 @@ export function Footer() {
       </nav>
    
     </footer>
+    </>
   )
 }
 
