@@ -163,7 +163,17 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: ``, // default: undefined
+        enableIdentityWidget: true,
+        publicPath: `admin`,
+        htmlTitle: `Twilightscapes CMS`,
+        htmlFavicon: `static/tw-logo-white.svg`,
+        includeRobots: false,
+      },
+    },
 
 
  
@@ -178,26 +188,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Twilightscapes`,
+        name: `Twilightscapes Night Photography `,
         short_name: `Twilightscapes`,
-        start_url: `/`,
+        start_url: `/?user_mode=app`,
+        description: `Unique Night Photography of remote and abandoned`,
         background_color: `#111`,
+        lang: `en`,
         theme_color: `#111`,
         display: `standalone`,
-        // icon: "static" + settings.meta.iconimage,
-        icons: [
-          {
-            src: `/static/assets/icon-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/static/assets/icon-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-            purpose: `any maskable`,
-          },
-        ],
+ icon: `static/tw-logo-white.svg`, // This path is relative to the root of the site.
+ icon_options: {
+  purpose: `any maskable`,
+},
+      icons: [
+        {
+          src: `static/tw-logo-white.svg`,
+          sizes: `192x192`,
+          type: `image/png`,
+        },
+        {
+          src: `static/tw-logo-white.svg`,
+          sizes: `512x512`,
+          type: `image/png`,
+        },
+      ], // Add or remove icon sizes as desired
       },
     },
     "gatsby-plugin-offline",
