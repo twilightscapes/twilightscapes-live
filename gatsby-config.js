@@ -170,7 +170,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `Twilightscapes CMS`,
-        htmlFavicon: `static/tw-logo-white.svg`,
+        htmlFavicon: `static/siteimages/manifest-icon-192.png`,
         includeRobots: false,
       },
     },
@@ -202,12 +202,12 @@ module.exports = {
 },
       icons: [
         {
-          src: `static/tw-logo-white.svg`,
+          src: `static/siteimages/manifest-icon-192.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `static/tw-logo-white.svg`,
+          src: `static/siteimages/manifest-icon-512.png`,
           sizes: `512x512`,
           type: `image/png`,
         },
