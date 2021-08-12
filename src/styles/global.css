@@ -2239,6 +2239,12 @@ background: rgba(0,0,0,0.6);
 
 
 
+            @media (min-width: 48rem) {
+              .installwindow{max-width:480px !important;
+                transition: var(--transition);
+              }
+              }
+
           .container2{border-color:#FA02B7 !important;}
 
   .container2 section:first-child:after{
