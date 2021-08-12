@@ -30,7 +30,7 @@ export default class Installer extends React.Component {
 
    render(){
        return(
-           <div>
+           <div className="no-app">
            <div style={{textAlign:'center', }}>
            <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install the Web App</button> - Get 30% OFF!
              
