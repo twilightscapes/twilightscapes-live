@@ -160,6 +160,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-sharp-exif',
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
