@@ -14,7 +14,7 @@ import Gearbox from "../components/gearbox"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import PhotoMenu from "../components/animated-photos-menu"
+// import PhotoMenu from "../components/animated-photos-menu"
 const CustomBox = styled.div`
 
 
@@ -51,7 +51,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
             featuredImage {
@@ -164,7 +164,7 @@ const HomePage = ({ data }) => {
         
 
 
-        <PhotoMenu />
+        {/* <PhotoMenu /> */}
 
 
       <div style={{padding:'2rem 3%'}}>

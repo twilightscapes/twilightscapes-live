@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { RiArrowDownLine, RiArrowRightSLine, RiStarLine } from "react-icons/ri"
-import { StaticImage } from "gatsby-plugin-image"
+import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
+
 
 import PostCard from "./post-card"
 // import FeaturedGalleries from "./featured-galleries"
@@ -17,8 +17,13 @@ export default function BlogListHome(props) {
 
 const PostMaker = ({ data }) => (
 <div>
-  
-  <section className="home-posts" style={{color:'#ff0000 !important'}} >
+  {/* <h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
+      Spotlight <strong>Galleries</strong>
+       <span className="icon -right">
+        <RiArrowDownLine />
+      </span>
+    </h2> */}
+  <section className="home-posts" style={{}} >
 
     
   {/* <FeaturedGalleries /> */}
@@ -101,7 +106,7 @@ const PostMaker = ({ data }) => (
 
 
 <h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
-      Latest in <strong>Articles</strong>{" "}
+      Latest <strong>Posts</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>
@@ -126,11 +131,11 @@ const PostMaker = ({ data }) => (
   
   <Link
       className="button"
-      to="/articles/"
+      to="/posts/"
       title="See More Galleries"
       style={{color:'#fff'}}
     >
-      See more articles
+      See more
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>

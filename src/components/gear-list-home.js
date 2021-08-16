@@ -23,7 +23,7 @@ const PostMaker = ({ data }) => (
 
 
 <h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
-      Latest in <strong>Articles</strong>{" "}
+      Latest in <strong>Posts</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>
@@ -40,11 +40,11 @@ const PostMaker = ({ data }) => (
   
   <Link
       className="button"
-      to="/articles/"
+      to="/posts/"
 
       title="See More Galleries"
     >
-      See more articles
+      See more posts
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>

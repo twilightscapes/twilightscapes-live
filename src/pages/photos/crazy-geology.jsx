@@ -9,6 +9,8 @@ import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
 import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
+import ReactPlayer from 'react-player/lazy'
+import { ImPlay } from "react-icons/im"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
@@ -91,18 +93,52 @@ export const query = graphql`
     <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
 </div> */}
 
-    <div className="vidbox" style={{position:'relative', maxHeight:'80vh'}}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
     <ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
       <div className="txtshadow-header letter zoomer">Crazy Geology</div>
       
 </ScrollAnimation>
 
-<div className="video-background">
+<ReactPlayer
+          className='react-player'
+          url="https://www.youtube.com/embed/j24SLqOA-fo?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=j24SLqOA-fo"
+          width="100%"
+          height="100%"
+     
+ 
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+              
+      
+      
+      
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          
+          </div>
+          </button>}
+      
+      
+      
+            light="../static/assets/transparent.png"
+          />
+
+
+{/* <div className="video-background">
     <div className="video-foreground">
       <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/j24SLqOA-fo?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=j24SLqOA-fo" frameBorder="0" allowFullScreen></iframe>
     </div>
-</div>
+</div> */}
 
 
 </div>

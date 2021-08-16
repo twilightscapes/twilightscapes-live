@@ -176,6 +176,14 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/img/front/`, // wherever background images are stored
+      },
+    },
+
 
  
     
@@ -203,12 +211,12 @@ module.exports = {
 },
       icons: [
         {
-          src: `static/siteimages/manifest-icon-192.png`,
+          src: `/static/siteimages/manifest-icon-192.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `static/siteimages/manifest-icon-512.png`,
+          src: `/static/siteimages/manifest-icon-512.png`,
           sizes: `512x512`,
           type: `image/png`,
         },

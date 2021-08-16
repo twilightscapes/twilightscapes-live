@@ -274,10 +274,16 @@ article img {
   }
 }
 
-.blog-post-content p, .blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5{
-  max-width: 80vw;
+.blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5{
+  font-size: clamp(18px, calc(1rem + 2vw), 36px);
+
+  // width: clamp(400px, 80vw, 1200px);
   margin-left: auto;
   margin-right: auto;
+}
+
+.blog-post-content {
+  width: clamp(400px, 88vw, 900px);
 }
 
 // .blog-post-content p img, .blog-post-content p svg, .blog-post-content iframe, .blog-post-content video{

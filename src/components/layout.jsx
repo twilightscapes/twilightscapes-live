@@ -13,7 +13,7 @@ import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
-import Fullscreen from "../components/FullScreen"
+// import Fullscreen from "../components/FullScreen"
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../../static/assets/search"
@@ -71,7 +71,7 @@ export function Layout({ children }) {
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
-<Fullscreen />
+{/* <Fullscreen /> */}
 
 <header name="pagetop" >
 
@@ -175,9 +175,9 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 
-      <li className="carto">
-      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>My rants &amp; raves</span></Link>
-       </li>
+      {/* <li className="carto">
+      <Link className="navbar-item txtshadow" to="/posts/">Posts<span>My rants &amp; raves</span></Link>
+       </li> */}
 
 
       <li className="carto">
@@ -195,20 +195,23 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto">
-              <Link className="navbar-item txtshadow" to="/experiences/">
-                Experiences
-                <span>Photo Multimedia</span>
+              <Link className="navbar-item txtshadow" to="/photos/">
+      
+              View Photos <span>Browse Photo Galleries</span>
+              </Link>
+      </li> 
+
+      
+<li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/posts/">
+              <span style={{color:'var(--primary-color)',}}>(All New)</span> Experiences
+                Photo Multimedia Blog
               </Link>
       </li>
 
 
 
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/photos/">
       
-              View Photos <span style={{color:'var(--primary-color)',}}>start here</span>
-              </Link>
-      </li> 
     
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>

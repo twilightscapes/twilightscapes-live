@@ -1,14 +1,15 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import TimeAgo from 'react-timeago'
 const PostCard = ({ data }) => (
+  <section>
   <article
     className="post-card"
-    sx={{
-      bg: "linear-gradient(180deg, #333 1%, #111 80%)",
-    }}
+    // sx={{
+    //   bg: "linear-gradient(180deg, #333 1%, #111 80%)",
+    // }}
   >
     {data.frontmatter.featuredImage ? (
       <Link to={data.frontmatter.slug}>
@@ -17,9 +18,10 @@ const PostCard = ({ data }) => (
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image"
         />
+
       </Link>
     ) : (
-      ""
+      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="AdFree Default Image" /></Link>
     )}
     <div className="post-content">
       <h2 className="title">
@@ -32,16 +34,13 @@ const PostCard = ({ data }) => (
           {data.frontmatter.title}
         </Link>
       </h2>
-      <p
-        className="meta"
-        sx={{
-          color: "muted",
-        }}
-      >
+      <p>
+        <TimeAgo date={data.frontmatter.date}/>
         {/* <time>{data.frontmatter.date}</time> */}
       </p>
     </div>
   </article>
+  </section>
 )
 
 export default PostCard

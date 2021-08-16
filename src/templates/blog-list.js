@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from 'react'
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
-import { StaticImage } from "gatsby-plugin-image"
+// import { FaHandPointDown } from "react-icons/fa"
+// import ScrollAnimation from 'react-animate-on-scroll'
+// import { StaticImage } from "gatsby-plugin-image"
 
 
 import { Link, graphql } from "gatsby"
-import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
+import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
 
 
 import PostCard from "../components/post-card"
@@ -15,23 +15,23 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
 
-import { Slide } from 'react-slideshow-image'
+// import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 
 
 // import Gall1 from '../components/gallery1'
 
-const properties = {
-  duration: 4000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: false,
-  easing: 'easeIn',
-  arrows: true,
+// const properties = {
+//   duration: 4000,
+//   transitionDuration: 500,
+//   infinite: true,
+//   indicators: false,
+//   easing: 'easeIn',
+//   arrows: true,
 
-  prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
-  nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
-};
+//   prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
+//   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
+// };
 
 const styles = {
   pagination: {
@@ -60,7 +60,7 @@ export const blogListQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
             featuredImage {
@@ -114,7 +114,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/articles/"
+    const blogSlug = "/archive/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -137,9 +137,9 @@ class BlogIndex extends React.Component {
     return (
       <Layout className="blog-page1">
         <Seo
-          title={"Twilightscapes Galleries — Page " + currentPage + " of " + numPages}
+          title={"AdFree Archive — Page " + currentPage + " of " + numPages}
           description={
-            "Twilightscapes base gallery page " + currentPage + " of " + numPages
+            "dFree Archive page " + currentPage + " of " + numPages
           }
         />
         
@@ -149,7 +149,7 @@ class BlogIndex extends React.Component {
         textAlign: "center",
       }}
     >
-<h1 style={{padding:'10px', margin:'0'}}>Articles</h1>
+{/* <h1 style={{padding:'10px', margin:'0'}}>Articles</h1> */}
 
     </div>
 
@@ -416,7 +416,7 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h2>Lastest Articles</h2>
+<h1>AdFree Archive</h1>
 
     
     
@@ -431,12 +431,12 @@ class BlogIndex extends React.Component {
 </div>
 
 
-<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
+{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
-
+</ScrollAnimation> */}
+ <br /><br />
       </Layout>
     )
   }
