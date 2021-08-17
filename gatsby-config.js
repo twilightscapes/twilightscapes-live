@@ -173,6 +173,7 @@ module.exports = {
         htmlTitle: `Twilightscapes CMS`,
         htmlFavicon: `static/siteimages/manifest-icon-192.png`,
         includeRobots: false,
+        logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
       },
     },
 
