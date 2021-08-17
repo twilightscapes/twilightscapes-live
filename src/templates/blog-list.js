@@ -416,7 +416,7 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h1 className="headline">Twilightscape's Experiences - The World's First Photo/Multimedia 3D Blog</h1>
+<h1 className="headline" style={{fontSize:''}}>Twilightscape's Experiences - The World's First Photo/Multimedia 3D Blog</h1>
 
     
     

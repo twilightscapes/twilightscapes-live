@@ -2417,16 +2417,16 @@ background-position:center 70px;
           padding:1em;
          margin:0 auto;
         /* box-shadow: 0px 1px 6px 1px black; */
-        text-shadow: 1px 2px 1px black;
+        text-shadow: 1px 0px 1px #999;
      /* background: rgba(250, 3, 196, 0.9); */
         /* background: rgba(0, 0, 0, 0.8); */
     
          /* filter: brightness(120%); */
-        font-size:100%;
-        font-weight:0 !important; 
 
-
-        color:#fff;
+        font-size: 36px;
+        font-size: clamp(18px, calc(1rem + 2vw), 36px);
+        font-size:clamp(2rem, 2.5vw, 2.8rem);
+   
         width:100%;
         transition: all .6s ease-out;
         display:block !important;

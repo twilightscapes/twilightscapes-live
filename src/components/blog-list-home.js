@@ -131,11 +131,11 @@ const PostMaker = ({ data }) => (
   
   <Link
       className="button"
-      to="/posts/"
+      to="/experiences/"
       title="See More Galleries"
       style={{color:'#fff'}}
     >
-      See more
+      See More Experiences?
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
