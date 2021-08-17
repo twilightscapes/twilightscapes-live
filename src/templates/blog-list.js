@@ -412,11 +412,11 @@ class BlogIndex extends React.Component {
       className="wrapper1"
       style={{
         textAlign: "center",
-        padding:'5vh 4vw',
+        padding:'0 4vw',
         clear:'both'
       }}
     >
-<h1>AdFree Archive</h1>
+<h1 className="headline">Twilightscape's Experiences - The World's First Photo/Multimedia 3D Blog</h1>
 
     
     

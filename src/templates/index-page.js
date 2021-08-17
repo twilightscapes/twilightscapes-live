@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 
 import { RiArrowRightSLine } from "react-icons/ri"
+import Intro from '../components/Intro'
 import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import ShareSocial from '../components/share' 
@@ -87,6 +88,12 @@ const HomePage = ({ data }) => {
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
       
+      
+
+
+      <Intro />
+
+
       <div className="home-banner flexbutt" style={{position:'relative', height:'auto', overflow:'hidden'}}>
 
       <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
@@ -148,7 +155,7 @@ const HomePage = ({ data }) => {
           )} */}
 
 <div className="flexcheek" style={{position:'relative', overflow:'hidden'}}>
-      <Intro2 />
+      {/* <Intro2 /> */}
       
       
 

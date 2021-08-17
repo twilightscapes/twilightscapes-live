@@ -204,8 +204,8 @@ Contact Me<span>Ordering Questions?</span>
       
 <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/posts/">
-              <span style={{color:'var(--primary-color)',}}>(All New)</span> Experiences
-                Photo Multimedia Blog
+              <span style={{color:'var(--primary-color)',}}>(All New)</span>3D Experiences
+                 Multimedia 3D Blog
               </Link>
       </li>
 

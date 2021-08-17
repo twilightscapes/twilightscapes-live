@@ -1330,9 +1330,10 @@ blockquote:after {
   margin-right: 0.25em;
   vertical-align: -0.4em;
   text-align: right;
-  position:absolute;
-  right:0;
-  bottom:-20px;
+  position:relative;
+  right:-25vw;
+  bottom:-8vh;
+  width:100%;
 
 }
 blockquote p {

@@ -156,7 +156,7 @@ export const query = graphql`
   </div>
 </div> */}
  
- <GoBack />
+ {/* <GoBack /> */}
  
 
 <br />
@@ -165,8 +165,8 @@ export const query = graphql`
 <GalleryMenu />
 
  <br /><br />
- <ShareSocial />
-<br /><br /><br />
+ {/* <ShareSocial />
+<br /><br /><br /> */}
 
 
 
@@ -180,17 +180,23 @@ export const query = graphql`
 <GalleryMenu />
 
 <br /><br />
+ <ShareSocial />
+<br />
+
+
+
+<br /><br />
 <GoBack />
 
 
 
-<blockquote style={{fontSize:'200%', padding:'1rem 8%', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>Cities are always fascinating. What's your favorite city and why?</blockquote>
+<blockquote style={{fontSize:'200%', borderRadius:'12px', width:'100%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>Cities are always fascinating. <br /> What's your favorite city and why?</blockquote>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'0 auto'}} />
 </ScrollAnimation>
 
-<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+<div style={{padding:'2vh 5vw', borderTop:'0px solid', marginTop:'0'}}>
     <CommentBox />
     </div>
     

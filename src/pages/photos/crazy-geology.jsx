@@ -114,35 +114,34 @@ export const query = graphql`
           playsinline
           muted={true}
           showPortrait
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+        //   playIcon={
+        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-          </div>
-          </button>}
+        //   </div>
+        //   </button>}
       
       
       
-            light="../static/assets/transparent.png"
+        //     light="../static/assets/transparent.png"
           />
-
 
 {/* <div className="video-background">
     <div className="video-foreground">
-      <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/j24SLqOA-fo?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=j24SLqOA-fo" frameBorder="0" allowFullScreen></iframe>
+      <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/fm-rOnGIIaE?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=fm-rOnGIIaE" frameBorder="0" allowFullScreen></iframe>
     </div>
 </div> */}
 
 
 </div>
-
+{/* <GoBack /> */}
 
     {/* <div id="vidtop-content">
 <div className="vid-info">
@@ -152,28 +151,23 @@ export const query = graphql`
   </div>
 </div> */}
  
- <GoBack />
+
  
-<div style={{position:'', zIndex:'', width:'90%', display:'flex', justifyContent:'center', padding:'1rem 3%', gap:'30px'}}>
-  {/* <p>The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night.</p> */}
+{/* <div style={{position:'', zIndex:'', width:'90%', display:'flex', justifyContent:'center', padding:'1rem 3%', gap:'30px'}}> */}
 
   {/* <p>The Milky Way is a barred spiral galaxy. All the stars we see in the night sky are in our own Milky Way Galaxy. Earth is aproximately 25,000 light years from the center and the distance from one side of the Milky Way to the other, is a whopping 100,000 light years. </p>
 
   <p>While nobody knows the true number, it is believed that the Milky Way consists of over a 100 billion stars!  </p>
 
   <p>Just as the Earth goes around the Sun, the Sun goes around the center of the Milky Way. It takes 250 million years for our Sun and the solar system to go all the way around the center of the Milky Way.</p> */}
-</div>
+{/* </div> */}
 
+<br /><br />
 
 <GalleryMenu />
 
 
-
-
 <br /><br />
- <ShareSocial />
-<br /><br /><br />
-
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
 </div>
 <br /><br />
@@ -181,12 +175,19 @@ export const query = graphql`
 <GalleryMenu />
 
 
+
+<br /><br />
+ <ShareSocial />
+
+
 <br /><br />
 <GoBack />
     
 
+<blockquote style={{fontSize:'200%', borderRadius:'12px', width:'100%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>What's the craziest rock stone formation you've seen?</blockquote>
 
-<blockquote style={{fontSize:'200%', padding:'1rem 8%', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>What's the craziest rock stone formation you've seen? </blockquote>
+
+
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
