@@ -47,6 +47,11 @@ collections:
           format: "YYYY-MM-DD HH:mm",
         }
       - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "YouTube Url", name: "youtuber", widget: "string" }
+      - { label: "YouTube Start", name: "youtubestart", widget: "string" }
+      - { label: "YouTube End", name: "youtubeend", widget: "string" }
+      - { label: "YouTube Mute ( 1=true or 0=false)", name: "youtubemute", widget: "string" }
+      - { label: "YouTube Show Controls ( 1=true or 0=false)", name: "youtubecontrols", widget: "string" }
       - {
           label: "Featured Image",
           name: "featuredImage",
@@ -54,6 +59,23 @@ collections:
           required: false,
           tagname: "",
         }
+      - {
+          label: "Underlay Image",
+          name: "overlayImage",
+          widget: "image",
+          required: false,
+          tagname: "",
+        }
+      - {
+          label: "SVG",
+          name: "svgImage",
+          widget: "image",
+          required: false,
+          tagname: "",
+        }
+      - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
+
+
 
       - {
           label: "Body",
@@ -78,6 +100,8 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
+          - { label: "Secondary Image", name: "secondaryImage", widget: "image" }
+          - { label: "YouTube Url", name: "youtuber", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "CTA"
             name: "cta"
@@ -152,7 +176,7 @@ collections:
               - widget: image
                 name: image
                 label: image
-                default: "/assets/todd.jpg"
+                default: "/assets/default-og-image.jpg"
               - widget: image
                 name: iconimage
                 label: favicon
