@@ -21,7 +21,7 @@ const PostCard = ({ data }) => (
 
       </Link>
     ) : (
-      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="AdFree Default Image" /></Link>
+      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" /></Link>
     )}
     <div className="post-content">
       <h2 className="title">
