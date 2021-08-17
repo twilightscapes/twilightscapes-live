@@ -101,6 +101,8 @@ collections:
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
           - { label: "Secondary Image", name: "secondaryImage", widget: "image" }
+          - { label: "SVG Image", name: "svgImage", widget: "image" }
+          - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
           - { label: "YouTube Url", name: "youtuber", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "CTA"
