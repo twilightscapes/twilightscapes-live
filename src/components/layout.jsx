@@ -203,7 +203,7 @@ Contact Me<span>Ordering Questions?</span>
 
       
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/posts/">
+              <Link className="navbar-item txtshadow" to="/experiences/">
               <span style={{color:'var(--primary-color)',}}>(All New)</span>3D Experiences
                  Multimedia 3D Blog
               </Link>
@@ -226,7 +226,7 @@ Contact Me<span>Ordering Questions?</span>
 
       
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-between', verticalAlign:'center', padding:'0 20px',  }}>
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'0 0',  }}>
   
       <Theme  style={{padding:'0'}} />
    <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>

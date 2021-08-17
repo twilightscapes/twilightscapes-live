@@ -176,36 +176,36 @@ const Post = ({ data, pageContext }) => {
     next,
   }
 
-  const Svg2 = frontmatter.overlayImage
+//   const Svg2 = frontmatter.overlayImage
  
-  if (!Svg2) {
+//   if (!Svg2) {
     
-  }
-  else{
-    <AddSvg2 />
-  }
-function AddSvg2(){
-  const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
-  return (
-    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
-  )
-}
+//   }
+//   else{
+//     <AddSvg2 />
+//   }
+// function AddSvg2(){
+//   const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
+//   return (
+//     <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
+//   )
+// }
 
 
-  const Svg = frontmatter.svgImage2
-  const svgZindex = frontmatter.svgzindex
-  if (!Svg) {
+//   const Svg = frontmatter.svgImage
+//   const svgZindex = frontmatter.svgzindex
+//   if (!Svg) {
     
-  }
-  else{
-    <AddSvg />
-  }
-function AddSvg(){
-  const svgUrl = "../assets/" + frontmatter.svgImage2.relativePath + ""
-  return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'', overflow:'hidden', border:'0px solid red', zIndex:'10', width:'100vw', height:'auto',  }} >You need a new browser</object>
-  )
-}
+//   }
+//   else{
+//     <AddSvg />
+//   }
+// function AddSvg(){
+//   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+//   return (
+//     <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'', overflow:'hidden', border:'0px solid red', zIndex:'10', width:'100vw', height:'auto',  }} >You need a new browser</object>
+//   )
+// }
 
   return (
     
@@ -253,21 +253,21 @@ function AddSvg(){
 
  
 
-  {Svg ? (
+  {/* {Svg ? (
             <AddSvg />
        
           ) : (
             ""
-          )}
+          )} */}
 
 
 
-{Svg2 ? (
+{/* {Svg2 ? (
             <AddSvg2 />
        
           ) : (
             ""
-          )}
+          )} */}
 
   {/* {OverlayImage ? (
             <GatsbyImage
@@ -302,16 +302,6 @@ function AddSvg(){
           )}
 
 
-
-
-
-
-        {/* <ReactPlayer
-          className='react-player'
-          url={Url}
-          width='100vw'
-          height='100vh'
-        /> */}
       </div>
 
 
@@ -418,12 +408,7 @@ export const pageQuery = graphql`
             gatsbyImageData(layout: FULL_WIDTH)
           }
         }
-        svgImage2 {
-          relativePath
-        }
-        overlayImage {
-          relativePath
-        }
+
         underlayImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

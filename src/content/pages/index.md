@@ -3,10 +3,19 @@ template: index-page
 slug: /
 title: Night Photography
 tagline: Twilightscapes - Night Photography by Todd Lambert
-featuredImage: /assets/night316.jpg
+featuredImage: /assets/twilight-promo-in-the-sky-with-diamonds.jpg
+secondaryImage: /assets/night316.jpg
 cta:
-  ctaText: See the photos
+  ctaText: "See the photos"
   ctaLink: /photos/
+youtuber: "iHxmNzMfDj4"
+youtubestart: "0"
+youtubeend: "0"
+youtubemute: "1"
+youtubecontrols: "0"
+svgzindex: "0"
+underlayImage: /assets/swd-foreground.png
+svgImage: /assets/campfire.svg
 ---
 Finding obscure locations and unusual subject matter, Todd has excelled at capturing long exposure photos of rarely seen moments of time.
 

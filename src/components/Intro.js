@@ -2,8 +2,8 @@ import React from 'react'
 import styled from "styled-components"
 // import Newsletter from './PopNewsletter'
 import ScrollAnimation from 'react-animate-on-scroll'
-import Newsignup from "./newssign"
-import { StaticImage } from "gatsby-plugin-image"
+// import Newsignup from "./newssign"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
@@ -141,12 +141,10 @@ const Intro = () => (
 
 
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute',
+{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={3950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute',
 right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center', display:'flex', borderRadius:'12px'}}>
-
-
   <Newsignup />
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
 </div>

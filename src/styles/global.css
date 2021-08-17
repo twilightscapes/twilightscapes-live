@@ -226,6 +226,10 @@ opacity:.2;
   border-radius: 0;
 }
 
+body.homepage .gatsby-image-wrapper [data-main-image]{
+  border-radius:12px solid !important;
+}
+
 
 .gatsby-image-wrapper img{max-height: 100%; }
 

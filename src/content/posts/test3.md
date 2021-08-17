@@ -11,9 +11,8 @@ youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/swd-foreground.png
-overlayImage: /assets/campfire.svg
 featuredImage: /assets/twilight-promo-in-the-sky-with-diamonds.jpg
-svgImage2: /assets/null.svg
+svgImage: /assets/campfire.svg
 ---
 
 
