@@ -164,9 +164,9 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <li className="carto">
+      {/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/photo-tools/">Twilight Tools<span>Lighting and Gear</span></Link>
-       </li>
+       </li> */}
 
 
       {/* <li className="carto">

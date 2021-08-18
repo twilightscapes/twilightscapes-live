@@ -2389,21 +2389,21 @@ background-position:center 70px;
       }
     
      .contentpanel{
-         display:block;
-         margin:0 auto;
-         padding:0 1rem;
-         text-decoration:none;
+        display:block;
+        margin:0 auto;
+        padding:0 1rem;
+        text-decoration:none;
         text-align:left;
         text-shadow: 1px 2px 1px black;
-         font-weight:400;
-         color:#FFFFFF;
+        font-weight:400;
+        color:#FFFFFF;
         cursor:default;
         background: rgba(0,0,0,0.50);
-         transition: all 0.15s;
+        transition: all 0.15s;
         font-size:100%;
         opacity:0;
         overflow-y:auto;
-        back-drop-filter: blur(10px);
+        backdrop-filter: blur(10px);
         width:100%;
         height:100%;
         animation:fade 1.7s forwards;
@@ -2414,8 +2414,8 @@ background-position:center 70px;
         .contentpanel > *{opacity:0; animation:fade 3s forwards;}
     
         .headline{
-          padding:1em;
-         margin:0 auto;
+        padding:1em;
+        margin:0 auto;
         /* box-shadow: 0px 1px 6px 1px black; */
         text-shadow: 1px 0px 1px #999;
      /* background: rgba(250, 3, 196, 0.9); */
