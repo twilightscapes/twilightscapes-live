@@ -5,11 +5,11 @@ import { getShopifyImage } from "gatsby-source-shopify"
 import { formatPrice } from "../utils/format-price"
 import {
   productCardStyle,
-  productHeadingStyle,
+  // productHeadingStyle,
   productImageStyle,
   productDetailsStyle,
-  productVendorStyle,
-  productPrice,
+  // productVendorStyle,
+  // productPrice,
 } from "./product-card.module.css"
 
 export function ProductCard({ product, eager }) {
@@ -18,7 +18,7 @@ export function ProductCard({ product, eager }) {
     priceRangeV2,
     slug,
     images: [firstImage],
-    vendor,
+    // vendor,
     storefrontImages,
   } = product
 

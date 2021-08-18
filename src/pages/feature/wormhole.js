@@ -9,8 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import Audio from '../../../static/assets/bensound-betterdays.mp3'
-import SVG from "../../../static/assets/crude-addiction.svg"
+// import Audio from '../../../static/assets/bensound-betterdays.mp3'
+// import SVG from "../../../static/assets/crude-addiction.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../../components/giftshop"
 import PhotoMenu from "../../components/animated-photos-menu"

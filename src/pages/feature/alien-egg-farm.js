@@ -123,7 +123,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <p className="letter">Single Shot - No PS - long exposure</p>
 
  <div style={{position:'relative', zIndex:'0', margin:'0 auto', display:'flex', justifyContent:'center', padding:'0', border:'1px solid #666'}}>
-<StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="" />
+{/* <StaticImage src="../img/favorites/night295.jpg" alt="Twilightscapes" className="" /> */}
 </div>
 
 {/* <div className="spacer66" style={{height:'2vh'}} /> */}

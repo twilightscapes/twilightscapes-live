@@ -4,11 +4,11 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
-import Intro2 from '../components/Intro2'
+// import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -230,7 +230,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0', display:''}}>
+<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}

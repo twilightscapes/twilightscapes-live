@@ -102,7 +102,7 @@ const Post = ({ data, pageContext }) => {
 
 
   const YouTube = frontmatter.youtuber
-  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
   if (!YouTube) {
 
   }
@@ -229,7 +229,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0', display:''}}>
+<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0'}}>
 {Image ? (
             <GatsbyImage
               image={Image}
