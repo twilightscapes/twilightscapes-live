@@ -57,7 +57,7 @@ const CaseStudyVertIndex = () => (
     
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-<Link state={{modal: true}} className="" to="/experiences/alien-egg-farm#___gatsby">
+<Link state={{modal: true}} className="" to="/feature/alien-egg-farm#___gatsby">
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
       <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
         <h2 className="moreButton" style={{fontSize:'100%', animation: 'fade 3s forwards', opacity:'0'}}>Enter the Experience</h2>
@@ -71,7 +71,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} className="" to="/experiences/transcendence#___gatsby">
+  <Link state={{modal: true}} className="" to="/feature/transcendence#___gatsby">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
@@ -87,7 +87,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} to="/experiences/crude-addiction#___gatsby">
+  <Link state={{modal: true}} to="/feature/crude-addiction#___gatsby">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
@@ -102,7 +102,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} to="/experiences/wormhole#___gatsby">
+  <Link state={{modal: true}} to="/feature/wormhole#___gatsby">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
@@ -119,7 +119,7 @@ const CaseStudyVertIndex = () => (
 
 <section className="child" style={{position:'relative', height:'100%', overflow:''}}>
 
-  <Link state={{modal: true}} to="/experiences/time-trolley">
+  <Link state={{modal: true}} to="/feature/time-trolley">
 
 <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%', height:'100%', position:'absolute', }}>
 <div style={{alignSelf: 'flex-center', position:'absolute',  bottom:'30px', textAlign:'center',}}>
