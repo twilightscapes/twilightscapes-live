@@ -1116,8 +1116,8 @@ input[type=checkbox] ~ .sidebarIconToggle > .bug{
   filter: drop-shadow(0 0px 4px rgba(0, 0, 0, 1));
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .bug {
-opacity: 0 !important;
+input[type=checkbox]:checked ~ .sidebarIconToggle {
+display:none !important;
 }
 
 
@@ -1132,8 +1132,8 @@ input[type=checkbox] {
   cursor: pointer;
   position: fixed;
   z-index: 4;
-  top: 75vh;
-  right: 50px;
+  top: 65vh;
+  right: 20px;
   /* height: 100px;
   width: 100px; */
   color: #999;
