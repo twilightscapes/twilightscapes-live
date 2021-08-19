@@ -5,7 +5,7 @@ import React from 'react'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
 
-
+import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
 
@@ -136,6 +136,9 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout className="blog-page1">
+<Helmet>
+  <body className="bloglist" />
+</Helmet>
         <Seo
           title={"AdFree Archive — Page " + currentPage + " of " + numPages}
           description={

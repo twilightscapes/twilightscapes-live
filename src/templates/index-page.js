@@ -7,7 +7,7 @@ import { RiArrowRightSLine } from "react-icons/ri"
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from 'react-player/lazy'
 // import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { FaHandPointDown } from "react-icons/fa"
@@ -86,7 +86,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 3
+      limit: 10
     ) {
       edges {
         node {
@@ -98,7 +98,7 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -156,21 +156,22 @@ const YouTube = frontmatter.youtuber
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
+      <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
  
-      <ReactPlayer
-          className='react-player'
-          url={Url}
-          width="100%"
-          height="100%"
+      // <ReactPlayer
+      //     className='react-player'
+      //     url={Url}
+      //     width="100%"
+      //     height="100%"
      
  
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
+      //     autoplay={true}
+      //     background={true}
+      //     loop
+      //     playing
+      //     playsinline
+      //     muted={true}
+      //     showPortrait
         //   playIcon={
         //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
@@ -188,9 +189,9 @@ const YouTube = frontmatter.youtuber
       
       
         //     light="../static/assets/transparent.png"
-          />
+          // />
 
-      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
+      // 
 
     )
   }

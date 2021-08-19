@@ -94,11 +94,28 @@ const Post = ({ data, pageContext }) => {
   const { frontmatter, html, excerpt } = markdownRemark
 
 
+  const Image = frontmatter.featuredImage
+    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+    : ""
+  
+    const UnderlayImage = frontmatter.underlayImage
+    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
+    : ""
 
-  function refreshPage() {
-    window.location.reload(true)
+  const Svg = frontmatter.svgImage
+  const svgZindex = frontmatter.svgzindex
+  if (!Svg) {
+    
   }
-
+  else{
+    <AddSvg />
+  }
+function AddSvg(){
+  const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+  return (
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} >You need a new browser</object>
+  )
+}
 
 
   const YouTube = frontmatter.youtuber
@@ -116,57 +133,53 @@ const Post = ({ data, pageContext }) => {
     return (
 
  
-      <ReactPlayer
-          className='react-player'
-          url={Url}
-          width="100%"
-          height="100%"
+      // <ReactPlayer
+      //     className='react-player'
+      //     url={Url}
+      //     width="100%"
+      //     height="100%"
      
  
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+      //     autoplay={true}
+      //     background={true}
+      //     loop
+      //     playing
+      //     playsinline
+      //     muted={true}
+      //     showPortrait
+      //     playIcon={
+      //       <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      //     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+      //     <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-          </div>
-          </button>}
+      //     </div>
+      //     </button>}
       
       
       
-            light="../static/assets/transparent.png"
-          />
+      //       light="../static/assets/transparent.png"
+      //     />
 
-      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
+       <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} />
 
     )
   }
 
 
 
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+
 
   // const OverlayImage = frontmatter.overlayImage
   //   ? frontmatter.overlayImage.childImageSharp.gatsbyImageData
   //   : ""
 
-  const UnderlayImage = frontmatter.underlayImage
-    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
-    : ""
+
 
 
   const { previous, next } = pageContext
@@ -192,21 +205,7 @@ const Post = ({ data, pageContext }) => {
 // }
 
 
-//   const Svg = frontmatter.svgImage
-//   const svgZindex = frontmatter.svgzindex
-//   if (!Svg) {
-    
-//   }
-//   else{
-//     <AddSvg />
-//   }
-// function AddSvg(){
-//   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
-//   return (
-//     <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'', overflow:'hidden', border:'0px solid red', zIndex:'10', width:'100vw', height:'auto',  }} >You need a new browser</object>
-//   )
-// }
-
+  
   return (
     
     <Layout className="page">
@@ -229,13 +228,17 @@ const Post = ({ data, pageContext }) => {
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0'}}>
+     
+
+
+
+<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
             />
             
           ) : (
@@ -253,12 +256,12 @@ const Post = ({ data, pageContext }) => {
 
  
 
-  {/* {Svg ? (
+  {Svg ? (
             <AddSvg />
        
           ) : (
             ""
-          )} */}
+          )}
 
 
 
@@ -285,7 +288,7 @@ const Post = ({ data, pageContext }) => {
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'2',
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'1',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -294,7 +297,8 @@ const Post = ({ data, pageContext }) => {
           )}
 
 
-  {YouTube ? (
+  
+{YouTube ? (
             <Iframer />
        
           ) : (
@@ -302,10 +306,9 @@ const Post = ({ data, pageContext }) => {
           )}
 
 
+
+
       </div>
-
-
-  {/* </div> */}
 
 
 
@@ -407,6 +410,9 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
+        }
+        svgImage{
+          relativePath
         }
 
         underlayImage {
