@@ -2,7 +2,8 @@
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { RiArrowRightSLine } from "react-icons/ri"
+
+import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
@@ -314,7 +315,30 @@ const YouTube = frontmatter.youtuber
 
 
 
-      {/* <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
+      
+
+        
+
+
+
+
+{/* <h2 style={{fontSize:'200%', marginBottom:'1rem'}}>
+      Latest <strong>Experiences</strong>{" "}
+      <span className="icon -right">
+        <RiArrowDownLine />
+      </span>
+    </h2> */}
+
+        <div className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',transition:'background 0.3s ease-in'}}>
+
+
+
+
+
+
+
+
+<div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
 
 
@@ -457,19 +481,33 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
 
 
       </div> 
-</div> */}
-
-        
+</div>
 
 
-        {/* <PhotoMenu /> */}
 
 
-      <div style={{padding:'0'}}>
+
+
+
+
+
+
         <BlogListHome data={posts} />
-        </div>
+   </div>
 
-
+  {/* <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
+  <Link
+      className="button"
+      to="/experiences/"
+      title="See More Galleries"
+      style={{color:'#fff'}}
+    >
+      See More Experiences?
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+</div> */}
 
 
       

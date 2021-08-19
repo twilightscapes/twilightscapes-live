@@ -910,7 +910,7 @@ body .carto:hover{
 
 
 
-.sirens{
+/* .sirens{
   background: linear-gradient(-45deg, #bc57eb, #FA02B7, #ccc, #37f8f8);
     background-size: 400% 400%;
     animation: sirens .3s ease infinite;
@@ -925,7 +925,7 @@ body .carto:hover{
     100% {
       background-position: 0% 50%;
     }
-  }
+  } */
 
 
 .ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after{
@@ -2642,20 +2642,24 @@ background-position:center 70px;
             .container2 {height:50vh !important; margin-top:60px !important;}
 .container2{
             height: clamp(33vh, 500px + 2vh, 70vh);
+            max-width:96% !important;
 }
+
 
             }
 
             @media (min-width: 48rem) {
               .installwindow{max-width:480px !important;}
+              .container2:hover {height:100vh !important;}
               }
 
 
 
 
 
-
-
+              .container2 { transition: all 1.9s ease-in-out; }
+              .container2:hover { transform: scale(.9); }
+              .container2:active{height: 100vh !important;}
 
 
 

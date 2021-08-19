@@ -29,7 +29,7 @@ const PostMaker = ({ data }) => (
       </span>
     </h2> */}
     
-    <div className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0',transition:'background 0.3s ease-in'}}>
+<div>
 
         
 
@@ -42,7 +42,7 @@ const PostMaker = ({ data }) => (
 
     
 
-  <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
+  {/* <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
   <Link
       className="button"
       to="/experiences/"
@@ -54,7 +54,7 @@ const PostMaker = ({ data }) => (
         <RiArrowRightSLine />
       </span>
     </Link>
-</div>
+</div> */}
 
 </div>
 )
