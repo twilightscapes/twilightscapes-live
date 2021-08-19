@@ -746,7 +746,7 @@ p{margin-bottom: 1rem;}
 
 .container2 section article{
   margin: 0;
-  min-height:1000px !important;
+  /* min-height:1000px !important; */
 }
 .container2 section img{height:100vh !important;}
 
@@ -897,18 +897,33 @@ body .carto:hover{
 .neonText {
   color: #fff;
   text-shadow:
-      0 0 7px rgb(235, 87, 198),
+      0 0 7px #bc57eb,
       0 0 10px rgb(196, 134, 180),
       0 0 21px rgb(167, 139, 162),
       0 0 22px #FA02B7,
       0 0 32px #FA02B7,
       0 0 42px #ccc,
       0 0 52px #FA02B7,
-      0 0 61px #fff;
+      0 0 61px #37f8f8;
 }
 
 
-
+.sirens{
+  background: linear-gradient(-45deg, #bc57eb, #FA02B7, #ccc, #37f8f8);
+    background-size: 400% 400%;
+    animation: sirens 35s ease infinite;
+  }
+  @keyframes sirens {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 
 .ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after{

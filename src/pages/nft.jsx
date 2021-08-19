@@ -40,14 +40,35 @@ const CustomBox = styled.div`
 
 a:after{display:none !important;}
 
+.sirens{
+  background: linear-gradient(-45deg, #bc57eb, #FA02B7, #ccc, #37f8f8);
+  background-size: 400% 400%;
+  animation: sirens 35s ease infinite;
+}
+@keyframes sirens {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .intro:before{
-	content: "Twilightscapes NFTs";
+	content: " ";
 position:absolute;
+z-index:-1 !important;
 display: flex;
 align-items: center;
 justify-content: center;
 font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: sirens 35s ease infinite;
 }
 
 
@@ -195,7 +216,7 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 <p style={{textAlign:'center', fontSize:'100%',}}>Genesis Series presented <br />  exclusively on Foundation
 <div style={{fontSize:'40px', display:'flex', justifyContent:'center', gap:'3px', marginTop:'10px', filter: 'drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.99))' }}><IoLogoVercel /><BsCircleFill style={{marginLeft:'-6px', fontSize:'36px'}} /><FaSquareFull style={{marginLeft:'2px', fontSize:'36px'}} /></div>
 
-
+<span style={{}}>View the work on Foundation</span>
 </p>
 
 
@@ -203,7 +224,7 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 <p style={{textAlign:'center', fontSize:'100%', fontWeight:'bold', maxWidth:'700px', margin:'0 auto'}}>
        winning bids will receive a special NFT package including: behind the scene information, a certificate of authenticity and a limited edition signed print.<br />
        <br />
-       Original source RAW file included.<br />The image will also be taken out of future commissions and retired.
+       {/* Original source RAW file included.<br />The image will also be taken out of future commissions and retired. */}
 </p>
 
 
