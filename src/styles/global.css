@@ -2640,6 +2640,10 @@ background-position:center 70px;
 
           @media (max-width: 48rem) {
             .container2 {height:50vh !important; margin-top:60px !important;}
+.container2{
+            height: clamp(33vh, 500px + 2vh, 70vh);
+}
+
             }
 
             @media (min-width: 48rem) {
