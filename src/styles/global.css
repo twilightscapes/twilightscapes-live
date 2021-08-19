@@ -736,8 +736,21 @@ p{margin-bottom: 1rem;}
 	
 @media (hover: hover) {
 /* #installer{display: none !important;} */
+.container2 {
+  overflow-y: scroll;
+  scroll-snap-type: none !important;
+}
+.container2 section {
+  scroll-snap-align: none;
 }
 
+.container2 section article{
+  margin: 0;
+  min-height:1000px !important;
+}
+.container2 section img{height:100vh !important;}
+
+}/* end of exclude non-touch */
 
 
 footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;}

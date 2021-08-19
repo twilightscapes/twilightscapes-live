@@ -314,7 +314,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
+      {/* <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
 
 
@@ -457,7 +457,7 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
 
 
       </div> 
-</div>
+</div> */}
 
         
 
@@ -465,7 +465,7 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
         {/* <PhotoMenu /> */}
 
 
-      <div style={{padding:'0 3%'}}>
+      <div style={{padding:'0'}}>
         <BlogListHome data={posts} />
         </div>
 
@@ -477,9 +477,9 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
 
 
 
-<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+{/* <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
+</ScrollAnimation> */}
 
     </Layout>
     </CustomBox>

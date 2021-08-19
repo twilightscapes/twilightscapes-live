@@ -314,9 +314,9 @@ function AddSvg(){
 
 
 
-{/* <br />
+<br />
 
-<GoBack /> */}
+<GoBack />
 
 
 

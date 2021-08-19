@@ -2,19 +2,19 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { Seo } from "../components/seo"
 // import { Helmet } from "react-helmet"
-import { RiSendPlane2Line } from "react-icons/ri"
+// import { RiSendPlane2Line } from "react-icons/ri"
 import { IoLogoVercel } from "react-icons/io5"
 import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull } from "react-icons/fa"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import CommentBox from "../components/commentbox"
-import CasePanels from "../components/casepanels"
+// import CasePanels from "../components/casepanels"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -161,7 +161,7 @@ export const query = graphql`
 
 
 
-<CasePanels />
+{/* <CasePanels /> */}
  
 
 
@@ -453,7 +453,7 @@ justifyContent: 'center',
 <br /><br />
 
 
-
+{/* 
 <div className="dropromo" style={{width:'100vw', height:'30vh', overflow:'hidden', position:'relative', }}>
        
 
@@ -507,7 +507,7 @@ justifyContent: 'center',
 <StaticImage src="../img/gas-header.jpg" alt="Twilightscapes" className="featured-image" />
 </div>
 
-</div>
+</div> */}
 
 
 
