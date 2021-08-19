@@ -42,7 +42,7 @@ const PostCard = ({ data }) => (
     {data.frontmatter.title}
   </Link>
 </h2>
-<p style={{minWidth:'20vw', background:'#222', color:'#ccc', borderRadius:'12px', padding:'0 1rem'}}>
+<p style={{minWidth:'20vw', position:'relative', textAlign:'center',}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
 </div>
