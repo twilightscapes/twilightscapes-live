@@ -224,7 +224,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+      <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
 
 
 
@@ -329,7 +329,7 @@ const YouTube = frontmatter.youtuber
       </span>
     </h2> */}
 
-        <div className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',transition:'background 0.3s ease-in'}}>
+        <div className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',}}>
 
 
 

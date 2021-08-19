@@ -2658,8 +2658,8 @@ background-position:center 70px;
 
 
               .container2 { transition: all 1.9s ease-in-out; }
-              .container2:hover { transform: scale(.9); }
-              .container2:active{height: 100vh !important;}
+              .container2:hover, .container2:active { transform: scale(1); height: 100vh !important; }
+              /* .container2:active{} */
 
 
 
