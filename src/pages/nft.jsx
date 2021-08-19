@@ -40,11 +40,7 @@ const CustomBox = styled.div`
 
 a:after{display:none !important;}
 
-.sirens{
-  background: linear-gradient(-45deg, #bc57eb, #FA02B7, #ccc, #37f8f8);
-  background-size: 400% 400%;
-  animation: sirens 35s ease infinite;
-}
+
 @keyframes sirens {
   0% {
     background-position: 0% 50%;
@@ -58,9 +54,8 @@ a:after{display:none !important;}
 }
 
 .intro:before{
-	content: " ";
+	content: "Twilightscapes NFTs";
 position:absolute;
-z-index:-1 !important;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -68,7 +63,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: sirens 35s ease infinite;
+  animation: sirens .5s ease infinite;
 }
 
 

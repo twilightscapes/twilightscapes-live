@@ -802,6 +802,7 @@ body.homepage .post-content{
 
 body.homepage .post-content a{color:#fff !important;}
 body.homepage .post-content h2{
+  font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   border:0px solid red;
   width: 100% !important;
   padding:0 1rem;
@@ -908,10 +909,11 @@ body .carto:hover{
 }
 
 
+
 .sirens{
   background: linear-gradient(-45deg, #bc57eb, #FA02B7, #ccc, #37f8f8);
     background-size: 400% 400%;
-    animation: sirens 35s ease infinite;
+    animation: sirens .3s ease infinite;
   }
   @keyframes sirens {
     0% {
@@ -1089,7 +1091,7 @@ border: 0px solid red;
 
   }
 
-  .youtubeform{}
+
 
 
 
@@ -1445,9 +1447,9 @@ blockquote:after {
   vertical-align: -0.4em;
   text-align: right;
   position:relative;
-  right:-25vw;
+  right:20vw;
   bottom:-8vh;
-  width:100%;
+  width:100;
 
 }
 blockquote p {
@@ -2637,7 +2639,7 @@ background-position:center 70px;
 
 
           @media (max-width: 48rem) {
-            .container2 {height:250px !important; margin-top:60px !important;}
+            .container2 {height:50vh !important; margin-top:60px !important;}
             }
 
             @media (min-width: 48rem) {
