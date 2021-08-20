@@ -339,7 +339,7 @@ const YouTube = frontmatter.youtuber
 <section>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek seotext" style={{padding:'0',}}>
+      <div className="flexcheek " style={{padding:'0',}}>
 
 
           <h1 className="title1 neonText">{frontmatter.title}</h1>
