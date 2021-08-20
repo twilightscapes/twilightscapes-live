@@ -35,7 +35,7 @@ const Consent = () => (
 >
 
 
-    <div style={{color:'inherit !important', padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}>
+    <div style={{color:'inherit !important', padding:'0 0 0 0', fontSize:'100%', textAlign:'center',}}>
      We use cookies to optimize our website.{" "}<br />
     <span style={{ fontSize: "75%", color:'inherit' }}>
    <Link className="donotsell" href="/privacy/" style={{textDecoration:'underline', color:'inherit !important'}}>Do Not Sell My Personal Information</Link>

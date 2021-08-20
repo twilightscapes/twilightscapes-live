@@ -58,9 +58,9 @@ const NewsletterPage = () => (
 <br />
 
             
-              <span style={{fontSize:'120%'}}><strong>Follow Me Into The Night</strong></span><br />
+              <span className="txtshadow" style={{fontSize:'120%',}}><strong>Follow Me Into The Night</strong></span><br />
               
-              <span style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
+              <span className="txtshadow" style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 
