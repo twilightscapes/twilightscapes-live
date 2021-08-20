@@ -89,7 +89,7 @@ const NewsletterPage = () => (
               className="button"
               
               type="submit"
-              style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.5vw, 1.5rem)'}}
+              style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.5vw, 1.5rem)', whiteSpace:'nowrap'}}
             >
               Follow Todd{" "}
               <span className="icon -right">
