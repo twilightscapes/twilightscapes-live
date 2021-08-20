@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import * as React from "react"
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -158,14 +159,13 @@ const YouTube = frontmatter.youtuber
     return (
 
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
- 
+ <>
       <ReactPlayer
+        id="mobilePlayer"
           className='react-player'
           url={Url}
           width="100%"
           height="100%"
-     
- 
           autoplay={true}
           background={true}
           loop
@@ -175,29 +175,40 @@ const YouTube = frontmatter.youtuber
           showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-              
-      
-      
-      
+
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
           <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
-          
+  
           </div>
           </button>}
-      
-      
-      
             light="../static/assets/transparent.png"
           />
+
+          <ReactPlayer
+        id="deskPlayer"
+          className='react-player'
+          url={Url}
+          width="100%"
+          height="100%"
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          />
+
+          </>
 
       
 
     )
   }
 
-
+  
 
 
   return (

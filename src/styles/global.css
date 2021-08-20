@@ -2669,6 +2669,8 @@ background-position:center 70px;
                 .container2 section article{
                   margin: 0;
                 }
+
+                #mobilePlayer{display: none !important;}
   
               }/* end of exclude non-touch */
                 
