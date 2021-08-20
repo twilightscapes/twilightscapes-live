@@ -417,7 +417,7 @@ const YouTube = frontmatter.youtuber
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'1px solid red',  borderRadius:'12px !important', position:'absolute', top:'0', zIndex:'1'}}
+              style={{border:'0px solid red',  borderRadius:'12px !important', position:'absolute', top:'0', zIndex:'1'}}
             />
           ) : (
             ""
