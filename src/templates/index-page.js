@@ -426,7 +426,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<ScrollAnimation animateIn="bounceInDown" delay={1350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'1'}}>
+<ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'1'}}>
 <h2
   className="letter normal txtshadow-header hit-the-floor"
   style={{
@@ -447,7 +447,7 @@ const YouTube = frontmatter.youtuber
 </ScrollAnimation>
 
 
-<ScrollAnimation animateIn="bounceInRight" delay={1400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
+<ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -464,7 +464,7 @@ const YouTube = frontmatter.youtuber
 </ScrollAnimation>
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'1'}}>
+<ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'1'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -482,7 +482,7 @@ const YouTube = frontmatter.youtuber
 </h2>
 </ScrollAnimation>
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'2', textAlign:'center', display:'block', borderRadius:'12px'}}>
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'2', textAlign:'center', display:'block', borderRadius:'12px'}}>
   <Newsignup />
 </ScrollAnimation>
 
