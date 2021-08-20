@@ -73,7 +73,7 @@ const Intro = () => (
       
       
       
-        //     light="../static/assets/transparent.png"
+        //     light="../assets/transparent.png"
           />
 
   

@@ -130,7 +130,7 @@ export const query = graphql`
       
       
       
-        //     light="../static/assets/transparent.png"
+        //     light="../assets/transparent.png"
           />
 
 {/* <div className="video-background">

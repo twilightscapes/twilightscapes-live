@@ -129,7 +129,7 @@ const CustomBox = styled.div`
       
       </div>
       </button>}
-      light="../static/assets/transparent.png"
+      light="../assets/transparent.png"
     />
 
                 // <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
