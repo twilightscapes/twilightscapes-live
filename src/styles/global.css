@@ -2669,20 +2669,20 @@ background-position:center 70px;
                 }
                 #scooch:hover {
                   /* transform: scale(.96); */
-                  margin-top:-10vh;
+                  /* margin-top:-10vh; */
                 }
 
                 .container2:hover, .container2:active { 
-                  height: 10% !important; 
+                  /* height: 10% !important;  */
                   top:0 !important; 
                 }
 
                 .container2 {
                   overflow-y: scroll;
-                  scroll-snap-type: none !important;
+                  /* scroll-snap-type: none !important; */
                 }
                 .container2 section {
-                  scroll-snap-align: none;
+                  /* scroll-snap-align: none; */
                 }
                 
                 .container2 section article{
@@ -2755,7 +2755,7 @@ opacity:.8;
       .container2 {
         overflow-y: scroll;
         scroll-snap-type: y proximity;
-        height:100vh;
+        height:90vh;
       }
       .container2 section {
         scroll-snap-align: start;
