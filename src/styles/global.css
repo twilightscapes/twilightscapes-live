@@ -2667,6 +2667,7 @@ background-position:center 70px;
             @media (min-width: 48rem) {
               .installwindow{max-width:480px !important;}
               .container2:hover {height:100vh !important;}
+              .container2:hover, .container2:active { transform: scale(1);height: 100% !important; top:0 !important; } 
               }
 
 
@@ -2674,7 +2675,7 @@ background-position:center 70px;
 
 
               .container2 { transition: all 1.2s ease-in-out; }
-              .container2:hover, .container2:active { transform: scale(.92); height: 200vh !important; }
+              
               /* .container2:active{} */
 
 
