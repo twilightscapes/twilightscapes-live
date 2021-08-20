@@ -2664,10 +2664,10 @@ background-position:center 70px;
               @media (hover: hover) {
 
                 #scooch{
-                  transform: scale(1);
+                  /* transform: scale(1); */
                   transition: all .8s ease-in-out;
                 }
-                #scooch:hover {
+                /* #scooch:hover {
                   transform: scale(.96);
                   margin-top:-10vh;
                 }
@@ -2675,7 +2675,7 @@ background-position:center 70px;
                 .container2:hover, .container2:active { 
                   height: 10% !important; 
                   top:0 !important; 
-                }
+                } */
 
                 .container2 {
                   overflow-y: scroll;
