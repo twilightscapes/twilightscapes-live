@@ -507,14 +507,6 @@ const YouTube = frontmatter.youtuber
 
 
 <div id="scooch">
-
-<h2 style={{fontSize:'200%', marginBottom:'1rem', textAlign:'center'}}>
-      Latest <strong>Experiences</strong>{" "}
-      <span className="icon -right">
-        <RiArrowDownLine />
-      </span>
-    </h2>
-
         <BlogListHome data={posts} />
    </div>
 
