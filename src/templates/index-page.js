@@ -235,7 +235,37 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})}>
+      
+
+
+
+
+
+
+      
+
+        
+
+
+
+
+{/* <h2 style={{fontSize:'200%', marginBottom:'1rem'}}>
+      Latest <strong>Experiences</strong>{" "}
+      <span className="icon -right">
+        <RiArrowDownLine />
+      </span>
+    </h2> */}
+
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+
+        {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
+
+
+
+
+<section>
+  <article>
+  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})}>
 
 
 
@@ -320,29 +350,9 @@ const YouTube = frontmatter.youtuber
 
 
       </div>
+  </article>
+</section>
 
-
-
-
-
-
-      
-
-        
-
-
-
-
-{/* <h2 style={{fontSize:'200%', marginBottom:'1rem'}}>
-      Latest <strong>Experiences</strong>{" "}
-      <span className="icon -right">
-        <RiArrowDownLine />
-      </span>
-    </h2> */}
-
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'10vh',}}>
-
-        {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
 
 
