@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
-import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
+// import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
