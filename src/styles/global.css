@@ -2689,12 +2689,14 @@ background-position:center 70px;
                   margin: 0;
                 }
 
-                #mobilePlayer{display: none !important;}
+                /* #mobilePlayer{display: none !important;} */
   
               }/* end of exclude non-touch */
                 
+
+              #deskPlayer{display: none;}
                 
-                /* footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;} */
+                footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;}
 
 
               .container2 { transition: all .8s ease-in-out; }

@@ -164,9 +164,9 @@ export function Footer() {
 
     <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
 
-    <Install />
-{/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
     <Consent />
+{/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
+    <Install />
     
       <div className={blurb}>
 

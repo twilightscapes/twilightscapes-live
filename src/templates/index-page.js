@@ -260,15 +260,15 @@ const YouTube = frontmatter.youtuber
 
 <section>
   <article>
-  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})}>
+  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-
+  {/* onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})} */}
 
      
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
+<div style={{display:'block', width:'100vw', height:'', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}
