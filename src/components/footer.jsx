@@ -32,6 +32,9 @@ import {
 } from "./footer.module.css"
 
 
+
+
+
 const sIcons = Icons.socialIcons.map((icons, index) => {
   
   return (
@@ -156,11 +159,20 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 })
 
 
-export function Footer() {
-  const { companyname } = useSiteMetadata()
+
+
+
+
+
+
+
+export function Footer({ location }) {
+  const { siteURL } = useSiteMetadata();
+
+  // const Url = location.href ? location.href : '';
   return (
 <>
-    
+{/* <a href={`${siteURL}${location.pathname}`}></a> */}
 
     <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
 
@@ -187,9 +199,9 @@ export function Footer() {
       <nav className={links} aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
+      {/* <Page /> */}
   
-  
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a href="https://toddlambert.com">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
+  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a title="Built by Todd Lambert using Gatsby and hosted on Netlify" href="{siteURL}">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
       </nav>
    
     </footer>

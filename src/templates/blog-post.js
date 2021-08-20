@@ -214,7 +214,7 @@ function AddSvg(){
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://adfreeyt.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
