@@ -134,10 +134,10 @@ export function Layout({ children }) {
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
  <li className="carta" style={{border:'none', margin:'1rem 0'}}>
-<Link to="/" aria-label="Return To Home"> <TwilightLogo /></Link>
+<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo /></Link>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0'}}>
-<Link to="/" aria-label="Return To Home"> <TwilightLogo /></Link>
+<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo /></Link>
  </li>
  
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>

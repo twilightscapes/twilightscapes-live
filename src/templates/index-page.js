@@ -138,7 +138,7 @@ const HomePage = ({ data }) => {
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
   return (
-    <object alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} >You need a new browser</object>
+    <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
   )
 }
 
@@ -258,7 +258,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section>
+<section style={{ display:'none',}}>
   <article>
   <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
@@ -354,7 +354,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section>
+<section style={{top:'0', paddingTop:'2rem'}}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 0 0 2rem',}}>
@@ -408,25 +408,25 @@ const YouTube = frontmatter.youtuber
  
 
 
- <div style={{margin:'0', zIndex:'-1', borderRadius:'12px', overflow:'hidden'}}>
+ <div style={{margin:'0', zIndex:'', borderRadius:'12px', overflow:'hidden', position:'relative'}}>
    
 
-
-          {/* {SecondaryImage ? (
+{/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
+           {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'1px solid transparent',  borderRadius:'12px !important' }}
+              style={{border:'1px solid red',  borderRadius:'12px !important', position:'absolute', top:'0', zIndex:'1'}}
             />
           ) : (
             ""
-          )} */}
+          )}
+{/* </div> */}
 
 
 
-
-<ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'1'}}>
+<ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}>
 <h2
   className="letter normal txtshadow-header hit-the-floor"
   style={{
@@ -464,7 +464,7 @@ const YouTube = frontmatter.youtuber
 </ScrollAnimation>
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'1'}}>
+<ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -482,7 +482,7 @@ const YouTube = frontmatter.youtuber
 </h2>
 </ScrollAnimation>
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'2', textAlign:'center', display:'block', borderRadius:'12px'}}>
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}>
   <Newsignup />
 </ScrollAnimation>
 
