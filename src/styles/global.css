@@ -10,7 +10,7 @@ body {
   font-family: var(--font-body);
   color: var(--text-color);
   /* background:#111; */
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width:100vw;
 }
 
@@ -1443,10 +1443,10 @@ blockquote:after {
   margin-right: 0.25em;
   vertical-align: -0.4em;
   text-align: right;
-  position:relative;
-  right:20vw;
-  bottom:-8vh;
-  width:100;
+  position:absolute;
+  right:0;
+  bottom:-20px;
+  width:100%;
 
 }
 blockquote p {
@@ -2630,63 +2630,51 @@ background-position:center 70px;
             100% { opacity: 0; }
         }
     
-        @media (hover: hover) {
-    
-          }
 
 
           @media (max-width: 48rem) {
-            .container2 {height:50vh !important; margin-top:60px !important;}
-.container2{
-            height: clamp(33vh, 500px + 2vh, 70vh);
-            max-width:96% !important;
-}
-
-
+            .container2 {margin-top:0 !important;}
+            .container2{max-width:96% !important;}
             }
 
             @media (min-width: 48rem) {
-              .installwindow{max-width:480px !important;}
               .container2:hover {height:100vh !important;}
-               
               }
-
 
               @media (hover: hover) {
 
-                .container2:hover, .container2:active { height: 10% !important; top:0 !important; }
+                .container2:hover, .container2:active { 
+                  height: 10% !important; 
+                  top:0 !important; 
+                }
 
-                /* #installer{display: none !important;} */
                 .container2 {
                   overflow-y: scroll;
-                  scroll-snap-type: none !important;
+                  /* scroll-snap-type: none !important; */
                 }
                 .container2 section {
-                  scroll-snap-align: none;
+                  /* scroll-snap-align: none; */
                 }
                 
                 .container2 section article{
                   margin: 0;
-                  /* min-height:1000px !important; */
                 }
-                /* .container2 section img{height:100vh !important;} */
+  
+              }/* end of exclude non-touch */
                 
-                }/* end of exclude non-touch */
                 
-                
-                footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;}
+                /* footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;} */
 
 
               .container2 { transition: all .8s ease-in-out; }
-              
-              /* .container2:active{} */
+
 
 
           .container2{border-color:#FA02B7 !important;}
 
 
 
-  .container2 section:first-child:after{
+  /* .container2 section:first-child:after{
 content: " SCROLL DOWN FOR MORE ";
 display: block;
 position:absolute;
@@ -2709,7 +2697,7 @@ opacity:.8;
     font-size: 20px;
     color:#fff;
     opacity:.8;
-      }
+      } */
 
       .container2 {
         overflow-y: scroll;

@@ -329,7 +329,7 @@ const YouTube = frontmatter.youtuber
       </span>
     </h2> */}
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'20vh',}}>
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'10vh',}}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
@@ -357,6 +357,7 @@ const YouTube = frontmatter.youtuber
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
+  <br /><br />
           <Link
             to={frontmatter.cta.ctaLink}
             className="actionJackson txtshadow"
@@ -391,12 +392,9 @@ const YouTube = frontmatter.youtuber
 
  <div style={{margin:'0', zIndex:'-1', borderRadius:'12px', overflow:'hidden'}}>
    
- <ScrollAnimation className="signup" animateIn="bounceInUp" delay={950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute',
-top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'2', textAlign:'center', display:'flex', borderRadius:'12px'}}>
-  <Newsignup />
-</ScrollAnimation>
 
-          {SecondaryImage ? (
+
+          {/* {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
@@ -405,10 +403,10 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
             />
           ) : (
             ""
-          )}
+          )} */}
 
 
-<div className="abcontent" style={{position:'absolute', height:'', width:'100%', top:'50px', right:'0', display:'flex', justifyContent:'center', flexDirection:'column', zIndex:'0'}}>
+
 
 <ScrollAnimation animateIn="bounceInDown" delay={1350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'1'}}>
 <h2
@@ -466,9 +464,11 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
 </h2>
 </ScrollAnimation>
 
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'2', textAlign:'center', display:'block', borderRadius:'12px'}}>
+  <Newsignup />
+</ScrollAnimation>
 
 
-</div>
 </div>
 
       

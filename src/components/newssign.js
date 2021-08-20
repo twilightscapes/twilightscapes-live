@@ -38,7 +38,9 @@ input::placeholder {
 const NewsletterPage = () => (
 
 
-<CustomBox style={{}}>
+<CustomBox style={{}}> 
+
+           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'100%'}}>
 <form
           className="news-form"
           action="/signedup/"
@@ -47,7 +49,7 @@ const NewsletterPage = () => (
           data-netlify="true"
           data-netlify-honeypot="bot-field">
 
-            <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'100%'}}>
+
 
               <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
 
@@ -87,7 +89,7 @@ const NewsletterPage = () => (
               className="button"
               
               type="submit"
-              style={{marginTop:'-8px'}}
+              style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.5vw, 1.5rem)'}}
             >
               Follow Todd{" "}
               <span className="icon -right">
@@ -103,10 +105,10 @@ const NewsletterPage = () => (
             <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
            
             </div>
-<br />
+<br /></form>
 </div>
 
-        </form>
+        
         
 </CustomBox>
   
