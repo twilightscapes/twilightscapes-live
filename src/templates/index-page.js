@@ -4,15 +4,15 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
+import { RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import ReactPlayer from 'react-player/lazy'
+// import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
-import { FaHandPointDown } from "react-icons/fa"
+// import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 // import Trumpy from '../../static/assets/trump-family-board.svg'
@@ -160,7 +160,7 @@ const YouTube = frontmatter.youtuber
 
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
  <>
-      <ReactPlayer
+      {/* <ReactPlayer
         id="mobilePlayer"
           className='react-player'
           url={Url}
@@ -184,9 +184,9 @@ const YouTube = frontmatter.youtuber
           </div>
           </button>}
             light="../assets/transparent.png"
-          />
+          /> */}
 
-          <ReactPlayer
+          {/* <ReactPlayer
         id="deskPlayer"
           className='react-player'
           url={Url}
@@ -199,7 +199,7 @@ const YouTube = frontmatter.youtuber
           playsinline
           muted={true}
           showPortrait
-          />
+          /> */}
 
           </>
 
