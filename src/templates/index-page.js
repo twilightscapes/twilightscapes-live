@@ -2,14 +2,14 @@
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-// import ReactPlayer from 'react-player/lazy'
-// import { ImPlay } from "react-icons/im"
+import ReactPlayer from 'react-player/lazy'
+import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -111,9 +111,50 @@ export const pageQuery = graphql`
 
 
 
+
+
+
 const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+
+
+
+
+    // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
+    // Specifically, the target element is the one we would like to allow scroll on (NOT a parent of that element).
+    // This is also the element to apply the CSS '-webkit-overflow-scrolling: touch;' if desired.
+   const targetElement = document.querySelector('#container2');
+
+
+  const showTargetElement = () => {
+    // ... some logic to show target element
+  
+    // 3. Disable body scroll
+    disableBodyScroll(this.targetElement);
+  }
+  
+  const hideTargetElement = () => {
+    // ... some logic to hide target element
+  
+    // 4. Re-enable body scroll
+    enableBodyScroll(this.targetElement);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -173,26 +214,26 @@ const YouTube = frontmatter.youtuber
       //     playsinline
       //     muted={true}
       //     showPortrait
-        //   playIcon={
-        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+      //     playIcon={
+      //       <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      //     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+      //     <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-        //   </div>
-        //   </button>}
+      //     </div>
+      //     </button>}
       
       
       
-        //     light="../static/assets/transparent.png"
-          // />
+      //       light="../static/assets/transparent.png"
+      //     />
 
-      // 
+      
 
     )
   }
@@ -220,11 +261,11 @@ const YouTube = frontmatter.youtuber
 
       
 
+{/* <div style={{display:'block', width:'100%', height:'50vh', border:'2px solid yellow', position:'relative', zIndex:'-2'}}></div> */}
 
 
 
-
-      <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onBlur={() => window.scrollTo({bottom: 0, behavior: 'smooth'})}>
+      <div id="player-wrapper" name="player-wrapper" className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onScroll={() => this.scrollTo({top: 0, behavior: 'auto'})}>
 
 
 
@@ -329,10 +370,10 @@ const YouTube = frontmatter.youtuber
       </span>
     </h2> */}
 
-        <div className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',}} onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})}>
+        <div id="container2" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',}}  onScrollCapture={enableBodyScroll} >
 
 
-
+  {/* onBlur={clearAllBodyScrollLocks()} */}
 
 
 
