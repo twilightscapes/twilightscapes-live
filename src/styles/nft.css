@@ -34,7 +34,7 @@ input[type=checkbox]:checked + label div label{display:block !important; cursor:
 .container2 {
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height:60vh;
+  height:90vh;
 }
 section {
 	scroll-snap-align: start;

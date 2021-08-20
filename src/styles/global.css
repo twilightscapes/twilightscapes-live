@@ -60,7 +60,7 @@ opacity:.2;
 
 
 #player-wrapper{
-  content: " sflahasoh ashfoash oasifh asoif hasoifasoihf  ";
+  content: "  ";
   display:block;
   width:100%;
   height:300px !important;
@@ -2648,7 +2648,10 @@ background-position:center 70px;
             }
 
             @media (min-width: 48rem) {
-              .container2:hover {height:100vh !important;}
+              #scooch:hover {
+                transform: scale(.96);
+                transition: all .8s ease-in-out;
+              }
               }
 
               @media (hover: hover) {
@@ -2663,7 +2666,7 @@ background-position:center 70px;
                   /* scroll-snap-type: none !important; */
                 }
                 .container2 section {
-                  /* scroll-snap-align: none; */
+                  scroll-snap-align: none;
                 }
                 
                 .container2 section article{
@@ -2714,7 +2717,7 @@ opacity:.8;
       .container2 {
         overflow-y: scroll;
         scroll-snap-type: y proximity;
-        height:60vh;
+        height:100vh;
       }
       .container2 section {
         scroll-snap-align: start;

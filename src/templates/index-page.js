@@ -249,12 +249,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* <h2 style={{fontSize:'200%', marginBottom:'1rem'}}>
-      Latest <strong>Experiences</strong>{" "}
-      <span className="icon -right">
-        <RiArrowDownLine />
-      </span>
-    </h2> */}
+
 
         <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
 
@@ -285,7 +280,7 @@ const YouTube = frontmatter.youtuber
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -357,10 +352,12 @@ const YouTube = frontmatter.youtuber
 
 
 
+
+
 <section>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0',}}>
+      <div className="flexcheek " style={{padding:'0 0 0 2rem',}}>
 
 
           <h1 className="title1 neonText">{frontmatter.title}</h1>
@@ -509,12 +506,20 @@ const YouTube = frontmatter.youtuber
 
 
 
+<div id="scooch">
 
-
-
+<h2 style={{fontSize:'200%', marginBottom:'1rem', textAlign:'center'}}>
+      Latest <strong>Experiences</strong>{" "}
+      <span className="icon -right">
+        <RiArrowDownLine />
+      </span>
+    </h2>
 
         <BlogListHome data={posts} />
    </div>
+
+   </div>{/* end scooch */}
+
 
   {/* <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
   <Link
