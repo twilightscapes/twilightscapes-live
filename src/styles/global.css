@@ -2764,7 +2764,7 @@ opacity:.8;
         background:tranparent !important;
       }
 
-.blogscroller{
+/* .blogscroller{
 overflow-y: scroll;
         scroll-snap-type: y proximity;
         height:70vh;
@@ -2772,7 +2772,7 @@ overflow-y: scroll;
 
 .blogscroller section {
   scroll-snap-align: start;
-  /* overflow:hidden; */
+  overflow:hidden;
   height:100% !important;
   background:tranparent !important;
 }
@@ -2783,7 +2783,7 @@ height:100vh;
    
 .blogscroller section article img{
   height:100% !important;
-}
+} */
 
 
         
