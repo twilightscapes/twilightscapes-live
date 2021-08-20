@@ -336,8 +336,8 @@ const YouTube = frontmatter.youtuber
 
 
 
-
-
+<section>
+<article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
 
@@ -482,8 +482,8 @@ top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'
 
       </div> 
 </div>
-
-
+</article>
+</section>
 
 
 
