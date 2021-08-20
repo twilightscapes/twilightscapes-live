@@ -2674,16 +2674,13 @@ background-position:center 70px;
 
 
               .container2 { transition: all 1.2s ease-in-out; }
-              .container2:hover, .container2:active { transform: scale(1); height: 100vh !important; }
+              .container2:hover, .container2:active { transform: scale(.92); height: 200vh !important; }
               /* .container2:active{} */
 
 
-
-
-
-
-
           .container2{border-color:#FA02B7 !important;}
+
+
 
   .container2 section:first-child:after{
 content: " SCROLL DOWN FOR MORE ";
