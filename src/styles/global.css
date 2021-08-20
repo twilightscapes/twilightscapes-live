@@ -2654,7 +2654,7 @@ background-position:center 70px;
 
               @media (hover: hover) {
 
-                .container2:hover, .container2:active { transform: scale(.96);height: 10% !important; top:0 !important; }
+                .container2:hover, .container2:active { height: 10% !important; top:0 !important; }
 
                 /* #installer{display: none !important;} */
                 .container2 {

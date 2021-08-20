@@ -329,9 +329,9 @@ const YouTube = frontmatter.youtuber
       </span>
     </h2> */}
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',}} onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})}>
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'20vh',}}>
 
-
+        {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
 
 
