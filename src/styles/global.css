@@ -2667,19 +2667,19 @@ background-position:center 70px;
                   /* transform: scale(1); */
                   transition: all .8s ease-in-out;
                 }
-                /* #scooch:hover {
-                  transform: scale(.96);
+                #scooch:hover {
+                  /* transform: scale(.96); */
                   margin-top:-10vh;
                 }
 
                 .container2:hover, .container2:active { 
                   height: 10% !important; 
                   top:0 !important; 
-                } */
+                }
 
                 .container2 {
                   overflow-y: scroll;
-                  /* scroll-snap-type: none !important; */
+                  scroll-snap-type: none !important;
                 }
                 .container2 section {
                   scroll-snap-align: none;
