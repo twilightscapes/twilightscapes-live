@@ -2651,6 +2651,8 @@ background-position:center 70px;
               #scooch:hover {
                 transform: scale(.96);
                 transition: all .8s ease-in-out;
+                margin-top:-10vh;
+                top:0;
               }
               }
 
