@@ -39,114 +39,114 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiFacebookBoxFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "twitter" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiTwitterFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "linkedin" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiLinkedinBoxFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "youtube" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiYoutubeFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "instagram" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiInstagramFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "rss" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiRssFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "github" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiGithubFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "telegram" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiTelegramFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "pinterest" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiPinterestFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "snapchat" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiSnapchatFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "skype" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiSkypeFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "wordpress" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <FaWordpress />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "dribbble" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiDribbbleFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "medium" ? (
-        <Link to={icons.url} target="_blank">
+        <a href={icons.url} rel="noreferrer" target="_blank">
           <RiMediumFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "behance" ? (
-        <Link to={icons.url} target="_blank">
+        <a href={icons.url} rel="noreferrer" target="_blank">
           <RiBehanceFill />
-        </Link>
+        </a>
       ) : (
         ""
       )}
       {icons.icon === "vk" ? (
-        <Link className="social" to={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <FaVk />
-        </Link>
+        </a>
       ) : (
         ""
       )}
