@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
+
 import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
@@ -111,50 +111,9 @@ export const pageQuery = graphql`
 
 
 
-
-
-
 const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-
-
-
-
-    // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
-    // Specifically, the target element is the one we would like to allow scroll on (NOT a parent of that element).
-    // This is also the element to apply the CSS '-webkit-overflow-scrolling: touch;' if desired.
-   const targetElement = document.querySelector('#container2');
-
-
-  const showTargetElement = () => {
-    // ... some logic to show target element
-  
-    // 3. Disable body scroll
-    disableBodyScroll(this.targetElement);
-  }
-  
-  const hideTargetElement = () => {
-    // ... some logic to hide target element
-  
-    // 4. Re-enable body scroll
-    enableBodyScroll(this.targetElement);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -198,40 +157,40 @@ const YouTube = frontmatter.youtuber
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
-      <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
+      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
  
-      // <ReactPlayer
-      //     className='react-player'
-      //     url={Url}
-      //     width="100%"
-      //     height="100%"
+      <ReactPlayer
+          className='react-player'
+          url={Url}
+          width="100%"
+          height="100%"
      
  
-      //     autoplay={true}
-      //     background={true}
-      //     loop
-      //     playing
-      //     playsinline
-      //     muted={true}
-      //     showPortrait
-      //     playIcon={
-      //       <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-      //     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-      //     <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-      //     </div>
-      //     </button>}
+          </div>
+          </button>}
       
       
       
-      //       light="../static/assets/transparent.png"
-      //     />
+            light="../static/assets/transparent.png"
+          />
 
       
 
@@ -265,7 +224,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div id="player-wrapper" name="player-wrapper" className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onScroll={() => this.scrollTo({top: 0, behavior: 'auto'})}>
+      <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }} onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})}>
 
 
 
@@ -370,10 +329,10 @@ const YouTube = frontmatter.youtuber
       </span>
     </h2> */}
 
-        <div id="container2" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',}}  onScrollCapture={enableBodyScroll} >
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'90%', height:'', border:'0px solid #000 !important', margin:'0 auto',}} onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})}>
 
 
-  {/* onBlur={clearAllBodyScrollLocks()} */}
+
 
 
 
