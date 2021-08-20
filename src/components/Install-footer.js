@@ -31,7 +31,7 @@ export default class Installer extends React.Component {
    render(){
        return(
            <div className="no-app">
-           <div style={{textAlign:'center', marginTop:'1rem', }}>
+           <div style={{textAlign:'center', marginTop:'1rem',}}>
            <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install the Web App</button> &nbsp; | &nbsp; Get 30% OFF! 
              
              
@@ -39,7 +39,7 @@ export default class Installer extends React.Component {
 
 {this.state.isActive ? 
 <>
-  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'100vw', textAlign:'center' }}>
+  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'600px', textAlign:'center' }}>
   
   One-Click Install - NO APP STORE NEEDED
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
