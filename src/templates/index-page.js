@@ -339,7 +339,7 @@ const YouTube = frontmatter.youtuber
 <section>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek seotext" style={{padding:'0 3% 3rem 3%',}}>
+      <div className="flexcheek seotext" style={{padding:'0',}}>
 
 
           <h1 className="title1 neonText">{frontmatter.title}</h1>
@@ -389,7 +389,7 @@ const YouTube = frontmatter.youtuber
  
 
 
- <div style={{margin:'3% 5% 3% 3%', zIndex:'-1', borderRadius:'12px', overflow:'hidden'}}>
+ <div style={{margin:'0', zIndex:'-1', borderRadius:'12px', overflow:'hidden'}}>
    
  <ScrollAnimation className="signup" animateIn="bounceInUp" delay={950} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute',
 top:'50vh', border:'0px solid yellow', justifyContent:'', width:'100%', zIndex:'2', textAlign:'center', display:'flex', borderRadius:'12px'}}>
