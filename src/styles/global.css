@@ -2647,16 +2647,30 @@ background-position:center 70px;
             .container2{max-width:96% !important;}
             }
 
-            @media (min-width: 48rem) {
+            /* @media (min-width: 48rem) {
               #scooch:hover {
                 transform: scale(.96);
                 transition: all .8s ease-in-out;
                 margin-top:-10vh;
-                top:0;
               }
+              } */
+
+              #scooch {
+                transform: scale(.92);
+                transition: all .8s ease-in-out;
               }
 
+
               @media (hover: hover) {
+
+                #scooch{
+                  transform: scale(1);
+                  transition: all .8s ease-in-out;
+                }
+                #scooch:hover {
+                  transform: scale(.96);
+                  margin-top:-10vh;
+                }
 
                 .container2:hover, .container2:active { 
                   height: 10% !important; 
