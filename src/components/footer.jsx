@@ -166,13 +166,13 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 
-export function Footer({ location }) {
-  const { siteURL } = useSiteMetadata();
-
-  // const Url = location.href ? location.href : '';
+export function Footer() {
+  const siteURL = useSiteMetadata();
+  
+ 
   return (
 <>
-{/* <a href={`${siteURL}${location.pathname}`}></a> */}
+
 
     <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
 
@@ -201,7 +201,7 @@ export function Footer({ location }) {
   
       {/* <Page /> */}
   
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a title="Built by Todd Lambert using Gatsby and hosted on Netlify" href="{siteURL}">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
+  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a title="Built by Todd Lambert using Gatsby and hosted on Netlify" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftwilightscapes.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
       </nav>
    
     </footer>
