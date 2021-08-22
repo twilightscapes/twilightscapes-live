@@ -34,9 +34,7 @@ import 'react-slideshow-image/dist/styles.css'
 //   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
 // };
 
-const targetElement = document.querySelector('#contentscroll')
 
-disableBodyScroll()
 
 const styles = {
   pagination: {

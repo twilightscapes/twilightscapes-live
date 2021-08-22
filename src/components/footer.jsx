@@ -168,8 +168,14 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 export function Footer() {
   const siteURL = useSiteMetadata();
-  
- 
+  const url = typeof window !== 'undefined' ? window.location.href : '';
+  const FinalUrl = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2F" + url + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
+
+
+
+
+
+
   return (
 <>
 
@@ -201,7 +207,7 @@ export function Footer() {
   
       {/* <Page /> */}
   
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a aria-label="Buily by Todd Lambert" title="Built by Todd Lambert using Gatsby and hosted on Netlify" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftwilightscapes.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
+  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a aria-label="Buily by Todd Lambert" title="Built by Todd Lambert using Gatsby and hosted on Netlify" href={FinalUrl} target="_blank" rel="noreferrer">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
       </nav>
    
     </footer>

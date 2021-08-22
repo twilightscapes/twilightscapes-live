@@ -448,7 +448,7 @@ to="#experiences" title="See the new EXPERIENCES™" />
 
 <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}>
 <h2
-  className="letter normal txtshadow-header hit-the-floor"
+  className="neonText normal txtshadow-header hit-the-floor"
   style={{
     color: '#fff',
     fontSize: '60px',
@@ -491,6 +491,7 @@ to="#experiences" title="See the new EXPERIENCES™" />
    fontSize:'80px',
    color: 'white',
    position: 'relative',
+   fontWeight:'bold',
 //            top: '230px',
     textAlign: 'right',
     textTransform: 'uppercase', 
