@@ -789,9 +789,8 @@ body.bloglist .post-content{
   position:absolute;
   bottom:0 !important;
   width:100%;
-  /* height:100%; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content:flex-end;
   background:#111;
   color:#fff !important;
@@ -799,17 +798,17 @@ body.bloglist .post-content{
   padding:10px 1rem 0 1rem;
 }
 
-body.homepage .post-content{
+.post-content{
   position:relative;
   bottom:0;
   z-index: 1;
   color:#fff !important;
   display: flex;
-  
+  text-align: left;
 }
 
 body.homepage .post-content a{color:#fff !important;}
-body.homepage .post-content h2{
+ .post-content h2{
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   border:0px solid red;
   width: 100% !important;
@@ -820,14 +819,14 @@ body.bloglist .post-content .featured-image{
   position:absolute;
   height:auto !important;
   top:0;
-border:0px solid red !important;
+border:1px solid red !important;
 }
 
-body.bloglist section.child{
+/* body.bloglist section.child{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 
 body.bloglist section.child article{
 
@@ -1034,7 +1033,7 @@ filter: drop-shadow(0px 0px 4px #666);
 
 
 #scooch section:first-child::after{
-  content: " JUST ADDED ";
+  content: " JUST ADDED! ";
   color:#222 !important;
   pointer-events: none !important;
   display:flex  !important;
@@ -1046,6 +1045,8 @@ filter: drop-shadow(0px 0px 4px #666);
   right:20px;
   z-index: 0;
   background:var(--primary-color);
+  font-size: 150%;
+  font-weight: bold;
   color:#fff !important;
   padding:0 1rem;
   filter: drop-shadow(0px 0px 10px rgba(0,0,0,.9));

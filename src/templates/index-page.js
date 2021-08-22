@@ -402,7 +402,7 @@ style={{
   margin:'0 auto'
 
 }} 
-to="#scootch" title="See the new EXPERIENCES™" />
+to="#experiences" title="See the new EXPERIENCES™" />
 
 
 
@@ -525,7 +525,7 @@ to="#scootch" title="See the new EXPERIENCES™" />
 
 
 
-<a id="scootch" name="scootch" />
+<a id="experiences" />
 <div id="scooch">
         <BlogListHome data={posts} />
 
