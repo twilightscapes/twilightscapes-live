@@ -174,7 +174,7 @@ export function Footer() {
 <>
 
 
-    <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
+    <footer className={footerStyle} style={{padding:'0 0', marginTop:'0',}}>
 
     <Consent />
 {/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}

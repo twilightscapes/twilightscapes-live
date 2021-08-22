@@ -360,7 +360,7 @@ const YouTube = frontmatter.youtuber
       <div className="flexcheek " style={{padding:'0 0 0 2rem',}}>
 
 
-          <h1 className="title1 neonText">{frontmatter.title}</h1>
+          <h1 className="title1 neonText1">{frontmatter.title}</h1>
           <p
             className="tagline1"
             sx={{
