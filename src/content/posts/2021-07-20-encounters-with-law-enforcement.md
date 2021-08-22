@@ -7,7 +7,6 @@ description: " I get it… scary white dude with long hair, slowly roaming seedy
 featuredImage: /assets/been-pulled-over.jpg
 ---
 
-<div class="sirens" style="position:absolute; top:0; left:0; width:100%; display:block; height:800px; z-index:1; border:0px solid yellow; opacity:.2;"></div>
 
 Over the years I’ve had more than my fair share of interactions with our local boys in blue. I have been pulled over probably more than most people which is an unfortunate side-effect of cruising around in rundown parts of town late at night.
 

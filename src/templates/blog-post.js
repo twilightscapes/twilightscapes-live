@@ -2,6 +2,7 @@
 // import React from "react"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
@@ -11,6 +12,7 @@ import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
 import ReactPlayer from 'react-player/lazy'
+import YouTube from "../components/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
@@ -89,7 +91,14 @@ const Pagination = props => (
 
 
 
+
+
+
+
 const Post = ({ data, pageContext }) => {
+
+
+
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -111,7 +120,12 @@ const Post = ({ data, pageContext }) => {
     <AddSvg />
   }
 function AddSvg(){
-  const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+  // const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+
+  const svgUrl = frontmatter.svgImage.publicURL
+
+
+
   return (
     <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} >You need a new browser</object>
   )
@@ -129,44 +143,50 @@ function AddSvg(){
   }
 
   function Iframer() {
-    const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
- 
-      // <ReactPlayer
-      //     className='react-player'
-      //     url={Url}
-      //     width="100%"
-      //     height="100%"
+ <div>
+      <ReactPlayer
+          className='react-player'
+          url={iframeUrl}
+          width="100%"
+          height="100%"
      
  
-      //     autoplay={true}
-      //     background={true}
-      //     loop
-      //     playing
-      //     playsinline
-      //     muted={true}
-      //     showPortrait
-      //     playIcon={
-      //       <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-      //     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-      //     <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-      //     </div>
-      //     </button>}
+          </div>
+          </button>}
       
       
       
-      //       light="../assets/transparent.png"
-      //     />
+            light="../assets/transparent.png"
+          />
 
-       <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} />
+
+
+
+
+        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
+
+</div>
 
     )
   }
@@ -209,12 +229,17 @@ function AddSvg(){
   return (
     
     <Layout className="page">
+
+<Helmet>
+  <body className="blogpost" />
+</Helmet>
+
       <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://nofuckintime.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
@@ -224,7 +249,7 @@ function AddSvg(){
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -232,19 +257,19 @@ function AddSvg(){
 
 
 
-<div style={{display:'block', width:'100vw', height:'90vh', overflow:'hidden', position:'absolute', top:'0',}}>
+<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
             />
             
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="No Fuckin Time Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -315,6 +340,7 @@ function AddSvg(){
 
 
 <br />
+
 <br />
 <br />
 <GoBack />
@@ -333,7 +359,6 @@ function AddSvg(){
 
 
 
-        {/* <svg id="erPaIC0hF4R1" viewBox="0 0 1600 1200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><text id="erPaIC0hF4R2" dx="0" dy="0" font-family="&quot;Roboto&quot;" font-size="70" transform="matrix(1 0 0 1 403.511685 343.101198)" fill="rgb(0,0,0)" stroke="none" stroke-width="0"><tspan id="erPaIC0hF4R3" font-family="Roboto" font-size="70" stroke="none" stroke-width="0">{svgUrl}</tspan></text></svg> */}
 
 
       
@@ -357,7 +382,7 @@ function AddSvg(){
 
    <ShareSocial />
       <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-        Always love to read your comments!
+      I always love to read your comments!
 <CommentBox />
      </div>
     
@@ -380,7 +405,7 @@ function AddSvg(){
 export default Post
 
 export const pageQuery = graphql`
-  query BlogPostQuery($id: String!) {
+  query BlogPostQueryBlogPostQuery($id: String!) {
     site {
       siteMetadata {
         siteTitle
@@ -413,7 +438,7 @@ export const pageQuery = graphql`
           }
         }
         svgImage{
-          relativePath
+          publicURL
         }
 
         underlayImage {
