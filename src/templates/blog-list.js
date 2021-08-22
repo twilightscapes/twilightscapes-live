@@ -431,11 +431,11 @@ class BlogIndex extends React.Component {
  {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
  <div id="contentscroll" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100%', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
 
- {/* <section style={{height:'auto'}}>
-  <Link to={props.prevPage} style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newer Posts 
+ <section style={{height:'auto'}}>
+  <Link to="/#scootch" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest Experiences 
     </article></Link>
-    </section> */}
+    </section>
 
  <section style={{height:'auto'}}>
   <article style={{height:'auto'}}>
