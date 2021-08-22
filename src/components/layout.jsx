@@ -202,12 +202,12 @@ Contact Me<span>Ordering Questions?</span>
       </li> 
 
       
-<li className="carto" style={{textAlign:'center'}}>
+{/* <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/experiences/">
               <span style={{color:'var(--primary-color)',}}>(All New)</span>3D Experiences
                  Multimedia 3D Blog
               </Link>
-      </li>
+      </li> */}
 
 
 
