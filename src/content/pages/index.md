@@ -7,7 +7,7 @@ featuredImage: /assets/twilight-promo-in-the-sky-with-diamonds.jpg
 secondaryImage: /assets/night316.jpg
 cta:
   ctaText: "See the photos"
-  ctaLink: /photos/
+  ctaLink: /scootch/
 youtuber: "iHxmNzMfDj4"
 youtubestart: "0"
 youtubeend: "0"

@@ -2658,6 +2658,7 @@ background-position:center 70px;
           @media (max-width: 48rem) {
             .container2 {margin-top:0 !important;}
             .container2{max-width:96% !important;}
+            #homeintro{height:100% !important; overflow:visible !important; display:block !important; position:relative !important;}
             }
 
             /* @media (min-width: 48rem) {
@@ -2739,6 +2740,35 @@ background-position:center 70px;
 
 
           .container2{border-color:#FA02B7 !important;}
+
+
+
+
+          .container2 section:first-child:after{
+            content: " SCROLL DOWN FOR MORE ";
+            display: block;
+            position:absolute;
+            bottom:0;
+            width:100%;
+            text-align: center;
+            background: #222;
+            font-size: 20px;
+            color:#fff;
+            opacity:.8;
+              }
+              .container2 section:last-child:after{
+                content: " CLICK BELOW FOR MORE ";
+                display: block;
+                position:absolute;
+                bottom:0;
+                width:100%;
+                text-align: center;
+                background: #222;
+                font-size: 20px;
+                color:#fff;
+                opacity:.8;
+                  }
+
 
 
 

@@ -3,7 +3,7 @@ import * as React from "react"
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
@@ -12,7 +12,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import ReactPlayer from 'react-player/lazy'
 // import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
-// import { FaHandPointDown } from "react-icons/fa"
+import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 // import Trumpy from '../../static/assets/trump-family-board.svg'
@@ -354,10 +354,10 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section style={{top:'0', paddingTop:'2rem'}}>
+<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'100vh'}}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 0 0 2rem',}}>
+      <div className="flexcheek " style={{padding:'0 2rem',}}>
 
 
           <h1 className="title1 neonText1">{frontmatter.title}</h1>
@@ -376,8 +376,9 @@ const YouTube = frontmatter.youtuber
           />
   
   <br /><br />
-          <Link
+          {/* <Link
             to={frontmatter.cta.ctaLink}
+            // href="#scootch"
             className="actionJackson txtshadow"
             style={{
               cursor:'pointer',
@@ -390,9 +391,26 @@ const YouTube = frontmatter.youtuber
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link> */}
 
 
+<AnchorLink 
+className="actionJackson txtshadow"
+style={{
+  cursor:'pointer',
+  width:'70%',
+  margin:'0 auto'
+
+}} 
+to="#scootch" title="See the all-new EXPERIENCES" />
+
+<br />
+<br />
+{/* <span className="actionJackson txtshadow"> <span className="icon -right">
+              <FaHandPointDown />
+            </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
+              <FaHandPointDown />
+            </span></span> */}
           
 
 
@@ -403,12 +421,12 @@ const YouTube = frontmatter.youtuber
         
 
 
- <div className="flexcheek" style={{position:'relative', overflow:'hidden'}}>
+ <div className="flexcheek" style={{position:'relative', height:'100vh', overflow:''}}>
  
  
 
 
- <div style={{margin:'0', zIndex:'', borderRadius:'12px', overflow:'hidden', position:'relative'}}>
+ <div style={{margin:'0', zIndex:'', borderRadius:'12px', height:'100vh', overflow:'', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
@@ -417,7 +435,7 @@ const YouTube = frontmatter.youtuber
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'100vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
@@ -505,7 +523,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-
+<a id="scootch" name="scootch" />
 <div id="scooch">
         <BlogListHome data={posts} />
    </div>

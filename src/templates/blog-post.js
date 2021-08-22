@@ -257,7 +257,7 @@ function AddSvg(){
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
+<div style={{display:'block', width:'100vw', height:'', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}
