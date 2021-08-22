@@ -402,7 +402,9 @@ style={{
   margin:'0 auto'
 
 }} 
-to="#scootch" title="See the all-new EXPERIENCES" />
+to="#scootch" title="See the new EXPERIENCES™" />
+
+
 
 <br />
 <br />
@@ -426,7 +428,7 @@ to="#scootch" title="See the all-new EXPERIENCES" />
  
 
 
- <div style={{margin:'0 10px 10px 0', zIndex:'', borderRadius:'12px', height:'80%', overflow:'hidden', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'80%', overflow:'hidden', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
