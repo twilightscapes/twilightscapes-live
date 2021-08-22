@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from 'react'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
@@ -32,6 +33,10 @@ import 'react-slideshow-image/dist/styles.css'
 //   prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
 //   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
 // };
+
+const targetElement = document.querySelector('#contentscroll')
+
+disableBodyScroll()
 
 const styles = {
   pagination: {
@@ -65,7 +70,7 @@ export const blogListQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -140,9 +145,9 @@ class BlogIndex extends React.Component {
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"AdFree Archive — Page " + currentPage + " of " + numPages}
+          title={"Twilightscapes Archive — Page " + currentPage + " of " + numPages}
           description={
-            "dFree Archive page " + currentPage + " of " + numPages
+            "Twilightscapes Archive page " + currentPage + " of " + numPages
           }
         />
         
@@ -419,13 +424,21 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h1 className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
+<h1 onFocus={disableBodyScroll()} className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
 
     
-    
- <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}>
+<Pagination {...props} />
+ {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
+ <div id="contentscroll" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100%', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+
+ <section style={{height:'auto'}}>
+  <article style={{height:'auto'}}>
+
  {posts}
- </div>
+
+</article>
+</section>
+</div>
         <Pagination {...props} />
 
 
