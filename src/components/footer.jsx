@@ -166,12 +166,14 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 
-export function Footer() {
-  const siteURL = useSiteMetadata();
-  const url = typeof window !== 'undefined' ? window.location.href : '';
+export function Footer({ location }) {
+  const { siteUrl } = useSiteMetadata();
+
+  const url = `${siteUrl}${location.pathname}`
+  // const url = typeof window !== 'undefined' ? window.location.href : '';
   const FinalUrl = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2F" + url + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
 
-
+;
 
 
 
