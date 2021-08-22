@@ -19,7 +19,7 @@ const PostCard = ({ data }) => (
 
 
     {data.frontmatter.featuredImage ? (
-      <Link to={data.frontmatter.slug}>
+      <Link to={data.frontmatter.slug + "/"}>
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
@@ -29,7 +29,7 @@ const PostCard = ({ data }) => (
 
       </Link>
     ) : (
-      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link  to={data.frontmatter.slug + "/"}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
 
 
@@ -37,7 +37,7 @@ const PostCard = ({ data }) => (
 
 <h2 className="title">
   <Link 
-    to={data.frontmatter.slug}
+    to={data.frontmatter.slug + "/"}
   >
     {data.frontmatter.title}
   </Link>

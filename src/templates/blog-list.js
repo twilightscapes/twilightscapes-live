@@ -90,7 +90,7 @@ const Pagination = props => (
       {Array.from({ length: props.numPages }, (_, i) => (
         <li key={`pagination-number${i + 1}`}>
           <Link
-            to={`${props.blogSlug}${i === 0 ? "" : i + 1}`}
+            to={`${props.blogSlug}${i === 0 ? "" : i + 1 + "/"}`}
             className={props.currentPage === i + 1 ? "is-active num" : "num"}
           >
             {i + 1}
@@ -99,7 +99,7 @@ const Pagination = props => (
       ))}
       {!props.isLast && (
         <li>
-          <Link to={props.nextPage} rel="next">
+          <Link to={props.nextPage + "/"} rel="next">
             Next{" "}
             <span className="icon -right">
               <RiArrowRightLine />
@@ -114,7 +114,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/archive/"
+    const blogSlug = "/experiences/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
