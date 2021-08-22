@@ -162,7 +162,7 @@ function AddSvg(){
           muted={true}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
@@ -257,13 +257,13 @@ function AddSvg(){
 
 
 
-<div style={{display:'block', width:'100vw', height:'', overflow:'hidden', position:'absolute', top:'0',}}>
+<div style={{display:'block', width:'100vw', height:'', overflow:'hidden', position:'absolute', top:'0', zIndex:'3'}}>
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'3', objectFit:'contain', overflow:'hidden', border:'1px solid red !important'}}
             />
             
           ) : (
@@ -308,7 +308,7 @@ function AddSvg(){
             ""
           )} */}
 
-{UnderlayImage ? (
+{/* {UnderlayImage ? (
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
@@ -319,16 +319,16 @@ function AddSvg(){
             
           ) : (
             ""
-          )}
+          )} */}
 
 
   
-{YouTube ? (
+{/* {YouTube ? (
             <Iframer />
        
           ) : (
             ""
-          )}
+          )} */}
 
 
 
