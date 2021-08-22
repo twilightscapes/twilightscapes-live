@@ -426,7 +426,7 @@ to="#scootch" title="See the all-new EXPERIENCES" />
  
 
 
- <div style={{margin:'0', zIndex:'', borderRadius:'12px', height:'100vh', overflow:'', position:'relative'}}>
+ <div style={{margin:'0 10px 10px 0', zIndex:'', borderRadius:'12px', height:'80%', overflow:'hidden', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
@@ -435,7 +435,7 @@ to="#scootch" title="See the all-new EXPERIENCES" />
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'100vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'90vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
