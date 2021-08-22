@@ -7,7 +7,7 @@ export function CartButton({ quantity }) {
   return (
     <Link
       aria-label={`Shopping Cart with ${quantity} items`}
-      to="/cart"
+      to="/cart/"
       className={cartButton}
     >
       <CartIcon />
