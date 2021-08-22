@@ -1047,6 +1047,7 @@ filter: drop-shadow(0px 0px 4px #666);
   background:var(--primary-color);
   font-size: 150%;
   font-weight: bold;
+  text-shadow: 2px 1px 1px #222;
   color:#fff !important;
   padding:0 1rem;
   filter: drop-shadow(0px 0px 10px rgba(0,0,0,.9));
@@ -1056,6 +1057,7 @@ filter: drop-shadow(0px 0px 4px #666);
   margin:0 4%;
   line-height: 100%;
   padding:.5rem 0 ;
+  border-radius: 12px;
   }
 
 
