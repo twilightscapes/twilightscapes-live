@@ -2737,14 +2737,14 @@ background-position:center 70px;
               #deskPlayer{display: none;}
                 
                 footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; z-index: 2; opacity: 1;
-                  background: linear-gradient(
+                  /* background: linear-gradient(
                     45deg,
                      #111,
                       #222,
                        #000,
                         #111);
                   background-size: 300% 300%;
-                  animation: gradient 12s ease infinite;
+                  animation: gradient 12s ease infinite; */
                   filter: drop-shadow(-20px 0px 14px #000);
                   /* box-shadow:  0 4px -22px var(--primary-color) !important; */
                 }
@@ -2770,16 +2770,16 @@ background-position:center 70px;
 
 
 
-          .container2 section:first-child:after{
+          .container2 section:first-child:before{
             content: " SCROLL DOWN FOR MORE ";
             display: block;
             position:absolute;
             bottom:0;
             width:100%;
             text-align: center;
-            background: #222;
+            /* background: #222; */
             font-size: 20px;
-            color:#fff;
+            /* color:#fff; */
             opacity:.8;
               }
               /* .container2 section:last-child:after{
