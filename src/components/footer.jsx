@@ -4,6 +4,7 @@ import Social from "../components/social"
 import Consent from "../components/Consent"
 import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
+import { Location } from '@reach/router'
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -166,18 +167,10 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 
-export function Footer({ location }) {
-  const { siteUrl } = useSiteMetadata();
-
-  const url = `${siteUrl}${location.pathname}`
-  // const url = typeof window !== 'undefined' ? window.location.href : '';
-  const FinalUrl = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2F" + url + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
-
-;
-
-
-
-
+export function Footer() {
+  const siteURL = useSiteMetadata();
+  
+ 
   return (
 <>
 
@@ -209,8 +202,18 @@ export function Footer({ location }) {
   
       {/* <Page /> */}
   
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a aria-label="Buily by Todd Lambert" title="Built by Todd Lambert using Gatsby and hosted on Netlify" href={FinalUrl} target="_blank" rel="noreferrer">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
+  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}
+  <Location>
+      {({ location }) => {
+
+        return <a aria-label="Buily by Todd Lambert" title="Built by Todd Lambert using Gatsby and hosted on Netlify" href={location.pathname} target="_blank" rel="noreferrer">Todd Lambert</a>
+        
+      }}
+    </Location>
+  - hand crafted Gatsby on Netlify</div>
       </nav>
+
+      
    
     </footer>
     </>
