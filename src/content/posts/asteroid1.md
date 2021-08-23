@@ -11,7 +11,7 @@ youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/arches-fg.png
-featuredImage: /assets/ASTEROID-SERIES1-PROMO.jpg
+featuredImage: /assets/Experiences-Header-2.jpg
 svgImage: /assets/null.svg
 ---
 Have you ever wanted to ride an asteroid through space? Ever wondered what it would be like to have your personal rock to ride through the Cosmos? 

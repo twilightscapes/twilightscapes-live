@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from 'react'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
+// import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
@@ -422,9 +422,9 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h1 onFocus={disableBodyScroll()} className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
+<h1 className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
 
-    
+{/* onFocus={disableBodyScroll()} */}
 <Pagination {...props} />
  {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
  <div id="contentscroll" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100%', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
