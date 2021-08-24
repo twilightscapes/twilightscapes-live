@@ -53,18 +53,18 @@ a:after{display:none !important;}
   }
 }
 
-.intro:before{
-	content: "Twilightscapes NFTs";
-position:absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+// .intro:before{
+// 	content: "Twilightscapes NFTs";
+// position:absolute;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: sirens .5s ease infinite;
-}
+// background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+//   background-size: 400% 400%;
+//   animation: sirens .5s ease infinite;
+// }
 
 
 
@@ -186,7 +186,7 @@ export const query = graphql`
 
 
 
-    <section className="nft" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
+    <section className="nft1" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
     
 
     
@@ -226,12 +226,20 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
     </div>
        
 
+    <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'auto', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<iframe src='https://opensea.io/Twilightscapes?embed=true&tab=created'
+        width='100%'
+        height='1200px'
+        frameborder='0'
+        allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
+</div>
+
 
     
-      <ShareSocial />
+      {/* <ShareSocial /> */}
        <br /> <br />
         <br />
-       <div className="spacer66" />
+       <div className="" />
  {/* <ScrollAnimation animateIn="bounceInUp"  animateOnce={true} delay={100} style={{position:'relative', height:'100%', border:'0px dotted #000', marginTop:'4rem', paddingTop:'1rem', background:''}}>
 
 
