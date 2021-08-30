@@ -23,3 +23,4 @@ export const onRouteUpdate = ({
 
 
 
+<script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>

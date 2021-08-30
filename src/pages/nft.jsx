@@ -236,7 +236,7 @@ The Non Fungible Token or NFT, stores proof of identity and ownership of art on 
 
 
     
-      {/* <ShareSocial /> */}
+      <ShareSocial />
        <br /> <br />
         <br />
        <div className="" />

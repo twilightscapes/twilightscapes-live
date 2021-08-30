@@ -380,6 +380,12 @@ function AddSvg(){
       {(previous || next) && <Pagination {...props} />}
       </div>
 
+
+
+   
+
+
+
    <ShareSocial />
       <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
       I always love to read your comments!
