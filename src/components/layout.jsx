@@ -194,12 +194,12 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
-<li className="carto">
+{/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/photos/">
       
               View Photos <span>Browse Photo Galleries</span>
               </Link>
-      </li> 
+      </li>  */}
 
       
 {/* <li className="carto" style={{textAlign:'center'}}>
