@@ -20,5 +20,5 @@ Well, present your E-Ticket (most of you were born centuries after we first colo
 
 This is the first of a new series called ASTEROID! where Twilightscapes takes you on a miraculous trek trough the eons of Space. 
 
-Check your propulsion restraints and monitor your air supply(or just hold your breath), because this one is going to be a wild ride. In the name of an immortal Space Commander, "Never give up... Never Surrender!"
+Check your propulsion restraints and monitor your air supply (or just hold your breath), because this one is going to be a wild ride. In the name of an immortal Space Commander, "Never give up... Never Surrender!"
 

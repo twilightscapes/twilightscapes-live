@@ -81,14 +81,14 @@ export default function GalleryPage({ data }) {
 </div>
 
 
-
-<GalleryMenu />
+{/* 
+<GalleryMenu /> */}
 
 
     
 
     <div className="frontprod" style={{marginTop:'2rem'}}>
-      <ProductListing products={data.shopifyCollection.products} className="frontprod" />
+      {/* <ProductListing products={data.shopifyCollection.products} className="frontprod" /> */}
 </div>
       {/* <Link
               className="moreButton"
@@ -109,7 +109,7 @@ export default function GalleryPage({ data }) {
               
               
 
-<p style={{textAlign:'center', margin:'2rem 0 0 0'}}>GET ALL YOUR FAVORITES NOW</p>
+{/* <p style={{textAlign:'center', margin:'2rem 0 0 0'}}>GET ALL YOUR FAVORITES NOW</p>
 
 <div style={{display:'flex', border:'1px solid #666', padding:'1rem', margin:'0 3% 0 3%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'800px', gap:'20px', background:''}}>
 
@@ -118,10 +118,10 @@ export default function GalleryPage({ data }) {
   <span style={{fontSize:'40px', color:'var(--primary-color)', lineHeight:'90%'}}>
   ONLY PAY<br /> FOR TWO
   </span>
-</div>
+</div> */}
 </div>
 
-<blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>You know what they say about people who can't pick 3 of anything? Maybe we need to talk?</blockquote>
+{/* <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>You know what they say about people who can't pick 3 of anything? Maybe we need to talk?</blockquote> */}
 
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
