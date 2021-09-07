@@ -16,7 +16,7 @@ export default function ProductTypeIndex({
       {/* <Seo title={`Unique Long Exposure PHotography by Todd Lambert ${productType}`} /> */}
       <h1 className={title}>{productType}</h1>
       
-      <ProductListing products={products.nodes} />
+      {/* <ProductListing products={products.nodes} /> */}
       {products.pageInfo.hasNextPage && (
         <MoreButton to={`/search?p=${slugify(productType)}#more`}>
           More Twilightscapes
