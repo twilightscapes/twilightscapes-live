@@ -54,11 +54,11 @@ export default function CartPage() {
               Looks like you haven’t found anything yet. We understand that
               sometimes it’s hard to choose — maybe this helps:
             </p>
-            <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
+            {/* <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
               View trending Twilightscapes
-            </Link>
+            </Link> */}
 
-            <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'40vh auto 0 auto'}}>Pre-order questions?</h3>
+            <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'10vh auto 0 auto'}}>Pre-order questions?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
