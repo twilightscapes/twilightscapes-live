@@ -18,9 +18,10 @@ export default function ProductTypeIndex({
       
       {/* <ProductListing products={products.nodes} /> */}
       {products.pageInfo.hasNextPage && (
-        <MoreButton to={`/search?p=${slugify(productType)}#more`}>
-          More Twilightscapes
-        </MoreButton>
+        // <MoreButton to={`/search?p=${slugify(productType)}#more`}>
+        //   More Twilightscapes
+        // </MoreButton>
+        ""
       )}
     </Layout>
   )
