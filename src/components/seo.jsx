@@ -17,13 +17,13 @@ export function Seo({
     query {
       site {
         siteMetadata {
-          siteTitle
-          siteTitleDefault
+          title
+          titleDefault
           siteUrl
-          hrefLang
-          siteDescription
-          siteImage
-          twitter
+          description
+          image
+          twitterUsername
+          companyname
         }
       }
     }
@@ -31,18 +31,18 @@ export function Seo({
 
   const {
     siteTitle,
-    siteTitleDefault,
+    titleDefault,
     siteUrl,
     siteDescription,
     siteImage,
     hrefLang,
-    twitter,
+    twitterUsername,
   } = siteMetadata
 
   const seo = {
-    title: title || siteTitleDefault,
+    title: title || titleDefault,
     description: description || siteDescription,
-    url: pathname ? `${siteUrl}${pathname}` : location.href,
+    url: pathname ? `${pathname}` : location.href,
     image: `${image || siteImage}`,
     // image = image[0] === "/" ? "https://twilightscapes.com" + image : image
   }
@@ -51,10 +51,10 @@ export function Seo({
   return (
     <Helmet
       title={title}
-      defaultTitle={siteTitleDefault}
-      titleTemplate={`%s | ${siteTitle}`}
+      defaultTitle={titleDefault}
+      titleTemplate={`%s | ${titleDefault}`}
     >
-      <html lang={hrefLang} />
+      <html lang="en" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta property="og:title" content={seo.title} />
@@ -66,7 +66,7 @@ export function Seo({
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:creator" content={twitter} />
+      <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:image" content={seo.image} />
 
       <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -75,18 +75,18 @@ export function Seo({
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/favicon-32x32.png"
+        href="/assets/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/favicon-16x16.png"
+        href="/assets/favicon-16x16.png"
       />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/apple-touch-icon.png"
+        href="/assets/apple-touch-icon.png"
       />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/siteimages/apple-splashapple-icon-180.png" />

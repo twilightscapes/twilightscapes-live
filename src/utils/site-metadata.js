@@ -6,13 +6,13 @@ const useSiteMetadata = () => {
     query {
       site {
         siteMetadata {
-          siteTitle
-          siteTitleDefault
-          siteUrl
-          hrefLang
-          siteDescription
-          siteImage
-          twitter
+          title
+        titleDefault
+        siteUrl
+        description
+        image
+        twitterUsername
+        companyname
         }
       }
     }

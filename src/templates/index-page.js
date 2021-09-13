@@ -3,20 +3,21 @@ import * as React from "react"
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { getSrc } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { RiArrowRightSLine } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-// import ReactPlayer from 'react-player/lazy'
-// import { ImPlay } from "react-icons/im"
+import ReactPlayer from 'react-player/lazy'
+import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 // import Trumpy from '../../static/assets/trump-family-board.svg'
-
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -32,13 +33,13 @@ export const pageQuery = graphql`
   query HomeQuery($id: String!) {
     site {
       siteMetadata {
-        siteTitle
-        siteTitleDefault
+        title
+        titleDefault
         siteUrl
-        hrefLang
-        siteDescription
-        siteImage
-        twitter
+        description
+        image
+        twitterUsername
+        companyname
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -114,7 +115,7 @@ export const pageQuery = graphql`
 
 const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -127,6 +128,12 @@ const HomePage = ({ data }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
+    const { iconimage } = useSiteMetadata()
+
+
+    const { siteUrl } = useSiteMetadata()
+
+    
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
   if (!Svg) {
@@ -160,7 +167,7 @@ const YouTube = frontmatter.youtuber
 
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
  <>
-      {/* <ReactPlayer
+      <ReactPlayer
         id="mobilePlayer"
           className='react-player'
           url={Url}
@@ -174,17 +181,21 @@ const YouTube = frontmatter.youtuber
           muted={true}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+          
+
+          <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
-  
+          <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
           </div>
           </button>}
             light="../assets/transparent.png"
-          /> */}
+          />
 
           {/* <ReactPlayer
         id="deskPlayer"
@@ -217,13 +228,23 @@ const YouTube = frontmatter.youtuber
     <Helmet>
   <body className="homepage" />
 </Helmet>
-<Seo
+{/* <Seo
           title={`Night Photo Galleries`}
           description={`Twilightscapes night photography`}
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
-        />
+        /> */}
       
-      
+      <Seo
+        title={frontmatter.title}
+        description={
+          frontmatter.description ? frontmatter.description : excerpt
+        }
+  //       image={photoUrl}
+  //  photoUrl
+
+   image={ siteUrl + getSrc(frontmatter.featuredImage) }
+
+      />
 
 
       {/* <Intro /> */}
@@ -258,7 +279,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section style={{ display:'none',}}>
+<section style={{ display:'',}}>
   <article>
   <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
