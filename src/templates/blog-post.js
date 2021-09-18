@@ -345,7 +345,7 @@ const Suggestion3 = frontmatter.youtubersuggestion3
 
 <div>
 <ReactPlayer
-          className='react-player66'
+          className='react-player'
           url={iframeUrl2}
           width="100%"
           height="100%"
@@ -514,14 +514,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-{Suggestion1 ? (
-            <div style={{position:'absolute', bottom:'-74px', zIndex:'0'}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )}
+
 
 
   
@@ -533,7 +526,14 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           )}
 
 
-
+{Suggestion1 ? (
+            <div style={{position:'absolute', bottom:'-74px', zIndex:'0'}}>
+            <YouTubed />
+            </div>
+       
+          ) : (
+            ""
+          )}
 
       </div>
 
