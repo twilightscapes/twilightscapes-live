@@ -40,7 +40,7 @@ const NewsletterPage = () => (
 
 <CustomBox style={{}}> 
 
-           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'100%'}}>
+           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'10% auto 0 auto', justifySelf:'center', width:'90%'}}>
 <form
           className="news-form"
           action="/signedup/"
@@ -51,7 +51,7 @@ const NewsletterPage = () => (
 
 
 
-              <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
+              
 
           <input type="hidden" name="form-name" value="news" />
 
@@ -63,7 +63,7 @@ const NewsletterPage = () => (
               <span className="txtshadow" style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
-
+<div className="blocker" style={{width:'90%', height:'100%', borderRadius:'12px', margin:'0 auto'}}></div>
                <label style={{color:'#fff'}} htmlFor="email">
                  <input type="email" name="email" required={true}
                       placeholder="your@email.com"

@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Social from "../components/social"
+import Theme from "../components/theme"
 import Consent from "../components/Consent"
 import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
@@ -36,9 +37,12 @@ import {
 
 
 const sIcons = Icons.socialIcons.map((icons, index) => {
-  
-  return (
 
+
+
+
+  return (
+<>
 
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
@@ -154,7 +158,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
         ""
       )}
     </div>
-
+</>
   )
 })
 
@@ -167,9 +171,27 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 export function Footer() {
-  const siteURL = useSiteMetadata();
-  
+  const { siteUrl } = useSiteMetadata();
+
+  const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
+
+
+
+
+
+
+  const { companyname } = useSiteMetadata()
  
+
+
+
+
+
+
+
+
+
+
   return (
 <>
 
@@ -178,30 +200,43 @@ export function Footer() {
 
     <Consent />
 {/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
-    <Install />
+    {/* <Install /> */}
     
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'2rem', textDecoration:'none'}}>Contact Me - I &nbsp;<FaHeart />&nbsp;feedback!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We&nbsp;<FaHeart />&nbsp;feedback!</Link>
 
  <div >
-        {/* <Social /> */}
+     
 
-        <div className="social-icons" style={{textAlign:'center', justifyContent:'center', margin:'3rem 5px'}}>
-  <div className="socialtext" style={{fontSize:'14px'}}>I&apos;m<br />Social</div>
-        {sIcons}
+        { !sIcons ? (
+    ""
+
+  ) : (
+    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', justifyContent:'center', alignItems:'center'}}>
+       <div className="socialtext" style={{fontSize:'14px',}}>We&apos;re <br />Social</div> {sIcons}
         </div>
+  )}
+  
+        
         </div>
 
         
       </div>
-      <nav className={links} aria-label="footer">
+      <nav className="footerlinks" aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
       {/* <Page /> */}
   
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())}<a aria-label="Buily by Todd Lambert" title="Built by Todd Lambert using Gatsby and hosted on Netlify" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftwilightscapes.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">Todd Lambert</a>- hand crafted Gatsby on Netlify</div>
+      {/* <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
+        
+        Copyright &copy; {(new Date().getFullYear())} VidSock(s) - is NOT affiliated with YouTube in any way. </div>
+        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} /> */}
+
+<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} &nbsp; – <a href={speedIt} target="_blank" rel="noreferrer">Yeah, we're FAST</a></div>
+<Theme  style={{display:'flex', alignSelf:'center',}} />
+<br />
       </nav>
    
     </footer>

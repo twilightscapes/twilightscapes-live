@@ -23,35 +23,15 @@ import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 import InnerImageZoom from 'react-inner-image-zoom'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
-const styles = {
-  "article blockquote": {
-    "background-color": "cardBg",
-  },
-  pagination: {
-    a: {
-      color: "inherit",
-      "&.is-active": {
-        color: "text",
-      },
-      "&:hover": {
-        color: "inherit",
-      },
-    },
-  },
+const CustomBox = styled.div`
+@media (max-width: 48rem) {
+  .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
 }
-
-
-
-
+`
 
 
 const Pagination = props => (
-
-
-
-
-  
-  <div className="pagination -post" sx={styles.pagination}>
+  <div className="pagination -post">
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
@@ -101,8 +81,6 @@ const Pagination = props => (
 
 const Post = ({ data, pageContext }) => {
 
-
-
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -115,9 +93,12 @@ const Post = ({ data, pageContext }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
+
     const NftLink = frontmatter.nftlink
     const NftRedeem = frontmatter.nftredeem
     const NftDrop = frontmatter.nftdrop
+
+
 
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
@@ -128,16 +109,15 @@ const Post = ({ data, pageContext }) => {
     <AddSvg />
   }
 function AddSvg(){
-  // const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
-
   const svgUrl = frontmatter.svgImage.publicURL
 
 
 
   return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
+
 
 const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
@@ -153,70 +133,72 @@ const Suggestion1 = frontmatter.youtubersuggestion1
 const Suggestion2 = frontmatter.youtubersuggestion2
 const Suggestion3 = frontmatter.youtubersuggestion3
 
+
+if (Suggestion1) {
+  <ShowSuggestion />
+}
+else{
+
+  
+}
+
+function ShowSuggestion() {
+
+  return (
+<div>
+  
+<div style={{width:'90%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
+<IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
+<IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
+  
+  
+  <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
+<br />
+
+The artist recommends these alternatives:
+<br /><br />
+Click to Copy:<br />
+<CopyToClipboard text={Suggestion1}>
+  <button>{Suggestion1} </button>
+</CopyToClipboard><br />
+
+
+  <CopyToClipboard text={Suggestion2}>
+  <button>{Suggestion2} </button>
+</CopyToClipboard><br />
+
+<CopyToClipboard text={Suggestion3}>
+  <button>{Suggestion3} </button>
+</CopyToClipboard><br />
+
+<br />
+Add your favorites in the comments below!
+
+</div>
+
+<span style={{fontSize:'150%'}}></span>
+<div className="mobilespace" style={{ border:'0px solid red'}}></div>
+</div>
+  )
+}
+
+const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
+const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
-  if (Suggestion1) {
-    <ShowSuggestion />
+
+
+  if (!YoutuberSuggestion1) {
+    <IframeSuggestions />
   }
   else{
   
     
   }
-  
-  function ShowSuggestion() {
-  
-    return (
-  <div>
-    
-  <div style={{width:'90%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
-  <IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
-  <IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
-    
-    
-    <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
-  <br />
-  
-  The artist recommends these alternatives:
-  <br /><br />
-  Click to Copy:<br />
-  <CopyToClipboard text={Suggestion1}>
-    <button>{Suggestion1} </button>
-  </CopyToClipboard><br />
-  
-  
-    <CopyToClipboard text={Suggestion2}>
-    <button>{Suggestion2} </button>
-  </CopyToClipboard><br />
-  
-  <CopyToClipboard text={Suggestion3}>
-    <button>{Suggestion3} </button>
-  </CopyToClipboard><br />
-  
-  <br />
-  Add your favorites in the comments below!
-  
-  </div>
-  
-  <span style={{fontSize:'150%'}}></span>
-  <div className="mobilespace" style={{ border:'0px solid red'}}></div>
-  </div>
-    )
-  }
 
 
-  const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-  const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-  const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
-  const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
-    if (!YouTube) {
-
-  }
-  else if (YoutuberSuggestion1) {
-    <IframeSuggestions />
-  }
-  else {
-    <Iframer />  
-  }
 
 
 
@@ -225,7 +207,7 @@ const Suggestion3 = frontmatter.youtubersuggestion3
     return (
       <div>
               <ReactPlayer
-              className='react-player'
+              className='react-player66'
               // url={iframeUrl}
               
               url={[
@@ -239,50 +221,44 @@ const Suggestion3 = frontmatter.youtubersuggestion3
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd }
                 },
               }}
-              autoplay={true}
-              background={true}
               loop
               playing
               playsinline
-              muted={true}
-              showPortrait
               playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-              <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              
+    
+              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
-              <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'2rem'}}>Click To Play</span>
-              
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-          
-          
-          
                 light="../assets/transparent.png"
               />
+
+              
 </div>
 
     )
 
   }
 
-
-
   function Iframer() {
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
     return (
 
- <div style={{display:''}}>
-      <ReactPlayer
-              className='react-player'
+ <div>
+              <ReactPlayer
+              className='react-player66'
               url={iframeUrl}
               
               // url={[
@@ -299,43 +275,32 @@ const Suggestion3 = frontmatter.youtubersuggestion3
                   playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
                 },
               }}
-              autoplay={true}
-              background={true}
               loop
               playing
               playsinline
-              muted={true}
-              showPortrait
               playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-              <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
+              
+    
+              <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
-              <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'2rem'}}>Click To Play</span>
-              
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-          
-          
-          
                 light="../assets/transparent.png"
               />
-
-
-
-
-
-        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
-
 </div>
 
     )
   }
+
+
+
 
 
 
@@ -345,7 +310,7 @@ const Suggestion3 = frontmatter.youtubersuggestion3
 
 <div>
 <ReactPlayer
-          className='react-player'
+          className='react-player66'
           url={iframeUrl2}
           width="100%"
           height="100%"
@@ -385,9 +350,8 @@ const Suggestion3 = frontmatter.youtubersuggestion3
 
 
 
-  // const OverlayImage = frontmatter.overlayImage
-  //   ? frontmatter.overlayImage.childImageSharp.gatsbyImageData
-  //   : ""
+
+
 
 
 
@@ -413,11 +377,12 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
   {/* <nft-card style={{}} contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183187330132344833"> </nft-card> */}
   </div>
 
+const { iconimage } = useSiteMetadata()
 
   return (
     
     <Layout className="page">
-
+<CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" />
   <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
@@ -440,7 +405,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -460,7 +425,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -472,12 +437,13 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
  
 
-  {Svg ? (
-            <AddSvg />
-       
-          ) : (
-            ""
-          )}
+
+
+
+
+
+
+
 
 
 
@@ -499,35 +465,24 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
             ""
           )} */}
 
-{UnderlayImage ? (
-            <GatsbyImage
-              image={UnderlayImage}
-              alt={frontmatter.title + " - image"}
-              className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'1',
-             objectFit:'contain', border:'0px solid red !important'}}
-            />
-            
-          ) : (
+
+
+
+
+
+
+
+
+{ !YouTube ? (
             ""
-          )}
-
-
-
-
-
-
-  
-{YouTube ? (
-            <Iframer />
        
           ) : (
-            ""
+            <Iframer />
           )}
 
 
 {Suggestion1 ? (
-            <div style={{position:'absolute', bottom:'-74px', zIndex:'0'}}>
+            <div style={{position:'absolute', top:'0', zIndex:'0',}}>
             <YouTubed />
             </div>
        
@@ -535,27 +490,49 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
             ""
           )}
 
-      </div>
 
 
 
-      {Suggestion1 ? (
-  <div style={{marginTop:'80px'}}>
-            <ShowSuggestion />
-       </div>
+{UnderlayImage ? (
+            <GatsbyImage
+              image={UnderlayImage}
+              alt={frontmatter.title + " - image"}
+              className="mcboaty"
+              style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'0',
+             objectFit:'contain', border:'0px solid red !important'}}
+            />
+            
+          ) : (
+            ""
+          )}
+
+{Svg ? (
+            <AddSvg />
+       
           ) : (
             ""
           )}
 
 
 
+      </div>
+
+
+
+
 
 <br />
-
 <br />
-<br />
-{/* <GoBack /> */}
 
+
+
+
+{Suggestion1 ? (
+            <ShowSuggestion />
+       
+          ) : (
+            ""
+          )}
 
 
 
@@ -585,7 +562,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
 {IsNft ? (
-            <h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
+            <strong style={{padding:'2rem 1rem'}}>Artist's Notes:</strong>
        
           ) : (
             ""
@@ -783,6 +760,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
    <GoBack />
    <br />
    <br />
+   </CustomBox>
     </Layout>
 
 
@@ -842,7 +820,6 @@ export const pageQuery = graphql`
         svgImage{
           publicURL
         }
-
         underlayImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

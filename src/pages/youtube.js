@@ -112,12 +112,14 @@ const CustomBox = styled.div`
       url={FinalUrl}
       width='100%'
       height='100%'
-      shownfo={false}
-      controls={false}
-      // autoplay={true}
+      config={{
+        youtube: {
+          playerVars: { showinfo:1, controls:1, mute:1, }
+        },
+      }}
       playing
       color="white"
-      muted={true}
+
       // playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
         
 
@@ -148,9 +150,9 @@ const CustomBox = styled.div`
     <CustomBox style={{}}>
 
 
+<div className='player-wrapper' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
-
-<div className='stack-layout' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
+{/* <div className='stack-layout' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'' }}> */}
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
@@ -223,7 +225,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div> */}
 {/* <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} /> */}
 
-<div className="" style={{display:'flex', justifyContent:'center', width:'100%', margin:'5px auto', flexDirection:'row', maxWidth:'1000px'}}>
+<div className="" style={{display:'block', justifyContent:'center', width:'100%', margin:'5px auto', flexDirection:'row', maxWidth:'1000px', border:'0px solid red', position:'relative', top:'0', height:''}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'center', alignItems:'center'  }}>
 
     <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:

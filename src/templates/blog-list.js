@@ -66,6 +66,7 @@ export const blogListQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
+            nftdrop
             featuredImage {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
@@ -143,21 +144,16 @@ class BlogIndex extends React.Component {
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"Twilightscapes Archive — Page " + currentPage + " of " + numPages}
+          title={"VidSocks Archive — Page " + currentPage + " of " + numPages}
           description={
-            "Twilightscapes Archive page " + currentPage + " of " + numPages
+            "VidSocks Archive page " + currentPage + " of " + numPages
           }
         />
         
-        <div
-      className="wrapper1"
-      style={{
-        textAlign: "center",
-      }}
-    >
+
 {/* <h1 style={{padding:'10px', margin:'0'}}>Articles</h1> */}
 
-    </div>
+
 
         
 
@@ -414,35 +410,31 @@ class BlogIndex extends React.Component {
     </div> */}
 
 
-    <div
-      className="wrapper1"
-      style={{
-        textAlign: "center",
-        padding:'0 4vw',
-        clear:'both'
-      }}
-    >
-<h1 className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
+<div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0', marginTop:'0', padding:'4%'}}>
+
+
+<h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>Archive</h1>
+{/* VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs. */}
 
 {/* onFocus={disableBodyScroll()} */}
 <Pagination {...props} />
  {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
- <div id="contentscroll" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100%', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+
 
  <section style={{height:'auto'}}>
-  <Link to="/#experiences" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest Experiences 
+  <Link to="/#posts" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest 
     </article></Link>
     </section>
 
  <section style={{height:'auto'}}>
-  <article style={{height:'auto'}}>
+  <article className="" style={{height:'auto'}}>
 
  {posts}
 
 </article>
 </section>
-</div>
+
         <Pagination {...props} />
 
 

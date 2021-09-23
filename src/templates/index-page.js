@@ -4,30 +4,22 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { RiArrowRightSLine } from "react-icons/ri"
-// import Intro from '../components/Intro'
-// import Intro2 from '../components/Intro2'
+import { GoArrowDown } from "react-icons/go"
+import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
-// import Trumpy from '../../static/assets/trump-family-board.svg'
-import { useSiteMetadata } from "../hooks/use-site-metadata"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-// import PhotoMenu from "../components/animated-photos-menu"
 const CustomBox = styled.div`
 
-
 `
-
-
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -58,6 +50,7 @@ export const pageQuery = graphql`
         youtubecontrols
         svgzindex
         featuredImage {
+          publicURL
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
@@ -99,7 +92,10 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
+            nftdrop
+            
             featuredImage {
+              publicURL
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
               }
@@ -133,7 +129,9 @@ const HomePage = ({ data }) => {
 
     const { siteUrl } = useSiteMetadata()
 
-    
+
+
+
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
   if (!Svg) {
@@ -162,24 +160,21 @@ const YouTube = frontmatter.youtuber
   }
 
   function Iframer() {
+    
+
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
-
-      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
  <>
+
       <ReactPlayer
         id="mobilePlayer"
-          className='react-player'
+          className='react-player1'
           url={Url}
           width="100%"
           height="100%"
-          autoplay={true}
-          background={true}
           loop
           playing
           playsinline
-          muted={true}
-          showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
@@ -197,31 +192,15 @@ const YouTube = frontmatter.youtuber
             light="../assets/transparent.png"
           />
 
-          {/* <ReactPlayer
-        id="deskPlayer"
-          className='react-player'
-          url={Url}
-          width="100%"
-          height="100%"
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
-          /> */}
 
           </>
-
-      
-
     )
   }
 
   
 
 
+  
   return (
     <CustomBox style={{}}>
     <Layout>
@@ -229,12 +208,11 @@ const YouTube = frontmatter.youtuber
   <body className="homepage" />
 </Helmet>
 {/* <Seo
-          title={`Night Photo Galleries`}
-          description={`Twilightscapes night photography`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`VidSock - Video Multimedia NFT Platform`}
+          description={`Create, display and market your NFTs with VidSock`}
+          image={'https://vidsock.com/default-og-image.jpg'}
         /> */}
-      
-      <Seo
+       <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
@@ -245,51 +223,21 @@ const YouTube = frontmatter.youtuber
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
 
       />
-
-
-      {/* <Intro /> */}
-
-
       
-
-{/* <div style={{display:'block', width:'100%', height:'50vh', border:'2px solid yellow', position:'relative', zIndex:'-2'}}></div> */}
-
-
-
       
 
 
-
-
-
-
-      
+        <div name="container2" className="container2" style={{height:'90vh',}}>
 
         
-
-
-
-
-
-
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
-
-        {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
-
-
-
-
-<section style={{ display:'',}}>
+<section style={{ display:'none',}}>
   <article>
-  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-  {/* onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})} */}
-
-     
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
-<div style={{display:'block', width:'100vw', height:'', overflow:'hidden', position:'absolute', top:'0',}}>
+
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -301,10 +249,10 @@ const YouTube = frontmatter.youtuber
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-</div>
+
 
 
 
@@ -322,23 +270,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* {Svg2 ? (
-            <AddSvg2 />
-       
-          ) : (
-            ""
-          )} */}
 
-  {/* {OverlayImage ? (
-            <GatsbyImage
-              image={OverlayImage}
-              alt={frontmatter.title + " - image"}
-              className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
-            />
-          ) : (
-            ""
-          )} */}
 
 {UnderlayImage ? (
             <GatsbyImage
@@ -373,15 +305,15 @@ const YouTube = frontmatter.youtuber
 
 
 
+<br />
 
-
-<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'100vh'}}>
-<article>
+<section style={{ display:'',}}>
+  <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 2rem',}}>
+      <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
 
 
-          <h1 className="title1 neonText1">{frontmatter.title}</h1>
+          <h1 className="title1">{frontmatter.title}</h1>
           <p
             className="tagline1"
             sx={{
@@ -392,18 +324,19 @@ const YouTube = frontmatter.youtuber
           </p>
 
           <div
+          style={{}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
-  <br /><br />
-          {/* <Link
+  <br />
+          <Link
             to={frontmatter.cta.ctaLink}
             // href="#scootch"
             className="actionJackson txtshadow"
             style={{
               cursor:'pointer',
-              width:'70%',
+              width:'90%',
               margin:'0 auto'
 
             }}
@@ -412,10 +345,14 @@ const YouTube = frontmatter.youtuber
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link> */}
+
+            
+          </Link>
+
+         
 
 
-<AnchorLink 
+{/* <AnchorLink 
 className="actionJackson txtshadow"
 style={{
   cursor:'pointer',
@@ -423,7 +360,7 @@ style={{
   margin:'0 auto'
 
 }} 
-to="#experiences" title="See the new EXPERIENCES™" />
+to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
@@ -444,12 +381,12 @@ to="#experiences" title="See the new EXPERIENCES™" />
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'100vh', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'88vh', overflow:'hidden', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'80%', overflow:'hidden', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'', overflow:'', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
@@ -458,7 +395,7 @@ to="#experiences" title="See the new EXPERIENCES™" />
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'90vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'contain', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
@@ -467,28 +404,28 @@ to="#experiences" title="See the new EXPERIENCES™" />
 
 
 
-<ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}>
-<h2
-  className="neonText normal txtshadow-header hit-the-floor"
+{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
+<div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
+  <h2
+  className="title1 txtshadow-header"
   style={{
-    color: '#fff',
-    fontSize: '60px',
+
+
    position: 'relative',
-//            top: '100px',
-//            right: '1%',
-//            backgroundColor: '#ff0000',
-    textAlign: 'right', 
+    textAlign: 'center', 
     float: 'none',
-    margin:'0',
+    margin:'1rem 0 0 0',
     padding:'0',
   }}
 >
-  Follow me
+Only Available<br />
+Through NFT
 </h2>
-</ScrollAnimation>
+</div>
+</ScrollAnimation> */}
 
 
-<ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
+{/* <ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -502,10 +439,10 @@ to="#experiences" title="See the new EXPERIENCES™" />
 >
   into the
 </h2>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
+{/* <ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
 <h2
   className="letter narrow txtshadow mobile-txt"
   style={{
@@ -522,13 +459,17 @@ to="#experiences" title="See the new EXPERIENCES™" />
 >
   Night
 </h2>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}>
+
+
+<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', display:'flex', justifyContent:'center'}}>
+<div style={{position:'', bottom:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', borderRadius:'12px'}}>
   <Newsignup />
+  </div>
 </ScrollAnimation>
 
-
+{/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
 </div>
 
       
@@ -547,13 +488,13 @@ to="#experiences" title="See the new EXPERIENCES™" />
 
 
 
-<a name="experiences" id="experiences"></a>
+<a name="posts" id="posts"></a>
 <div id="scooch">
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
-  <Link to="/experiences/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-    View Older Experiences <RiArrowRightSLine style={{fontSize:'50px'}} />
+  <Link to="/experiences/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+    View More <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
     </section>
 
@@ -562,19 +503,7 @@ to="#experiences" title="See the new EXPERIENCES™" />
    </div>{/* end scooch */}
 
 
-  {/* <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
-  <Link
-      className="button"
-      to="/experiences/"
-      title="See More Galleries"
-      style={{color:'#fff'}}
-    >
-      See More Experiences?
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
-    </Link>
-</div> */}
+
 
 
       
@@ -582,9 +511,6 @@ to="#experiences" title="See the new EXPERIENCES™" />
 
 
 
-{/* <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation> */}
 
     </Layout>
     </CustomBox>

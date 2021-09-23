@@ -14,13 +14,22 @@ export const wrapRootElement = ({ element }) => (
 
 
 
-export const onRouteUpdate = ({ 
-  location, prevLocation }) => {
-  if (location && location.state)
-    location.state.referrer = prevLocation ? prevLocation.pathname : null
+export const onInitialClientRender = () => {
+  setTimeout(function() {
+      document.getElementById("___loader").style.display = "none"
+  }, 1000)
 }
 
 
+export const onServiceWorkerUpdateReady = () => {
+  const answer = window.confirm(
+    `This application has been updated. ` +
+      `Reload to display the latest version?`
+  )
+
+  if (answer === true) {
+    window.location.reload()
+  }
+}
 
 
-<script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
