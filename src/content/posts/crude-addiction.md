@@ -4,13 +4,13 @@ title: Crude Addiction
 slug: /crude-addiction
 date: 2021-08-19 10:43
 description: Life is not always what it seems
-youtuber: "XjuLZwlDxh8"
+youtuber: ""
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 youtubeshoworiginal: ""
-youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
+youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
 comments: "1"

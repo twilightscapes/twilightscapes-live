@@ -395,7 +395,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'contain', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
