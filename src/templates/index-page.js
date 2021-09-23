@@ -493,7 +493,7 @@ Through NFT
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
-  <Link to="/experiences/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <Link to="/experiences/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View More <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
     </section>
