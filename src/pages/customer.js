@@ -50,7 +50,7 @@ export default function CustomerPage({}) {
        </div>
     
        </div>
-
+       <div className="spacer33"></div> 
     
     </Layout>
 

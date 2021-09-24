@@ -87,6 +87,7 @@ const Contact = ({ data }) => {
           </p>
         </form>
       </div>
+      <br /><br />
     </Layout>
   )
 }

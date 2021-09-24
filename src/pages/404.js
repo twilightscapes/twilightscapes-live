@@ -41,6 +41,7 @@ const NotFound = () => (
       </Link></div>
 
     </div>
+    <div className="spacer33"></div> 
   </Layout>
 )
 
