@@ -5,8 +5,8 @@ slug: /sky-with-diamonds
 date: 2021-08-16 01:43
 description: A new interactive Photo "Experience" from Twilightscapes
 youtuber: "iHxmNzMfDj4"
-youtubestart: ""
-youtubeend: ""
+youtubestart: "0"
+youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"

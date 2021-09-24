@@ -259,20 +259,20 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
  <div>
               <ReactPlayer
               className='react-player66'
-              url={iframeUrl}
+              // url={iframeUrl}
               
-              // url={[
-              //   iframeUrl,
-              //   YoutuberSuggestion1,
-              //   YoutuberSuggestion2,
-              //   YoutuberSuggestion3
-              // ]}
+              url={[
+                iframeUrl,
+                YoutuberSuggestion1,
+                YoutuberSuggestion2,
+                YoutuberSuggestion3
+              ]}
               width="100%"
               height="100%"
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd, autoplay: 1,}
                 },
               }}
               loop
@@ -285,7 +285,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               
     
               <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="Twilightscapes" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -315,14 +315,9 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           width="100%"
           height="100%"
           style={{zIndex:'0'}}
-          controls={true}
-          autoplay={true}
-          background={true}
           loop
           playing
           playsinline
-          muted={false}
-          showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
               
