@@ -227,13 +227,13 @@ const YouTube = frontmatter.youtuber
       
 
 
-        <div name="container2" className="container2" style={{height:'90vh',}}>
+        <div name="container21" className="container21" style={{height:'',}}>
 
         
 <section style={{ display:'none',}}>
   <article>
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -381,7 +381,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'88vh', overflow:'hidden', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
+ <div className="flexcheek" style={{position:'relative', height:'88vh', overflow:'', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
  
  
 

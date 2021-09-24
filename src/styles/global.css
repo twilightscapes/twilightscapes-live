@@ -2908,6 +2908,11 @@ background-position:center 70px;
               }
 
 
+              #scooch:hover{
+                transition: all .8s ease-in-out;
+              }
+
+
               @media (hover: hover) {
 
                 #scooch{
