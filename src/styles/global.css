@@ -3030,7 +3030,7 @@ opacity:.8;
 
 
 
-      @media (hover: none) {
+      /* @media (hover: none) {
         .container2 {
           overflow-y: scroll;
           scroll-snap-type: y proximity;
@@ -3039,10 +3039,9 @@ opacity:.8;
         .container2 section {
           scroll-snap-align: start;
           overflow:hidden;
-          /* height:70vh; */
           background:tranparent !important;
         }
-      }
+      } */
       
       
 
