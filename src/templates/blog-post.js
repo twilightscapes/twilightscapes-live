@@ -221,7 +221,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, mute:1 }
                 },
               }}
               loop
