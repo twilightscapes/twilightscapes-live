@@ -208,20 +208,20 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
       <div>
               <ReactPlayer
               className='react-player66'
-              // url={iframeUrl}
+              url={iframeUrl}
               
-              url={[
-                iframeUrl,
-                YoutuberSuggestion1,
-                YoutuberSuggestion2,
-                YoutuberSuggestion3
-              ]}
+              // url={[
+              //   iframeUrl,
+              //   YoutuberSuggestion1,
+              //   YoutuberSuggestion2,
+              //   YoutuberSuggestion3
+              // ]}
               width="100%"
               height="100%"
          
               config={{
                 youtube: {
-                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, mute:1 }
+                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, autoplay:1, mute:1, playsinline:1}
                 },
               }}
               loop
@@ -272,7 +272,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, autoplay:1, mute:1}
+                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, autoplay:1, mute:1, playsinline:1}
                 },
               }}
               loop
