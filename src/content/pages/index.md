@@ -4,7 +4,7 @@ tagline: Twilightscapes - Night Photography by Todd Lambert
 featuredImage: /assets/twilight-promo-in-the-sky-with-diamonds.jpg
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
-showInfo: ""
+showInfo: true
 youtuber: "iHxmNzMfDj4"
 youtubeautostart: "1"
 title: Night Photography
