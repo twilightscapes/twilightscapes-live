@@ -19,6 +19,10 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 const CustomBox = styled.div`
 
+@media (max-width: 48rem) {
+#posts {padding-top:200px !important;}
+}
+
 `
 
 
@@ -358,7 +362,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<br />
+
 
 {/* show Info */}
 {ShowInfo ? (
@@ -424,8 +428,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<br />
-<br />
+
 {/* <span className="actionJackson txtshadow"> <span className="icon -right">
               <FaHandPointDown />
             </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
@@ -441,12 +444,12 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'88vh', overflow:'', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
+ <div className="flexcheek" style={{position:'relative', maxHeight:'50vh', overflow:'', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'', overflow:'', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'50vh', overflow:'', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
@@ -555,7 +558,8 @@ Through NFT
 {/* end show Posts */}
 {ShowPosts ? (
 
-<div id="posts" name="posts">
+<div id="posts" name="posts" style={{paddingTop:''}}>
+  <br />
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
