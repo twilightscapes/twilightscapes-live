@@ -134,10 +134,14 @@ export function Layout({ children }) {
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
  <li className="carta" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo /><span>Follow Me Into The Night</span></Link>
+<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo />
+{/* <span>Follow Me Into The Night</span> */}
+</Link>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo /><span>Follow Me Into The Night</span></Link>
+<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo />
+{/* <span>Follow Me Into The Night</span> */}
+</Link>
  </li>
  
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
@@ -194,12 +198,12 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
-{/* <li className="carto">
+<li className="carto">
               <Link className="navbar-item txtshadow" to="/photos/">
       
               View Photos <span>Browse Photo Galleries</span>
               </Link>
-      </li>  */}
+      </li> 
 
       
 {/* <li className="carto" style={{textAlign:'center'}}>

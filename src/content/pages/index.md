@@ -11,8 +11,8 @@ title: Night Photography
 svgImage: /assets/campfire.svg
 showPosts: true
 cta:
-  ctaText: See the Posts
-  ctaLink: /#posts
+  ctaText: See the Photos!
+  ctaLink: /photos/
 youtubeend: ""
 showFeature: true
 youtubecontrols: ""

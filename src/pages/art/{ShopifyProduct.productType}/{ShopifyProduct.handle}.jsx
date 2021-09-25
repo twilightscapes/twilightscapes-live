@@ -223,10 +223,10 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-            <span className="print">
+            <span className="print" style={{display:'none'}}>
             <h2 className={priceValue}>
              <strong style={{fontSize:'30px'}}>{price}</strong>
-              {/* <br /> High-Res Print Ready Art */}
+              <br /> High-Res Print Ready Art
             </h2>
          
 
@@ -286,7 +286,7 @@ export default function Product({ data: { product, suggestions } }) {
             </span>
             
 
-<ProductDetails />
+{/* <ProductDetails /> */}
 
 </div>
 

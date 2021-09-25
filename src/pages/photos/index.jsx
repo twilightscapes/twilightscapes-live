@@ -81,14 +81,14 @@ export default function GalleryPage({ data }) {
 </div>
 
 
-{/* 
-<GalleryMenu /> */}
+
+<GalleryMenu />
 
 
     
 
     <div className="frontprod" style={{marginTop:'2rem'}}>
-      {/* <ProductListing products={data.shopifyCollection.products} className="frontprod" /> */}
+      <ProductListing products={data.shopifyCollection.products} className="frontprod" />
 </div>
       {/* <Link
               className="moreButton"
