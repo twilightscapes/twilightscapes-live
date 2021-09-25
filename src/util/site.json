@@ -13,8 +13,8 @@
     "image": "/assets/default-og-image.jpg",
     "description": "Night long exposure photography in remote abandoned locations urban exploration",
     "icon512": "/assets/icon-512x512.png",
+    "showfooter": true,
     "comments": "5708736052068352-proj"
   },
   "ga": "UA-49869143-1"
 }
-

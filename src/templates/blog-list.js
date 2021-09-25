@@ -118,7 +118,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/experiences/"
+    const blogSlug = "/posts/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -144,9 +144,9 @@ class BlogIndex extends React.Component {
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"VidSocks Archive — Page " + currentPage + " of " + numPages}
+          title={"Twilightscapes Archive — Page " + currentPage + " of " + numPages}
           description={
-            "VidSocks Archive page " + currentPage + " of " + numPages
+            "Twilightscapes Archive page " + currentPage + " of " + numPages
           }
         />
         

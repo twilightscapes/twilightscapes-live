@@ -21,7 +21,7 @@ import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
 import styled from "styled-components"
-import InnerImageZoom from 'react-inner-image-zoom'
+// import InnerImageZoom from 'react-inner-image-zoom'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 const CustomBox = styled.div`
 @media (max-width: 48rem) {
@@ -101,7 +101,7 @@ const Post = ({ data, pageContext }) => {
 
 
   const Svg = frontmatter.svgImage
-  const svgZindex = frontmatter.svgzindex
+  // const svgZindex = frontmatter.svgzindex
   if (!Svg) {
     
   }
@@ -127,7 +127,8 @@ const Comments = frontmatter.comments
 const YouTubeStart = frontmatter.youtubestart
 const YouTubeEnd = frontmatter.youtubeend
 const YouTubeMute = frontmatter.youtubemute
-const youtubeautostart = frontmatter.youtubeautostart
+const YouTubeControls = frontmatter.youtubecontrols
+const YouTubeAutostart = frontmatter.youtubeautostart
 
 const Suggestion1 = frontmatter.youtubersuggestion1
 const Suggestion2 = frontmatter.youtubersuggestion2
@@ -183,8 +184,8 @@ Add your favorites in the comments below!
 }
 
 const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
 const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
@@ -209,7 +210,6 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               <ReactPlayer
               className='react-player66'
               url={iframeUrl}
-              
               // url={[
               //   iframeUrl,
               //   YoutuberSuggestion1,
@@ -218,10 +218,9 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               // ]}
               width="100%"
               height="100%"
-         
               config={{
                 youtube: {
-                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, autoplay:1, mute:1, playsinline:1}
+                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                 },
               }}
               loop
@@ -259,20 +258,18 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
  <div>
               <ReactPlayer
               className='react-player66'
-              // url={iframeUrl}
-              
-              url={[
-                iframeUrl,
-                YoutuberSuggestion1,
-                YoutuberSuggestion2,
-                YoutuberSuggestion3
-              ]}
+              url={iframeUrl}
+              // url={[
+              //   iframeUrl,
+              //   YoutuberSuggestion1,
+              //   YoutuberSuggestion2,
+              //   YoutuberSuggestion3
+              // ]}
               width="100%"
               height="100%"
-         
               config={{
                 youtube: {
-                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd, autoplay:1, mute:1, playsinline:1}
+                  playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                 },
               }}
               loop
@@ -285,7 +282,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               
     
               <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="Twilightscapes" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -315,7 +312,6 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           width="100%"
           height="100%"
           style={{zIndex:'0'}}
-          loop
           playing
           playsinline
           playIcon={
@@ -327,7 +323,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0', textAlign:'center'}}>Click To Play</span>
+          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To Play</span>
           
           </div>
           </button>}
@@ -408,7 +404,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div style={{display:'block', width:'100vw', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
+<div style={{display:'block', width:'100%', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -420,7 +416,7 @@ const { iconimage } = useSiteMetadata()
           ) : (
 
        
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -607,7 +603,7 @@ const { iconimage } = useSiteMetadata()
        { NftDrop ? (
 
          
-            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
   <Countdown daysInHours date={NftDrop} >
 <Completionist />
   </Countdown>
@@ -656,7 +652,7 @@ const { iconimage } = useSiteMetadata()
 <br />
  {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
-<div style={{maxWidth:'90vw', padding:'0', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     <Iframer2 />
 

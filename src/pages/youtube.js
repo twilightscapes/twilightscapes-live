@@ -1,18 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 // import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
 // import ShareSocial from '../components/share' 
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
 // import { Seo } from "../components/seo"
-import { FaRegPlusSquare } from 'react-icons/fa';
-import { IoShareOutline } from 'react-icons/io5';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+// import { FaRegPlusSquare } from 'react-icons/fa';
+// import { IoShareOutline } from 'react-icons/io5';
+// import { AiOutlineCloseCircle } from 'react-icons/ai';
 // import { StaticImage } from "gatsby-plugin-image"
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -21,7 +21,7 @@ import { ImPlay } from "react-icons/im"
 // import PhotoMenu from "../components/animated-photos-menu"
 // import CommentBox from "../components/commentbox"
 import ReactPlayer from 'react-player/lazy'
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+// import {CopyToClipboard} from 'react-copy-to-clipboard'
 // import ReactPlayer from '../components/react-player'
 const CustomBox = styled.div`
 @media (max-width: 48em) {
@@ -150,7 +150,7 @@ const CustomBox = styled.div`
     <CustomBox style={{}}>
 
 
-<div className='player-wrapper' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
+<div className='player-wrapper' style={{position:'relative', width:'100vw',  top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 {/* <div className='stack-layout' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'' }}> */}
 

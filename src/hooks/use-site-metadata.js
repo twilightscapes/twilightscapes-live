@@ -14,6 +14,7 @@ export const useSiteMetadata = () => {
             iconimage
             companyname
             comments
+            showfooter
           }
         }
       }
