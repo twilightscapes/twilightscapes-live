@@ -237,7 +237,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           value={this.state.youtubelink}
           // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           onInput={this.handleInputChange}
-          onChangeCapture={this.handleShow}
+          onChange={this.handleShow}
            
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
           
@@ -271,7 +271,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
       value={this.state.youtubelink}
       // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
       onInput={this.handleInputChange}
-      onChangeCapture={this.handleShow}
+      onChange={this.handleShow}
        
       placeholder="example: https://youtu.be/cVsQLlk-T0s"
       

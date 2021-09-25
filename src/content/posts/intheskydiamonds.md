@@ -9,10 +9,21 @@ youtubestart: ""
 youtubeend: ""
 youtubemute: "1"
 youtubecontrols: "0"
+youtubeshoworiginal: "0"
+youtubersuggestion1: ""
+youtubersuggestion2: ""
+youtubersuggestion3: ""
+youtubeautostart: "1"
+isnftforsale: "1"
 svgzindex: "0"
+comments: "1"
+shareable: "1"
 underlayImage: /assets/swd-foreground.png
 svgImage: /assets/campfire.svg
 featuredImage: /assets/Experiences-Header-5.jpg
+nftlink: ""
+nftdrop: ""
+nftredeem: ""
 ---
 
 
