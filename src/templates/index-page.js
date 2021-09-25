@@ -24,7 +24,7 @@ const CustomBox = styled.div`
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String!, $limit: Int ) {
+  query HomeQuery($id: String!) {
     
     site {
       siteMetadata {
@@ -91,7 +91,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: $limit
+      limit: 9
     ) {
       edges {
         node {
