@@ -11,12 +11,13 @@ import { AiOutlineClose } from "react-icons/ai"
 import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
+import Bug from "../../static/assets/TSidebarHover.svg"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
-import SearchIcon from "../../static/assets/search"
+// import SearchIcon from "../../static/assets/search"
 import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
@@ -92,9 +93,11 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<span>MENU</span>
-<IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/>
 
+
+<span></span>
+{/* <IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/> */}
+<Bug className="bug" style={{fontSize:'48px', maxWidth:'', opacity:'.4', margin:'0 20px 0 0', width:'140px', marginTop:'100px' }}/>
 
     {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>

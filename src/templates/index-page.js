@@ -47,6 +47,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD-HH-MM-SS")
         slug
         title
+        tagline
         description
         showFeature
         showPosts
@@ -102,7 +103,6 @@ export const pageQuery = graphql`
             slug
             title
             nftdrop
-  
             
             featuredImage {
               publicURL
@@ -137,7 +137,7 @@ const HomePage = ({ data }) => {
     : ""
 
     // const { iconimage } = useSiteMetadata()
-
+    const Tagline = frontmatter.tagline
 
     const { siteUrl } = useSiteMetadata()
 
@@ -373,16 +373,17 @@ const YouTube = frontmatter.youtuber
 
 
           <h1 className="title1">{frontmatter.title}</h1>
-          <p
+          <h2
             className="tagline1"
             sx={{
               color: "",
+              fontSize: '',
             }}
           >
             {frontmatter.tagline}
-          </p>
+          </h2>
 
-          <div
+          <h3
           style={{}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}

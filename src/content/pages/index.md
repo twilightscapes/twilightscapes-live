@@ -1,13 +1,13 @@
 ---
 slug: /
-tagline: Twilightscapes - Night Photography by Todd Lambert
+tagline: Night Photography by Todd Lambert
 featuredImage: /assets/twilight-promo-in-the-sky-with-diamonds.jpg
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
 showInfo: true
 youtuber: "iHxmNzMfDj4"
 youtubeautostart: "1"
-title: Night Photography
+title: Twilightscapes
 svgImage: /assets/campfire.svg
 showPosts: true
 cta:
