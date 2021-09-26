@@ -1,13 +1,13 @@
 ---
 slug: /
-tagline: Night Photography by Todd Lambert
+tagline: "[ Single Shot ] - [ Long Exposure ] - [ Light Painting ]"
 featuredImage: /assets/twilight-promo-in-the-sky-with-diamonds.jpg
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
 showInfo: true
 youtuber: "iHxmNzMfDj4"
 youtubeautostart: "1"
-title: Twilightscapes
+title: Unique Night Photography by Todd Lambert
 svgImage: /assets/campfire.svg
 showPosts: true
 cta:
@@ -21,7 +21,7 @@ youtubemute: "1"
 svgzindex: ""
 youtubestart: ""
 ---
-Finding obscure locations and unusual subject matter, Todd has excelled at capturing long exposure photos of rarely seen moments of time.
+Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time in unique locations.
 
 As a location scout and avid urban explorer, Todd learned to photograph what he sees and to bring the unique subject matter he finds to light. 
 

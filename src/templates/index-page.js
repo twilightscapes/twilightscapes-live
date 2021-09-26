@@ -19,16 +19,12 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 const CustomBox = styled.div`
 
-@media (max-width: 48rem) {
-#posts {padding-top:200px !important;}
-}
-
 `
 
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String!) {
+  query HomeQuery($id: String!, $limit: Int ) {
     
     site {
       siteMetadata {
@@ -51,7 +47,6 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD-HH-MM-SS")
         slug
         title
-        tagline
         description
         showFeature
         showPosts
@@ -96,7 +91,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 9
+      limit: $limit
     ) {
       edges {
         node {
@@ -107,6 +102,7 @@ export const pageQuery = graphql`
             slug
             title
             nftdrop
+  
             
             featuredImage {
               publicURL
@@ -141,7 +137,7 @@ const HomePage = ({ data }) => {
     : ""
 
     // const { iconimage } = useSiteMetadata()
-    const Tagline = frontmatter.tagline
+
 
     const { siteUrl } = useSiteMetadata()
 
@@ -362,7 +358,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-
+<br />
 
 {/* show Info */}
 {ShowInfo ? (
@@ -377,17 +373,16 @@ const YouTube = frontmatter.youtuber
 
 
           <h1 className="title1">{frontmatter.title}</h1>
-          <h2
+          <p
             className="tagline1"
             sx={{
               color: "",
-              fontSize: '',
             }}
           >
             {frontmatter.tagline}
-          </h2>
+          </p>
 
-          <h3
+          <div
           style={{}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -396,15 +391,15 @@ const YouTube = frontmatter.youtuber
   <br />
           <Link
             to={frontmatter.cta.ctaLink}
-            // href="#scootch"
-            className="navbar-item button fire actionJackson"
+            className="button fire actionJackson"
             style={{
               cursor:'pointer',
               width:'80%',
               maxWidth:'600px',
               margin:'0 auto',
               display:'flex',
-              alignSelf:'center'
+              alignSelf:'center',
+              color:'#ccc'
             }}
           >
             {frontmatter.cta.ctaText}
@@ -430,7 +425,8 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-
+<br />
+<br />
 {/* <span className="actionJackson txtshadow"> <span className="icon -right">
               <FaHandPointDown />
             </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
@@ -446,13 +442,16 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', maxHeight:'50vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
+      <div className="flexcheek" style={{position:'relative', maxHeight:'70vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'50vh', overflow:'', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'70vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
    
+
+
+
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
            {SecondaryImage ? (
@@ -460,13 +459,20 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'65vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
           )}
 {/* </div> */}
 
+
+
+<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
+  <Newsignup />
+  </div>
+</ScrollAnimation>
 
 
 {/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
@@ -526,14 +532,6 @@ Through NFT
 </h2>
 </ScrollAnimation> */}
 
-
-
-<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', display:'flex', justifyContent:'center'}}>
-<div style={{position:'', bottom:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', borderRadius:'12px'}}>
-  <Newsignup />
-  </div>
-</ScrollAnimation>
-
 {/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
 </div>
 
@@ -551,6 +549,7 @@ Through NFT
 </article>
 </section>
 
+
 ) : (
   ""
 )}
@@ -560,12 +559,11 @@ Through NFT
 {/* end show Posts */}
 {ShowPosts ? (
 
-<div id="posts" name="posts" style={{paddingTop:''}}>
-  <br />
+<div id="posts" name="posts">
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
-  <Link to="/posts/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <Link to="/posts/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View More <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
     </section>
