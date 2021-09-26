@@ -446,7 +446,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', maxHeight:'50vh', overflow:'', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
+ <div className="flexcheek" style={{position:'relative', maxHeight:'50vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
  
  
 
@@ -460,7 +460,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'80vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'65vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
