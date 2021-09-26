@@ -5,6 +5,7 @@ slug: /photo-industry-evolution
 date: 2020-07-20 12:55
 description: That is what art does for people. It expands the boundaries of their own dreams and helps to make their own dreams greater.
 featuredImage: /assets/photo-industry-evolution.jpg
+comments: "1"
 ---
 First things first, I want to produce affordable art that everyone can enjoy. I do not believe that art should be locked away in a high tower where only the rich and elite can view or enjoy it.
 

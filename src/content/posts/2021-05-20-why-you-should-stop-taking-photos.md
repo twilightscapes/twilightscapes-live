@@ -8,6 +8,7 @@ description: Beyond the basics of being in the right place at the right time, or
   you should be in, every time you approach a photograph. That mindset is based
   around a simple question.
 featuredImage: /assets/stop-taking-photos.jpg
+comments: "1"
 ---
 ## I learned to stop taking photos, and instead I now make photos
 

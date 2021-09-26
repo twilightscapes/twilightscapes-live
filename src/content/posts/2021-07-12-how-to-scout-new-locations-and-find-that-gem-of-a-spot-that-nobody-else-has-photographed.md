@@ -8,6 +8,7 @@ description: "Over the years I have put my tripod into some places where I
   probably shouldn’t have. I have traipsed into places where I was unprepared or
   ignorant.  "
 featuredImage: /assets/find-your-own-spot.jpg
+comments: "1"
 ---
 I have several photo locations I shot from over the years, that I am fairly confident that nobody else has a photo of, or at least not a recent or non-documentary version of it.
 

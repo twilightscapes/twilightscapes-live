@@ -5,6 +5,7 @@ slug: /night-photo-101
 date: 2021-07-21 11:37
 description: " can be a real stress test on your equipment and their capabilities. For these types of shots, it's all about getting as much light on your sensor in as quick of a time frame as possible "
 featuredImage: /assets/into-to-night.jpg
+comments: "1"
 ---
 ## Night shots really fall into two camps in my opinion... low ISO or high ISO.
 

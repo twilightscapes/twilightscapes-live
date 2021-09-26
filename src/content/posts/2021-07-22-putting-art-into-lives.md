@@ -5,6 +5,7 @@ slug: /putting-art-into-lives-not-just-onto-walls
 date: 2021-07-22 11:37
 description: "That is what art does for people. It expands the boundaries of their own dreams and helps to make their own dreams greater."
 featuredImage: /assets/twilightscapes-article-header-art-into-lives.jpg
+comments: "1"
 ---
 ##Putting art into lives - not just onto walls.
 

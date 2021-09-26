@@ -5,6 +5,7 @@ slug: /encounters-with-law-enforcement-as-a-photographer
 date: 2021-07-18 11:37
 description: " I get it… scary white dude with long hair, slowly roaming seedy sections of town late at night  "
 featuredImage: /assets/been-pulled-over.jpg
+comments: "1"
 ---
 
 

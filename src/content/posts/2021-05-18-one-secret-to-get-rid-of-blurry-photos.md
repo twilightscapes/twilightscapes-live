@@ -7,6 +7,7 @@ description: That mistake is not knowing the minimum shutter speed that is
   needed in order to successfully handhold your camera and come away with a
   sharp and in focus photograph.
 featuredImage: /assets/one-secret-banner.jpg
+comments: "1"
 ---
 Most people who are beginning with photography, and using a DSLR for the first time make the same common mistake that ruins their cherished photos every time.
 
