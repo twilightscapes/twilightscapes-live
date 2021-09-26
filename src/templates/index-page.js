@@ -397,12 +397,14 @@ const YouTube = frontmatter.youtuber
           <Link
             to={frontmatter.cta.ctaLink}
             // href="#scootch"
-            className="actionJackson txtshadow"
+            className="navbar-item button fire actionJackson"
             style={{
               cursor:'pointer',
-              width:'90%',
-              margin:'0 auto'
-
+              width:'80%',
+              maxWidth:'600px',
+              margin:'0 auto',
+              display:'flex',
+              alignSelf:'center'
             }}
           >
             {frontmatter.cta.ctaText}
