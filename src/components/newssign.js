@@ -60,7 +60,7 @@ const NewsletterPage = () => (
             
               <span className="txtshadow" style={{fontSize:'120%',}}><strong>Follow Me Into The Night</strong></span><br />
               
-              <span className="txtshadow" style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
+              <span className="txtshadow" style={{fontSize:'85%'}}>night photography newsletter<br />(it's free!)</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 <div className="blocker" style={{width:'90%', height:'100%', borderRadius:'12px', margin:'0 auto'}}></div>

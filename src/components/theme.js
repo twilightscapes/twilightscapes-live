@@ -16,7 +16,7 @@ const Theme = () => {
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
           <div sx={themeStyles.modeText}>
-            {colorMode === "default" ? "Dark (best)" : "Light"}
+            {colorMode === "default" ? "Dark Mode" : "Light Mode"}
           </div>
         </div>
       </button>

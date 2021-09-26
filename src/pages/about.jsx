@@ -17,7 +17,7 @@ const CustomBox = styled.div`
 .intro{height:100% !important;}
 
 .intro:before{
-	content: "About Twilightscapes";
+	content: "About Todd Lambert";
 position:absolute;
 display: flex;
 align-items: center;
@@ -142,10 +142,10 @@ height: 0;
 
 
 
-<ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
+{/* <ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
       <div className="txtshadow-header letter zoomer">About
     </div>
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
 

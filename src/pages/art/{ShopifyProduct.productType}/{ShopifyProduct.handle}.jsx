@@ -174,7 +174,7 @@ export default function Product({ data: { product, suggestions } }) {
                         <InnerImageZoom src={getSrc(firstImage.gatsbyImageData)} objectFit="contain" loading={index === 0 ? "eager" : "lazy"} />
 
                       {/* <img className="spinned" src={spinner} alt="Twilightscapes" style={{height:'100%', width:'100%', position:'fixed', top:'0', left:'0',  zIndex:'-1', border:'1px solid yellow', display:'block'}} /> */}
-                      <div className="mobilefixa" style={{textAlign:'center',}}>
+                      <div className="mobilefixa" style={{textAlign:'center', marginTop:'8px'}}>
            <GoBack />
             </div>
                       </div>

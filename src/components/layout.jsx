@@ -154,18 +154,18 @@ export function Layout({ children }) {
 
 
 
- <li className="carto">
+ {/* <li className="carto">
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>I love hearing from you!</span>
 </Link>
+</li> */}
 
 
 
-{/* </li>
 <li className="carta">
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>Ordering Questions?</span>
-</Link> */}
+</Link>
 </li>
 
 
@@ -187,11 +187,7 @@ Contact Me<span>Ordering Questions?</span>
        </li> */}
 
 
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/nft/">
-                NFT Collectibles <span>Limited Editions</span>
-              </Link>
-      </li> */}
+      
 
 
       {/* <li className="carto">
@@ -207,6 +203,12 @@ Contact Me<span>Ordering Questions?</span>
               View Photos <span>Browse Photo Galleries</span>
               </Link>
       </li> 
+
+      <li className="carto">
+              <Link className="navbar-item txtshadow" to="/nft/">
+                NFT Collectibles <span>Limited Editions</span>
+              </Link>
+      </li>
 
       
 {/* <li className="carto" style={{textAlign:'center'}}>
@@ -233,7 +235,7 @@ Contact Me<span>Ordering Questions?</span>
 
       
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'0 0', display:'none'  }}>
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'0 0',  }}>
   
       <Theme  style={{padding:'0'}} />
    {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
