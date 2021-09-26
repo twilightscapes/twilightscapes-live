@@ -103,7 +103,7 @@ export const query2 = graphql`
                   justifyContent: 'center',
                   fontSize:'100%',
                   }}>
-                    Workin' In Gas Station
+                    Workin' In A Gas Station
                   </Link>
                         </li>
                         
