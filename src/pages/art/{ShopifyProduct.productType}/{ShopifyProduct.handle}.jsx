@@ -18,6 +18,9 @@ import ProductDetails from "../../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
 import { StaticImage } from "gatsby-plugin-image"
 
+import { BiLeftArrow } from "react-icons/bi"
+import { navigate } from "gatsby";
+import { useHistory } from "react-router-dom"
 
 import InnerImageZoom from 'react-inner-image-zoom'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
@@ -87,6 +90,17 @@ export default function Product({ data: { product, suggestions } }) {
   const [available, setAvailable] = React.useState(
     productVariant.availableForSale
   )
+
+  const GoBacker = () => {
+    let history = useHistory();
+
+    
+    return (
+        
+      <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><button className="back button" onClick={() => { navigate(-1) }} style={{display:'flex', justifyContent:'center'}}><span className="icon -left" style={{paddingRight:'1rem'}}><BiLeftArrow /></span> {" "}Go Back</button></div>
+        
+    )
+}
 
   const checkAvailablity = React.useCallback(
     (productId) => {
@@ -175,7 +189,8 @@ export default function Product({ data: { product, suggestions } }) {
 
                       {/* <img className="spinned" src={spinner} alt="Twilightscapes" style={{height:'100%', width:'100%', position:'fixed', top:'0', left:'0',  zIndex:'-1', border:'1px solid yellow', display:'block'}} /> */}
                       <div className="mobilefixa" style={{textAlign:'center', marginTop:'8px'}}>
-           <GoBack />
+           <GoBacker />
+           
             </div>
                       </div>
 
@@ -214,10 +229,10 @@ export default function Product({ data: { product, suggestions } }) {
 
 <div className="flexcheek" style={{width:'70%'}}>
 <ShareSocial className="print" />
-            <div className={breadcrumb}>
+            {/* <div className={breadcrumb}>
               <Link to={product.productTypeSlug}>{product.productType}</Link>
               
-            </div>
+            </div> */}
             <h1 className={header} style={{margin:'3rem 0 0 0'}}>{title}</h1>
             <div className={productDescription} style={{paddingTop:'2rem'}} dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
 
@@ -252,8 +267,8 @@ export default function Product({ data: { product, suggestions } }) {
                   </div>
                 ))}
             </fieldset>
-            <div className={addToCartStyle}>
-              Qty: &nbsp;<NumericInput
+            <div className={addToCartStyle} style={{display:''}}>
+              {/* Qty: &nbsp;<NumericInput
                 aria-label="Quantity"
                 onIncrement={() => setQuantity((q) => Math.min(q + 1, 20))}
                 onDecrement={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -261,15 +276,15 @@ export default function Product({ data: { product, suggestions } }) {
                 value={quantity}
                 min="1"
                 max="20"
-              />
-              <br /><br />
+              /> <br /><br />*/}
+              
               <AddToCart
                 variantId={productVariant.storefrontId}
                 quantity={quantity}
                 available={available}
               />
             </div>
-            <div className="taggage" style={{display:'flex', flexWrap:'wrap !important', maxWidth:'100vw', margin:'3rem 0 2rem 0', overflow:'hidden'}}> 
+            <div className="taggage" style={{display:'none', flexWrap:'wrap !important', maxWidth:'100vw', margin:'3rem 0 2rem 0', overflow:'hidden'}}> 
               <span className={labelFont}>Type</span>
               <span className={tagList}>
                 <Link to={product.productTypeSlug}>{product.productType}</Link>
@@ -285,12 +300,12 @@ export default function Product({ data: { product, suggestions } }) {
             </div>
             </span>
             
-
-{/* <ProductDetails /> */}
-
+          
 </div>
 
             <div className="flexcheek sidebart" style={{border:'0px solid yellow', width:'30%'}}>
+
+
 
             <div className="mobile" style={{}}>
 <GoBack />

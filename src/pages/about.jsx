@@ -133,7 +133,7 @@ height: 0;
     <Seo
           title={`About Todd Lambert`}
           description={`Todds story - about Todd Lambert`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          image={'https://twilightscapes.com/promo-about-todd.jpg'}
         />
 
 {/* <Seo title={`About Todd Lambert`} /> */}

@@ -46,7 +46,7 @@ export default function CartPage() {
 
 
     <Layout>
-      <div className={wrap} style={{minHeight:'100vh'}}>
+      <div className={wrap} style={{minHeight:'100vh' }}>
         {emptyCart ? (
           <div className={emptyStateContainer} style={{paddingTop:'5rem'}}>
             <h1 className={emptyStateHeading}>Your cart is empty</h1>
@@ -72,7 +72,7 @@ export default function CartPage() {
             <div className="has-app promocode1" style={{textAlign:'center', fontSize:'30px', margin:'0 0 2rem 0'}}>
 30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
 </div>
-            <table className={table}>
+            <table className={table} style={{border:''}}>
               <thead>
                 <tr>
                   <th className={imageHeader}>Image</th>
@@ -139,9 +139,13 @@ export default function CartPage() {
             >
               Checkout
             </button>
+
+            
           </>
         )}
       </div>
+      <div className="spacer66"></div>
+      <br /><br />
     </Layout>
     </>
   )

@@ -3,7 +3,9 @@ import * as React from "react"
 import styled from "styled-components"
 
 import { BiLeftArrow } from "react-icons/bi"
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
+import { navigate } from '@gatsbyjs/reach-router'
+
 
 const CustomBox = styled.div`
 
