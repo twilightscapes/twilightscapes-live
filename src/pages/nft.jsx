@@ -168,7 +168,7 @@ export const query = graphql`
     <Seo
           title={`NFT Collectible Photography`}
           description={`Twilightscapes NFTs - NFT Art photography for collectors`}
-          image={'https://twilightscapes.com/follow-me-into-the-night-promo.jpg'}
+          image={'https://twilightscapes.com/promo-follow-me-into-night.jpg'}
         />
 
 
