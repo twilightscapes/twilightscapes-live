@@ -58,7 +58,17 @@ export const query2 = graphql`
    
 <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
                   
-<h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1>
+<Link to="/nft/"
+className=""
+style={{
+cursor:'pointer',
+textAlign:'center',
+margin:'1rem auto',
+alignItems:'center',
+display: 'flex',
+justifyContent: 'center',
+fontSize:'100%',
+}}><h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1></Link>
                             
                   
                   <h2 style={{textAlign:'center', margin:'0 12%'}}>
@@ -106,13 +116,7 @@ export const query2 = graphql`
 
 
 
-<br />
-{/* <hr /> */}
-<br />
-<h4>All Twilightscapes NFTs include maximum resolution, lossless compressed TIFF files from the original source RAW data and includes print rights.</h4>
-<br />
-<p>All Twilightscapes feature NFTNOW™ - get instant delivery of your NFT. No more waiting!</p>
-<br /><br />
+
 <p style={{textAlign:'center', fontWeight:'bold', fontSize:'120%'}}>ONLY 14 one-of-one pieces will be released in this Limited Edition  series.</p>
 
        
@@ -149,6 +153,22 @@ rel="noreferrer" target="_blank"
                   <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', maxHeight:'50vh', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 
 <iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/followmeintothenight" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'50vh', borderRadius:'12px'  }} />
+</div>
+
+
+<br /><br />
+<NFTMenu />
+
+
+<div className='' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', }}>
+
+<br />
+{/* <hr /> */}
+<br />
+<h4>All Twilightscapes NFTs include maximum resolution, lossless compressed TIFF files from the original source RAW data and includes print rights.</h4>
+<br />
+<p>All Twilightscapes feature NFTNOW™ - get instant delivery of your NFT. No more waiting!</p>
+<br /><br />
 </div>
                   
                   {/* <br />
