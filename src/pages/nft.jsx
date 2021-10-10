@@ -15,6 +15,7 @@ import { FaHandPointDown } from "react-icons/fa"
 import { RiArrowRightSLine } from "react-icons/ri"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Genesis from '../pages/photos/in-the-city'
+import NFTMenu from "../components/nft-menu"
 import CommentBox from "../components/commentbox"
 // import CasePanels from "../components/casepanels"
 
@@ -140,7 +141,7 @@ height: 0;
 
 export const query = graphql`
   query {
-    shopifyCollection(handle: { eq: "genesis" }) {
+    shopifyCollection(handle: { eq: "twilightscapes" }) {
       products {
         ...ProductCard
       }
@@ -190,63 +191,11 @@ export const query = graphql`
 
 
 
-<ul className="galmenu custom-gal" style={{margin:'0 !important',}}>
 
-      <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Limited Editions</li>
-
-      <li className="galmenu-item">
-     
-<Link to="/nft/"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  Follow Me Into The Night
-</Link>
-      </li>
-     
-      <li className="galmenu-item">
-      <Link to="/workin-in-a-gas-station/"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  Workin' In A Gas Station
-</Link>
-      </li>
-      
-      {/* <li className="galmenu-item">
-      <Link to="/photos/in-the-city"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  In The City
-</Link>
-      </li> */}
-      </ul>
+<NFTMenu />
 
 
 
-      <br /><br /><br />
 
 
       <section className="nft1" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
@@ -254,32 +203,12 @@ fontSize:'100%',
 <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
 
 
-<p className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Follow Me Into The Night </p>
-
-<h3 style={{textAlign:'center', fontSize:'140%', marginTop:''}}>An introduction to Todd Lambert<br /> <span style={{fontSize:'66%'}}>The Genesis Series</span></h3>
-
-<br /><br />
-
-<p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time in unique locations.</p>
-
-<p>As a location scout and avid urban explorer, Todd learned to photograph what he sees at night.</p>
-
-<p style={{textAlign:'',}}>Let Todd's award winning work prove to you that the night is indeed beautiful.</p>
-
-<blockquote style={{width:'60%', maxWidth:'80vw', margin:'50px auto', }}>The night is misunderstood and often feared. But the truest colors come out only at night. There is no better time than nighttime.
-  <br /><br />
-<div style={{textAlign:'right', marginRight:'20%'}}>– Todd Lambert</div></blockquote>
 
 
 
-<br />
-{/* <hr /> */}
-<br />
-<h4>All Twilightscapes NFTs include maximum resolution, lossless compressed TIFF files from the original source RAW data and includes print rights.</h4>
-<br />
-<h5>All Twilightscapes feature NFTNOW™ - get instant delivery of your NFT. No more waiting!</h5>
-<br /><br />
-<h6 style={{textAlign:'center', fontWeight:'bold', fontSize:'120%'}}>ONLY 14 one-of-one pieces will be released in this Limited Edition genesis series.</h6>
+
+
+
 
 
 
@@ -296,13 +225,16 @@ fontSize:'100%',
 
 
 
-<div className="nft"><ProductListing products={data.shopifyCollection.products} />
+<div className="nft">
+
+  
+  <ProductListing products={data.shopifyCollection.products} />
 </div>
   
 
 <br /><br />
 
-<a aria-label="Link to OpenSea" href="https://opensea.io/collection/followmeintothenight"
+<a aria-label="Link to OpenSea" href="https://opensea.io/collection/twilightscapes"
             className="navbar-item button fire actionJackson"
             style={{
               cursor:'pointer',
@@ -320,7 +252,7 @@ fontSize:'100%',
 
 <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', maxHeight:'50vh', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 
-<iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/followmeintothenight" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'30vh', borderRadius:'12px'  }} />
+<iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/twilightscapes" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'30vh', borderRadius:'12px'  }} />
 </div>
 
 

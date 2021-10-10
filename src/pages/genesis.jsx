@@ -12,12 +12,11 @@ import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull } from "react-icons/fa"
 // import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
+import NFTMenu from "../components/nft-menu"
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import CommentBox from "../components/commentbox"
-import NFTMenu from "../components/nft-menu"
 import styled from 'styled-components'
-
 
 const CustomBox = styled.div`
 
@@ -25,7 +24,7 @@ const CustomBox = styled.div`
 
 export const query2 = graphql`
   query {
-    shopifyCollection(handle: { eq: "workin-in-a-gas-station" }) {
+    shopifyCollection(handle: { eq: "genesis" }) {
       products {
         ...ProductCard
       }
@@ -72,19 +71,23 @@ export const query2 = graphql`
                   </section>
                   
                   
+                  <NFTMenu />
                   
-<NFTMenu />
+                  
+
+                  
+                
                   
                   <section className="nft1" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
 
                   <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
                   
                   
-                  <p className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Workin' In A Gas Station </p>
-                  
-                  <p style={{textAlign:'center', fontSize:'140%', marginTop:''}}>A collection of old abandoned roadside filling gas stations</p>
-                  
-                  <h3 style={{textAlign:'center', fontSize:'120%', marginTop:''}}>"You're gonna wind up workin in a gas station"</h3>
+                  <p className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Follow Me Into The Night </p>
+
+<h3 style={{textAlign:'center', fontSize:'140%', marginTop:''}}>An introduction to Todd Lambert<br /> <span style={{fontSize:'66%'}}>The Genesis Series</span></h3>
+
+<br /><br />
 
       
 
@@ -129,7 +132,7 @@ export const query2 = graphql`
                     
 <br /><br />
 
-<a aria-label="Link to OpenSea" href="https://opensea.io/collection/workin-in-a-gas-station"
+<a aria-label="Link to OpenSea" href="https://opensea.io/collection/followmeintothenight"
 className="navbar-item button fire actionJackson"
 style={{
   cursor:'pointer',
@@ -145,7 +148,7 @@ rel="noreferrer" target="_blank"
 <br />
                   <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', maxHeight:'50vh', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 
-<iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/workin-in-a-gas-station" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'50vh', borderRadius:'12px'  }} />
+<iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/followmeintothenight" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'50vh', borderRadius:'12px'  }} />
 </div>
                   
                   {/* <br />

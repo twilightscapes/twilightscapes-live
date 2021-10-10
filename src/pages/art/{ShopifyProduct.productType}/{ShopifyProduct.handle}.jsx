@@ -91,16 +91,16 @@ export default function Product({ data: { product, suggestions } }) {
     productVariant.availableForSale
   )
 
-  const GoBacker = () => {
-    let history = useHistory();
+//   const BackButton = window.history.length
+//     function BackButt() {
+//       if (window.history.length > 1) {
+//   <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><button className="back button" onClick={() => { navigate(-1) }} style={{display:'flex', justifyContent:'center'}}><span className="icon -left" style={{paddingRight:'1rem'}}><BiLeftArrow /></span> {" "}Go Back</button></div>
+//       } else {
+// null
+//       }
+//     }
 
-    
-    return (
-        
-      <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><button className="back button" onClick={() => { navigate(-1) }} style={{display:'flex', justifyContent:'center'}}><span className="icon -left" style={{paddingRight:'1rem'}}><BiLeftArrow /></span> {" "}Go Back</button></div>
-        
-    )
-}
+
 
   const checkAvailablity = React.useCallback(
     (productId) => {
@@ -189,8 +189,15 @@ export default function Product({ data: { product, suggestions } }) {
 
                       {/* <img className="spinned" src={spinner} alt="Twilightscapes" style={{height:'100%', width:'100%', position:'fixed', top:'0', left:'0',  zIndex:'-1', border:'1px solid yellow', display:'block'}} /> */}
                       <div className="mobilefixa" style={{textAlign:'center', marginTop:'8px'}}>
-           <GoBacker />
-           
+
+{/* {BackButton ? (
+<BackButt />
+   ) : (
+    ""
+  )} */}
+
+  <GoBack />
+
             </div>
                       </div>
 
