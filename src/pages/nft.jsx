@@ -263,7 +263,9 @@ export const query = graphql`
 </div>
 <br /> */}
 
-
+<br /><br />
+<NFTMenu />
+<br />
 
 <p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Don't see the twilightscape you're looking for?</p>
 

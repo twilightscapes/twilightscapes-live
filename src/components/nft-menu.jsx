@@ -82,6 +82,7 @@ const NFTMenu = () => (
 
 <li className="galmenu-item">
 
+
 <Link to="/genesis/"
 className="button"
 style={{
@@ -94,6 +95,22 @@ justifyContent: 'center',
 fontSize:'100%',
 }}>
 Follow Me Into The Night
+</Link>
+</li>
+
+<li className="galmenu-item">
+<Link to="/dendroid-dreams/"
+className="button"
+style={{
+cursor:'pointer',
+textAlign:'center',
+margin:'1rem auto',
+alignItems:'center',
+display: 'flex',
+justifyContent: 'center',
+fontSize:'100%',
+}}>
+Dendroid Dreams
 </Link>
 </li>
 

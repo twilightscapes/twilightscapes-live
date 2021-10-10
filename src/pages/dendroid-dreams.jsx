@@ -24,7 +24,7 @@ const CustomBox = styled.div`
 
 export const query2 = graphql`
   query {
-    shopifyCollection(handle: { eq: "genesis" }) {
+    shopifyCollection(handle: { eq: "dendroid-dreams" }) {
       products {
         ...ProductCard
       }
@@ -48,9 +48,9 @@ export const query2 = graphql`
                   
                       
    <Seo
-       title={`Workin In A Gas Station NFTs`}
-       description={`Twilightscapes NFTs - NFT Art photography for collectors`}
-       image={'https://twilightscapes.com/promo-follow-me-into-night.jpg'}
+          title={`Dendroid Dreams - Tree Photography NFTs`}
+          description={`Twilightscapes NFTs - NFT Art photography for collectors`}
+          image={'https://twilightscapes.com/promo-follow-me-into-night.jpg'}
         />
                   
 
@@ -83,24 +83,25 @@ export const query2 = graphql`
                   <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
                   
                   
-                  <p className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Follow Me Into The Night </p>
+                  <p className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Dendroid Dreams</p>
 
-<h3 style={{textAlign:'center', fontSize:'140%', marginTop:''}}>An introduction to Todd Lambert<br /> <span style={{fontSize:'66%'}}>The Genesis Series</span></h3>
+<h3 style={{textAlign:'center', fontSize:'140%', marginTop:''}}>A collection of photos that show the aging spirits of trees.</h3>
 
 <br /><br />
 
-      
+<ul style={{textAlign:'center', listStyleType:'none'}}><li>My wood becomes the feast.</li><li>For your light I follow when darkness falls.</li><li>Optimism is my only fear.</li><li>I only wait to decompose.</li><li>As I enjoy my delusions in peace.</li><li>A dendroid I must be.</li></ul>
 
-<h4>How little did I know that my favorite Zappa song would become so apropos as the title for this collection.</h4>
+
+{/* <h4>How little did I know that my favorite Zappa song would become so apropos as the title for this collection.</h4>
 <br />
 
 <h5>One of my favorite subject matters has always been old gas stations. I guess it started along with my fascination and later obsession with Route 66.</h5>
 <br />
 
 <h6>As I explored countless small towns and interstate off-ramps to follow Route 66, I became enamored with the beauty in these old vestiges of an era when the car was king and the open road was  everyone's adventure.</h6>
-<br />
+<br /> */}
 
-<blockquote style={{width:'60%', maxWidth:'80vw', margin:'50px auto', }}>Here I present some of my favorite gas stations that I've "worked in". <br />These images comprise an important part of my life. Just as I explored Route 66 over many years, I did the same with my photography style.
+<blockquote style={{width:'60%', maxWidth:'80vw', margin:'50px auto', }}>Here I present some of my favorite trees. <br />These images show some of my favorites trees that I've photographed over the years. I hope you enjoy them as much as I do.
   <br /><br />
 <div style={{textAlign:'right', marginRight:'20%'}}>– Todd Lambert</div></blockquote>
 
@@ -113,7 +114,7 @@ export const query2 = graphql`
 <br />
 <p>All Twilightscapes feature NFTNOW™ - get instant delivery of your NFT. No more waiting!</p>
 <br /><br />
-<p style={{textAlign:'center', fontWeight:'bold', fontSize:'120%'}}>ONLY 14 one-of-one pieces will be released in this Limited Edition  series.</p>
+<p style={{textAlign:'center', fontWeight:'bold', fontSize:'120%'}}>ONLY 14 one-of-one pieces will be released in this Limited Edition series.</p>
 
        
                       </div>
@@ -132,7 +133,7 @@ export const query2 = graphql`
                     
 <br /><br />
 
-<a aria-label="Link to OpenSea" href="https://opensea.io/collection/followmeintothenight"
+<a aria-label="Link to OpenSea" href="https://opensea.io/collection/dendroid-dreams"
 className="navbar-item button fire actionJackson"
 style={{
   cursor:'pointer',
@@ -148,7 +149,7 @@ rel="noreferrer" target="_blank"
 <br />
                   <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', maxHeight:'50vh', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 
-<iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/followmeintothenight" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'50vh', borderRadius:'12px'  }} />
+<iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/dendroid-dreams" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'50vh', borderRadius:'12px'  }} />
 </div>
                   
                   {/* <br />
