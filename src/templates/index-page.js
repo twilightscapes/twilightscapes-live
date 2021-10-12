@@ -290,7 +290,7 @@ const YouTube = frontmatter.youtuber
           ) : (
 
    
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 
