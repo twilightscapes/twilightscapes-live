@@ -95,10 +95,10 @@ export function Layout({ children }) {
 
 
 
-<span></span>
-{/* <IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/> */}
-<Bug className="bug" style={{fontSize:'48px', maxWidth:'', opacity:'.4', margin:'0 20px 0 0', width:'140px', marginTop:'100px' }}/>
 
+{/* <IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/> */}
+<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'.4', margin:'100px 0 0 0', width:'100%' }}/>
+<div style={{textAlign:'center'}}>site menu</div>
     {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div> */}
