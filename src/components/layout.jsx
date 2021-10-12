@@ -98,7 +98,7 @@ export function Layout({ children }) {
 
 {/* <IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/> */}
 <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'.4', margin:'100px 0 0 0', width:'100%' }}/>
-<div style={{textAlign:'center'}}>site menu</div>
+<div style={{textAlign:'center'}}>MENU</div>
     {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div> */}
