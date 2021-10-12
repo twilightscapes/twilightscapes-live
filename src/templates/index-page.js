@@ -58,6 +58,7 @@ export const pageQuery = graphql`
         youtubecontrols
         youtubeautostart
         svgzindex
+        tagline
         featuredImage {
           publicURL
           childImageSharp {
@@ -273,7 +274,7 @@ const YouTube = frontmatter.youtuber
 <section style={{ display:'',}}>
   <article>
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -283,13 +284,13 @@ const YouTube = frontmatter.youtuber
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
             />
             
           ) : (
 
-       
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+   
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 
@@ -373,14 +374,15 @@ const YouTube = frontmatter.youtuber
 
 
           <h1 className="title1">{frontmatter.title}</h1>
-          <p
+          <h2
             className="tagline1"
             sx={{
               color: "",
             }}
           >
             {frontmatter.tagline}
-          </p>
+          </h2>
+
 
           <div
           style={{}}

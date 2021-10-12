@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: "[ Single Shot ] - [ Long Exposure ] - [ Light Painting ]"
+tagline: "[ Single Shot ]  [ Long Exposure ]  [ Light Painting ]"
 featuredImage: /assets/promo-follow-me-into-night.jpg
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
