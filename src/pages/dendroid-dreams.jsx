@@ -50,7 +50,7 @@ export const query2 = graphql`
    <Seo
           title={`Dendroid Dreams - Tree Photography NFTs`}
           description={`Twilightscapes NFTs - NFT Art photography for collectors`}
-          image={'https://twilightscapes.com/promo-follow-me-into-night.jpg'}
+          image={'https://twilightscapes.com/promo-dendroid-dreams.jpg'}
         />
                   
 
