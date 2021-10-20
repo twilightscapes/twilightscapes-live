@@ -1607,7 +1607,7 @@ blockquote:after {
 
 .countdown{border:0px solid pink; position:relative}
 .countdown span:before{
-  content: " DROPS IN: ";
+  content: " ENDS IN: ";
   font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;

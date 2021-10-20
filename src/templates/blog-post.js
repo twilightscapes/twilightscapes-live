@@ -604,7 +604,7 @@ const { iconimage } = useSiteMetadata()
 
          
             <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-  <Countdown daysInHours date={NftDrop} >
+  <Countdown date={NftDrop} >
 <Completionist />
   </Countdown>
 
