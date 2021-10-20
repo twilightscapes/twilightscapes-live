@@ -7,7 +7,7 @@ description: "Learn the story of Amanda's Agony - A secret nobody wants to talk 
 featuredImage: /assets/amandas-agony.jpg
 comments: "1"
 shareable: "1"
-nftdrop: "2021-10-31T14:00:00"
+nftdrop: "2021-10-23T11:00:00"
 isnftforsale: "1"
 ---
 
