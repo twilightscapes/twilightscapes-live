@@ -1171,6 +1171,7 @@ filter: drop-shadow(0px 0px 4px #666);
     .spacer66{height:33vh;}
     .spacer99{height:99vh;}
 
+    body.contactpage footer{display: none !important;}
 /* .contact-form {
   margin-top: 36px;
 } */

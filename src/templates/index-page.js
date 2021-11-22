@@ -373,7 +373,10 @@ const YouTube = frontmatter.youtuber
       <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
 
 
-          <h1 className="title1">{frontmatter.title}</h1>
+          <h1 className="title1">
+            {/* {frontmatter.title} */}
+            Unique Night Photography <br />by Todd Lambert
+          </h1>
           <h2
             className="tagline1"
             sx={{

@@ -245,7 +245,7 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-            <span className="print" style={{display:'none'}}>
+            <span className="print" style={{display:''}}>
             <h2 className={priceValue}>
              <strong style={{fontSize:'30px'}}>{price}</strong>
               <br /> High-Res Print Ready Art
@@ -285,11 +285,17 @@ export default function Product({ data: { product, suggestions } }) {
                 max="20"
               /> <br /><br />*/}
               
+              
               <AddToCart
                 variantId={productVariant.storefrontId}
                 quantity={quantity}
                 available={available}
               />
+
+<ProductDetails />
+<br /><br />
+
+
             </div>
             <div className="taggage" style={{display:'none', flexWrap:'wrap !important', maxWidth:'100vw', margin:'3rem 0 2rem 0', overflow:'hidden'}}> 
               <span className={labelFont}>Type</span>

@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-
+import { Helmet } from "react-helmet"
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -31,6 +31,9 @@ const Contact = ({ data }) => {
 
 
     <Layout className="contact-page" sx={contactStyles.contactPage}>
+      <Helmet>
+  <body className="contactpage" />
+</Helmet>
       <Seo
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
