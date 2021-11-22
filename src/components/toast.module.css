@@ -4,7 +4,7 @@
   width: max-content;
   position: fixed;
   right: 130px;
-  top: 67vh;
+  top: 80vh;
   padding: var(--space-md) var(--space-lg);
   font-size: var(--text-xs);
   font-weight: var(--semibold);
@@ -19,6 +19,12 @@
   white-space: nowrap;
 }
 
+@media (max-width: 58rem) {
+
+  .toastWrapper {
+    top: 75vh !important;
+  }
+}
 @keyframes showing {
   0% {
     transform: translateX(200px);
