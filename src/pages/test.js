@@ -17,7 +17,6 @@ const CustomBox = styled.div`
 
 
 
-
 const options = {
   settings: {
     autoplaySpeed: 4000,
