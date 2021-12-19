@@ -12,7 +12,7 @@ svgImage: /assets/campfire.svg
 showPosts: true
 cta:
   ctaText: See the Photos!
-  ctaLink: /photos/
+  ctaLink: https://vault.twilightscapes.com
 youtubeend: ""
 showFeature: true
 youtubecontrols: ""

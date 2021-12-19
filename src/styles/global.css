@@ -1300,6 +1300,94 @@ body.homepage .mobilespace{
 }
 .social span{display: none;}
 
+
+
+.zoombox .gatsby-image-wrapper{cursor:zoom-in;}
+#SRLLightbox button{border-radius:12px !important;}
+
+
+
+
+
+
+
+
+
+
+
+.zoombox {
+  padding: 1.5em;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.masonry {
+  columns: 1;
+  column-gap: 10px;
+}
+.masonry * {
+  margin:0 0 1.5em 0;
+  display: inline-block;
+  width: 96%;
+  height:100%;
+  backface-visibility:hidden;
+  vertical-align:top;
+  background-size: contain;
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+.masonry *{
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+/* .masonry {
+  columns: 1;
+  column-gap: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.masonry * {
+  margin:0 0 1.5em 0;
+  display: inline-block;
+  width: 96%;
+  height:100%;
+  backface-visibility:hidden;
+  vertical-align:top;
+  background-size: contain;
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+} */
+
+/* @media (max-width: 58em) {
+
+} */
+
+
+
+
+
+
+
+
 #sidebarMenu {
   height: 75vh;
   position: fixed;
@@ -1346,9 +1434,6 @@ body.homepage .mobilespace{
                   background-size: 300% 100%;
         animation: gradient 12s ease infinite; */
     }
-
-
-
 
 
 .sidebarMenuInner li{
