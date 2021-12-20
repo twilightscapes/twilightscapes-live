@@ -177,8 +177,6 @@ fontSize:'100%',
     </Link>
       </li>
 
-
-
       <li className="galmenu-item">
       <Link
       className="button"
@@ -189,6 +187,22 @@ fontSize:'100%',
       title="Crazy Geology Gallery"
     >
       Crazy Geology
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
+
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/vault/gasstations/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Gas Station Gallery"
+    >
+      Gas Stations
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
