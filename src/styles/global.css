@@ -1321,6 +1321,20 @@ body.homepage .mobilespace{
   margin-right: auto;
   margin-left: auto;
 }
+
+.masonry img{
+  max-width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  border-left: 2px solid rgba(51, 4, 39, 0.5);
+  border-top: 2px solid rgba(66, 55, 63, 0.8);
+  border-radius: 12px;
+  transition: transform 250ms ease-in-out;
+  background-color:#111;
+  background: linear-gradient(180deg, #333 1%, #111 80%);
+  /* box-shadow: 0 6px 20px #ff0000;
+  filter: drop-shadow(10px 10px 24px #ff0000); */
+}
 .masonry {
   columns: 1;
   column-gap: 10px;
