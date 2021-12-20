@@ -1317,7 +1317,7 @@ body.homepage .mobilespace{
 
 .zoombox {
   padding: 1.5em;
-  max-width: 1200px;
+  max-width: 100vw;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1334,13 +1334,19 @@ body.homepage .mobilespace{
   vertical-align:top;
   background-size: contain;
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {  .masonry {
     columns: 2;
   }
 }
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (max-width: 1300px) and (min-width: 1024px) {  .masonry {
+  columns: 3;
+}
+}
+
+@media only screen and (min-width: 1300px) {
   .masonry {
-    columns: 3;
+    columns: 4;
   }
 }
 .masonry *{

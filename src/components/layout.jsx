@@ -198,7 +198,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto">
-              <Link className="navbar-item txtshadow" to="https://vault.twilightscapes.com">
+              <Link className="navbar-item txtshadow" to="/vault/favorites/">
       
               View Photos <span>Browse Photo Galleries</span>
               </Link>

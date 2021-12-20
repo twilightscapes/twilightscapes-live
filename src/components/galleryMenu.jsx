@@ -87,10 +87,27 @@ const GalleryMenu = () => (
       <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Themed Galleries</li>
 
    
+      <li className="galmenu-item">
+     
+     <Link to="/vault/favorites"
+     className="button"
+     style={{
+     cursor:'pointer',
+     textAlign:'center',
+     margin:'1rem auto',
+     alignItems:'center',
+     display: 'flex',
+     justifyContent: 'center',
+     fontSize:'100%',
+     }}>
+       Favorites
+     </Link>
+           </li>
+
       
       <li className="galmenu-item">
      
-<Link to="/photos/milky-way"
+<Link to="/vault/milky-way"
 className="button"
 style={{
 cursor:'pointer',
@@ -106,24 +123,10 @@ fontSize:'100%',
       </li>
      
 
-      <li className="galmenu-item">
-      <Link to="/photos/crazy-geology"
-className="button"
-style={{
-cursor:'pointer',
-textAlign:'center',
-margin:'1rem auto',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
-  Crazy Geology
-</Link>
-      </li>
+
       
       <li className="galmenu-item">
-      <Link to="/photos/in-the-city"
+      <Link to="/vault/cars"
 className="button"
 style={{
 cursor:'pointer',
@@ -134,12 +137,31 @@ display: 'flex',
 justifyContent: 'center',
 fontSize:'100%',
 }}>
-  In The City
+  Cars
 </Link>
       </li>
 
+
+      <li className="galmenu-item">
+      <Link to="/vault/dendroiddreams"
+className="button"
+style={{
+cursor:'pointer',
+textAlign:'center',
+margin:'1rem auto',
+alignItems:'center',
+display: 'flex',
+justifyContent: 'center',
+fontSize:'100%',
+}}>
+  Dendroid Dreams
+</Link>
+      </li>
+
+
+
       
-      {/* <li className="galmenu-item">
+      <li className="galmenu-item">
       <Link
       className="button"
       to="/vault/ghosttowns/"
@@ -188,7 +210,7 @@ fontSize:'100%',
         <RiArrowRightSLine />
       </span>
     </Link>
-      </li> */}
+      </li>
 
 
 	  
