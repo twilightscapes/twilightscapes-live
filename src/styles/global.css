@@ -1325,6 +1325,7 @@ body.homepage .mobilespace{
 .masonry img{
   max-width: 100%;
   cursor: pointer;
+  background-size: cover;
   text-decoration: none;
   border-left: 2px solid rgba(51, 4, 39, 0.5);
   border-top: 2px solid rgba(66, 55, 63, 0.8);
@@ -1334,7 +1335,15 @@ body.homepage .mobilespace{
   background: linear-gradient(180deg, #333 1%, #111 80%);
   /* box-shadow: 0 6px 20px #ff0000;
   filter: drop-shadow(10px 10px 24px #ff0000); */
+  overflow: visible;
 }
+
+
+.masonry :nth-child(6n - 2){
+/* border: 40px solid #FA02B7 !important;  */
+
+}
+
 .masonry {
   columns: 1;
   column-gap: 10px;
