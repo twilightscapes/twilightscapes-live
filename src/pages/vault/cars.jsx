@@ -16,7 +16,7 @@ const IndexPage = ({data}) => (
         />
   
   <GalleryMenu />
-  <div className="zoombox">
+  <div className="zoombox1">
       <SRLWrapper options={options} className="">
       <div className="masonry" style={{}}>
     {data.allFile.edges.map(edge => {
@@ -53,13 +53,13 @@ const options = {
     backgroundColor: 'rgba(30,30,36,0.8)',
     iconColor: 'rgba(255, 255, 255, 0.8)',
     iconPadding: '10px',
-    showAutoplayButton: false,
+    showAutoplayButton: true,
     showCloseButton: true,
-    showDownloadButton: false,
-    showFullscreenButton: false,
+    showDownloadButton: true,
+    showFullscreenButton: true,
     showNextButton: true,
     showPrevButton: true,
-    showThumbnailsButton: false,
+    showThumbnailsButton: true,
     size: '40px'
   },
   caption: {
