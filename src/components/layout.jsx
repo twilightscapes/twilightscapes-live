@@ -23,6 +23,7 @@ import Theme from "../components/theme"
 // import TouchUp from '../components/TouchUp'
 import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
+import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
 // import Install from './install-discount'
 // 
@@ -85,7 +86,14 @@ export function Layout({ children }) {
 
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+
+
+      <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
+<StaticImage className="" src="../../static/assets/TSidebarHover.svg" alt="Logo" style={{borderRadius:''}} /></div>
+  </label>
+
+  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle"> */}
 
   {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
   <IoMdFingerPrint style={{fontSize:'50px', }}/>
@@ -97,12 +105,12 @@ export function Layout({ children }) {
 
 
 {/* <IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/> */}
-<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'.4', margin:'100px 0 0 0', width:'100%' }}/>
-<div style={{textAlign:'center'}}>MENU</div>
+{/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'.4', margin:'100px 0 0 0', width:'100%' }}/> */}
+{/* <div style={{textAlign:'center'}}>MENU</div> */}
     {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div> */}
-  </label>
+  {/* </label> */}
 
 
   <label htmlFor="openSidebarMenu" className="backdrop1" ></label>

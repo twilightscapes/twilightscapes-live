@@ -1459,6 +1459,11 @@ body.homepage .mobilespace{
 }
 
 
+#menuicon:after{
+  content: " MENU ";
+}
+
+
 .sidebarMenuInner {
   transition: all .8s ease-in-out;
       background-color: #111;
