@@ -1,18 +1,18 @@
 {
   "meta": {
     "iconimage": "/assets/tw-logo-white.svg",
-    "favicon32x32": "/assets/favicon-32x32.png",
-    "favicon16x16": "/assets/favicon-16x16.png",
+    "favicon32x32": "/icons/icon-192x192.png",
+    "favicon16x16": "/icons/icon-192x192.png",
     "companyname": "Twilightscapes",
     "siteUrl": "https://twilightscapes.com/",
     "twitterUsername": "toddlambert",
     "titleDefault": "Twilightscapes",
-    "icon192": "/assets/icon-192x192.png",
+    "icon192": "/assets/icons/icon-192x192.png",
     "titleTemplate": "%s",
     "title": "Unique night photography of abandoned urban exploration",
     "image": "/assets/default-og-image.jpg",
     "description": "Night long exposure photography in remote abandoned locations urban exploration",
-    "icon512": "/assets/icon-512x512.png",
+    "icon512": "/icons/icon-512x512.png",
     "showfooter": true,
     "comments": "5708736052068352-proj"
   },
