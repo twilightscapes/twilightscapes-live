@@ -196,13 +196,24 @@ module.exports = {
 
 
  
-    
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: settings.ga,
+        trackingIds: [
+          settings.ga, // Google Analytics / GA
+        ],
       },
     },
+
+    
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: settings.ga,
+    //   },
+    // },
+
+    
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
