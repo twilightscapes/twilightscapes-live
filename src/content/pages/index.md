@@ -12,7 +12,7 @@ svgImage: /assets/campfire.svg
 showPosts: true
 cta:
   ctaText: See the Photos!
-  ctaLink: /vault/
+  ctaLink: /photos/
 youtubeend: ""
 showFeature: true
 youtubecontrols: ""

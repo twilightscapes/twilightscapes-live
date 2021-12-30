@@ -206,7 +206,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto">
-              <Link className="navbar-item txtshadow" to="/vault/favorites/">
+              <Link className="navbar-item txtshadow" to="/photos/">
       
               View Photos <span>Browse Photo Galleries</span>
               </Link>
