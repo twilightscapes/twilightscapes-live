@@ -14,7 +14,7 @@ const IndexPage = ({data}) => (
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
   
-  <div className="zoombox">
+  <div className="zoombox1">
       <SRLWrapper options={options} className="">
       <div className="masonry" style={{}}>
     {data.allFile.edges.map(edge => {

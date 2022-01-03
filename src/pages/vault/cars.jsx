@@ -20,7 +20,7 @@ const IndexPage = ({data}) => (
       <SRLWrapper options={options} className="">
       <div className="masonry" style={{}}>
     {data.allFile.edges.map(edge => {
-      return <Img fluid={edge.node.childImageSharp.fluid} />
+      return <Img className="item" fluid={edge.node.childImageSharp.fluid} />
         
     })}
     </div>
