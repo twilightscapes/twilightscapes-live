@@ -6,6 +6,7 @@ import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
 import { StaticImage } from "gatsby-plugin-image"
+import ShareSocial from '../../components/share' 
 const IndexPage = ({data}) => (
   
 <Layout className="thanks-page">
@@ -39,6 +40,7 @@ const IndexPage = ({data}) => (
     </SRLWrapper>
         </div>
          <GalleryMenu />
+         <ShareSocial />
          <div className="spacer66" />
 
   </Layout>

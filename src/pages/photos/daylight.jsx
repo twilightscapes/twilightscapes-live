@@ -6,14 +6,16 @@ import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
 import { StaticImage } from "gatsby-plugin-image"
+import ShareSocial from '../../components/share' 
+
 const IndexPage = ({data}) => (
   
       <Layout className="thanks-page">
 
 <Seo
-          title={`Photography`}
-          description={`Twilightscapes - `}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`Daylight Nature Photography by Twilightscapes`}
+          description={`Just to prove I'm not a vampire, here's some of my work done during daylight hours`}
+          image={'https://twilightscapes.com/static/images/day16.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
@@ -39,6 +41,7 @@ const IndexPage = ({data}) => (
     </SRLWrapper>
         </div>
          <GalleryMenu />
+         <ShareSocial />
          <div className="spacer66" />
 
   </Layout>
