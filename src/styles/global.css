@@ -1215,7 +1215,11 @@ body .item img {object-fit: contain !important;}
                 background-color: rgba(0,0,0,0.5);
                 height: 70vh !important;
               }
-              
+
+              @media (max-width: 48rem) {
+                .sliderholder{height: 50vh !important;}
+              }
+
  
               .sliderholder::before{
                 content:' ';
