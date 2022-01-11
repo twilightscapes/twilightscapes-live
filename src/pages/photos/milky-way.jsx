@@ -18,9 +18,10 @@ const IndexPage = ({data}) => (
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
-      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1', }}>
-  scroll <span style={{fontSize:'18px'}}>&#10095;</span>
+<div className="RArrow">
+scroll <span>&#10095;</span>
 </div>
+
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
