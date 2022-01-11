@@ -1291,13 +1291,13 @@ body .item img {object-fit: contain !important;}
 
 
 
-.horizontal-scroll-wrapper a:first-child,  .horizontal-scroll-wrapper a:nth-child(11n-8){
-  border:0px solid red !important;
-  }
+/* .horizontal-scroll-wrapper .item :first-child{
+  border:2px solid red !important;
+  } */
 
 
   
- .horizontal-scroll-wrapper a:first-child:after, .horizontal-scroll-wrapper a:nth-child(3n-8):after{
+ .horizontal-scroll-wrapper a:first-child:after, .horizontal-scroll-wrapper a:nth-child(7n-8):after{
   
     content: " Just Sold ";
     color:#222 !important;
