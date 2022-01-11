@@ -1218,6 +1218,7 @@ body .item img {object-fit: contain !important;}
 
               @media (max-width: 48rem) {
                 .sliderholder{height: 50vh !important;}
+                .horizontal-scroll-wrapper{margin:5vh auto 0 auto !important;}
               }
 
  
