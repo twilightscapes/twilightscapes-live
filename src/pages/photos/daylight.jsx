@@ -16,14 +16,14 @@ const IndexPage = ({data}) => (
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
   {/* <GalleryMenu /> */}
-  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'70vh', overflow:'hidden', position:'relative', padding:' 0',}}>
+  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
       <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1', }}>
   scroll <span style={{fontSize:'18px'}}>&#10095;</span>
 </div>
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
-      <div className="horizontal-scroll-wrapper squares" style={{margin:'10vh auto 0 auto', width:'', padding:'0'}}>
+      <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
        <StaticImage
         src="../../static/assets/transparent.png"
         alt="-->Done, you've viewed all of the images.<--"

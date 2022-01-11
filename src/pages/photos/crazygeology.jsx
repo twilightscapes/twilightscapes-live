@@ -8,39 +8,39 @@ import GalleryMenu from "../../components/galleryMenu"
 import { StaticImage } from "gatsby-plugin-image"
 const IndexPage = ({data}) => (
   
-      <Layout className="thanks-page">
+  <Layout className="thanks-page">
 
-<Seo
-          title={`Photography`}
-          description={`Twilightscapes - `}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
-        />
-   {/* <GalleryMenu /> */}
-   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'375px', overflow:'hidden', position:'relative', padding:' 0'}}>
-      
-      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1', }}>
-  scroll <span style={{fontSize:'18px'}}>&#10095;</span>
-</div>
-      <SRLWrapper options={options} className="">
-       {/* <div className="masonry" style={{}}> */}
-       <div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
-       <StaticImage
-        src="../../static/assets/transparent.png"
-        alt="-->Done, you've viewed all of the images.<--"
-        srl_gallery_image="true"
-        className="item"
-      />
-    {data.allFile.edges.map(edge => {
-      return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
+  <Seo
+            title={`Photography`}
+            description={`Twilightscapes - `}
+            image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          />
+    {/* <GalleryMenu /> */}
+    <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
         
-    })}
-    </div>
-    </SRLWrapper>
-        </div>
-         <GalleryMenu />
-  <div className="spacer66" />
-
-  </Layout>
+        <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1', }}>
+    scroll <span style={{fontSize:'18px'}}>&#10095;</span>
+  </div>
+        <SRLWrapper options={options} className="">
+        {/* <div className="masonry" style={{}}> */}
+        <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
+         <StaticImage
+          src="../../static/assets/transparent.png"
+          alt="-->Done, you've viewed all of the images.<--"
+          srl_gallery_image="true"
+          className="item"
+        />
+      {data.allFile.edges.map(edge => {
+        return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
+          
+      })}
+      </div>
+      </SRLWrapper>
+          </div>
+           <GalleryMenu />
+           <div className="spacer66" />
+  
+    </Layout>
 )
 
 const options = {
