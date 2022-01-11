@@ -14,7 +14,7 @@ import ShareSocial from '../components/share'
 import { FaHandPointDown } from "react-icons/fa"
 import { RiArrowRightSLine } from "react-icons/ri"
 import ScrollAnimation from 'react-animate-on-scroll'
-import Genesis from '../pages/photos/in-the-city'
+import Genesis from '../pages/sales/in-the-city'
 import NFTMenu from "../components/nft-menu"
 import CommentBox from "../components/commentbox"
 // import CasePanels from "../components/casepanels"

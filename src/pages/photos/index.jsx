@@ -1,137 +1,115 @@
-
-
-import * as React from "react"
-import { graphql, Link } from "gatsby"
-import { Seo } from "../../components/seo"
+import React from "react"
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 import { Layout } from "../../components/layout"
-import { ProductListing } from "../../components/product-listing"
-import { FaHandPointDown } from "react-icons/fa"
+import { Seo } from "../../components/seo"
+import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
-// import { Helmet } from "react-helmet"
-// import TouchUp from '../components/TouchUp'
-import { RiSendPlane2Line } from "react-icons/ri"
-import { Helmet } from "react-helmet"
-import { FiZoomIn } from 'react-icons/fi'
-// import {
-//   container,
-//   intro,
-//   callOut,
-//   callToAction,
-//   deployButton,
-// } from "../../index.module.css"
-
-import ScrollAnimation from 'react-animate-on-scroll'
-import styled from "styled-components"
-const CustomBox = styled.div`
-
-
-
-
-
-img{cursor: zoom-in !important;}
-
-
-
-
-@media (min-width: 58em) {
-
-}
-
-
-`
-
-
-export const query = graphql`
-query {
-  shopifyCollection(handle: { eq: "frontpage" }) {
-    products {
-      ...ProductCard
-    }
-  }
-}
-`
-
-export default function GalleryPage({ data }) {
-  return (
-<> 
-<Helmet>
-    <body className="gallery" />
-    
-</Helmet>
+const IndexPage = ({data}) => (
+  
+      <Layout className="thanks-page">
 
 <Seo
-          title={`Twilightscapes Photo Galleries`}
-          description={`Twilightscapes night photography`}
+          title={`Photography`}
+          description={`Twilightscapes - `}
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
-
-
-
-
-    <CustomBox>
-    <Layout>
-
-
-
-
-
-
-<div className="zoomer" style={{zIndex:'1', position:'fixed', bottom:'5vh', display:'flex', justifyContent:'center', width:'100vw'}}>
-    <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
-</div>
-
-
-
-{/* <GalleryMenu /> */}
-
-
-    
-
-    <div className="frontprod" style={{marginTop:'2rem'}}>
+   <GalleryMenu />
+   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'375px', overflow:'hidden', position:'relative', padding:' 0'}}>
       
-
-      <ProductListing products={data.shopifyCollection.products} className="frontprod" />
+      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1',}}>
+  scroll <span style={{fontSize:'18px'}}>&#10095;</span>
 </div>
-      {/* <Link
-              className="moreButton"
-              sx={{
-                cursor:'pointer',
-                width:'',
-                backgroundColor:'#000 !important'
-              }}
-              to="/vault/favorites/"
-            >
-              View More {" "}
-              <span className="icon -right" style={{paddingLeft:'1rem'}}>
-                <RiSendPlane2Line />
-              </span>
-            </Link> */}
+      <SRLWrapper options={options} className="">
+      {/* <div className="masonry" style={{}}> */}
+      <div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
+    {data.allFile.edges.map(edge => {
+      return <Img className="item" fluid={edge.node.childImageSharp.fluid} />
+        
+    })}
+    </div>
+    </SRLWrapper>
+        </div>
+        {/* <GalleryMenu /> */}
+        <div className="spacer66" />
 
-            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0'}}>
-              
-              
+  </Layout>
+)
 
-{/* <p style={{textAlign:'center', margin:'2rem 0 0 0'}}>GET ALL YOUR FAVORITES NOW</p>
+const options = {
+  settings: {
+    autoplaySpeed: 4000,
+    boxShadow: '0px 0px 20px #000',
+    disableKeyboardControls: false,
+    disablePanzoom: false,
+    disableWheelControls: false,
+    hideControlsAfter: false,
+    lightboxTransitionSpeed: 0.3,
+    lightboxTransitionTimingFunction: 'linear',
+    overlayColor: 'rgba(0, 0, 0, 0.7)',
+    slideAnimationType: 'slide',
+    slideSpringValues: [300, 50],
+    slideTransitionSpeed: 0.6,
+    slideTransitionTimingFunction: 'linear',
+    usingPreact: false
+  },
+  buttons: {
+    backgroundColor: 'rgba(30,30,36,0.8)',
+    iconColor: 'rgba(255, 255, 255, 0.8)',
+    iconPadding: '10px',
+    showAutoplayButton: true,
+    showCloseButton: true,
+    showDownloadButton: false,
+    showFullscreenButton: false,
+    showNextButton: true,
+    showPrevButton: true,
+    showThumbnailsButton: true,
+    size: '40px'
+  },
+  caption: {
+captionAlignment: 'start',
+captionColor: '#FFFFFF',
+captionContainerPadding: '20px 12% 30px 12%',
+captionFontFamily: 'inherit',
+captionFontSize: 'inherit',
+captionFontStyle: 'inherit',
+captionFontWeight: 'inherit',
+captionTextTransform: 'inherit',
+showCaption: true
+  },
+  thumbnails: {
+    showThumbnails: true,
+    thumbnailsAlignment: 'center',
+    thumbnailsContainerBackgroundColor: '#111',
+    thumbnailsContainerPadding: '0',
+    thumbnailsGap: '0 2px',
+    thumbnailsIconColor: '#ffffff',
+    thumbnailsOpacity: 0.4,
+    thumbnailsPosition: 'bottom',
+    thumbnailsSize: ['100px', '80px']
+  },
+  progressBar: {
+    backgroundColor: '#f2f2f2',
+    fillColor: '#000000',
+    height: '3px',
+    showProgressBar: true
+  },
+};
+export default IndexPage
 
-<div style={{display:'flex', border:'1px solid #666', padding:'1rem', margin:'0 3% 0 3%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'800px', gap:'20px', background:''}}>
-
-  <span style={{fontSize:'70px', color:'white', transform:'rotate()', lineHeight:'80%'}}>PICK ANY <br /><span style={{letterSpacing:''}}>THREE</span></span>
-
-  <span style={{fontSize:'40px', color:'var(--primary-color)', lineHeight:'90%'}}>
-  ONLY PAY<br /> FOR TWO
-  </span>
-</div> */}
-</div>
-
-{/* <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>You know what they say about people who can't pick 3 of anything? Maybe we need to talk?</blockquote> */}
-
-
-{/* <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation> */}
-
-
-   </Layout></CustomBox>
-    </>
-  )
-}
+export const indexQuery = graphql`
+  query indexPhotos {
+    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/favorites/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 2400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
