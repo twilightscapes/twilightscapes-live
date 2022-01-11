@@ -1309,6 +1309,7 @@ body .item img {object-fit: contain !important;}
 }
 .RArrow{
   position:absolute;
+  z-index: 1;
   right:20px;
   bottom:20px;
   animation: fadeout 3s forwards;

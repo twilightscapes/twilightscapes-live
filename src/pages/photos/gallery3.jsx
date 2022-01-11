@@ -84,8 +84,8 @@ showCaption: true
     thumbnailsSize: ['100px', '80px']
   },
   progressBar: {
-    backgroundColor: '#f2f2f2',
-    fillColor: '#000000',
+    backgroundColor: '#000',
+    fillColor: '#333',
     height: '3px',
     showProgressBar: true
   },
