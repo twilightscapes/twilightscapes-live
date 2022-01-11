@@ -1213,7 +1213,7 @@ body .item img {object-fit: contain !important;}
             
               .sliderholder{
                 background-color: rgba(0,0,0,0.5);
-                height: 70vh !important;
+                height: 60vh !important;
               }
 
               @media (max-width: 48rem) {
@@ -1263,7 +1263,7 @@ body .item img {object-fit: contain !important;}
                 left: 0;
                 width: calc(350px + 1px);
                 max-height: 100vw;
-                margin:15vh auto 0 auto;
+                margin:8vh auto 0 auto;
                 padding: 0;
                 /* background: #abc; */
                 overflow-y: auto;
