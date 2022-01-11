@@ -82,9 +82,9 @@ const GalleryMenu = () => (
       
       
       
-      <ul className="galmenu custom-gal" style={{margin:'0 auto 0 auto', padding:'0 2%'}}>
+      <ul className="galmenu custom-gal" style={{margin:'0 auto 0 auto', padding:'1%'}}>
 
-      <li className="mobilehide" style={{width:'140px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0', fontWeight:'bold'}}>Themed Galleries</li>
+      <li className="mobilehide" style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0', fontWeight:'bold'}}>Themed Galleries</li>
 
    
       <li className="galmenu-item">
@@ -240,10 +240,10 @@ fontSize:'100%',
 
 
 
-      <ul className="galmenu fullarchive masonry" style={{borderBottom:'2px dotted #222', padding:'0 3%'}}>
+      <ul className="galmenu fullarchive masonry" style={{borderTop:'2px dotted #222', padding:'2%'}}>
       {/* <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 1rem 0',}}>Bonus Galleries</li> */}
 
-      <li className="mobilehide" style={{width:'', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 0', fontWeight:'bold'}}>Full Archives</li>
+      <li className="mobilehide" style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 0', fontWeight:'bold'}}>Full Archives</li>
 
 
       <li className="galmenu-item"><Link to="/photos/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" >I</Link></li>
