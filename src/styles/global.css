@@ -1805,7 +1805,7 @@ input[type=checkbox] {
   cursor: pointer;
   position: fixed;
   z-index: 4;
-  top: 65vh;
+  bottom: 5vh;
   right: 20px;
   /* height: 100px;
   width: 100px; */

@@ -155,6 +155,7 @@ justifyContent: 'center',
 fontSize:'100%',
 }}>
   Dendroid Dreams
+  
 </Link>
       </li>
 
@@ -171,9 +172,7 @@ fontSize:'100%',
       title="Ghost Towns Gallery"
     >
       Ghost Towns
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
+      
     </Link>
       </li>
 
@@ -187,9 +186,7 @@ fontSize:'100%',
       title="Crazy Geology Gallery"
     >
       Crazy Geology
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
+      
     </Link>
       </li>
 
@@ -203,9 +200,7 @@ fontSize:'100%',
       title="Gas Station Gallery"
     >
       Gas Stations
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
+      
     </Link>
       </li>
 
@@ -220,9 +215,7 @@ fontSize:'100%',
       title="During Daytime Gallery"
     >
       Day Light
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
+      
     </Link>
       </li>
 
@@ -247,7 +240,7 @@ fontSize:'100%',
 
 
       <br />
-      <ul className="galmenu fullarchive">
+      <ul className="galmenu fullarchive masonry" style={{borderBottom:'2px dotted #222', padding:'0 3%'}}>
       {/* <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 1rem 0',}}>Bonus Galleries</li> */}
 
       <li style={{width:'', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 0',}}>Full Archives</li>
