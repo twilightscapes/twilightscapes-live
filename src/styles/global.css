@@ -1300,8 +1300,16 @@ body .item img {object-fit: contain !important;}
                 .horizontal-scroll-wrapper {
                   scroll-snap-type: y mandatory;
                 }
+
+                .RArrow span::before{
+                  content:"swipe ";
+                }
               }
 
+.RArrow span::before{
+  font-size: 1rem;
+  content:"scroll ";
+}
 
 .RArrow{
   position:absolute;
@@ -1316,6 +1324,9 @@ body .item img {object-fit: contain !important;}
   font-size:18px;
 }
 
+
+
+
 /* .horizontal-scroll-wrapper .item :first-child{
   border:2px solid red !important;
   } */
@@ -1323,7 +1334,6 @@ body .item img {object-fit: contain !important;}
 
   
  .horizontal-scroll-wrapper a:first-child:after, .horizontal-scroll-wrapper a:nth-child(7n-8):after{
-  
     content: " Just Sold ";
     color:#222 !important;
     pointer-events: none !important;

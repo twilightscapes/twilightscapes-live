@@ -18,8 +18,8 @@ const IndexPage = ({data}) => (
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
-<div className="RArrow">
-scroll <span>&#10095;</span>
+  <div className="RArrow">
+ <span>&#10095;</span>
 </div>
 
       <SRLWrapper options={options} className="">

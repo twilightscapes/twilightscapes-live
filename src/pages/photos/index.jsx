@@ -19,7 +19,7 @@ const IndexPage = ({data}) => (
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
 
   <div className="RArrow">
-scroll <span>&#10095;</span>
+ <span>&#10095;</span>
 </div>
 
       <SRLWrapper options={options} className="">
