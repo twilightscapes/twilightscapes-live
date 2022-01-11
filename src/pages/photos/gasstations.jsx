@@ -13,7 +13,7 @@ const IndexPage = ({data}) => (
 <Layout className="thanks-page">
 
 <Seo
-          title={`Abandoned Gast Station Night Photography by Twilightscapes`}
+          title={`Abandoned Gast Station Night Photography`}
           description={`Workin In A Gas Station - Abandoned Gas Stations Night Photography `}
           image={'https://twilightscapes.com/promo-workin-gas-station.jpg'}
         />
