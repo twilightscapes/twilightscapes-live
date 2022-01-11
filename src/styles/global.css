@@ -790,12 +790,18 @@ height:0;
 .flexcheek {width:50%}
 
 .mobile{display: none; border:0px solid red !important;}
+
 @media (max-width: 48rem) {
   .flexbutt{flex-direction: column !important;}
 .flexcheek{width:100% !important;}
 .mobile{display: block;}
 .dd ul{min-height:inherit !important;}
 /* .flexcheek h1, .mobilefix{ margin-top:2rem !important;} */
+
+.mobilehide{
+  display: none !important;
+}
+
 	}
 
 
@@ -2456,10 +2462,10 @@ border:1px solid #222;
   .galmenu{
     display: flex; align-items: center; margin:0; padding:0; justify-content: space-around;
     background:#111;
-
+    height:auto;
     width:auto;
     }
-    .galmenu li { height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; list-style-type:none;}
+    .galmenu li { padding:0; color:#fff; margin:0 3px; text-align: center; list-style-type:none;}
     
     
     
@@ -2492,10 +2498,10 @@ border:1px solid #222;
     
     @media (max-width: 58rem) {
     .galmenu{
-    display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top; flex-shrink: inherit; flex-basis: 30%;
+    display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top;
     }
     .galmenu li{margin:0 0 3px 0;}
-    .custom-gal li { height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
+    .custom-gal li { padding:0; color:#fff; margin:5px 3px; text-align: center;}
     
     .galmenu li:first-child{border:0px solid red !important; width:100% !important;}
     
