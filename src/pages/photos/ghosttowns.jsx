@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
 <Seo
           title={`Abandoned Ghost Town Photography`}
           description={`Abandoned Ghost Towns at Night`}
-          image={'https://twilightscapes.com/static/images/night83.jpg'}
+          image={'https://twilightscapes.com/images/night83.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>

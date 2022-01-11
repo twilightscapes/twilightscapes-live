@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
 <Seo
           title={`Todd Lambert - Favorite Photography`}
           description={`Twilightscapes Favorite Night Photography`}
-          image={'https://twilightscapes.com/static/images/night221.jpg'}
+          image={'https://twilightscapes.com/images/night221.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>

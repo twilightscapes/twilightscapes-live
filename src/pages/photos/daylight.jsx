@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
 <Seo
           title={`Daylight Nature Photography by Twilightscapes`}
           description={`Just to prove I'm not a vampire, here's some of my work done during daylight hours`}
-          image={'https://twilightscapes.com/static/images/day16.jpg'}
+          image={'https://twilightscapes.com/images/day16.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>

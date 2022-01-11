@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
 <Seo
           title={`Tree Photography At Night by Twilightscapes`}
           description={`Trees are one of the most preciously special things on the planet. I love trees.`}
-          image={'https://twilightscapes.com/static/images/sea-of-sorrow.jpg'}
+          image={'https://twilightscapes.com/images/sea-of-sorrow.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>

@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
 <Seo
           title={`Milky Way Photography by Twilightscapes`}
           description={`The glorious Milky Way as never showm before `}
-          image={'https://twilightscapes.com/static/images/night95.jpg'}
+          image={'https://twilightscapes.com/images/night95.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
