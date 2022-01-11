@@ -11,9 +11,9 @@ const IndexPage = ({data}) => (
 <Layout className="thanks-page">
 
 <Seo
-          title={`Photography`}
-          description={`Twilightscapes - `}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`Abandoned Car Photography by Twilightscapes`}
+          description={`Abandoned cars photographed at night`}
+          image={'https://twilightscapes.com/static/images/night132.jpg'}
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
