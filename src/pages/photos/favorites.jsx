@@ -5,6 +5,7 @@ import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
+import { StaticImage } from "gatsby-plugin-image"
 const IndexPage = ({data}) => (
   
       <Layout className="thanks-page">
@@ -17,14 +18,20 @@ const IndexPage = ({data}) => (
    <GalleryMenu />
    <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'375px', overflow:'hidden', position:'relative', padding:' 0'}}>
       
-      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1', color:'#dd4000', filter:' drop-shadow(1px 1px 0px rgba(228, 223, 223, 0.5))'}}>
+      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1',}}>
   scroll <span style={{fontSize:'18px'}}>&#10095;</span>
 </div>
       <SRLWrapper options={options} className="">
-      {/* <div className="masonry" style={{}}> */}
-      <div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
+{/* <div className="masonry" style={{}}> */}
+<div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
+       <StaticImage
+        src="../../static/assets/transparent.png"
+        alt="-->Done, you've viewed all of the images.<--"
+        // srl_gallery_image="true"
+        className="item"
+      />
     {data.allFile.edges.map(edge => {
-      return <Img className="item" fluid={edge.node.childImageSharp.fluid} />
+      return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
     })}
     </div>
@@ -59,8 +66,8 @@ const options = {
     iconPadding: '10px',
     showAutoplayButton: true,
     showCloseButton: true,
-    showDownloadButton: true,
-    showFullscreenButton: true,
+    showDownloadButton: false,
+    showFullscreenButton: false,
     showNextButton: true,
     showPrevButton: true,
     showThumbnailsButton: true,

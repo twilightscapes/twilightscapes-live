@@ -32,7 +32,7 @@ const IndexPage = ({data}) => (
         className="item"
       />
     {data.allFile.edges.map(edge => {
-      return <Img className="item" fluid={edge.node.childImageSharp.fluid} />
+      return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
     })}
     </div>

@@ -1257,7 +1257,7 @@ body .item img {object-fit: contain !important;}
                 transform-origin: right top;
                 transition: transform .2s;
                 
-                scroll-padding: 0 0 0 80px;
+                scroll-padding: 0 0 0 0;
               }
               .horizontal-scroll-wrapper > * {
                 display: block;

@@ -82,15 +82,15 @@ const GalleryMenu = () => (
       
       
       
-      <ul className="galmenu custom-gal" style={{margin:'0 auto !important',}}>
+      <ul className="galmenu custom-gal" style={{margin:'0 auto',}}>
 
       <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Themed Galleries</li>
 
    
       <li className="galmenu-item">
      
-     <Link to="/vault/favorites"
-     className="button"
+     <Link to="/photos/favorites"
+     className=""
      style={{
      cursor:'pointer',
      textAlign:'center',
@@ -107,8 +107,8 @@ const GalleryMenu = () => (
       
       <li className="galmenu-item">
      
-<Link to="/vault/milky-way"
-className="button"
+<Link to="/photos/milky-way"
+className=""
 style={{
 cursor:'pointer',
 textAlign:'center',
@@ -126,8 +126,8 @@ fontSize:'100%',
 
       
       <li className="galmenu-item">
-      <Link to="/vault/cars"
-className="button"
+      <Link to="/photos/cars"
+className=""
 style={{
 cursor:'pointer',
 textAlign:'center',
@@ -143,8 +143,8 @@ fontSize:'100%',
 
 
       <li className="galmenu-item">
-      <Link to="/vault/dendroiddreams"
-className="button"
+      <Link to="/photos/dendroiddreams"
+className=""
 style={{
 cursor:'pointer',
 textAlign:'center',
@@ -163,8 +163,8 @@ fontSize:'100%',
       
       <li className="galmenu-item">
       <Link
-      className="button"
-      to="/vault/ghosttowns/"
+      className=""
+      to="/photos/ghosttowns/"
       sx={{
         variant: "variants.button",
       }}
@@ -179,8 +179,8 @@ fontSize:'100%',
 
       <li className="galmenu-item">
       <Link
-      className="button"
-      to="/vault/crazygeology/"
+      className=""
+      to="/photos/crazygeology/"
       sx={{
         variant: "variants.button",
       }}
@@ -195,8 +195,8 @@ fontSize:'100%',
 
       <li className="galmenu-item">
       <Link
-      className="button"
-      to="/vault/gasstations/"
+      className=""
+      to="/photos/gasstations/"
       sx={{
         variant: "variants.button",
       }}
@@ -212,8 +212,8 @@ fontSize:'100%',
 
       <li className="galmenu-item">
       <Link
-      className="button"
-      to="/vault/daylight/"
+      className=""
+      to="/photos/daylight/"
       sx={{
         variant: "variants.button",
       }}
@@ -235,8 +235,8 @@ fontSize:'100%',
       
       
       
-      {/* <li className="galmenu-item has-app"><Link to="/vault/daylight"  title="During Daylight">During<br />Daylight</Link></li>
-      <li className="galmenu-item no-app"><Link to="/vault"  title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
+      {/* <li className="galmenu-item has-app"><Link to="/photos/daylight"  title="During Daylight">During<br />Daylight</Link></li>
+      <li className="galmenu-item no-app"><Link to="/photos"  title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
       
 
 
@@ -253,15 +253,15 @@ fontSize:'100%',
       <li style={{width:'', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 0',}}>Full Archives</li>
 
 
-      <li className="galmenu-item"><Link to="/vault/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" >I</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery4/" className="button" sx={{variant: "variants.button",}}  title="Gallery 4">IV</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery5/" className="button" sx={{variant: "variants.button",}}  title="Gallery 5">V</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery6/" className="button" sx={{variant: "variants.button",}}  title="Gallery 6">VI</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery7/" className="button" sx={{variant: "variants.button",}}  title="Gallery 7">VII</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery8/" className="button" sx={{variant: "variants.button",}}  title="Gallery 8">VIII</Link></li>
-      <li className="galmenu-item"><Link to="/vault/gallery9/" className="button" sx={{variant: "variants.button",}}  title="Gallery 9">IV</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" >I</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery4/" className="button" sx={{variant: "variants.button",}}  title="Gallery 4">IV</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery5/" className="button" sx={{variant: "variants.button",}}  title="Gallery 5">V</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery6/" className="button" sx={{variant: "variants.button",}}  title="Gallery 6">VI</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery7/" className="button" sx={{variant: "variants.button",}}  title="Gallery 7">VII</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery8/" className="button" sx={{variant: "variants.button",}}  title="Gallery 8">VIII</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery9/" className="button" sx={{variant: "variants.button",}}  title="Gallery 9">IV</Link></li>
       {/* <li className="galmenu-item1"><Link to="/gallery10/"  title="Gallery 10">X</Link></li> */}
       
       {/* <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
@@ -269,9 +269,9 @@ fontSize:'100%',
       <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
       
       
-      {/* <li className="galmenu-item has-app" has-app><Link to="/vault/gallery8"  title="Gallery 8" has-app>VIII</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery9"  title="Gallery 9">IX</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery10"  title="Gallery 10">X</Link></li> */}
+      {/* <li className="galmenu-item has-app" has-app><Link to="/photos/gallery8"  title="Gallery 8" has-app>VIII</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/photos/gallery9"  title="Gallery 9">IX</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/photos/gallery10"  title="Gallery 10">X</Link></li> */}
       </ul>
  
       

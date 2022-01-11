@@ -5,6 +5,7 @@ import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
+import { StaticImage } from "gatsby-plugin-image"
 const IndexPage = ({data}) => (
   
       <Layout className="thanks-page">
@@ -21,10 +22,16 @@ const IndexPage = ({data}) => (
   scroll <span style={{fontSize:'18px'}}>&#10095;</span>
 </div>
       <SRLWrapper options={options} className="">
-      {/* <div className="masonry" style={{}}> */}
-      <div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
+{/* <div className="masonry" style={{}}> */}
+<div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
+       <StaticImage
+        src="../../static/assets/transparent.png"
+        alt="-->Done, you've viewed all of the images.<--"
+        srl_gallery_image="true"
+        className="item"
+      />
     {data.allFile.edges.map(edge => {
-      return <Img className="item" fluid={edge.node.childImageSharp.fluid} />
+      return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
     })}
     </div>
