@@ -82,9 +82,9 @@ const GalleryMenu = () => (
       
       
       
-      <ul className="galmenu custom-gal" style={{margin:'1rem auto 0 auto',}}>
+      <ul className="galmenu custom-gal" style={{margin:'0 auto 0 auto', padding:'0 2%'}}>
 
-      <li className="mobilehide" style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0', fontWeight:'bold'}}>Themed Galleries</li>
+      <li className="mobilehide" style={{width:'140px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0', fontWeight:'bold'}}>Themed Galleries</li>
 
    
       <li className="galmenu-item">
@@ -239,7 +239,7 @@ fontSize:'100%',
 
 
 
-      <br />
+
       <ul className="galmenu fullarchive masonry" style={{borderBottom:'2px dotted #222', padding:'0 3%'}}>
       {/* <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 1rem 0',}}>Bonus Galleries</li> */}
 

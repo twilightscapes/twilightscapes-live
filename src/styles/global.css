@@ -1211,6 +1211,9 @@ body .item img {object-fit: contain !important;}
               }
               
             
+              .sliderholder{
+                background-color: rgba(0,0,0,0.5);
+              }
               
  
               .sliderholder::before{
