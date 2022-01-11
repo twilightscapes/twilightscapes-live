@@ -82,12 +82,14 @@ export default function GalleryPage({ data }) {
 
 
 
-<GalleryMenu />
+{/* <GalleryMenu /> */}
 
 
     
 
     <div className="frontprod" style={{marginTop:'2rem'}}>
+      
+
       <ProductListing products={data.shopifyCollection.products} className="frontprod" />
 </div>
       {/* <Link
@@ -124,9 +126,9 @@ export default function GalleryPage({ data }) {
 {/* <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px', width:'60%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>You know what they say about people who can't pick 3 of anything? Maybe we need to talk?</blockquote> */}
 
 
-<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
+{/* <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
+</ScrollAnimation> */}
 
 
    </Layout></CustomBox>

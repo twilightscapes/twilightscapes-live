@@ -100,8 +100,11 @@ export const indexQuery = graphql`
         node {
           id
           childImageSharp {
-            fluid(maxWidth: 2400) {
-              ...GatsbyImageSharpFluid
+            fluid (maxWidth:2000, quality:90, ){
+              src
+              srcSet
+              aspectRatio
+              sizes
             }
           }
         }

@@ -15,9 +15,14 @@ const IndexPage = ({data}) => (
           image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
    <GalleryMenu />
-  <div className="zoombox">
+   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'375px', overflow:'hidden', position:'relative', padding:' 0'}}>
+      
+      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1', color:'#dd4000', filter:' drop-shadow(1px 1px 0px rgba(228, 223, 223, 0.5))'}}>
+  scroll <span style={{fontSize:'18px'}}>&#10095;</span>
+</div>
       <SRLWrapper options={options} className="">
-      <div className="masonry" style={{}}>
+      {/* <div className="masonry" style={{}}> */}
+      <div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
     {data.allFile.edges.map(edge => {
       return <Img className="item" fluid={edge.node.childImageSharp.fluid} />
         
@@ -25,8 +30,8 @@ const IndexPage = ({data}) => (
     </div>
     </SRLWrapper>
         </div>
-        <GalleryMenu />
-        <div className="spacer33" />
+        {/* <GalleryMenu /> */}
+        <div className="spacer66" />
 
   </Layout>
 )

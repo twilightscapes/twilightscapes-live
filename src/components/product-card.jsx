@@ -3,14 +3,14 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getShopifyImage } from "gatsby-source-shopify"
 import { formatPrice } from "../utils/format-price"
-import {
-  productCardStyle,
-  // productHeadingStyle,
-  productImageStyle,
-  productDetailsStyle,
-  // productVendorStyle,
-  // productPrice,
-} from "./product-card.module.css"
+// import {
+//   productCardStyle,
+//   productHeadingStyle,
+//   productImageStyle,
+//   productDetailsStyle,
+//   productVendorStyle,
+//   productPrice,
+// } from "./product-card.module.css"
 
 export function ProductCard({ product, eager }) {
   const {
@@ -44,11 +44,12 @@ export function ProductCard({ product, eager }) {
 
   return (
     <Link
-      className={productCardStyle}
+    className=""
+      // className={productCardStyle}
       to={slug}
       aria-label={`View ${title} product page`}
     >
-      <div className={productImageStyle} data-name="product-image-box" style={{overflow:'visible', width:'100%', backgroundSize: '', justifyContent:'center'}}>
+      <div className="item" data-name="product-image-box" style={{overflow:'', width:'', backgroundSize: '', justifyContent:''}}>
         <GatsbyImage
           alt={firstImage?.altText ?? title}
           image={firstImage?.gatsbyImageData ?? storefrontImageData}
@@ -58,13 +59,13 @@ export function ProductCard({ product, eager }) {
         />
       </div>
       
-      <div className={productDetailsStyle}>
+      {/* <div className={productDetailsStyle}> */}
         {/* <div className={productVendorStyle}>{vendor}</div> */}
         {/* <h2 as="h2" className={productHeadingStyle}>
           {title}
         </h2> */}
         {/* <div className={productPrice}>{price}</div> */}
-      </div>
+      {/* </div> */}
     </Link>
   )
 }
@@ -79,7 +80,7 @@ export const query = graphql`
     images {
       id
       altText
-      gatsbyImageData(height:350)
+      gatsbyImageData(height:200)
     }
     priceRangeV2 {
       minVariantPrice {
