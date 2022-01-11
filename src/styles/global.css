@@ -2494,13 +2494,15 @@ border:1px solid #222;
     }
     
     .galmenu [aria-current] {
-    background:  #000; 
+    /* background:  #000;  */
     cursor: default !important; 
-    color:#666;
+    color:#FA02B7 !important;
     box-shadow: none;
     /* filter: drop-shadow (0px 0px 10px rgba(155, 155, 155, 0.5)) !important; */
     filter: none !important;
     pointer-events: none;
+    /* padding:1%; */
+    text-decoration: none;
     }
 
         
