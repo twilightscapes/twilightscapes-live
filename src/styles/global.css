@@ -1301,7 +1301,7 @@ body .item img {object-fit: contain !important;}
   scroll-snap-type: y mandatory;
   }
   .RArrow span::before{
-  content:"swipe ";
+  content:"swipe " !important;
   }
 }
 .RArrow span::before{
