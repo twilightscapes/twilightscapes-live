@@ -87,9 +87,9 @@ const GalleryMenu = () => (
       <li className="mobilehide" style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0', fontWeight:'bold'}}>Themed Galleries</li>
 
    
-      <li className="galmenu-item">
+      {/* <li className="galmenu-item">
      
-     <Link to="/photos/favorites"
+     <Link to="/photos/churches"
      className=""
      style={{
      cursor:'pointer',
@@ -100,9 +100,9 @@ const GalleryMenu = () => (
      justifyContent: 'center',
      fontSize:'100%',
      }}>
-       Favorites
+       Churches
      </Link>
-           </li>
+           </li> */}
 
       
       <li className="galmenu-item">

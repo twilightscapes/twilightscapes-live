@@ -5,8 +5,8 @@ import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
-import { StaticImage } from "gatsby-plugin-image"
-import ShareSocial from '../../components/share' 
+// import { StaticImage } from "gatsby-plugin-image"
+// import ShareSocial from '../../components/share' 
 import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
 
 const IndexPage = ({data}) => (
@@ -49,7 +49,7 @@ const IndexPage = ({data}) => (
         </div>
          <GalleryMenu />
 
-         <ShareSocial />
+         {/* <ShareSocial /> */}
          <div className="spacer66" />
 
   </Layout>

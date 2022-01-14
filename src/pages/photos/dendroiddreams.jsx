@@ -5,8 +5,8 @@ import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
-import { StaticImage } from "gatsby-plugin-image"
-import ShareSocial from '../../components/share' 
+// import { StaticImage } from "gatsby-plugin-image"
+// import ShareSocial from '../../components/share' 
 import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
 
 const IndexPage = ({data}) => (
@@ -32,12 +32,12 @@ const IndexPage = ({data}) => (
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
-       <StaticImage
+       {/* <StaticImage
         src="../../static/assets/transparent.png"
         alt="-->Done, you've viewed all of the images.<--"
         srl_gallery_image="true"
         className="item"
-      />
+      /> */}
     {data.allFile.edges.map(edge => {
       return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
@@ -47,7 +47,7 @@ const IndexPage = ({data}) => (
         </div>
          <GalleryMenu />
 
-         <ShareSocial />
+         {/* <ShareSocial /> */}
          <div className="spacer66" />
 
   </Layout>
