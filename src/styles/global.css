@@ -1223,14 +1223,13 @@ filter: drop-shadow(0px 0px 3px #ccc);
 
 
 
-              @media (max-width: 58rem) {
+              @media (max-width: 48rem) {
                 .sliderholder{height: 60vh !important;}
                 .horizontal-scroll-wrapper{margin:20px auto 0 auto !important;
                   width: calc(350px + 1px) !important;
                 transform: rotate(-90deg) translateY(-350px) !important;
                 }
                 .squares > * {
-                  /* max-width: 400px; */
                   max-height: 350px !important; 
                 }
               }

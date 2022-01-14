@@ -8,6 +8,8 @@ import GalleryMenu from "../../components/galleryMenu"
 import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../../components/share' 
 
+import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
+
 const IndexPage = ({data}) => (
   
   <Layout className="thanks-page">
@@ -18,8 +20,14 @@ const IndexPage = ({data}) => (
             image={'https://twilightscapes.com/images/night201.jpg'}
           />
     {/* <GalleryMenu /> */}
+
+
+
     <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
         
+    <TwilightLogo style={{
+  filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',}} />
+  
     <div className="RArrow">
  <span>&#10095;</span>
 </div>

@@ -19,8 +19,10 @@ const IndexPage = ({data}) => (
         />
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
+
 <TwilightLogo style={{
   filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',}} />
+  
   <div className="RArrow">
  <span>&#10095;</span>
 </div>
@@ -28,12 +30,12 @@ const IndexPage = ({data}) => (
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
-       <StaticImage
+       {/* <StaticImage
         src="../../static/assets/transparent.png"
         alt="-->Done, you've viewed all of the images.<--"
         srl_gallery_image="true"
         className="item"
-      />
+      /> */}
     {data.allFile.edges.map(edge => {
       return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
