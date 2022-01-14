@@ -1212,9 +1212,16 @@ body .item img {object-fit: contain !important;}
               
             
               .sliderholder{
-                background-color: rgba(0,0,0,0.5);
+                background-color: rgba(63, 61, 61, 0.9);
+         
+                background: rgb(8, 8, 8);
+background: linear-gradient(0deg, rgb(8, 8, 8) 0%, rgb(58, 56, 56) 100%);
+
+filter: drop-shadow(0px 0px 3px #ccc);
                 height: 60vh !important;
               }
+
+
 
               @media (max-width: 48rem) {
                 .sliderholder{height: 50vh !important;}
@@ -1243,6 +1250,7 @@ body .item img {object-fit: contain !important;}
                 background-color: rgb(187 54 0);
                 opacity:0;
                 bottom:0;
+
               }
 
               /* .horizontal-scroll-wrapper::after{

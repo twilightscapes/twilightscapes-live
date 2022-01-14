@@ -1,5 +1,5 @@
 import * as React from "react"
-import { SkipNavContent, SkipNavLink } from "./skip-nav"
+// import { SkipNavContent, SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 import { Footer } from "./footer"
 import { Seo } from "./seo"
@@ -43,7 +43,7 @@ export function Layout({ children }) {
     <div style={{background:''}}> 
 <>
       <Seo />
-      <SkipNavLink />
+      {/* <SkipNavLink /> */}
 
       <ModalRoutingContext.Consumer>
     {({ modal, closeTo }) => (
@@ -307,7 +307,11 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <SkipNavContent className="intro">{children}</SkipNavContent>
+      {/* <SkipNavContent className="intro"> */}
+
+        {children}
+        
+        {/* </SkipNavContent> */}
       
       
       {/* <Consent /> */}
