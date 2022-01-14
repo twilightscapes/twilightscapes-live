@@ -1235,6 +1235,18 @@ filter: drop-shadow(0px 0px 3px #ccc);
                 }
               }
 
+              @media (min-width: 1200px) {
+                .sliderholder{height: 70vh !important;}
+                .horizontal-scroll-wrapper{margin:20px auto 0 auto !important;
+                  width: calc(60vw + 1px) !important;
+                transform: rotate(-90deg) translateY(-60vw) !important;
+                }
+                .squares > * {
+                  /* max-width: 400px; */
+                  max-height: 60vh !important; 
+                }
+              }
+
  
               .sliderholder::before{
                 content:' ';

@@ -14,6 +14,7 @@ import ReactPlayer from 'react-player/lazy'
 // import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import Newsignup from "../components/newssign"
+import Portfolio from "../pages/portfolio"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -258,7 +259,7 @@ const YouTube = frontmatter.youtuber
       
 
 
-
+      {/* <Portfolio /> */}
 
         <div name="container21" className="container21" style={{height:'',}}>
 

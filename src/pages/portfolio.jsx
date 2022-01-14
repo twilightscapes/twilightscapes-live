@@ -1,26 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
-import { Layout } from "../../components/layout"
-import { Seo } from "../../components/seo"
+// import { Layout } from "../../components/layout"
+// import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu"
-import { StaticImage } from "gatsby-plugin-image"
-import ShareSocial from '../../components/share' 
-import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
-const IndexPage = ({data}) => (
+// import GalleryMenu from "../../../../components/galleryMenu"
+
+// import { StaticImage } from "gatsby-plugin-image"
+// import ShareSocial from '../../components/share' 
+// import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
+const PortfolioPage = ({data}) => (
   
-<Layout className="thanks-page">
+  <>
+{/* <Layout className="thanks-page">
 
 <Seo
           title={`Todd Lambert's Favorite Photography`}
           description={`Twilightscapes Favorite Night Photography`}
           image={'https://twilightscapes.com/images/night221.jpg'}
-        />
+        /> */}
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
-<TwilightLogo style={{
-  filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',}} />
+{/* <TwilightLogo style={{
+  filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',}} /> */}
   <div className="RArrow">
  <span>&#10095;</span>
 </div>
@@ -28,12 +30,12 @@ const IndexPage = ({data}) => (
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
-       <StaticImage
+       {/* <StaticImage
         src="../../static/assets/transparent.png"
         alt="-->Done, you've viewed all of the images.<--"
         srl_gallery_image="true"
         className="item"
-      />
+      /> */}
     {data.allFile.edges.map(edge => {
       return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
@@ -41,14 +43,15 @@ const IndexPage = ({data}) => (
     </div>
     </SRLWrapper>
         </div>
-         <GalleryMenu />
+         {/* <GalleryMenu /> */}
 
 
-         <ShareSocial />
+         {/* <ShareSocial /> */}
 
          <div className="spacer66" />
 
-  </Layout>
+         </>
+  // </Layout>
 )
 
 const options = {
@@ -61,7 +64,7 @@ const options = {
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.1)',
+    overlayColor: 'rgba(0, 0, 0, 0.7)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,
@@ -110,10 +113,10 @@ showCaption: true
     showProgressBar: true
   },
 };
-export default IndexPage
+export default PortfolioPage
 
-export const indexQuery = graphql`
-  query indexPhotos {
+export const PortfolioQuery = graphql`
+  query PortfolioPhotos {
     allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/favorites/"}}) {
       edges {
         node {
