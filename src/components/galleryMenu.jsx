@@ -120,8 +120,8 @@ const GalleryMenu = () => (
   <Tabs forceRenderTabPanel defaultIndex={0}>
 
     <TabList style={{justifyContent:'space-around'}}>
-      <Tab>Themed Galleries</Tab>
-      <Tab>View Full Archives</Tab>
+      <Tab style={{textDecoration:'underline', marginTop:'1rem'}}>Themed Galleries</Tab>
+      <Tab style={{textDecoration:'underline', marginTop:'1rem'}}>View Full Archives</Tab>
     </TabList>
 
     
