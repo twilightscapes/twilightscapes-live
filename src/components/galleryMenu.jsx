@@ -115,7 +115,7 @@ const GalleryMenu = () => (
   <option value="https://www.gurustop.net">GuruStop.NET</option>
 </select> */}
 
-
+<div style={{background: 'linear-gradient(-180deg, rgb(8, 8, 8) 0%, rgb(20, 20, 20) 100%)',  borderRadius:'0 0 12px 12px',filter:'drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5))', width:'96%', margin:'0 auto', textShadow:'1px 1px 0 #000', border:'1px solid #000', borderTop:'none'}}>
 
   <Tabs >
 
@@ -224,7 +224,7 @@ className=""
     </TabPanel>
   </Tabs>
 
-      
+      </div>
       
       <div style={{display:'none'}}>
       
