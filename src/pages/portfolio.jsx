@@ -93,35 +93,25 @@ export default function PortfolioPage() {
         /> */}
     
     {/* <div className="spacer66"></div> */}
-<SRLWrapper options={options}>
+
   
-{/* <p style={{textAlign:'center', margin:'4rem 0 10px 0'}}>Custom SVG Animations</p> */}
 
+{/* <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}> */}
 
-
-
-
-  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'375px', overflow:'hidden', position:'relative', padding:' 0',}}>
+  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'', overflow:'hidden', position:'relative', padding:' 0',}}>
 
   <TwilightLogo style={{
   filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',
   position:'absolute', zIndex:'-1', top:'15vh'}} />
 
 
-{/* <div className="" style={{margin:'0 auto', width:'', padding:'0', height:'100vw'}}>
-
-<Link state={{modal: true}} to="/legacy/" style={{height:'350px', position:'relative', left:'0', top:'-60px'}}>
-  <StaticImage className="" src="../../static/assets/Experiences-Header-6.jpg" alt="Todd builds Web Apps" style={{height:'350px'}}  />
-  todd
-</Link>
-</div> */}
-
 <div className="RArrow">
   <span>&#10095;</span>
 </div>
 
+<SRLWrapper options={options}>
 
-<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'', padding:'30px 0'}}>
+<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'', padding:' 0'}}>
 
 <div style={{width:'1000px', height:'1000px'}}></div>
 
@@ -301,7 +291,7 @@ export default function PortfolioPage() {
 
  
      </div>
-
+</SRLWrapper>
 
  {/* <Link className="post-card" state={{modal: true}} to="/legacy/" title="View Todd's Legacy Work" style={{position:'absolute', left:'0', top:'10px', zIndex:'1', width:'60px',  background:'rgba(0, 0, 0, .9)', height:'350px', display:'flex', borderRadius:'0 12px 12px 0'}}>
 
@@ -314,7 +304,7 @@ export default function PortfolioPage() {
 
 
 
-</SRLWrapper>
+
 
 
 
