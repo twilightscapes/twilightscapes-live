@@ -1221,7 +1221,7 @@ max-height: 80vh !important;
                 background: rgb(85, 59, 59);
 background: linear-gradient(0deg, rgb(8, 8, 8) 0%, rgb(58, 56, 56) 100%);
 
-filter: drop-shadow(0px 0px 3px #ccc);
+filter: drop-shadow(0px 0px 0px #ccc);
 height:100%;
                 max-height: 70vh !important;
          

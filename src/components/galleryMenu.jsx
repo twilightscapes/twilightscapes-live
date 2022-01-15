@@ -118,9 +118,10 @@ const GalleryMenu = () => (
 <div style={{background: 'linear-gradient(-180deg, rgb(8, 8, 8) 0%, rgb(20, 20, 20) 100%)',  borderRadius:'0 0 12px 12px',
 //  filter:'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5))', 
  width:'96%', margin:'0 auto', textShadow:'1px 1px 0 #000',
- 
+ color:'#fff',
  border:'3px solid #222',
- borderTop:'0px transparent', zIndex:'1'}}>
+ borderTop:'0px solid #111111', 
+ zIndex:'1'}}>
 
   <Tabs >
 
