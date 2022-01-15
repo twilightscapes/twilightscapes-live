@@ -75,6 +75,7 @@
     "react-photo-gallery": "^8.0.0",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
+    "react-select": "^5.2.2",
     "react-share-social": "^0.1.48",
     "react-slideshow-image": "^3.4.3",
     "react-tabs": "^3.1.1",
