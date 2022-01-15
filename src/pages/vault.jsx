@@ -1,21 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
-import { Layout } from "../../components/layout"
-import { Seo } from "../../components/seo"
+import { Layout } from "../components/layout"
+import { Seo } from "../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu"
+import GalleryMenu1 from "../components/galleryMenu-grid"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
-import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
+import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 
 const IndexPage = ({data}) => (
   
 <Layout className="thanks-page">
 
 <Seo
-          title={`Todd Lambert's Favorite Photographs`}
-          description={`Twilightscapes Favorite Night Photography`}
+          title={`Twilightscapes Vault`}
+          description={`Twilightscapes Night Photography`}
           image={'https://twilightscapes.com/images/night221.jpg'}
         />
   {/* <GalleryMenu /> */}
@@ -47,7 +47,7 @@ const IndexPage = ({data}) => (
     </div>
     </SRLWrapper>
         </div>
-         <GalleryMenu />
+         <GalleryMenu1 />
 
          {/* <ShareSocial /> */}
          <div className="spacer66" />
@@ -65,7 +65,7 @@ const options = {
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.7)',
+    overlayColor: 'rgba(0, 0, 0, 0.1)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,

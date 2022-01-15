@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu"
+import GalleryMenu from "../../components/galleryMenu-grid"
 const IndexPage = ({data}) => (
   
       <Layout className="thanks-page">
