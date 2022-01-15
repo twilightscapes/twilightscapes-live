@@ -121,7 +121,7 @@ export default function PortfolioPage() {
 </div>
 
 
-<div className="horizontal-scroll-wrapper squares" style={{margin:'40px auto 0 auto', width:'', padding:'30px 0'}}>
+<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'', padding:'30px 0'}}>
 
 <div style={{width:'1000px', height:'1000px'}}></div>
 

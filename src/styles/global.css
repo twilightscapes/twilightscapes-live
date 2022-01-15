@@ -1205,7 +1205,7 @@ body .item img {object-fit: contain !important;}
 .horizontal-scroll-wrapper  img{cursor:zoom-in !important; 
    /* border-radius:12px !important; */
    object-fit: contain !important;
-max-height: 60vh !important;
+max-height: 80vh !important;
   }
               
               .horizontal-scroll-wrapper img:hover{border:0px solid rgb(187 54 0) !important;
@@ -1222,14 +1222,15 @@ max-height: 60vh !important;
 background: linear-gradient(0deg, rgb(8, 8, 8) 0%, rgb(58, 56, 56) 100%);
 
 filter: drop-shadow(0px 0px 3px #ccc);
-                height: 70vh;
+height:100%;
+                max-height: 70vh !important;
               }
 
 
 
               @media (max-width: 48rem) {
-                .sliderholder{height: 60vh !important;}
-                .horizontal-scroll-wrapper{margin:20px auto 0 auto !important;
+                .sliderholder{height: 50vh !important;}
+                .horizontal-scroll-wrapper{margin:0 auto 0 auto !important;
                   width: calc(350px + 1px) !important;
                 transform: rotate(-90deg) translateY(-350px) !important;
                 }
@@ -1240,7 +1241,7 @@ filter: drop-shadow(0px 0px 3px #ccc);
 
               @media (min-width: 1200px) {
                 .sliderholder{height: 70vh !important;}
-                .horizontal-scroll-wrapper{margin:20px auto 0 auto !important;
+                .horizontal-scroll-wrapper{margin:0 auto 0 auto !important;
                   width: calc(60vw + 1px) !important;
                 transform: rotate(-90deg) translateY(-60vw) !important;
                 }
@@ -1320,7 +1321,7 @@ filter: drop-shadow(0px 0px 3px #ccc);
               }
               .squares > * {
                 /* max-width: 400px; */
-                max-height: 60vh;
+                max-height: 70vh;
                 margin: 0 0 50% 0;
                 padding: 0 0 !important;
                 /* filter: drop-shadow(0px 0px 5px rgba(44, 44, 44, 0.8)); */
@@ -1997,11 +1998,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .gatsby-image-wrapper-constrained{display: block !important;}
 
-.gatsby-image-wrapper img {
-  /* width:100%; border-radius: 12px; */
-/* object-fit: contain !important; */
-/* max-height: 60vh !important; */
-}
+/* .gatsby-image-wrapper img {
+  width:100%; border-radius: 12px;
+object-fit: contain !important;
+max-height: 60vh !important;
+} */
 .react-images__view-image{height:100vh !important; object-fit: contain;}
 .fullscreen{height:100vh; width:100%;}
 .vert img{ object-fit: contain !important;}
