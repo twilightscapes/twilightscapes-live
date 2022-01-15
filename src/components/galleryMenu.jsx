@@ -131,40 +131,18 @@ const GalleryMenu = () => (
 
           <Tab>
             <Link to="/photos/milky-way"
-className=""
-style={{
-cursor:'pointer',
-textAlign:'center',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
+className="">
   Milky Way
 </Link></Tab>
 
           <Tab><Link to="/photos/cars"
 className=""
-style={{
-cursor:'pointer',
-textAlign:'center',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
+>
   Cars
 </Link></Tab>
           <Tab><Link to="/photos/dendroiddreams"
 className=""
-style={{
-cursor:'pointer',
-textAlign:'center',
-alignItems:'center',
-display: 'flex',
-justifyContent: 'center',
-fontSize:'100%',
-}}>
+>
   Dendroid Dreams
 </Link></Tab>
           <Tab><Link
@@ -188,10 +166,11 @@ fontSize:'100%',
     >
       Gas Stations
     </Link></Tab>
-    <Tab><Link
+    <Tab style={{alignSelf:''}}><Link
       to="/photos/daylight/"
       className=""
       title="During Daytime Gallery"
+      
     >
       Day Light
     </Link></Tab>
@@ -215,7 +194,7 @@ fontSize:'100%',
       <Tabs>
         <TabList style={{flexBasis:'', justifyContent:'space-around'}}>
 
-          <Tab><Link to="/photos/gallery1-h/" className=""  title="Gallery 1" >I</Link></Tab>
+          <Tab><Link to="/photos/gallery1-h/" className=""  title="Gallery 1" style={{flexShrink:'0'}} >I</Link></Tab>
 
           <Tab><Link to="/photos/gallery2-h/" className=""   title="Gallery 2">II</Link></Tab>
 

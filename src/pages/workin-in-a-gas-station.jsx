@@ -6,16 +6,18 @@ import { Link } from "gatsby"
 import { Seo } from "../components/seo"
 // import { Helmet } from "react-helmet"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import { RiArrowRightSLine } from "react-icons/ri"
 import { IoLogoVercel } from "react-icons/io5"
 import { BsCircleFill } from "react-icons/bs"
 import { FaSquareFull } from "react-icons/fa"
 // import { StaticImage } from "gatsby-plugin-image"
 import ShareSocial from '../components/share' 
 import { FaHandPointDown } from "react-icons/fa"
+import { RiArrowRightSLine } from "react-icons/ri"
 import ScrollAnimation from 'react-animate-on-scroll'
-import CommentBox from "../components/commentbox"
+import Genesis from '../pages/sales/in-the-city'
 import NFTMenu from "../components/nft-menu"
+
+
 import styled from 'styled-components'
 
 
@@ -55,11 +57,35 @@ export const query2 = graphql`
         />
                   
 
+
+                  <div className="nft">
+  <ProductListing products={data.shopifyCollection.products} />
+</div>
+
+<NFTMenu />
+
 <section className="nft1" style={{paddingBottom:'1rem', overflow:'', margin:'1vh', background:''}}>
+
    
 <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
-                  
-<Link to="/nft/"
+
+  <p><a aria-label="Link to OpenSea" href="https://opensea.io/collection/workin-in-a-gas-station"
+            className="navbar-item button fire actionJackson"
+            style={{
+              cursor:'pointer',
+              width:'80%',
+              maxWidth:'600px',
+              margin:'0 auto',
+              display:'flex',
+              alignSelf:'center'
+            }}
+            rel="noreferrer" target="_blank">
+              This Collection Available on OpenSea 
+<span className="icon -right"><RiArrowRightSLine /></span></a>
+            </p>
+
+
+{/* <Link to="/nft/"
 className=""
 style={{
 cursor:'pointer',
@@ -69,21 +95,21 @@ alignItems:'center',
 display: 'flex',
 justifyContent: 'center',
 fontSize:'100%',
-}}><h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1></Link>
+}}><h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1></Link> */}
                             
                   
-                  <h2 style={{textAlign:'center', margin:'0 12%'}}>
+                  {/* <h2 style={{textAlign:'center', margin:'0 12%'}}>
                   The Non Fungible Token or NFT, stores proof of identity and ownership of art on the blockchain where it's impossible to be forged, stolen or copied.
-                  </h2>
+                  </h2> */}
                   
-                  <h3 style={{textAlign:'center', fontSize:'100%', fontWeight:'bold', marginTop:'10px'}}>Twilightscapes offers Limited Edition rare NFTs.</h3>
+                  {/* <h3 style={{textAlign:'center', fontSize:'100%', fontWeight:'bold', marginTop:'10px'}}>Twilightscapes offers Limited Edition rare NFTs.</h3> */}
                  
                   </div>
                   </section>
                   
                   
                   
-<NFTMenu />
+{/* <NFTMenu /> */}
                   
                   <section className="nft1" style={{paddingTop:'0', overflow:'', margin:'1vh', background:''}}>
 
@@ -128,10 +154,10 @@ fontSize:'100%',
                   
                   
               
-                  <div className="nft"><ProductListing products={data.shopifyCollection.products} />
-                  </div>
+                  {/* <div className="nft"><ProductListing products={data.shopifyCollection.products} />
+                  </div> */}
                     
-<br /><br />
+{/* <br /><br />
 
 <a aria-label="Link to OpenSea" href="https://opensea.io/collection/workin-in-a-gas-station"
 className="navbar-item button fire actionJackson"
@@ -146,16 +172,16 @@ style={{
 rel="noreferrer" target="_blank"
 >This Collection Available on OpenSea 
 <span className="icon -right"><RiArrowRightSLine /></span></a>
-<br />
+<br /> */}
                   <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', maxHeight:'50vh', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 
 <iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/workin-in-a-gas-station" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'50vh', borderRadius:'12px'  }} />
 </div>
 
 
-
+{/* 
 <br /><br />
-<NFTMenu />
+<NFTMenu /> */}
 
 <div className='' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', }}>
 

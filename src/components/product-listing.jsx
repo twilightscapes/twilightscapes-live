@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ProductCard } from "./product-card"
-
+import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 
 // To optimize LCP we mark the first product card as eager so the image gets loaded faster
 export function ProductListing({ products }) {
@@ -8,19 +8,26 @@ export function ProductListing({ products }) {
     <>
     {/* // <div className={listingContainerStyle}>
     // <div className="masonry"> */}
-    <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'375px', overflow:'hidden', position:'relative', padding:' 0'}}>
+  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'', overflow:'hidden', position:'relative', padding:' 0',}}>
       
-      <div className="RArrow" style={{fontSize:'1rem', position:'absolute', right:'20px', top:'0', zIndex:'1',}}>
-  scroll <span style={{fontSize:'18px'}}>&#10095;</span>
-</div>
-      <div className="horizontal-scroll-wrapper squares" style={{margin:'30px auto 0 auto', width:'', padding:'0'}}>
+      <TwilightLogo style={{
+      filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',
+      position:'absolute', zIndex:'-1', top:'15vh'}} />
+    
+      <div className="RArrow">
+     <span>&#10095;</span>
+    </div>
+    <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0',}}>
+
+
+<div style={{width:'1000px', height:'1000px'}}></div>
 
       {products.map((p, index) => (
         <ProductCard product={p} key={p.id} eager={index === 0} />
       ))}
     </div>
     </div>
-    <div className="spacer33" />
+    {/* <div className="spacer33" /> */}
     </>
   )
 }
