@@ -261,7 +261,7 @@ const YouTube = frontmatter.youtuber
 
       <Portfolio />
 
-        <div name="container21" className="container21" style={{height:'',}}>
+        <div name="container21" className="container21" style={{marginTop:'',}}>
 
 
 {/* show feature */}
@@ -371,7 +371,7 @@ const YouTube = frontmatter.youtuber
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
+      <div className="flexcheek " style={{padding:'1rem 2rem 0 2rem', maxHeight:'90vh',}}>
 
 
           <h1 className="title1">
@@ -431,8 +431,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<br />
-<br />
+
 {/* <span className="actionJackson txtshadow"> <span className="icon -right">
               <FaHandPointDown />
             </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
@@ -448,18 +447,18 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
-      <div className="flexcheek" style={{position:'relative', maxHeight:'70vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
+      <div className="flexcheek" style={{position:'relative', maxHeight:'50vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'70vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'50vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
    
 
 
 
 
-{/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
+
            {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
@@ -470,7 +469,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
           ) : (
             ""
           )}
-{/* </div> */}
+
 
 
 
@@ -502,43 +501,9 @@ Through NFT
 </ScrollAnimation> */}
 
 
-{/* <ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
-<h2
-  className="letter narrow txtshadow mobile-txt"
-  style={{
-   fontSize:'40px',
-   color: 'white',
-   position: 'relative',
-    textAlign: 'right', 
-    margin:'0',
-    padding:'0',
-  }}
->
-  into the
-</h2>
-</ScrollAnimation> */}
-
-
-{/* <ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
-<h2
-  className="letter narrow txtshadow mobile-txt"
-  style={{
-   fontSize:'80px',
-   color: 'white',
-   position: 'relative',
-   fontWeight:'bold',
-//            top: '230px',
-    textAlign: 'right',
-    textTransform: 'uppercase', 
-    margin:'0',
-    padding:'0',
-  }}
->
-  Night
-</h2>
-</ScrollAnimation> */}
 
 {/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
+
 </div>
 
       

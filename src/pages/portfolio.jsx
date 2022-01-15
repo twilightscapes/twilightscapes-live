@@ -22,14 +22,14 @@ const CustomBox = styled.div`
 const options = {
   settings: {
     autoplaySpeed: 4000,
-    // boxShadow: '0px 0px 20px #fff',
+    boxShadow: '0px 0px 20px #000',
     disableKeyboardControls: false,
     disablePanzoom: false,
     disableWheelControls: false,
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    // overlayColor: 'rgba(185, 7, 230, 0.5)',
+    overlayColor: 'rgba(0, 0, 0, 0.1)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,
@@ -40,13 +40,13 @@ const options = {
     backgroundColor: 'rgba(30,30,36,0.8)',
     iconColor: 'rgba(255, 255, 255, 0.8)',
     iconPadding: '10px',
-    showAutoplayButton: false,
+    showAutoplayButton: true,
     showCloseButton: true,
     showDownloadButton: false,
     showFullscreenButton: false,
     showNextButton: true,
     showPrevButton: true,
-    showThumbnailsButton: false,
+    showThumbnailsButton: true,
     size: '40px'
   },
   caption: {
@@ -61,7 +61,7 @@ captionTextTransform: 'inherit',
 showCaption: true
   },
   thumbnails: {
-    showThumbnails: true,
+    showThumbnails: false,
     thumbnailsAlignment: 'center',
     thumbnailsContainerBackgroundColor: '#111',
     thumbnailsContainerPadding: '0',
@@ -72,8 +72,8 @@ showCaption: true
     thumbnailsSize: ['100px', '80px']
   },
   progressBar: {
-    backgroundColor: '#f2f2f2',
-    fillColor: '#000000',
+    backgroundColor: '#000',
+    fillColor: '#333',
     height: '3px',
     showProgressBar: true
   },
