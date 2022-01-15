@@ -117,7 +117,7 @@ const GalleryMenu = () => (
 
 
 
-  <Tabs forceRenderTabPanel defaultIndex={0}>
+  <Tabs >
 
     <TabList style={{justifyContent:'space-around'}}>
       <Tab style={{textDecoration:'underline', marginTop:'1rem'}}>Themed Galleries</Tab>
@@ -126,7 +126,7 @@ const GalleryMenu = () => (
 
     
     <TabPanel>
-      <Tabs forceRenderTabPanel>
+      <Tabs>
         <TabList style={{display:'flex', flexBasis:'shrink',  justifyContent:'space-around'}}>
 
           <Tab>
@@ -205,14 +205,14 @@ fontSize:'100%',
     </Link></Tab> */}
 
         </TabList>
-         <TabPanel>
-          {/* <p>Husband of Marge; father of Bart, Lisa, and Maggie.</p> */}
-        </TabPanel>
+         {/* <TabPanel>
+          <p style={{textAlign:'center'}}>Galleries based on selected subject matter</p>
+        </TabPanel> */}
 
       </Tabs>
     </TabPanel>
     <TabPanel>
-      <Tabs forceRenderTabPanel>
+      <Tabs>
         <TabList style={{flexBasis:'', justifyContent:'space-around'}}>
 
           <Tab><Link to="/photos/gallery1-h/" className=""  title="Gallery 1" >I</Link></Tab>
@@ -237,13 +237,10 @@ fontSize:'100%',
 
         </TabList>
   
-        <TabPanel>
-          {/* <p>Chinese-Martian intern at Planet Express. Fonfon Ru of Kif Kroker.</p> */}
-        </TabPanel>
-        <TabPanel>
-        </TabPanel>
-        <TabPanel>
-        </TabPanel> 
+        {/* <TabPanel>
+          <p style={{textAlign:'center'}}>View The Full Twilightscapes Archive</p>
+        </TabPanel> */}
+
       </Tabs>
     </TabPanel>
   </Tabs>

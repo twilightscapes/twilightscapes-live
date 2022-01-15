@@ -2330,7 +2330,7 @@ transform: scale(1);
 }
 
 .react-tabs__tab a{
-  color:inherit !important;
+  color:inherit ;
 }
 
 
@@ -2364,6 +2364,20 @@ transform: scale(1);
 
   .react-tabs__tab--selected, .react-tabs__tab{background:transparent !important; border: none !important; color:inherit !important;}
 
+  /* .react-tabs__tab-list .react-tabs__tab--selected {border: 1px solid red !important} */
+
+
+  a[aria-current] {
+    /* background:  #000;  */
+    cursor: default !important; 
+    color:#FA02B7 !important;
+    box-shadow: none;
+    /* filter: drop-shadow (0px 0px 10px rgba(155, 155, 155, 0.5)) !important; */
+    filter: none !important;
+    pointer-events: none !important;
+    /* padding:1%; */
+    text-decoration: none;
+    }
 
 
 
