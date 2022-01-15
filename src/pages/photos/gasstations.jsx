@@ -31,12 +31,10 @@ const IndexPage = ({data}) => (
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
-       {/* <StaticImage
-        src="../../static/assets/transparent.png"
-        alt="-->Done, you've viewed all of the images.<--"
-        srl_gallery_image="true"
-        className="item"
-      /> */}
+
+
+      <div style={{width:'1000px', height:'1000px'}}></div>
+          
     {data.allFile.edges.map(edge => {
       return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
         
@@ -47,7 +45,7 @@ const IndexPage = ({data}) => (
          <GalleryMenu />
 
          {/* <ShareSocial /> */}
-         <div className="spacer66" />
+         {/* <div className="spacer66" /> */}
 
   </Layout>
 )
@@ -62,7 +60,7 @@ const options = {
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.7)',
+    overlayColor: 'rgba(0, 0, 0, 0.1)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,

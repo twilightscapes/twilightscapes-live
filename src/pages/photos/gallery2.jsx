@@ -41,7 +41,7 @@ const options = {
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.7)',
+    overlayColor: 'rgba(0, 0, 0, 0.1)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,

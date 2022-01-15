@@ -29,12 +29,9 @@ const Gal1Page = ({data}) => (
           <SRLWrapper options={options} className="">
           {/* <div className="masonry" style={{}}> */}
           <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
-           {/* <StaticImage
-            src="../../static/assets/transparent.png"
-            alt="-->Done, you've viewed all of the images.<--"
-            srl_gallery_image="true"
-            className="item"
-          /> */}
+
+          <div style={{width:'1000px', height:'1000px'}}></div>
+
         {data.allFile.edges.map(edge => {
           return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
             
@@ -45,7 +42,7 @@ const Gal1Page = ({data}) => (
              <GalleryMenu />
     
              {/* <ShareSocial /> */}
-             {/* <div className="spacer66" /> */}<br />
+             {/* <div className="spacer66" /> */}
     
       </Layout>
     )
