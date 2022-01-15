@@ -22,7 +22,7 @@ const CustomBox = styled.div`
 const options = {
   settings: {
     autoplaySpeed: 4000,
-    boxShadow: '0px 0px 20px #000',
+    // boxShadow: '0px 0px 20px #000',
     disableKeyboardControls: false,
     disablePanzoom: false,
     disableWheelControls: false,
