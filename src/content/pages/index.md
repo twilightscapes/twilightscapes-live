@@ -14,7 +14,7 @@ cta:
   ctaText: See the Photos!
   ctaLink: /photos/
 youtubeend: ""
-showFeature: true
+showFeature: ""
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"

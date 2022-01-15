@@ -259,7 +259,7 @@ const YouTube = frontmatter.youtuber
       
 
 
-      {/* <Portfolio /> */}
+      <Portfolio />
 
         <div name="container21" className="container21" style={{height:'',}}>
 
@@ -394,7 +394,7 @@ const YouTube = frontmatter.youtuber
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
-  <br />
+  {/* <br />
           <Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
@@ -414,7 +414,7 @@ const YouTube = frontmatter.youtuber
             </span>
 
             
-          </Link>
+          </Link> */}
 
          
 
