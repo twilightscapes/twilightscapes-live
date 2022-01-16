@@ -172,12 +172,7 @@ export default function PortfolioPage() {
       />
 
 
-<StaticImage
-        src="../img/faves/.jpeg"
-        alt="Twilightscapes - Night Photography by Todd Lambert"
-        srl_gallery_image="true"
-        className="item"
-      />
+
 
 
 <StaticImage

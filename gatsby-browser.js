@@ -4,14 +4,14 @@ import "./src/styles/reset.css"
 import "./src/styles/variables.css"
 import "./src/styles/global.css"
 
-import SimpleReactLightbox from 'simple-react-lightbox'
+// import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 
 export const wrapRootElement = ({ element }) => (
 
   
-  <SimpleReactLightbox><StoreProvider>{element}</StoreProvider></SimpleReactLightbox>
+  <StoreProvider>{element}</StoreProvider>
 )
 
 

@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
+ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
-import { SRLWrapper } from "simple-react-lightbox"
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
@@ -28,6 +29,7 @@ const IndexPage = ({data}) => (
  <span>&#10095;</span>
 </div>
 
+<SimpleReactLightbox>
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
@@ -36,11 +38,14 @@ const IndexPage = ({data}) => (
       <div style={{width:'1000px', height:'1000px'}}></div>
           
     {data.allFile.edges.map(edge => {
-      return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
-        
+      return <GatsbyImage
+      image={edge.node.childImageSharp.gatsbyImageData}
+      srl_gallery_image="true"
+      alt={edge.node.name}
+    />
     })}
     </div>
-    </SRLWrapper>
+    </SRLWrapper></SimpleReactLightbox>
         </div>
          <GalleryMenu />
 
@@ -117,14 +122,11 @@ export const indexQuery = graphql`
     allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/ghosttowns/"}}) {
       edges {
         node {
+          name
           id
+          relativePath
           childImageSharp {
-            fluid (maxWidth:2000, quality:90, ){
-              src
-              srcSet
-              aspectRatio
-              sizes
-            }
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }
