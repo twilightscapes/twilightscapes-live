@@ -1236,7 +1236,7 @@ height:100%;
 
               @media (max-width: 48rem) {
                 .sliderholder{height: 50vh !important;}
-                .horizontal-scroll-wrapper{margin:10px auto 0 auto !important;
+                .horizontal-scroll-wrapper{margin:0 auto 0 auto !important;
                   width: calc(350px + 1px) !important;
                 transform: rotate(-90deg) translateY(-350px) !important;
                 }
@@ -1247,7 +1247,7 @@ height:100%;
 
               @media (min-width: 49rem) {
                 .sliderholder{height: 70vh !important;}
-                .horizontal-scroll-wrapper{margin:20px auto 0 auto !important;
+                .horizontal-scroll-wrapper{margin:0 auto 0 auto !important;
                   width: calc(60vw + 1px) !important;
                 transform: rotate(-90deg) translateY(-60vw) !important;
                 }
@@ -1348,17 +1348,18 @@ height:100%;
   scroll-snap-type: y mandatory;
   }
   .RArrow span::before{
-  content:"swipe " !important;
+  content:"\2329  swipe  \232a" !important;
   }
 }
 .RArrow span::before{
-  content:"scroll ";
+  content:"\2329  scroll  \232a";
 }
 .RArrow{
   position:absolute;
   z-index: 1;
-  right:20px;
+  text-transform:uppercase;
   bottom:20px;
+  text-align:center;
   animation: fadeout 3s forwards;
 }
 .RArrow span{
