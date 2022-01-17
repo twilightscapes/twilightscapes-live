@@ -77,7 +77,8 @@
     "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.3",
     "theme-ui": "^0.13.1",
-    "urql": "^2.0.2"
+    "urql": "^2.0.2",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "devDependencies": {
     "sass": "^1.48.0"
