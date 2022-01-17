@@ -30,12 +30,12 @@ export function Seo({
   `)
 
   const {
-    siteTitle,
+    // siteTitle,
     titleDefault,
-    siteUrl,
+    // siteUrl,
     siteDescription,
     siteImage,
-    hrefLang,
+    // hrefLang,
     twitterUsername,
   } = siteMetadata
 

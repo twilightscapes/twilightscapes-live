@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { RiArrowLeftSLine, RiBugLine, RiSkullLine } from "react-icons/ri"
+import { RiArrowLeftSLine, RiBugLine } from "react-icons/ri"
 
 import { AiFillRobot } from "react-icons/ai"
 import { Seo } from "../components/seo"
@@ -26,7 +26,7 @@ const NotFound = () => (
           }}
         />
         <h1 className="neonText" style={{fontSize:'200%'}}>Well, Shit.</h1>
-        <p className="neonText" style={{fontSize:'150%'}} style={{margin:'2rem'}}>
+        <p className="neonText" style={{fontSize:'150%', margin:'2rem'}}>
           That wasn't supposed to happen.
         </p>
       </header>

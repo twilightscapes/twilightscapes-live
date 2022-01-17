@@ -2,13 +2,13 @@
 import * as React from "react"
 import styled from "styled-components";
 import { Link } from 'gatsby'
-import Select from "react-select"
+// import Select from "react-select"
 // import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import {  RiArrowRightSLine } from "react-icons/ri"
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import {  RiArrowRightSLine } from "react-icons/ri"
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const CustomBox = styled.div`
@@ -62,11 +62,11 @@ const CustomBox = styled.div`
 `
 
 
-const options = [
-  { value: "http://www.cnet.com", label: "Apple" },
-  { value: "http://www.geocities.com", label: "Orange" },
-  { value: "http://www.cnn.com", label: "Grape" }
-]
+// const options = [
+//   { value: "http://www.cnet.com", label: "Apple" },
+//   { value: "http://www.geocities.com", label: "Orange" },
+//   { value: "http://www.cnn.com", label: "Grape" }
+// ]
 
 // function go(){
 //   const location=
@@ -75,21 +75,7 @@ const options = [
 //   }
    
 
-  function go(){
-    // bind change event to select
-    // '#dynamic_select'.on('change', 
-    
-    // function () {
-        const url = (this).val(); // get selected value
 
-        if (url) { // require a URL
-            window.location = url; // redirect
-        }
-
-        return false;
-    // });
-
-  };
 
 
 const GalleryMenu = () => (

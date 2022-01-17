@@ -2,22 +2,22 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { Seo } from "../components/seo"
 // import { Helmet } from "react-helmet"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import { IoLogoVercel } from "react-icons/io5"
-import { BsCircleFill } from "react-icons/bs"
-import { FaSquareFull } from "react-icons/fa"
+// import { IoLogoVercel } from "react-icons/io5"
+// import { BsCircleFill } from "react-icons/bs"
+// import { FaSquareFull } from "react-icons/fa"
 // import { StaticImage } from "gatsby-plugin-image"
-import ShareSocial from '../components/share' 
+// import ShareSocial from '../components/share' 
 import { FaHandPointDown } from "react-icons/fa"
 import { RiArrowRightSLine } from "react-icons/ri"
 import ScrollAnimation from 'react-animate-on-scroll'
-import Genesis from '../pages/sales/in-the-city'
+// import Genesis from '../pages/sales/in-the-city'
 import NFTMenu from "../components/nft-menu"
 // import CommentBox from "../components/commentbox"
-import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+
 // import CasePanels from "../components/casepanels"
 
 // import { MoreButton } from "../components/more-button"
@@ -113,7 +113,7 @@ export const query = graphql`
               This Collection Available on OpenSea 
 <span className="icon -right"><RiArrowRightSLine /></span></a>
             </p>
-            
+
 <h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1>
           
 

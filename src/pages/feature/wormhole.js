@@ -93,7 +93,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
-  <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/NfEdtor4cis?controls=0&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NfEdtor4cis" frameBorder="0" allowFullScreen playsinline></iframe>
+  <iframe title="custom animation by Todd Lambert" className="" width="100%" height="350" src="https://www.youtube.com/embed/NfEdtor4cis?controls=0&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NfEdtor4cis" frameBorder="0" allowFullScreen playsinline></iframe>
   </div>
 
   

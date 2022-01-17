@@ -1,21 +1,21 @@
 import * as React from "react"
 import { Layout } from "../../components/layout"
-import GoBack from "../../components/goBack"
+// import GoBack from "../../components/goBack"
 import { Helmet } from "react-helmet"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import { ProductListing } from "../../components/product-listing"
 import { Seo } from "../../components/seo"
 // import CasePanels from "../components/casepanels"
 // import LaunchPad from "../../components/launchpad"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 // import SpacePort from "../../../static/assets/spaceport.svg"
 import PhotoMenu from "../../components/animated-photos-menu"
 import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
 import { FaHandPointDown } from "react-icons/fa"
-import { Link } from "gatsby"
-import Audio from '../../../static/assets/bensound-betterdays.mp3'
+// import { Link } from "gatsby"
+// import Audio from '../../../static/assets/bensound-betterdays.mp3'
 
 
 export const query = graphql`

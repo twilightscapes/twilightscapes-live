@@ -13,8 +13,7 @@ const Thanks = () => (
       style={{
         textAlign: "center",
         width:'80%',
-        margin:'0 auto',
-        textAlign:'center'
+        margin:'0 auto'
       }}
     >
 <div className="spacer33"></div> 

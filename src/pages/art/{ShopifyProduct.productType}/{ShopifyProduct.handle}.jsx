@@ -11,16 +11,16 @@ import { AddToCart } from "../../../components/add-to-cart"
 import CommentBox from "../../../components/commentbox"
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
-import { NumericInput } from "../../../components/numeric-input"
+// import { NumericInput } from "../../../components/numeric-input"
 import ShareSocial from '../../../components/share' 
 import GoBack from "../../../components/goBack"
 import ProductDetails from "../../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
 import { StaticImage } from "gatsby-plugin-image"
 
-import { BiLeftArrow } from "react-icons/bi"
-import { navigate } from "gatsby";
-import { useHistory } from "react-router-dom"
+// import { BiLeftArrow } from "react-icons/bi"
+// import { navigate } from "gatsby";
+// import { useHistory } from "react-router-dom"
 
 import InnerImageZoom from 'react-inner-image-zoom'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
@@ -28,7 +28,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 
 
 import {
-  productBox,
+  // productBox,
   container,
   header,
   productImageWrapper,
@@ -40,10 +40,10 @@ import {
   priceValue,
   selectVariant,
   labelFont,
-  breadcrumb,
+  // breadcrumb,
   tagList,
   addToCartStyle,
-  metaSection,
+  // metaSection,
   productDescription,
 } from "./product-page.module.css"
 
@@ -82,7 +82,7 @@ export default function Product({ data: { product, suggestions } }) {
   const { client } = React.useContext(StoreContext)
 
   const [variant, setVariant] = React.useState({ ...initialVariant })
-  const [quantity, setQuantity] = React.useState(1)
+  const [quantity] = React.useState(1)
 
   const productVariant =
     client.product.helpers.variantForOptions(product, variant) || variant

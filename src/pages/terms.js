@@ -16,7 +16,7 @@ import GoBack from "../components/goBack"
 
 
 
-export default function TermsPage({}) {
+export default function TermsPage() {
    return (
 
 

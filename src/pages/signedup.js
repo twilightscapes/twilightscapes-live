@@ -17,7 +17,7 @@ import { AiTwotoneCamera } from "react-icons/ai"
 
 
 
-export default function SignedUpPage({}) {
+export default function SignedUpPage() {
    return (
 
 

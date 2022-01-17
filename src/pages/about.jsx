@@ -120,7 +120,7 @@ height: 0;
 //   }
 // `
 // export default function nftPage({ data }) {
-  export default function aboutPage() {
+  export default function aboutPage1() {
   return (
 
 
@@ -153,7 +153,7 @@ height: 0;
 <div className="video-background">
     <div className="video-foreground">
       
-      <iframe className="" width="100%" height="350" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
+      <iframe title="Video about Todd Lambert" className="" width="100%" height="350" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
     </div>
 </div>
 

@@ -1,9 +1,9 @@
 import * as React from "react"
 
-import GoBack from "./goBack"
+// import GoBack from "./goBack"
 
 import { StaticImage } from "gatsby-plugin-image"
-import { Seo } from "./seo"
+// import { Seo } from "./seo"
 
 
 // import Footer from '../../components/Footer'
@@ -13,7 +13,7 @@ import { Link } from 'gatsby'
 
 import styled from "styled-components"
 // import { MdPlayArrow } from 'react-icons/md'
-import { IoMdFingerPrint } from 'react-icons/io'
+// import { IoMdFingerPrint } from 'react-icons/io'
 
 // import { FiZoomIn } from 'react-icons/fi'
 

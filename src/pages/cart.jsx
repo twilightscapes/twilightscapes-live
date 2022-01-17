@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { Layout } from "../components/layout"
 import { StoreContext } from "../context/store-context"
 import { LineItem } from "../components/line-item"
@@ -22,7 +22,7 @@ import {
   productHeader,
   emptyStateContainer,
   emptyStateHeading,
-  emptyStateLink,
+  // emptyStateLink,
   title,
 } from "./cart.module.css"
 

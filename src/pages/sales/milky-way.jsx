@@ -6,14 +6,14 @@ import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
 import CommentBox from "../../components/commentbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"
 // import { BsCircleFill } from "react-icons/bs"
 // import { FaSquareFull } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
-import { FiZoomIn } from 'react-icons/fi'
+// import { FiZoomIn } from 'react-icons/fi'
 import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
 import ShareSocial from '../../components/share' 

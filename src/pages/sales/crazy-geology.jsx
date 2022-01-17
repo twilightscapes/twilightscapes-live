@@ -4,13 +4,13 @@ import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
-import { FiZoomIn } from 'react-icons/fi'
+// import { FiZoomIn } from 'react-icons/fi'
 import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
 import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import { Helmet } from "react-helmet"
 // import { RiArrowDownLine, RiArrowRightSLine, RiStarLine, RiSendPlane2Line } from "react-icons/ri"
 // import { IoLogoVercel } from "react-icons/io5"

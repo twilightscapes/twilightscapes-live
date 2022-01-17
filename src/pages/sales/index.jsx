@@ -1,15 +1,15 @@
 
 
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Seo } from "../../components/seo"
 import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
-import { FaHandPointDown } from "react-icons/fa"
-import GalleryMenu from "../../components/galleryMenu"
+// import { FaHandPointDown } from "react-icons/fa"
+// import GalleryMenu from "../../components/galleryMenu"
 // import { Helmet } from "react-helmet"
 // import TouchUp from '../components/TouchUp'
-import { RiSendPlane2Line } from "react-icons/ri"
+// import { RiSendPlane2Line } from "react-icons/ri"
 import { Helmet } from "react-helmet"
 import { FiZoomIn } from 'react-icons/fi'
 // import {
@@ -20,7 +20,7 @@ import { FiZoomIn } from 'react-icons/fi'
 //   deployButton,
 // } from "../../index.module.css"
 
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import styled from "styled-components"
 const CustomBox = styled.div`
 

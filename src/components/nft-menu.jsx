@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import {  RiArrowRightSLine } from "react-icons/ri"
+// import {  RiArrowRightSLine } from "react-icons/ri"
 
 const CustomBox = styled.div`
 

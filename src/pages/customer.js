@@ -16,7 +16,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 
-export default function CustomerPage({}) {
+export default function CustomerPage() {
    return (
 
 

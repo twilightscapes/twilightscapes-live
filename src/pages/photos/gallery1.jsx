@@ -27,7 +27,7 @@ const Gal1Page = ({data}) => (
       position:'absolute', zIndex:'-1', top:'15vh'}} />
     
       <div className="RArrow">
-     <span>&#10095;</span>
+     <span></span>
     </div>
     
     <SimpleReactLightbox>

@@ -2,19 +2,19 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { Seo } from "../components/seo"
 // import { Helmet } from "react-helmet"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import { IoLogoVercel } from "react-icons/io5"
-import { BsCircleFill } from "react-icons/bs"
-import { FaSquareFull } from "react-icons/fa"
+// import { IoLogoVercel } from "react-icons/io5"
+// import { BsCircleFill } from "react-icons/bs"
+// import { FaSquareFull } from "react-icons/fa"
 // import { StaticImage } from "gatsby-plugin-image"
-import ShareSocial from '../components/share' 
+// import ShareSocial from '../components/share' 
 import { FaHandPointDown } from "react-icons/fa"
 import { RiArrowRightSLine } from "react-icons/ri"
 import ScrollAnimation from 'react-animate-on-scroll'
-import Genesis from '../pages/sales/in-the-city'
+// import Genesis from '../pages/sales/in-the-city'
 import NFTMenu from "../components/nft-menu"
 
 

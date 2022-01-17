@@ -16,7 +16,7 @@ import GoBack from "../components/goBack"
 
 
 
-export default function PrivacyPage({}) {
+export default function PrivacyPage() {
    return (
 
 

@@ -5,12 +5,12 @@ import { ProductListing } from "../../components/product-listing"
 // import GoBack from "../../components/goBack"
 import styled from "styled-components"
 import ShareSocial from '../../components/share' 
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import Audio from '../../../static/assets/bensound-betterdays.mp3'
-import SVG from "../../../static/assets/transcendence.svg"
+// import Audio from '../../../static/assets/bensound-betterdays.mp3'
+import Svg from "../../../static/assets/transcendence.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../../components/giftshop"
 import PhotoMenu from "../../components/animated-photos-menu"
@@ -85,7 +85,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   
 <div className="video-background" style={{width:'100vw', maxWidth:'1200px', margin:'0 auto',}}>
 
-  <SVG style={{width:'100%', position:'absolute', bottom:'', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
+  <Svg style={{width:'100%', position:'absolute', bottom:'', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
 
 
 {/* <div style={{width:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/Wormhole.png" alt="Twilightscapes" className="layer1" /></div> */}

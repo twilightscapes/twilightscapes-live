@@ -15,7 +15,7 @@ export function ProductListing({ products }) {
       position:'absolute', zIndex:'-1', top:'15vh'}} />
     
       <div className="RArrow">
-     <span>&#10095;</span>
+     <span></span>
     </div>
     <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
 

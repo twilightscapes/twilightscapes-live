@@ -26,8 +26,8 @@ const IndexPage = ({data}) => (
   position:'absolute', zIndex:'-1', top:'15vh'}} />
 
   <div className="RArrow">
- <span>&#10095;</span>
-</div>
+     <span></span>
+    </div>
 
 <SimpleReactLightbox>
       <SRLWrapper options={options} className="">
