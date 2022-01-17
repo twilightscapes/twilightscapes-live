@@ -8,7 +8,7 @@ export function ProductListing({ products }) {
     <>
     {/* // <div className={listingContainerStyle}>
     // <div className="masonry"> */}
-  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'', overflow:'hidden', position:'relative', padding:' 0',}}>
+   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
       <TwilightLogo style={{
       filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',
@@ -17,7 +17,7 @@ export function ProductListing({ products }) {
       <div className="RArrow">
      <span>&#10095;</span>
     </div>
-    <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0',}}>
+    <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
 
 
 <div style={{width:'1000px', height:'1000px'}}></div>

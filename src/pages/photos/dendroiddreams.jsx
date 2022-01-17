@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
+ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
-import { SRLWrapper } from "simple-react-lightbox"
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import GalleryMenu from "../../components/galleryMenu"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
@@ -29,6 +30,7 @@ const IndexPage = ({data}) => (
  <span>&#10095;</span>
 </div>
 
+<SimpleReactLightbox>
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
@@ -36,12 +38,17 @@ const IndexPage = ({data}) => (
 
       <div style={{width:'1000px', height:'1000px'}}></div>
           
-    {data.allFile.edges.map(edge => {
-      return <Img srl_gallery_image="true" className="item" fluid={edge.node.childImageSharp.fluid} />
-        
+      {data.allFile.edges.map(edge => {
+      return <GatsbyImage
+      image={edge.node.childImageSharp.gatsbyImageData}
+      srl_gallery_image="true"
+      alt={edge.node.name}
+      key={edge.node.id}
+    />
     })}
+
     </div>
-    </SRLWrapper>
+    </SRLWrapper></SimpleReactLightbox>
         </div>
          <GalleryMenu />
 
@@ -57,11 +64,11 @@ const options = {
     boxShadow: '0px 0px 20px #000',
     disableKeyboardControls: false,
     disablePanzoom: false,
-    disableWheelControls: false,
+    disableWheelControls: true,
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.1)',
+    overlayColor: 'rgba(0, 0, 0, 0.8)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,
@@ -69,16 +76,16 @@ const options = {
     usingPreact: false
   },
   buttons: {
-    backgroundColor: 'rgba(30,30,36,0.8)',
+    backgroundColor: '#FA02B7',
     iconColor: 'rgba(255, 255, 255, 0.8)',
     iconPadding: '10px',
-    showAutoplayButton: true,
+    showAutoplayButton: false,
     showCloseButton: true,
     showDownloadButton: false,
     showFullscreenButton: false,
-    showNextButton: true,
-    showPrevButton: true,
-    showThumbnailsButton: true,
+    showNextButton: false,
+    showPrevButton: false,
+    showThumbnailsButton: false,
     size: '40px'
   },
   caption: {
@@ -90,10 +97,10 @@ captionFontSize: 'inherit',
 captionFontStyle: 'inherit',
 captionFontWeight: 'inherit',
 captionTextTransform: 'inherit',
-showCaption: true
+showCaption: false
   },
   thumbnails: {
-    showThumbnails: true,
+    showThumbnails: false,
     thumbnailsAlignment: 'center',
     thumbnailsContainerBackgroundColor: '#111',
     thumbnailsContainerPadding: '0',
@@ -117,11 +124,11 @@ export const indexQuery = graphql`
     allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/DendroidDreams/"}}) {
       edges {
         node {
+          name
           id
+          relativePath
           childImageSharp {
-            fluid(maxWidth: 2400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }

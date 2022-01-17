@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import { Seo } from "../components/seo"
 // import CasePanels from "../components/casepanels"
 import GalleryMenu from "../components/galleryMenu"
-import { SRLWrapper } from "simple-react-lightbox"
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import styled from "styled-components"
 const CustomBox = styled.div`
@@ -22,14 +22,14 @@ const CustomBox = styled.div`
 const options = {
   settings: {
     autoplaySpeed: 4000,
-    // boxShadow: '0px 0px 20px #000',
+    boxShadow: '0px 0px 20px #000',
     disableKeyboardControls: false,
     disablePanzoom: false,
-    disableWheelControls: false,
+    disableWheelControls: true,
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.1)',
+    overlayColor: 'rgba(0, 0, 0, 0.8)',
     slideAnimationType: 'slide',
     slideSpringValues: [300, 50],
     slideTransitionSpeed: 0.6,
@@ -37,16 +37,16 @@ const options = {
     usingPreact: false
   },
   buttons: {
-    backgroundColor: 'rgba(30,30,36,0.8)',
+    backgroundColor: '#FA02B7',
     iconColor: 'rgba(255, 255, 255, 0.8)',
     iconPadding: '10px',
-    showAutoplayButton: true,
+    showAutoplayButton: false,
     showCloseButton: true,
     showDownloadButton: false,
     showFullscreenButton: false,
-    showNextButton: true,
-    showPrevButton: true,
-    showThumbnailsButton: true,
+    showNextButton: false,
+    showPrevButton: false,
+    showThumbnailsButton: false,
     size: '40px'
   },
   caption: {
@@ -58,7 +58,7 @@ captionFontSize: 'inherit',
 captionFontStyle: 'inherit',
 captionFontWeight: 'inherit',
 captionTextTransform: 'inherit',
-showCaption: true
+showCaption: false
   },
   thumbnails: {
     showThumbnails: false,
@@ -98,7 +98,7 @@ export default function PortfolioPage() {
 
 {/* <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}> */}
 
-  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'', overflow:'hidden', position:'relative', padding:' 0',}}>
+<div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
 
   <TwilightLogo style={{
   filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',
@@ -106,12 +106,12 @@ export default function PortfolioPage() {
 
 
 <div className="RArrow">
-  <span>&#10095;</span>
+ <span></span>
 </div>
-
+<SimpleReactLightbox>
 <SRLWrapper options={options}>
 
-<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'', padding:' 0'}}>
+<div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
 
 <div style={{width:'1000px', height:'1000px'}}></div>
 
@@ -286,7 +286,7 @@ export default function PortfolioPage() {
 
  
      </div>
-</SRLWrapper>
+</SRLWrapper></SimpleReactLightbox>
 
  {/* <Link className="post-card" state={{modal: true}} to="/legacy/" title="View Todd's Legacy Work" style={{position:'absolute', left:'0', top:'10px', zIndex:'1', width:'60px',  background:'rgba(0, 0, 0, .9)', height:'350px', display:'flex', borderRadius:'0 12px 12px 0'}}>
 

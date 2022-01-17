@@ -26,7 +26,7 @@ const IndexPage = ({data}) => (
   position:'absolute', zIndex:'-1', top:'15vh'}} />
 
   <div className="RArrow">
- <span>&#10095;</span>
+ <span></span>
 </div>
 <SimpleReactLightbox>
       <SRLWrapper options={options} className="">
@@ -41,6 +41,7 @@ const IndexPage = ({data}) => (
       image={edge.node.childImageSharp.gatsbyImageData}
       srl_gallery_image="true"
       alt={edge.node.name}
+      key={edge.node.id}
     />
     })}
     </div>
@@ -60,7 +61,7 @@ const options = {
     boxShadow: '0px 0px 20px #000',
     disableKeyboardControls: false,
     disablePanzoom: false,
-    disableWheelControls: false,
+    disableWheelControls: true,
     hideControlsAfter: false,
     lightboxTransitionSpeed: 0.3,
     lightboxTransitionTimingFunction: 'linear',
@@ -72,7 +73,7 @@ const options = {
     usingPreact: false
   },
   buttons: {
-    backgroundColor: 'rgba(30,30,36,0.8)',
+    backgroundColor: '#FA02B7',
     iconColor: 'rgba(255, 255, 255, 0.8)',
     iconPadding: '10px',
     showAutoplayButton: false,

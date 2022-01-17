@@ -1210,7 +1210,7 @@ body .item img {object-fit: contain !important;}
 .horizontal-scroll-wrapper  img{cursor:zoom-in !important; 
    /* border-radius:12px !important; */
    object-fit: contain !important;
-max-height: 80vh !important;
+max-height: 60vh ;
   }
               
               .horizontal-scroll-wrapper img:hover{border:0px solid rgb(187 54 0) !important;

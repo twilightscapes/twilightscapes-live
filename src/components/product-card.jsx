@@ -51,10 +51,11 @@ export function ProductCard({ product, eager }) {
     >
       <div className="item" data-name="product-image-box1" style={{overflow:'', width:'', backgroundSize: '', justifyContent:''}}>
         <GatsbyImage
+          key={firstImage.id}
           alt={firstImage?.altText ?? title}
           image={firstImage?.gatsbyImageData ?? storefrontImageData}
           loading={eager ? "eager" : "lazy"
-
+          
         }
         />
       </div>
