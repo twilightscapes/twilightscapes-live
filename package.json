@@ -1,16 +1,9 @@
 {
-  "name": "@stackrole/gatsby-starter-foundation",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-  "version": "2.0.0",
-  "author": "Stackrole <stackrole@gmail.com>",
+  "name": "@vidsock/gatsby-vidsock",
+  "description": "Next Gen NFT Marketing Platform",
+  "version": "1.0.0",
+  "author": "Todd Lambert <toddlambert@gmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stackrole/gatsby-starter-foundation.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stackrole/gatsby-starter-foundation/issues"
-  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages"
@@ -24,7 +17,7 @@
     "commentbox.io": "^2.1.0",
     "debounce": "^1.2.1",
     "fontsource-hammersmith-one": "^4.0.0",
-    "gatsby": "^3.2.0",
+    "gatsby": "^4.0.0",
     "gatsby-background-image": "^1.1.2",
     "gatsby-cli": "^4.0.0",
     "gatsby-image": "^2.0.23",

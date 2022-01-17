@@ -3381,10 +3381,10 @@ background: rgba(0,0,0,0.6);
 
               @media (hover: hover) {
 
-                #posts{
-                  /* transform: scale(1); */
-                  /* transition: all .8s ease-in-out; */
-                }
+                /* #posts{
+                  transform: scale(1);
+                  transition: all .8s ease-in-out;
+                } */
 
 
                 .container2:hover, .container2:active { 
