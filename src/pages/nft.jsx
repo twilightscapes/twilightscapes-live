@@ -99,20 +99,7 @@ export const query = graphql`
 <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
 
 
-<p><a aria-label="Link to OpenSea" href="https://opensea.io/collection/twilightscapes"
-            className="navbar-item button fire actionJackson"
-            style={{
-              cursor:'pointer',
-              width:'80%',
-              maxWidth:'600px',
-              margin:'0 auto',
-              display:'flex',
-              alignSelf:'center'
-            }}
-            rel="noreferrer" target="_blank">
-              This Collection Available on OpenSea 
-<span className="icon -right"><RiArrowRightSLine /></span></a>
-            </p>
+
 
 <h1 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)'}}>NFT Collectible Photography</h1>
           
@@ -156,7 +143,21 @@ export const query = graphql`
 <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', maxHeight:'50vh', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 <iframe title="Twilightscapes on OpenSea" id="youtube2" className="blog-video1" width="100%" height="400" src="https://opensea.io/collection/twilightscapes" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'30vh', borderRadius:'12px'  }} />
 </div>
-
+<br />
+<p><a aria-label="Link to OpenSea" href="https://opensea.io/collection/twilightscapes"
+            className="navbar-item button fire actionJackson"
+            style={{
+              cursor:'pointer',
+              width:'80%',
+              maxWidth:'600px',
+              margin:'0 auto',
+              display:'flex',
+              alignSelf:'center'
+            }}
+            rel="noreferrer" target="_blank">
+              This Collection Available on OpenSea 
+<span className="icon -right"><RiArrowRightSLine /></span></a>
+            </p>
 
 
 {/* <br />

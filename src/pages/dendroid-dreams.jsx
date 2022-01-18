@@ -67,20 +67,7 @@ export const query2 = graphql`
 <div className="" style={{background:'', padding:'1vh 8vw 0 8vw', textAlign:'left'}}>
                   
 
-<p><a aria-label="Link to OpenSea" href="https://opensea.io/collection/dendroid-dreams"
-            className="navbar-item button fire actionJackson"
-            style={{
-              cursor:'pointer',
-              width:'80%',
-              maxWidth:'600px',
-              margin:'0 auto',
-              display:'flex',
-              alignSelf:'center'
-            }}
-            rel="noreferrer" target="_blank">
-              This Collection Available on OpenSea 
-<span className="icon -right"><RiArrowRightSLine /></span></a>
-            </p>
+
 
 {/* <Link to="/nft/"
 className=""
@@ -182,6 +169,21 @@ rel="noreferrer" target="_blank"
 
 {/* <br /><br />
 <NFTMenu /> */}
+<br />
+<p><a aria-label="Link to OpenSea" href="https://opensea.io/collection/dendroid-dreams"
+            className="navbar-item button fire actionJackson"
+            style={{
+              cursor:'pointer',
+              width:'80%',
+              maxWidth:'600px',
+              margin:'0 auto',
+              display:'flex',
+              alignSelf:'center'
+            }}
+            rel="noreferrer" target="_blank">
+              This Collection Available on OpenSea 
+<span className="icon -right"><RiArrowRightSLine /></span></a>
+            </p>
 
 <div className='' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', }}>
 

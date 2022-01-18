@@ -235,7 +235,7 @@ export function Footer() {
 <br />
 <br />
 
-<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a></div>
+<a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a></div>
 
 
 
