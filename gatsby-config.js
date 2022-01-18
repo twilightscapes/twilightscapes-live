@@ -173,7 +173,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-netlify`,
+  
 
     {
       resolve: `gatsby-plugin-netlify-cms`,
