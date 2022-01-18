@@ -5,7 +5,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu-old"
+import GalleryMenu from "../../components/galleryMenu"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
