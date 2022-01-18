@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Seo } from "../components/seo"
 import CasePanels from "../components/casepanels"
 import { SRLWrapper } from "simple-react-lightbox"
+import galleryMaker from "../components/gallerymaker"
 import styled from "styled-components"
 const CustomBox = styled.div`
 .horizontal-scroll-wrapper {
@@ -53,6 +54,11 @@ export default function testPage() {
    return (
     <CustomBox>
       <Layout>
+
+
+      <galleryMaker />
+
+
 <div className="sliderholder1" style={{height:'70px', overflow:'hidden', width:'', margin:'5rem auto 0 auto', objectFit:'contain', position:'relative', display:'flex', placeContent:'', justifyContent:'', flexDirection:'', border:'5px solid black', borderRadius:''}}>
 
   {/* <div style={{}}>Scroll to browse galleries --&lgt;</div> */}

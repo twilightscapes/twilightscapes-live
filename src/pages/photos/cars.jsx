@@ -148,18 +148,21 @@ showCaption: false
 export default IndexPage
 
 export const indexQuery = graphql`
-  query AssetsPhotos {
-    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/cars/"}}) {
-      edges {
-        node {
-          name
-          id
-          relativePath
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-          }
+query carsPhotos {
+  allFile(
+    filter: {relativeDirectory: {eq: "cars"}, relativePath: {}}
+    sort: {order: ASC, fields: name}
+  ) {
+    edges {
+      node {
+        name
+        id
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
         }
       }
     }
   }
+}
 `

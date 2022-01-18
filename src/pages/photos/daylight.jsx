@@ -150,18 +150,21 @@ showCaption: false
 export default IndexPage
 
 export const indexQuery = graphql`
-  query dayPhotos {
-    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/daytime/"}}) {
-      edges {
-        node {
-          name
-          id
-          relativePath
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-          }
+query daylightPhotos {
+  allFile(
+    filter: {relativeDirectory: {eq: "daytime"}, relativePath: {}}
+    sort: {order: ASC, fields: name}
+  ) {
+    edges {
+      node {
+        name
+        id
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
         }
       }
     }
   }
+}
 `

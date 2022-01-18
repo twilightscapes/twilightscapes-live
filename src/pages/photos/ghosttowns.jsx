@@ -145,18 +145,21 @@ showCaption: false
 export default IndexPage
 
 export const indexQuery = graphql`
-  query ghostPhotos {
-    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/ghosttowns/"}}) {
-      edges {
-        node {
-          name
-          id
-          relativePath
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-          }
+query ghostPhotos {
+  allFile(
+    filter: {relativeDirectory: {eq: "ghosttowns"}, relativePath: {}}
+    sort: {order: ASC, fields: name}
+  ) {
+    edges {
+      node {
+        name
+        id
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
         }
       }
     }
   }
+}
 `

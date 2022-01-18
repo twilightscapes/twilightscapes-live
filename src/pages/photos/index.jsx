@@ -5,7 +5,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu"
+import GalleryMenu from "../../components/galleryMenu-old"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
@@ -120,18 +120,21 @@ showCaption: false
 export default IndexPage
 
 export const indexQuery = graphql`
-  query indexPhotos {
-    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/favorites/"}}) {
-      edges {
-        node {
-          name
-          id
-          relativePath
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-          }
+query fav1Photos {
+  allFile(
+    filter: {relativeDirectory: {eq: "favorites"}, relativePath: {}}
+    sort: {order: ASC, fields: name}
+  ) {
+    edges {
+      node {
+        name
+        id
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
         }
       }
     }
   }
+}
 `

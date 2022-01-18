@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu"
+import GalleryMenu from "../../components/galleryMenu-old"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 import TwilightLogo from "../../../static/assets/TSidebarHover.svg"
@@ -130,21 +130,21 @@ showCaption: false
 export default Gal1Page
 
 export const indexQuery = graphql`
-  query gal1hPhotos {
-    allFile(
-      filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/gallery1/"}}
-      sort: { order: ASC, fields: name }
-    ) {
-      edges {
-                node {
-                 name
-                  id
-                 relativePath
-                 childImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-                }
-               }
-            }
-          }
+query gallery1Photos {
+  allFile(
+    filter: {relativeDirectory: {eq: "gallery1"}, relativePath: {}}
+    sort: {order: ASC, fields: name}
+  ) {
+    edges {
+      node {
+        name
+        id
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
         }
+      }
+    }
+  }
+}
 `
