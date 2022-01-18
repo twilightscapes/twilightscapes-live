@@ -1235,6 +1235,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/hammersmith-one@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/hammersmith-one/-/hammersmith-one-4.5.0.tgz#04c083eb01db34a19d8a1c3de63bc350d6c61a69"
+  integrity sha512-DJ+AOHGUBGKZ2/PZmAfuMPQPwoXlQn8mRnZEVCt31gnoSaOmxO4HUWVlt24ADATmQqHwETx3Le1O7oW557PS2A==
+
 "@fontsource/roboto@^4.5.0":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.1.tgz#63f7b783f755d8f6727eb60198627e7e1be3ac20"
@@ -6097,11 +6102,6 @@ follow-redirects@^1.0.0, follow-redirects@^1.14.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
   integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
 
-fontsource-hammersmith-one@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fontsource-hammersmith-one/-/fontsource-hammersmith-one-4.0.0.tgz#446b976453f5f263cc30e0a940d6f787263ecf27"
-  integrity sha512-YjOZTkgpQgqBB7WWbM6iH1lRA9L0Qbx4cp361AVH0jBDxX2ITMHrTO5sywZFj2bx9P9KzbD9ymdvVQfH4NAJaQ==
-
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -6768,7 +6768,7 @@ gatsby-worker@^1.5.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.0.0:
+gatsby@^4.5:
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.5.3.tgz#69a8e80e6f3eb7bb51a0e193d1725fab081cf5e6"
   integrity sha512-YajcPykB+LMeUSEkxB/EouzURjOaVDA2cHCyzhgL0U1vpz4fIHWWxNzPhJ+XxWdzyJCJhZMms2eY2O6vlJMApA==
@@ -15498,9 +15498,9 @@ xss@^1.0.6:
     cssfilter "0.0.10"
 
 xstate@^4.26.0, xstate@^4.26.1:
-  version "4.27.0"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.27.0.tgz#f3c918ac4229bd5e6dec2231e991ba55c6bfa559"
-  integrity sha512-ohOwDM9tViC/zSSmY9261CHblDPqiaAk5vyjVbi69uJv9fGWMzlm0VDQwM2OvC61GKfXVBeuWSMkL7LPUsTpfA==
+  version "4.28.0"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.28.0.tgz#e5802638120951793ef7ea5a91e975f86244a73c"
+  integrity sha512-qavuFNzejRZVR75Pmbc7zOuUvVOWoABn6sucHr9M5oWjP3LeJ8A5T9lYfADiaY0o9E6q1T63f6JIhCBgt4XTdw==
 
 xtend@^4.0.0, xtend@^4.0.1:
   version "4.0.2"
