@@ -13,7 +13,7 @@ const CustomBox = styled.div`
   display: inline-block;
   top: 0;
   left: 0;
-  // width: calc(100px + 1px);
+  width: calc(100px + 1px);
   max-width:;
   height: 100vw;
   margin: 0;
@@ -24,6 +24,7 @@ const CustomBox = styled.div`
   transform: rotate(-90deg) translateY(-0px);
   transform-origin: right top;
 }
+
 .horizontal-scroll-wrapper > div {
   display: block;
   padding: 0;
@@ -39,16 +40,9 @@ const CustomBox = styled.div`
 fontSize:100%;
 color:#fff !important;
 background:#000;
-padding:3px 40px;
-border-radius:12px;
+padding:10px 40px;
+border-radius:12px 12px 0 0;
 }
-
-.squares > * {
-
-}
-
-
-
 
 .squares {
   padding: 0 0 0 100px;
@@ -57,13 +51,17 @@ border-radius:12px;
   width: auto;
   height: auto;
   text-align:center;
-  margin: 0 0 56% 0;
+  margin: 0 0 80% 0;
 }
 
-// .squares > div:first{
-//   border:1px solid red !important;
-//   margin: 0 0 20% 0 !important
-// }
+@media (min-width: 58em) {
+  .squares > div {
+    margin: 0 0 60% 0 !important;
+  }
+  .sliderholder1{height:65px}
+
+}
+
 
 `
 export default function testPage() {
@@ -72,11 +70,11 @@ export default function testPage() {
 
 
       
-<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'1rem 0', objectFit:'contain', position:'relative', display:'flex', placeContent:'', justifyContent:'', flexDirection:'', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'-5px', background:'#222', borderTop:'0px'}}>
+<div className="sliderholder1" style={{height:'50px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#222', borderTop:'0px'}}>
 
   
 
-<div className="horizontal-scroll-wrapper squares" style={{marginTop:'0'}}>
+<div className="horizontal-scroll-wrapper squares" style={{margin:'20px'}}>
 
 
 
