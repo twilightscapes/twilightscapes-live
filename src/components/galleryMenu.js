@@ -26,7 +26,7 @@ const CustomBox = styled.div`
 }
 .horizontal-scroll-wrapper > div {
   display: block;
-  padding: 5px;
+  padding: 0;
   // background: #cab;
   transform: rotate(90deg);
   transform-origin: right top;
@@ -39,8 +39,8 @@ const CustomBox = styled.div`
 fontSize:100%;
 color:#fff !important;
 background:#000;
-padding:1px 30px;
-
+padding:3px 40px;
+border-radius:12px;
 }
 
 .squares > * {
@@ -51,31 +51,36 @@ padding:1px 30px;
 
 
 .squares {
-  padding: 0 0 0 0;
+  padding: 0 0 0 100px;
 }
 .squares > div {
   width: auto;
   height: auto;
   text-align:center;
-  margin: 0 0 50% 0;
+  margin: 0 0 56% 0;
 }
 
-.squares > div:first{
-  border:1px solid red !important;
-  margin: 0 0 20% 0 !important
-}
+// .squares > div:first{
+//   border:1px solid red !important;
+//   margin: 0 0 20% 0 !important
+// }
 
 `
 export default function testPage() {
    return (
     <CustomBox>
-<div className="sliderholder1" style={{height:'75px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'1rem 0', objectFit:'contain', position:'relative', display:'flex', placeContent:'', justifyContent:'', flexDirection:'', border:'0px solid black', borderRadius:'12px', position:'relative', top:'-5px', background:'', borderTop:'0px'}}>
-{/* 
-  <div style={{textAlign:'center', position:'absolute', bottom:'0', width:'100%'}}>Scroll to browse galleries --&gt;</div> */}
 
-<div className="horizontal-scroll-wrapper squares" style={{display:''}}>
 
-<div style={{width:'1000px', height:'100px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
+      
+<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'1rem 0', objectFit:'contain', position:'relative', display:'flex', placeContent:'', justifyContent:'', flexDirection:'', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'-5px', background:'#222', borderTop:'0px'}}>
+
+  
+
+<div className="horizontal-scroll-wrapper squares" style={{marginTop:'0'}}>
+
+
+
+<div style={{width:'100px', height:'100px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
 
   <div><Link className="button1" to="/photos/milky-way">
   Milky Way
@@ -110,6 +115,7 @@ export default function testPage() {
 
 
 </div>
+<div style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:''}}>Scroll 	&rang;</div>
 </div>
 
 
