@@ -67,7 +67,7 @@ export const query = graphql`
 `
 
        // export default function nftPage({ data: { products } }) {
-              export default function crazygeoPage({ data }) {
+              export default function crazygeo1Page({ data }) {
                 
 
   return (

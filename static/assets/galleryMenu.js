@@ -8,11 +8,59 @@ import { Link } from "gatsby"
 // import { SRLWrapper } from "simple-react-lightbox"
 import styled from "styled-components"
 const CustomBox = styled.div`
+.horizontal-scroll-wrapper {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: calc(100px + 1px);
+  max-width:;
+  height: 100vw;
+  margin: 0;
+  padding-top: 1px;
+  // background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-0px);
+  transform-origin: right top;
+}
 
+.horizontal-scroll-wrapper > * {
+  display: block;
+  padding: 0;
+  // background: #cab;
+  transform: rotate(90deg);
+  transform-origin: right top;
+  border:0px solid red;
+}
 
+.button1{
+  width:100px;
+  cursor:pointer;
+fontSize:100%;
+color:#fff !important;
+// background:#000;
+padding:10px 40px;
+border-radius:12px 12px 0 0;
+}
 
+.squares {
+  padding: 0 0 0 100px;
+}
+.squares > * {
+  width: auto;
+  height: auto;
+  text-align:center;
+  margin: 0 0 80% 0;
+}
 
+@media (min-width: 58em) {
+  .squares > * {
+    margin: 0 0 60% 0 !important;
+  }
+  .sliderholder1{height:65px}
 
+}
 
 
 `
@@ -26,7 +74,7 @@ export default function testPage() {
 
   
 
-<div className="horizontal-scroll-wrapper spares" style={{margin:'20px'}}>
+<div className="horizontal-scroll-wrapper squares" style={{margin:'20px'}}>
 
 
 

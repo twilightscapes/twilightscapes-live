@@ -1387,6 +1387,25 @@ height:100%;
 
 
 
+
+.spares {
+  padding: 0 0 0 100px;
+}
+.spares > * {
+  width: auto;
+  height: auto;
+  text-align:center;
+  margin: 0 0 80% 0;
+}
+
+@media (min-width: 58em) {
+  .spares > * {
+    margin: 0 0 60% 0 !important;
+  }
+  .sliderholder1{height:65px}
+
+}
+
 /* .horizontal-scroll-wrapper .item :first-child{
   border:2px solid red !important;
   } */
