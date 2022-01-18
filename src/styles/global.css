@@ -833,7 +833,7 @@ p{margin-bottom: 1rem;}
 
 .title1{
 
-  font-size: clamp(01rem, 1vw + 1.5rem, 2.5rem);
+  font-size: clamp(1rem, 1vw + 1.5rem, 2.5rem);
 
   padding-bottom:5px;
   text-align:center;

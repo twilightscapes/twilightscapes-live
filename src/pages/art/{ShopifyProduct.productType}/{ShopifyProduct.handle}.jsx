@@ -341,7 +341,11 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-<div className="round" style={{ overflow:'hidden', position:'relative', zIndex:'0', marginTop:'2rem'}}>
+<div className="round" style={{ overflow:'hidden', position:'relative', zIndex:'0', marginTop:'5rem'}}>
+
+<GoBack />
+
+<br/><br />
 
   <h3 style={{fontSize:'130%', fontWeight:'bold', textAlign:'center'}}>About the photographer</h3>
 

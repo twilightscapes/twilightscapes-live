@@ -115,9 +115,9 @@ export default function testPage() {
   In The City
 </Link></div>
 
-<div><a className="button disabled" to="/photos/churches">
+{/* <div><a className="button disabled" >
   Churches
-</a></div>
+</a></div> */}
 
 
 
