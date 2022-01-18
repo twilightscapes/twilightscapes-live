@@ -1,11 +1,11 @@
 import * as React from "react"
 // import { Layout } from "../components/layout"
-import GoBack from "./goBack"
+// import GoBack from "./goBack"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Seo } from "./seo"
-import CasePanels from "./casepanels"
-import { SRLWrapper } from "simple-react-lightbox"
+// import { StaticImage } from "gatsby-plugin-image"
+// import { Seo } from "./seo"
+// import CasePanels from "./casepanels"
+// import { SRLWrapper } from "simple-react-lightbox"
 import styled from "styled-components"
 const CustomBox = styled.div`
 .horizontal-scroll-wrapper {
@@ -70,7 +70,7 @@ export default function testPage() {
 
 
       
-<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#080808', borderTop:'0px'}}>
+<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#080808', borderTop:'0px'}}>
 
   
 

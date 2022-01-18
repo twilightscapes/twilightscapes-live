@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import GoBack from "../components/goBack"
+// import GoBack from "../components/goBack"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Seo } from "../components/seo"
-import CasePanels from "../components/casepanels"
-import { SRLWrapper } from "simple-react-lightbox"
-import galleryMaker from "../components/gallerymaker"
+// import { StaticImage } from "gatsby-plugin-image"
+// import { Seo } from "../components/seo"
+// import CasePanels from "../components/casepanels"
+// import { SRLWrapper } from "simple-react-lightbox"
+// import galleryMaker from "../components/gallerymaker"
 import styled from "styled-components"
 const CustomBox = styled.div`
 .horizontal-scroll-wrapper {

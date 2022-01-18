@@ -11,7 +11,7 @@ import { ProductListing } from "../../components/product-listing"
 // import TouchUp from '../components/TouchUp'
 // import { RiSendPlane2Line } from "react-icons/ri"
 import { Helmet } from "react-helmet"
-import { FiZoomIn } from 'react-icons/fi'
+// import { FiZoomIn } from 'react-icons/fi'
 // import {
 //   container,
 //   intro,

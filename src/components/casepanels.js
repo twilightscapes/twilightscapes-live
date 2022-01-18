@@ -3,13 +3,13 @@ import * as React from "react"
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'
 // import GalleryMenu from '../../components/GalleryMenu'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import Image from './Image'
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 // import { MdPlayArrow } from 'react-icons/md'
-import { IoMdFingerPrint } from 'react-icons/io'
+// import { IoMdFingerPrint } from 'react-icons/io'
 import { RiSendPlane2Line } from "react-icons/ri"
 // import DownArrow from './DownArrow'
 // import { RiArrowDownCircleLine } from 'react-icons/ri'
