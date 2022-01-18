@@ -517,10 +517,12 @@ const YouTube = frontmatter.youtuber
 
 
           <div
-          style={{}}
+          style={{padding:'0 8% 0 6.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+
+
   
   {/* <br />
           <Link

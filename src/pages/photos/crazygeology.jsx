@@ -184,7 +184,7 @@ export const query = graphql`
 <GoBack />
     
 
-<blockquote style={{fontSize:'200%', borderRadius:'12px', width:'100%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>What's the craziest rock stone formation you've seen?</blockquote>
+<p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>What's the craziest rock stone formation you've seen?</p>
 
 
 

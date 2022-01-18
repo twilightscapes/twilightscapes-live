@@ -70,7 +70,7 @@ export default function testPage() {
 
 
       
-<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#000', borderTop:'0px'}}>
+<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#080808', borderTop:'0px'}}>
 
   
 
@@ -122,7 +122,7 @@ export default function testPage() {
 
 
 </div>
-<div className="RArrow" style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:'', zIndex:'-1'}}>Scroll 	&rang;</div>
+<div className="RArrow" style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:'', zIndex:'-1'}}> <span></span> </div>
 
 
 </div>

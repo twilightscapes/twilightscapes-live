@@ -628,7 +628,7 @@ outline:1px rgba(0, 0, 0, 1);
   font-weight: bold;
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
-
+background:#080808;
 } 
 
 
@@ -1366,11 +1366,11 @@ height:100%;
   scroll-snap-type: y mandatory;
   }
   .RArrow span::before{
-  content:"\2329  swipe  \232a" !important;
+  content:"\2329  swipe" !important;
   }
 }
 .RArrow span::before{
-  content:"\2329  scroll  \232a";
+  content:"scroll  \232a";
 }
 .RArrow{
   position:absolute;
@@ -1378,7 +1378,7 @@ height:100%;
   text-transform:uppercase;
   bottom:20px;
   text-align:center;
-  animation: fadeout 3s forwards;
+  animation: fadeout 4s forwards;
 }
 .RArrow span{
   font-size:18px;

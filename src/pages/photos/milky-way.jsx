@@ -185,7 +185,7 @@ export const query = graphql`
 
 
 
-<blockquote style={{fontSize:'200%', borderRadius:'12px', width:'100%', margin:'3rem auto 1rem auto', padding:'0 8%', textAlign:'center'}}>Do you like the Milky Way as much as I do?<br /> I'd love to hear ahout it.</blockquote>
+<p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Do you like the Milky Way as much as I do?<br /> I'd love to hear ahout it.</p>
 
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
