@@ -16,7 +16,7 @@ export const pageQuery = graphql`
     }
   }
 `
-const AboutPage = ({ data }) => {
+const About1Page = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -31,4 +31,4 @@ const AboutPage = ({ data }) => {
   )
 }
 
-export default AboutPage
+export default About1Page

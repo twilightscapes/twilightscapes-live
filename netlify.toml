@@ -7,8 +7,6 @@
   NODE_VERSION = "14.17.5"
   NODE_OPTIONS = "--max_old_space_size=4096"
 
-[[plugins]]
-package = "@netlify/plugin-gatsby"
 
 [[redirects]]
   from = "/deconstructed-photography"
