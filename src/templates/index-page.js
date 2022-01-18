@@ -346,7 +346,7 @@ const YouTube = frontmatter.youtuber
       <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
       <TwilightLogo style={{
-      filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',
+      filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'45vw', opacity:'.8',
       position:'absolute', zIndex:'-1', top:'15vh'}} />
       
       <div className="RArrow">

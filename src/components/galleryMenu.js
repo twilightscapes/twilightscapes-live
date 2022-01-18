@@ -39,7 +39,7 @@ const CustomBox = styled.div`
   cursor:pointer;
 fontSize:100%;
 color:#fff !important;
-background:#000;
+// background:#000;
 padding:10px 40px;
 border-radius:12px 12px 0 0;
 }
@@ -70,7 +70,7 @@ export default function testPage() {
 
 
       
-<div className="sliderholder1" style={{height:'50px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#222', borderTop:'0px'}}>
+<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#222', borderTop:'0px'}}>
 
   
 
@@ -80,40 +80,40 @@ export default function testPage() {
 
 <div style={{width:'100px', height:'100px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
 
-  <div><Link className="button1" to="/photos/milky-way">
+  <div><Link className="button" to="/photos/milky-way">
   Milky Way
 </Link></div>
 
-<div><Link className="button1" to="/photos/ghosttowns">
+<div><Link className="button" to="/photos/ghosttowns">
   Ghost Towns
 </Link></div>
 
 
-<div><Link className="button1" to="/photos/cars">
+<div><Link className="button" to="/photos/cars">
   Relics of Rust
 </Link></div>
 
-<div><Link className="button1" to="/photos/crazygeology"
+<div><Link className="button" to="/photos/crazygeology"
 >
   Crazy Geology
 </Link></div>
 
 
-<div><Link className="button1" to="/photos/dendroiddreams">
+<div><Link className="button" to="/photos/dendroiddreams">
   Dendroid Dreams
 </Link></div>
 
-<div><Link className="button1" to="/photos/gasstations">
+<div><Link className="button" to="/photos/gasstations">
   Gas Stations
 </Link></div>
 
-<div><Link className="button1" to="/photos/daylight">
+<div><Link className="button" to="/photos/daylight">
   Daylight
 </Link></div>
 
 
 </div>
-<div style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:''}}>Scroll 	&rang;</div>
+<div className="RArrow" style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:''}}>Scroll 	&rang;</div>
 </div>
 
 

@@ -196,7 +196,7 @@ export function Footer() {
 
 
 
-    <footer className={footerStyle} style={{padding:'0 0', marginTop:'0', position:'relative'}}>
+    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'0', position:'relative'}}>
 
     <Consent />
 

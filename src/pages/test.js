@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Layout } from "../components/layout"
+import { Layout } from "../components/layout"
 import GoBack from "../components/goBack"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -17,7 +17,7 @@ const CustomBox = styled.div`
   max-width:;
   height: 100vw;
   margin: 0;
-  padding-top: 1px;
+  padding-top: 40px;
   // background: #abc;
   overflow-y: auto;
   overflow-x: hidden;
@@ -26,14 +26,14 @@ const CustomBox = styled.div`
 }
 .horizontal-scroll-wrapper > div {
   display: block;
-  padding: 5px;
+  padding: ;
   // background: #cab;
   transform: rotate(90deg);
   transform-origin: right top;
   border:0px solid red;
 }
 
-.button{width:100px}
+// .button{width:200px}
 
 .squares > * {
 
@@ -45,104 +45,49 @@ const CustomBox = styled.div`
   width: auto;
   height: auto;
   text-align:center;
-  margin: 0 0 28vw 0;
+  margin: 45%  0;
 }
 
 `
 export default function testPage() {
    return (
     <CustomBox>
-<div className="sliderholder1" style={{height:'35px', overflow:'hidden', width:'50vw', margin:'-50px auto 0 auto', objectFit:'contain', position:'relative', display:'flex', placeContent:'', justifyContent:'', flexDirection:'', border:'5px solid black', borderRadius:'12px'}}>
+      <Layout>
+<div className="sliderholder1" style={{height:'70px', overflow:'hidden', width:'', margin:'5rem auto 0 auto', objectFit:'contain', position:'relative', display:'flex', placeContent:'', justifyContent:'', flexDirection:'', border:'5px solid black', borderRadius:''}}>
 
-  <div style={{}}>Scroll to browse galleries --&lgt;</div>
+  {/* <div style={{}}>Scroll to browse galleries --&lgt;</div> */}
 
-<div className="horizontal-scroll-wrapper squares" style={{display:''}}>
+<div className="horizontal-scroll-wrapper squares" style={{margin:'20px'}}>
 
-<div style={{width:'1000px', height:'1000px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
+<div style={{width:'10px', height:'80px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
 
-  <div><Link className="button" to="/photos/milky-way"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+  <div><Link className="button" to="/photos/milky-way">
   Milky Way
 </Link></div>
 
-<div><Link className="button" to="/photos/ghosttowns"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+<div><Link className="button" to="/photos/ghosttowns">
   Ghost Towns
 </Link></div>
 
 
-<div><Link className="button" to="/photos/cars"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+<div><Link className="button" to="/photos/cars">
   Cars
 </Link></div>
 
-<div><Link className="button" to="/photos/crazygeology"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+<div><Link className="button" to="/photos/crazygeology">
   Crazy Geology
 </Link></div>
 
 
-<div><Link className="button" to="/photos/dendroiddreams"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+<div><Link className="button" to="/photos/dendroiddreams">
   Dendroid Dreams
 </Link></div>
 
-<div><Link className="button" to="/photos/gasstations"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+<div><Link className="button" to="/photos/gasstations">
   Gas Stations
 </Link></div>
 
-<div><Link className="button" to="/photos/daylight"
-className=""
-style={{
-cursor:'pointer',
-fontSize:'100%',
-color:'#fff !important',
-background:'#FF0000',
-padding:'1px 10px'
-}}>
+<div><Link className="button" to="/photos/daylight">
   Daylight
 </Link></div>
 
@@ -156,7 +101,7 @@ padding:'1px 10px'
 
 
 
-
+<div className="spacer66"></div>
 
 
 
@@ -329,6 +274,7 @@ padding:'1px 10px'
   </div> */}
     
     {/* </Layout> */}
+    </Layout>
     </CustomBox>
   )
 }
