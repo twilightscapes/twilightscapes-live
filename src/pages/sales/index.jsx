@@ -76,9 +76,9 @@ export default function GalleryPage({ data }) {
 
 
 
-<div className="zoomer" style={{zIndex:'1', position:'fixed', bottom:'5vh', display:'flex', justifyContent:'center', width:'100vw'}}>
+{/* <div className="zoomer" style={{zIndex:'1', position:'fixed', bottom:'5vh', display:'flex', justifyContent:'center', width:'100vw'}}>
     <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
-</div>
+</div> */}
 
 
 
@@ -87,7 +87,7 @@ export default function GalleryPage({ data }) {
 
     
 
-    <div className="frontprod" style={{marginTop:'2rem'}}>
+    <div className="frontprod" style={{marginTop:''}}>
       
 
       <ProductListing products={data.shopifyCollection.products} className="frontprod" />

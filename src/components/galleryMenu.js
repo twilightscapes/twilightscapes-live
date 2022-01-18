@@ -25,7 +25,7 @@ const CustomBox = styled.div`
   transform-origin: right top;
 }
 
-.horizontal-scroll-wrapper > div {
+.horizontal-scroll-wrapper > * {
   display: block;
   padding: 0;
   // background: #cab;
@@ -47,7 +47,7 @@ border-radius:12px 12px 0 0;
 .squares {
   padding: 0 0 0 100px;
 }
-.squares > div {
+.squares > * {
   width: auto;
   height: auto;
   text-align:center;
@@ -55,7 +55,7 @@ border-radius:12px 12px 0 0;
 }
 
 @media (min-width: 58em) {
-  .squares > div {
+  .squares > * {
     margin: 0 0 60% 0 !important;
   }
   .sliderholder1{height:65px}
@@ -70,7 +70,7 @@ export default function testPage() {
 
 
       
-<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#222', borderTop:'0px'}}>
+<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', position:'relative', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#000', borderTop:'0px'}}>
 
   
 
@@ -111,9 +111,20 @@ export default function testPage() {
   Daylight
 </Link></div>
 
+<div><Link className="button" to="/photos/in-the-city">
+  In The City
+</Link></div>
+
+<div><a className="button disabled" to="/photos/churches">
+  Churches
+</a></div>
+
+
 
 </div>
-<div className="RArrow" style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:''}}>Scroll 	&rang;</div>
+<div className="RArrow" style={{textAlign:'center', position:'absolute', left:'20px', bottom:'20px', width:'', zIndex:'-1'}}>Scroll 	&rang;</div>
+
+
 </div>
 
 

@@ -93,6 +93,45 @@ export const query = graphql`
     <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
 </div> */}
 
+
+
+
+
+
+
+
+    {/* <div id="vidtop-content">
+<div className="vid-info">
+	  <strong>Meet Todd</strong>
+	  <p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.</p>
+     <p>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of</p>
+  </div>
+</div> */}
+ 
+ {/* <GoBack /> */}
+ 
+
+
+
+{/* <GalleryMenu /> */}
+
+
+ {/* <ShareSocial />
+<br /><br /><br /> */}
+
+
+
+
+
+
+<div className="nft"><ProductListing products={data.shopifyCollection.products} />
+</div>
+
+
+<GalleryMenu />
+
+
+
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
     <ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
@@ -143,47 +182,9 @@ export const query = graphql`
 
 </div>
 
-
-
-
-
-
-    {/* <div id="vidtop-content">
-<div className="vid-info">
-	  <strong>Meet Todd</strong>
-	  <p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.</p>
-     <p>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of</p>
-  </div>
-</div> */}
- 
- {/* <GoBack /> */}
- 
-
-<br />
-<br />
-
-<GalleryMenu />
-
- <br /><br />
- {/* <ShareSocial />
-<br /><br /><br /> */}
-
-
-
-
-
-
-<div className="nft"><ProductListing products={data.shopifyCollection.products} />
-</div>
-<br /><br />
-
-<GalleryMenu />
-
 <br /><br />
  <ShareSocial />
 <br />
-
-
 
 <br /><br />
 <GoBack />

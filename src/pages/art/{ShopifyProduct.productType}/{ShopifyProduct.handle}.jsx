@@ -174,7 +174,7 @@ export default function Product({ data: { product, suggestions } }) {
                 aria-label="gallery"
                 aria-describedby="instructions"
               >
-                <ul className={productImageList} style={{minHeight:'100vh'}}>
+                <ul className={productImageList} style={{minHeight:'80vh'}}>
                   {images.map((image, index) => (
                     <li
                       key={`product-image-${image.id}`}
@@ -196,7 +196,7 @@ export default function Product({ data: { product, suggestions } }) {
     ""
   )} */}
 
-  <GoBack />
+  {/* <GoBack /> */}
 
             </div>
                       </div>
@@ -320,9 +320,9 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-            <div className="mobile" style={{}}>
+            {/* <div className="mobile" style={{}}>
 <GoBack />
-</div>
+</div> */}
 
             {/* <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
             
@@ -341,7 +341,7 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-<div className="round" style={{ overflow:'hidden', position:'relative', zIndex:'0'}}>
+<div className="round" style={{ overflow:'hidden', position:'relative', zIndex:'0', marginTop:'2rem'}}>
 
   <h3 style={{fontSize:'130%', fontWeight:'bold', textAlign:'center'}}>About the photographer</h3>
 
