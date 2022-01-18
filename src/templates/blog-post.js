@@ -7,10 +7,13 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
+import { AiOutlineAudioMuted } from "react-icons/ai"
+import { Footer } from "../components/footer"
+import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
@@ -22,13 +25,72 @@ import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 // import InnerImageZoom from 'react-inner-image-zoom'
-import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+// import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'
 const CustomBox = styled.div`
 @media (max-width: 48rem) {
   .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
 }
 `
 
+const options = {
+  settings: {
+    autoplaySpeed: 3000,
+    // boxShadow: '0px 0px 20px #fff',
+    disableKeyboardControls: false,
+    disablePanzoom: false,
+    disableWheelControls: false,
+    hideControlsAfter: false,
+    lightboxTransitionSpeed: 0.3,
+    lightboxTransitionTimingFunction: 'linear',
+    // overlayColor: 'rgba(185, 7, 230, 0.5)',
+    slideAnimationType: 'slide',
+    slideSpringValues: [300, 50],
+    slideTransitionSpeed: 0.6,
+    slideTransitionTimingFunction: 'linear',
+    usingPreact: false
+  },
+  buttons: {
+    backgroundColor: 'rgba(30,30,36,0.8)',
+    iconColor: 'rgba(255, 255, 255, 0.8)',
+    iconPadding: '10px',
+    showAutoplayButton: true,
+    showCloseButton: true,
+    showDownloadButton: true,
+    showFullscreenButton: true,
+    showNextButton: true,
+    showPrevButton: true,
+    showThumbnailsButton: true,
+    size: '40px'
+  },
+  caption: {
+captionAlignment: 'start',
+captionColor: '#FFFFFF',
+captionContainerPadding: '20px 12% 30px 12%',
+captionFontFamily: 'inherit',
+captionFontSize: 'inherit',
+captionFontStyle: 'inherit',
+captionFontWeight: 'inherit',
+captionTextTransform: 'inherit',
+showCaption: true
+  },
+  thumbnails: {
+    showThumbnails: true,
+    thumbnailsAlignment: 'center',
+    thumbnailsContainerBackgroundColor: 'transparent',
+    thumbnailsContainerPadding: '0',
+    thumbnailsGap: '0 1px',
+    thumbnailsIconColor: '#ffffff',
+    thumbnailsOpacity: 0.4,
+    thumbnailsPosition: 'bottom',
+    thumbnailsSize: ['100px', '80px']
+  },
+  progressBar: {
+    backgroundColor: '#f2f2f2',
+    fillColor: '#000000',
+    height: '3px',
+    showProgressBar: true
+  },
+};
 
 const Pagination = props => (
   <div className="pagination -post">
@@ -146,9 +208,11 @@ else{
 function ShowSuggestion() {
 
   return (
-<div>
+<div style={{}}>
   
-<div style={{width:'90%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
+
+  
+<div style={{width:'90%', maxWidth:'400px', margin:'85px auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
 <IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
 <IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
   
@@ -251,7 +315,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   }
 
   function Iframer() {
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber
 
     return (
 
@@ -261,15 +325,15 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               url={iframeUrl}
               // url={[
               //   iframeUrl,
-              //   YoutuberSuggestion1,
-              //   YoutuberSuggestion2,
-              //   YoutuberSuggestion3
+              //   Suggestion1,
+              //   Suggestion2,
+              //   Suggestion3
               // ]}
               width="100%"
               height="100%"
               config={{
                 youtube: {
-                  playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+                  playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                 },
               }}
               loop
@@ -278,15 +342,19 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               playIcon={
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
               
     
-              <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+
+              <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+
+
+      {/* <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'300px', height:'150px', maxWidth:'300px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
     </div>
-          
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+          <br />
+              <div className="button" style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
+      {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
               </div>
               </button>}
                 light="../assets/transparent.png"
@@ -302,7 +370,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 
   function Iframer2() {
-    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
     return (
 
 <div>
@@ -314,6 +382,11 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           style={{zIndex:'0'}}
           playing
           playsinline
+          config={{
+            youtube: {
+              playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:0  }
+            },
+          }}
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
               
@@ -339,9 +412,56 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     )
   }
 
+  const YouTube2 = frontmatter.youtuber2
+  const AudioStart = frontmatter.audiostart
+  const AudioEnd = frontmatter.audioend
+
+  function Iframer3() {
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
+    return (
+
+<ReactPlayer
+          className='react-player67'
+          url={iframeUrl3}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
+          width="100%"
+          height=""
+          style={{marginTop:'80px', position:'relative'}}
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          playIcon={
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+          
+        <div className="" style={{position:'absolute', top:'-70px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+          
+      
+          {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
+
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.5rem', fontSize:'2rem', background:'linear-gradient(180deg, #777 30%, #333 80%)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'}}>Click For Audio</div></div>
+          
+          </div>
+          </button>}
+   
+            light="../assets/transparent.png"
+          />
+     
 
 
 
+
+    )
+  }
 
 
 
@@ -400,25 +520,34 @@ const { iconimage } = useSiteMetadata()
 
 
 
-     
 
 
 
-<div style={{display:'block', width:'100%', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
+
+<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
+
+<div style={{margin:'0 auto', width:'100%', overflow:''}}>
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
             />
+            // <InnerImageZoom src={getSrc(Image)} />
+
+
+            
             
           ) : (
 
-       
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+       ""
+            // <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
+          </div>
+
+       
 </div>
 
 
@@ -512,8 +641,8 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<br />
-<br />
+{/* <br />
+<br /> */}
 
 
 
@@ -524,6 +653,14 @@ const { iconimage } = useSiteMetadata()
           ) : (
             ""
           )}
+
+{ !YouTube2 ? (
+            ""
+       
+          ) : (
+            <Iframer3 />
+          )}
+
 
 
 
@@ -560,11 +697,12 @@ const { iconimage } = useSiteMetadata()
           )}
 
 
-
+<SRLWrapper options={options} className="">
       <div
-        className="blog-post-content" style={{ padding:'0 2rem', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'800px', margin:'0 auto', color:'inherit !important'}}
+        className="blog-post-content" style={{ padding:'0 ', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
-      />      
+      />    
+      </SRLWrapper>  
      
      <br /><br />
  
@@ -604,7 +742,7 @@ const { iconimage } = useSiteMetadata()
 
          
             <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-  <Countdown date={NftDrop} >
+  <Countdown daysInHours date={NftDrop} >
 <Completionist />
   </Countdown>
 
@@ -655,7 +793,7 @@ const { iconimage } = useSiteMetadata()
 <div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     <Iframer2 />
-
+                    
        </div></div>
        
           ) : (
@@ -666,7 +804,7 @@ const { iconimage } = useSiteMetadata()
 
 
       </article>
-
+  
 
 
       <div style={{padding:'0 5vw', color:'inherit !important'}}>
@@ -752,6 +890,7 @@ const { iconimage } = useSiteMetadata()
    <br />
    <br />
    </CustomBox>
+   <Footer />
     </Layout>
 
 
@@ -787,12 +926,15 @@ export const pageQuery = graphql`
         title
         description
         youtuber
+        youtuber2
         youtubeshoworiginal
         youtubersuggestion1
         youtubersuggestion2
         youtubersuggestion3
         youtubestart
         youtubeend
+        audiostart
+        audioend
         youtubemute
         youtubecontrols
         youtubeautostart

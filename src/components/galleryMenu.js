@@ -51,7 +51,7 @@ export default function testPage() {
 </Link></div>
 
 
-<div><Link className="button" to="/photos/dendroiddreams">
+<div><Link className="button" to="/dendroid-dreams/">
   Dendroid Dreams
 </Link></div>
 
