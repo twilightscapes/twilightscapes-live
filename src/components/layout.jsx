@@ -184,7 +184,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto">
-              <Link className="navbar-item txtshadow" to="/about-todd/">
+              <Link className="navbar-item txtshadow" to="/about/">
                 About Todd Lambert<span>As seen on reality TV</span>
               </Link>
       </li>
