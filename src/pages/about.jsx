@@ -4,7 +4,7 @@ import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 import { Seo } from "../components/seo"
 import { FaHandPointDown } from "react-icons/fa"
-import CommentBox from "../components/commentbox"
+// import CommentBox from "../components/commentbox"
 
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -1015,7 +1015,7 @@ Traveling across the country in search of a beauty that is elusive and fading, o
        
        
        
-       <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto',}}>Wow! If you've made it this far, then that must mean that you are:</h3> <br /><br />
+       {/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto',}}>Wow! If you've made it this far, then that must mean that you are:</h3> <br /><br />
 
        <ul style={{display:'flex', flexDirection:'column', justifyContent:'space-between', fontSize:'150%', margin:'0 auto', width:'55%', listStyle:'none', listStyleType:'none', textAlign:'left', border:'1px solid', padding:'3rem', borderRadius:'12px', gap:'2rem' }}>
 
@@ -1027,11 +1027,10 @@ Traveling across the country in search of a beauty that is elusive and fading, o
 
        <li>d) my Mom (Love you Mom!)</li>
 
-       {/* <li>SOOO, that must mean you're cool and I like you. (HMU - I'm buyin!)</li> */}
-       </ul>
+       </ul> */}
 
        <div style={{display:'flex', flexDirection:'column', justifyContent:'space-between', fontSize:'150%', margin:'0 auto', width:'75%', textAlign:'left'}}>
-       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>AND...</h2>
+       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>Wow, you made it...</h2>
 
        <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px'}}>if you've come this far, maybe you're willing to come a little further. You remember the name of the town, don't you?</blockquote>
 
@@ -1041,13 +1040,68 @@ Traveling across the country in search of a beauty that is elusive and fading, o
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
+
+
+
+<h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'2rem auto'}}>Todd's Other Work</h3>
+ 
+ <div className="flexbutt noexit print" style={{padding:'0 4%',
+position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'0 auto 2rem auto', }}>
+
+
+
+{/* <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between',}}>
+    <a className="noexit" href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <StaticImage src="../../static/assets/twilightscapes-button.jpg" alt="Todd Lambert Night photos"  /></a>
+    <br />
+    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the night like you&apos;ve never seen it before.
+    <br /><br />
+    <div style={{textAlign:'center',}}><a className="post-card button " href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>Twilightscapes.com</a></div>
+    </div> */}
+
+
+    
+    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
+    <a className="noexit" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <StaticImage src="../../static/assets/urban-fetish-button.jpg" alt="Todd Lambert Night photos" style={{borderRadius:'8px'}}  /></a>
+    <br />
+    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
+    <br /><br />
+    <div style={{textAlign:'center',}}><a className="post-card button " href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>UrbanFetish.com</a></div>
+    </div>
+
+
+
+
+
+<div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between',}}>
+    <a className="noexit" href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <StaticImage src="../../static/assets/toddlambert-promo-banner.png" alt="Todd Lambert is an independent artist, creator, design, developer and generally a unicorn" style={{borderRadius:'8px'}}  /></a>
+    <br />
+    Todd Lambert excels in design, development, marketing, conceptual photography and online strategy that bring results. Learn more about Todd and maybe hire him to help you?
+    <br /><br />
+    <div style={{textAlign:'center',}}><a className="post-card button " href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>ToddLambert.com</a></div>
+    </div>
+
+
+    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
+    <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
+    <StaticImage src="../../static/assets/vidsock-promo.jpg" alt="Todd builds Web Apps"  style={{borderRadius:'8px'}} /></a>
+    <br />
+Todd sells exceptionally fast and well-built multimedia web apps called VidSocks. They are a complete website solution that costs nothing to run and get top ranks in Google!
+    <br /><br />
+    <div style={{textAlign:'center',}}><a className="post-card button " href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>VidSocks.com</a></div>
+    </div>
+
+
+</div>
        
    
     </section>
 
-    <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+    {/* <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
     <CommentBox />
-    </div>
+    </div> */}
 
 
 
