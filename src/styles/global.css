@@ -1266,12 +1266,19 @@ height:100%;
 
               @media (min-width: 49rem) {
                 .sliderholder{height: 70vh !important;}
+
                 .horizontal-scroll-wrapper{margin:20px auto 0 auto !important;
-                  width: calc(70vw + 1px) !important;
+                width: calc(70vw + 1px) !important;
                 transform: rotate(-90deg) translateY(-70vw) !important;
                 }
+
                 .squares > * {
                   max-height: 60vh !important; 
+                }
+
+                .horizontal-scroll-wrapper.menurapper{
+                  width: calc(40vw + 1px) !important;
+                transform: rotate(-90deg) translateY(-40vw) !important;
                 }
               }
 
