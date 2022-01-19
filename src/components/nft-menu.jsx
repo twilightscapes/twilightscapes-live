@@ -15,6 +15,30 @@ const CustomBox = styled.div`
 
 
 
+.galmenu::before{
+  content:'';
+  display:block;
+  width:100%;
+  height:30px;
+  position:absolute;
+  top:0;
+  background:#ff0000;
+  z-index:-1;
+}
+
+
+.galmenu::after{
+  content:'';
+  display:block;
+  width:100%;
+  height:30px;
+  position:absolute;
+  bottom:-10px;
+  background:#111;
+  border-top:1px solid #333;
+}
+
+
 
 
 .themed{margin-top:10px;}
@@ -76,7 +100,7 @@ const NFTMenu = () => (
       
       
       
-<ul className="galmenu custom-gal" style={{margin:'0 !important',}}>
+<ul className="galmenu custom-gal" style={{margin:'0 !important', position:'relative'}}>
 
 <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Limited Editions</li>
 
@@ -127,6 +151,22 @@ justifyContent: 'center',
 fontSize:'100%',
 }}>
 Workin' In A Gas Station
+</Link>
+</li>
+
+<li className="galmenu-item">
+<Link to="/photos/"
+className="button"
+style={{
+cursor:'pointer',
+textAlign:'center',
+margin:'1rem auto',
+alignItems:'center',
+display: 'flex',
+justifyContent: 'center',
+fontSize:'100%',
+}}>
+More Photos
 </Link>
 </li>
 
