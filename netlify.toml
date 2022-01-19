@@ -6,9 +6,3 @@
 [build.environment]
   NODE_VERSION = "14.17.5"
   NODE_OPTIONS = "--max_old_space_size=4096"
-
-
-[[redirects]]
-  from = "/deconstructed-photography"
-  to = "/experiences"
-  status = 301
