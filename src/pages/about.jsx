@@ -1030,11 +1030,14 @@ Traveling across the country in search of a beauty that is elusive and fading, o
        </ul> */}
 
        <div style={{display:'flex', flexDirection:'column', justifyContent:'space-between', fontSize:'150%', margin:'0 auto', width:'75%', textAlign:'left'}}>
-       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>Wow, you made it...</h2>
+       <h2 style={{fontSize:'200%', fontWeight:'bold', textAlign:'center', margin:'3rem auto 1rem auto' }}>You made it...</h2>
 
-       <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px'}}>if you've come this far, maybe you're willing to come a little further. You remember the name of the town, don't you?</blockquote>
-
-       <blockquote style={{fontSize:'130%', border:'1 px dotted', padding:'1rem', borderRadius:'12px'}}>I could use a good man to help me get my project on wheels. I'll keep an eye out for you and the chessboard ready.</blockquote>
+       <blockquote style={{fontSize:'clamp(1.2rem, 1.8vw, 2.2rem)', border:'1px dotted', padding:'1rem', borderRadius:'12px'}}>If you've come this far, maybe you're willing to come a little further. You remember the name of the town, don't you?
+              <br /><br />
+              I could use a good man to help me get my project on wheels. I'll keep an eye out for you and the chessboard ready.
+              
+              <div style={{textAlign:'right', fontSize:'.8rem', marginBottom:'2rem', paddingRight:'20%'}}>-- Shawshank Redemption (1994)</div>
+              </blockquote>
 </div>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
