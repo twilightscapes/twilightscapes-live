@@ -27,7 +27,7 @@ export default function testPage() {
 
   
 
-<div className="horizontal-scroll-wrapper spares" style={{margin:'20px'}}>
+<div className="horizontal-scroll-wrapper spares menurapper" style={{margin:'20px'}}>
 
 
 
