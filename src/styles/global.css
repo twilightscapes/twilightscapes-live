@@ -1345,6 +1345,7 @@ height:100%;
                 transform-origin: right top;
                 /* transition: transform .2s; */
                 scroll-padding: 0 0 0 0;
+                scroll-snap-type: y mandatory ;
               }
               .horizontal-scroll-wrapper > * {
                 display: block;
