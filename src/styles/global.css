@@ -1345,7 +1345,7 @@ height:100%;
                 transform-origin: right top;
                 /* transition: transform .2s; */
                 scroll-padding: 10% 1%;
-                scroll-snap-type: y mandatory ;
+                /* scroll-snap-type: y proximity ; */
               }
               .horizontal-scroll-wrapper > * {
                 display: block;
