@@ -44,7 +44,13 @@ const WaterPage = ({data}) => (
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
 
 
-      <div style={{width:'1000px', height:'1000px'}}></div>
+      <div className="introspacer" style={{}}></div>
+
+<div className="intropanel">
+  {/* <Link to="/contact">
+ 
+  </Link> */}
+</div>
           
       {data.allFile.edges.map(edge => {
       return <GatsbyImage
