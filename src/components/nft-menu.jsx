@@ -13,7 +13,7 @@ const CustomBox = styled.div`
 
 .themed{margin-top:20px;}
 
-
+.galmenu{background:#080808;}
 
 .galmenu::before{
   content:'';
