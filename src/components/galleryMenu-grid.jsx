@@ -175,7 +175,7 @@ fontSize:'100%',
       Ghost Towns
     </Link></Tab>
           <Tab><Link
-      to="/photos/crazygeology/"
+      to="/photos/crazy-geology/"
       className=""
       title="Crazy Geology Gallery"
     >
@@ -348,7 +348,7 @@ fontSize:'100%',
       <li className="galmenu-item">
       <Link
       className=""
-      to="/photos/crazygeology/"
+      to="/photos/crazy-geology/"
       sx={{
         variant: "variants.button",
       }}

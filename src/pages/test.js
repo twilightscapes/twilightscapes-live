@@ -80,7 +80,7 @@ export default function testPage() {
   Cars
 </Link></div>
 
-<div><Link className="button" to="/photos/crazygeology">
+<div><Link className="button" to="/photos/crazy-geology">
   Crazy Geology
 </Link></div>
 

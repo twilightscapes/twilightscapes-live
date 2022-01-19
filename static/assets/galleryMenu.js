@@ -93,7 +93,7 @@ export default function testPage() {
   Relics of Rust
 </Link></div>
 
-<div><Link className="button" to="/photos/crazygeology"
+<div><Link className="button" to="/photos/crazy-geology"
 >
   Crazy Geology
 </Link></div>

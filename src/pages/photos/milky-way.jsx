@@ -125,6 +125,11 @@ export const query = graphql`
 </div>
 <GalleryMenu />
 
+<br /><br />
+<h1 className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Milky Way</h1>
+<br /><br />
+
+
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
     <ScrollAnimation animateIn="bounceInDown" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={0} style={{position:'absolute', zIndex:'1', top:'100px',  fontSize:'10vw', color:'white', display:'flex', justifyContent:'center', alignItems:'center', border:'0px solid blue', width:'100vw'}}>
@@ -176,7 +181,7 @@ export const query = graphql`
 
 
 
-<br /><br />
+
  <ShareSocial />
 
 

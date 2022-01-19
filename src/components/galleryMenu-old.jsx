@@ -207,7 +207,7 @@ fontSize:'100%',
       <li className="galmenu-item">
       <Link
       className=""
-      to="/photos/crazygeology/"
+      to="/photos/crazy-geology/"
       sx={{
         variant: "variants.button",
       }}

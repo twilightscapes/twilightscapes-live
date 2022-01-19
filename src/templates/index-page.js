@@ -120,7 +120,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 7
+      limit: 6
     ) {
       edges {
         node {
@@ -664,7 +664,7 @@ Through NFT
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
-  <Link to="/posts/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <Link to="/posts/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View More <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
     </section>

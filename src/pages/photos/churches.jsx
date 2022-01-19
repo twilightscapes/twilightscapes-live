@@ -14,14 +14,15 @@ import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
 import GoBack from "../../components/goBack"
 import ScrollAnimation from 'react-animate-on-scroll'
-const IndexPage = ({data}) => (
+
+const ChurchPage = ({data}) => (
   
-<Layout className="thanks-page">
+      <Layout className="thanks-page">
 
 <Seo
-          title={`Abandoned Car Photography`}
-          description={`Abandoned cars photographed on location at night`}
-          image={'https://twilightscapes.com/images/night132.jpg'}
+          title={`Church Photography at Night`}
+          description={`Photos of old abandoned churches`}
+          image={'https://twilightscapes.com/images/churches/Churches - 11 of 17.jpeg'}
         />
   {/* <GalleryMenu /> */}
 
@@ -61,9 +62,10 @@ const IndexPage = ({data}) => (
          {/* <ShareSocial /> */}
          {/* <div className="spacer66" /> */}
 
+
          <br /><br />
-<h1 className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Relics of Rust</h1>
-<br /><br />
+         <h1 className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Churches </h1>
+         <br /><br />
  <ShareSocial />
 
 
@@ -71,7 +73,7 @@ const IndexPage = ({data}) => (
 <GoBack />
     
 
-<p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Do you have a favorite car? Let me know below:</p>
+{/* <p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}></p> */}
 
 
 
@@ -147,12 +149,12 @@ showCaption: false
   },
 };
 
-export default IndexPage
+export default ChurchPage
 
 export const indexQuery = graphql`
-query carsPhotos {
+query churchPhotos {
   allFile(
-    filter: {relativeDirectory: {eq: "cars"}, relativePath: {}}
+    filter: {relativeDirectory: {eq: "churches"}, relativePath: {}}
     sort: {order: ASC, fields: name}
   ) {
     edges {

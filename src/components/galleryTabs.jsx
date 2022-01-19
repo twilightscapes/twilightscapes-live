@@ -159,7 +159,7 @@ className=""
       Ghost Towns
     </Link></Tab>
           <Tab><Link
-      to="/photos/crazygeology/"
+      to="/photos/crazy-geology/"
       className=""
       title="Crazy Geology Gallery"
     >

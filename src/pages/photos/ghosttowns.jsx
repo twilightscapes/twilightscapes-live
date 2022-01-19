@@ -59,6 +59,8 @@ const IndexPage = ({data}) => (
          {/* <div className="spacer66" /> */}
 
          <br /><br />
+<h1 className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Ghost Towns</h1>
+<br /><br />
  <ShareSocial />
 
 

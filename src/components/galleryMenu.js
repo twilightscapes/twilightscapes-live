@@ -40,22 +40,29 @@ export default function testPage() {
   Ghost Towns
 </Link></div>
 
+<div><Link className="button" to="/photos/water-is-life">
+  Water Is Life
+</Link></div>
+
 
 <div><Link className="button" to="/photos/cars">
   Relics of Rust
 </Link></div>
 
-<div><Link className="button" to="/photos/crazygeology"
+<div><Link className="button" to="/photos/crazy-geology"
 >
   Crazy Geology
 </Link></div>
 
+<div><Link className="button" to="/photos/churches">
+  Churches
+</Link></div>
 
 <div><Link className="button" to="/dendroid-dreams/">
   Dendroid Dreams
 </Link></div>
 
-<div><Link className="button" to="/photos/gasstations">
+<div><Link className="button" to="/workin-in-a-gas-station">
   Gas Stations
 </Link></div>
 

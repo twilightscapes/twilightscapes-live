@@ -14,14 +14,15 @@ import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
 import GoBack from "../../components/goBack"
 import ScrollAnimation from 'react-animate-on-scroll'
-const IndexPage = ({data}) => (
+
+const WaterPage = ({data}) => (
   
-<Layout className="thanks-page">
+      <Layout className="thanks-page">
 
 <Seo
-          title={`Abandoned Car Photography`}
-          description={`Abandoned cars photographed on location at night`}
-          image={'https://twilightscapes.com/images/night132.jpg'}
+          title={`Water Nature Photography`}
+          description={`Photos of nature that focus on water`}
+          image={'https://twilightscapes.com/images/water-is-life/Water Is Life - 7 of 29.jpeg'}
         />
   {/* <GalleryMenu /> */}
 
@@ -61,9 +62,10 @@ const IndexPage = ({data}) => (
          {/* <ShareSocial /> */}
          {/* <div className="spacer66" /> */}
 
+
          <br /><br />
-<h1 className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Relics of Rust</h1>
-<br /><br />
+         <p className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Water Is Life </p>
+         <br /><br />
  <ShareSocial />
 
 
@@ -71,7 +73,7 @@ const IndexPage = ({data}) => (
 <GoBack />
     
 
-<p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Do you have a favorite car? Let me know below:</p>
+{/* <p style={{textAlign:'center', fontSize:'clamp(.8rem, 1.4rem, 2rem)', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Need more proof that I am NOT a vampire?</p> */}
 
 
 
@@ -147,12 +149,12 @@ showCaption: false
   },
 };
 
-export default IndexPage
+export default WaterPage
 
 export const indexQuery = graphql`
-query carsPhotos {
+query waterPhotos {
   allFile(
-    filter: {relativeDirectory: {eq: "cars"}, relativePath: {}}
+    filter: {relativeDirectory: {eq: "water-is-life"}, relativePath: {}}
     sort: {order: ASC, fields: name}
   ) {
     edges {
