@@ -2,6 +2,7 @@ import * as React from "react"
 // import { Layout } from "../components/layout"
 // import GoBack from "./goBack"
 import { Link } from "gatsby"
+// import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
 // import { Seo } from "./seo"
 // import CasePanels from "./casepanels"
@@ -32,22 +33,25 @@ export default function testPage() {
 
 <div style={{width:'100px', height:'100px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
 
-  <div><Link className="button" to="/photos/milky-way">
+  <div name="milkyway"><Link id="milkyway" className="button" to="/photos/milky-way">
   Milky Way
 </Link></div>
 
-<div><Link className="button" to="/photos/ghosttowns">
+<div><Link id="ghosttowns" className="button" to="/photos/ghosttowns">
   Ghost Towns
 </Link></div>
 
-<div><Link className="button" to="/photos/water-is-life">
+<div><Link id="water" className="button" to="/photos/water-is-life">
   Water Is Life
 </Link></div>
 
 
-<div><Link className="button" to="/photos/cars">
+<div>
+{/* <AnchorLink to="/photos/cars#rust" title="Relics of Rust"></AnchorLink> */}
+  <Link name="rust" id="rust" className="button" to="/photos/cars">
   Relics of Rust
-</Link></div>
+</Link>
+</div>
 
 <div><Link className="button" to="/photos/crazy-geology"
 >
