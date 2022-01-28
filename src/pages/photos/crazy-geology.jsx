@@ -83,8 +83,8 @@ export const query = graphql`
 
     <Layout className="gasstations-page" style={{position:''}}>
     <Seo
-          title={`Crazy Geography - wild locations`}
-          description={`Photos of crazy geographical locations`}
+          title={`Crazy Geology - wild stone formations and natural phenomenon`}
+          description={`Photos of crazy locations with unique geological features`}
           image={'https://twilightscapes.com/default-photo-crazy.jpg'}
         />
     

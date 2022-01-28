@@ -1235,11 +1235,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/hammersmith-one@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/hammersmith-one/-/hammersmith-one-4.5.0.tgz#04c083eb01db34a19d8a1c3de63bc350d6c61a69"
-  integrity sha512-DJ+AOHGUBGKZ2/PZmAfuMPQPwoXlQn8mRnZEVCt31gnoSaOmxO4HUWVlt24ADATmQqHwETx3Le1O7oW557PS2A==
-
 "@fontsource/roboto@^4.5.0":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.1.tgz#63f7b783f755d8f6727eb60198627e7e1be3ac20"

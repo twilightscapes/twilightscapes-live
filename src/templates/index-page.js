@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-// import { GoArrowDown } from "react-icons/go"
+import { IoIosArrowDroprightCircle, IoIosArrowDropdownCircle } from "react-icons/io"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -21,6 +21,7 @@ import { Layout } from "../components/layout"
 import GalleryMenu from "../components/galleryMenu"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+import IntroHelper from "../../static/assets/help-intro.svg"
 const CustomBox = styled.div`
 
 `
@@ -341,9 +342,9 @@ const YouTube = frontmatter.youtuber
 
       />
       
-      
+      {/* className='stack-layout' */}
 
-      <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
+      <div className="sliderholder stack-layout" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
       <TwilightLogo style={{
       // filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', 
@@ -352,9 +353,36 @@ const YouTube = frontmatter.youtuber
       position:'absolute', zIndex:'', top:'15vh',
       hover:''
       }} />
+
+
+{/* <div aria-label="Link to VidSocks.com" className="post-card" style={{position:'absolute', right:'0', top:'', zIndex:'1', width:'50px', background:'rgba(0, 0, 0, .7)', height:'95%', display:'flex', flexDirection:'column', justifyContent:'center', borderRadius:'12px 0 0 12px', border:'1px solid #999 !important', borderLeft:'none !important', margin:'10px 0'}}>
+
+  <div style={{position:'', left:'', top:'', transform: 'rotate(90deg)', width:'100%', height:'', border:'0px solid red', color:'#fff',  textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold', margin:'-80px auto 0 auto'}}>Visit VidSocks.com</div>
+</div> */}
+
+
+{/* <a aria-label="Link to VidSocks.com" className="post-card noexit" rel="noreferrer" target="_blank" href="https://vidsocks.com" title="Link to VidSocks.com" style={{position:'absolute', left:'0', top:'', zIndex:'1', width:'50px', background:'rgba(0, 0, 0, .9)', height:'95%', display:'flex', flexDirection:'column', justifyContent:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', margin:'10px 0'}}>
+
+  <div style={{position:'', left:'', top:'', transform: 'rotate(90deg)', width:'100%', height:'', border:'0px solid red', color:'#fff',  textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold', margin:'-80px auto 0 auto'}}>Visit VidSocks.com</div>
+</a> */}
+
+{/* <IntroHelper style={{
+  width:'100%',
+  height:'100vh',
+  position:'absolute',
+  top:'0',
+  left:'0',
+  right:'0',
+  bottom:'0',
+  zIndex:'0',
+  objectFit:'cover'
+}} /> */}
+
+
+
       
       <div className="RArrow">
-         <span></span>
+         {/* <span></span> */}
         </div>
     
     <SimpleReactLightbox>
@@ -366,10 +394,20 @@ const YouTube = frontmatter.youtuber
           <div className="introspacer" style={{}}></div>
 
           <div className="intropanel">
+          
+          {/* <div className="" style={{animation:'fadeout 4s forwards',
+  animationDelay: '2s', position:'absolute', bottom:'0', right:'0', fontSize:'1.6rem', display:'flex', justifyContent:'center', alignItems:'center'}}>
+          SCROLL
+          <div style={{fontSize:'50px', marginLeft:'10px'}}>< IoIosArrowDroprightCircle /></div>
+          <div style={{fontSize:'50px', position:'absolute', margin:'3rem 1rem 0 0'}}>< IoIosArrowDropdownCircle /></div>
+          </div> */}
+
             {/* <Link to="/contact">
            
             </Link> */}
           </div>
+
+       
               
           {data.allFile.edges.map(edge => {
           return <GatsbyImage
@@ -379,7 +417,13 @@ const YouTube = frontmatter.youtuber
           key={edge.node.id}
         />
         })}
-    
+       <div className="donation" style={{}}>
+            <Link to="/contact">
+          
+
+
+            </Link>
+          </div>
         </div>
         </SRLWrapper></SimpleReactLightbox>
             </div>
@@ -673,11 +717,16 @@ Through NFT
 <div id="posts" name="posts">
         <BlogListHome data={posts} />
 
-        <section style={{height:'auto'}}>
-  <Link to="/posts/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-    View More <RiArrowRightSLine style={{fontSize:'50px'}} />
+
+        <div style={{textAlign:'center',}}><Link className="post-card button " to="/posts/" style={{textDecoration:'none', color:'inherit',}}> More Posts <RiArrowRightSLine style={{fontSize:'50px'}} /></Link></div>
+
+
+        {/* <section style={{height:'auto'}}>
+  <Link to="/posts/" style={{display:'block', width:''}}>
+    <article className="button" style={{height:'', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'', fontSize:'', textAlign:'center' }}>
+    More Posts <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
-    </section>
+    </section> */}
 
    </div>
 
@@ -693,7 +742,7 @@ Through NFT
 
       
 
- <h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'2rem auto'}}>Todd's Other Work</h3>
+ <h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'0 auto 2rem auto'}}>Todd's Other Work</h3>
  
  <div className="flexbutt noexit print" style={{padding:'0 4%',
 position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'0 auto 2rem auto', }}>
