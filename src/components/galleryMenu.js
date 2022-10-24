@@ -26,12 +26,12 @@ export default function testPage() {
       
 <div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#080808', borderTop:'0px'}}>
 
-<div className="noexit" style={{position:'absolute', right:'0', top:'', zIndex:'1', width:'50px', background:'rgba(0, 0, 0, .3)', height:'100%', display:'flex', flexDirection:'column', justifyContent:'center', borderRadius:'12px', border:'1px solid #ccc !important', borderLeft:'0px !important', margin:' 0'}}>
+{/* <div className="noexit" style={{position:'absolute', right:'0', top:'', zIndex:'1', width:'50px', background:'rgba(0, 0, 0, .3)', height:'100%', display:'flex', flexDirection:'column', justifyContent:'center', borderRadius:'12px', border:'1px solid #ccc !important', borderLeft:'0px !important', margin:' 0'}}>
 
 <div style={{position:'absolute', right:'', bottom:'0',
 //  transform: 'rotate(90deg)',
  width:'', height:'', border:'0px solid red', color:'#fff',  textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold', margin:'-80px auto 0 auto'}}><RiArrowRightSLine style={{fontSize:'50px'}} /></div>
-</div>
+</div> */}
 
 <div className="horizontal-scroll-wrapper spares menurapper" style={{margin:'20px'}}>
 

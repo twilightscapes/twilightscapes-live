@@ -17,6 +17,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
 import ShareSocial from '../../components/share' 
+import Newsignup from "../../components/newssign"
 
 // import { MoreButton } from "../components/more-button"
 // import { title } from "../pages/index.module.css"
@@ -122,10 +123,18 @@ export const query = graphql`
 
 
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
+<div className="donation" style={{}}>
+{/* <Link to="/contact"> */}
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+  <Newsignup />
+  </div>
+{/* </Link> */}
+</div>
 </div>
 <GalleryMenu />
 
 <br /><br />
+
 <h1 className="neonText" style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', color:'#fff'}}>Milky Way</h1>
 <br /><br />
 

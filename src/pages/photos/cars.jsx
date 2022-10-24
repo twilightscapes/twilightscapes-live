@@ -14,6 +14,7 @@ import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
 import GoBack from "../../components/goBack"
 import ScrollAnimation from 'react-animate-on-scroll'
+import Newsignup from "../../components/newssign"
 const IndexPage = ({data}) => (
   
 <Layout className="thanks-page">
@@ -29,9 +30,7 @@ const IndexPage = ({data}) => (
 
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
-  <TwilightLogo style={{
-  filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', maxWidth:'50vw', opacity:'.7',
-  position:'absolute', zIndex:'-1', top:'15vh'}} />
+  <TwilightLogo className="bglogo" />
   
   <div className="RArrow">
      <span></span>
@@ -59,6 +58,14 @@ const IndexPage = ({data}) => (
       key={edge.node.id}
     />
     })}
+
+<div className="donation" style={{}}>
+{/* <Link to="/contact"> */}
+<div style={{position:'relative', top:'', margin:'0', padding:'5% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+  <Newsignup />
+  </div>
+{/* </Link> */}
+</div>
 
     </div>
     </SRLWrapper></SimpleReactLightbox>

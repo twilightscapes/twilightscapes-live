@@ -346,13 +346,7 @@ const YouTube = frontmatter.youtuber
 
       <div className="sliderholder stack-layout" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
-      <TwilightLogo style={{
-      // filter:'brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9)', 
-      maxWidth:'50vw',
-      opacity:'.5',
-      position:'absolute', zIndex:'', top:'15vh',
-      hover:''
-      }} />
+      <TwilightLogo className="bglogo" />
 
 
 {/* <div aria-label="Link to VidSocks.com" className="post-card" style={{position:'absolute', right:'0', top:'', zIndex:'1', width:'50px', background:'rgba(0, 0, 0, .7)', height:'95%', display:'flex', flexDirection:'column', justifyContent:'center', borderRadius:'12px 0 0 12px', border:'1px solid #999 !important', borderLeft:'none !important', margin:'10px 0'}}>
@@ -418,11 +412,15 @@ const YouTube = frontmatter.youtuber
         />
         })}
        <div className="donation" style={{}}>
-            <Link to="/contact">
+            {/* <Link to="/contact"> */}
           
+           
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+  <Newsignup />
+  </div>
 
 
-            </Link>
+            {/* </Link> */}
           </div>
         </div>
         </SRLWrapper></SimpleReactLightbox>
